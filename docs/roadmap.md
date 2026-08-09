@@ -1,150 +1,214 @@
-# 🚀 Learn AI Workflow Roadmap
+# 🎓 Learn A.I Workflow for Data Science Roadmap
 
-> A structured journey from Python fundamentals to Data Science, Machine Learning, Deep Learning, and AI Workflow Engineering.
-
-## 📖 About
-
-This roadmap documents the learning path for building AI workflows from the ground up. The goal is not just to study theory, but to turn each phase into practical progress, portfolio projects, and a future AI Learning Assistant.
-
-## 🎯 Objectives
-
-- Learn Data Science systematically
-- Build AI projects step by step
-- Track progress with an RPG Skill Tree style roadmap
-- Grow a public portfolio on GitHub
-- Develop an AI Learning Assistant over time
-
-## 🌳 Roadmap
-
-The learning path follows six phases:
-
-1. Python Fundamentals
-2. Python for Data
-3. Math & Statistics for AI
-4. Machine Learning Fundamentals
-5. Deep Learning & Neural Networks
-6. Generative AI & AI Workflow
+> Status Legend:
+>
+> - ✅ Completed
+> - 🟨 Current
+> - ⬜ Not Started
+> - 🔒 Locked
 
 ---
 
-## 🐍 Phase 1 — Python Fundamentals
+# 🐍 PHASE 1 — PYTHON FOUNDATION
 
-- [x] Variables, Data Types, Operators
-- [x] Conditionals (if/elif/else)
-- [x] Loops (for/while)
-- [x] Functions, Parameters, Return, Scope
-- [x] Data Structures (List, Tuple, Dict, Set)
-- [x] String Manipulation & Formatting
-- [x] Error Handling (try/except)
-- [x] File I/O
-- [x] OOP (Class, Object, Inheritance)
-- [x] Virtual Environment & pip
-- [x] Project Python Dasar
+| Module | Status |
+|---------|:------:|
+| Variables, Data Types & Operators | ✅ |
+| Conditional Statements | ✅ |
+| Loops | ✅ |
+| Functions | ✅ |
+| Data Structures | ✅ |
+| String Manipulation | ✅ |
+| Error Handling | ✅ |
+| File I/O | ✅ |
+| Object Oriented Programming | ✅ |
+| Virtual Environment & pip | ✅ |
+| Python Basic Project | ✅ |
 
-## 📊 Phase 2 — Python for Data
+**Progress:** **100%**
 
-### NumPy
-- [x] Array
-- [x] Operations
-- [x] Shape, Dimension, dtype
-- [x] Indexing & Slicing
-- [x] Reshape
-- [x] Broadcasting
-- [x] Universal Functions
-- [x] Statistical Operations
-- [x] Argmax
-- [x] Argmin
-- [x] np.any()
-- [x] np.all()
-- [x] Sorting & Searching
-- [ ] Array Manipulation
-- [ ] Linear Algebra
-- [ ] Random Module
-- [ ] File I/O NumPy
-- [ ] Performance Optimization
-- [ ] Capstone NumPy
+---
 
-### Pandas
-- [ ] DataFrame Basics
-- [ ] Filtering
-- [ ] Groupby
-- [ ] Merge / Join
-- [ ] Missing Data Handling
-- [ ] Data Cleaning
+# 📊 PHASE 2 — PYTHON FOR DATA
 
-### Matplotlib
-- [ ] Basic Plotting
-- [ ] Line Plot
-- [ ] Bar Plot
-- [ ] Histogram
-- [ ] Scatter Plot
-- [ ] Subplots
-- [ ] Styling & Labels
+## 📦 NumPy 🟨 CURRENT MODULE
 
-### Seaborn
-- [ ] Distribution Plot
-- [ ] Count Plot
-- [ ] Box Plot
-- [ ] Heatmap
-- [ ] Pair Plot
-- [ ] Categorical Plot
+### Foundation
 
-### Jupyter Notebook / Google Colab
-- [ ] Notebook Basics
-- [ ] Markdown & Code Cells
-- [ ] Working with Colab
+- ✅ Array
+- ✅ Array Operations
+- ✅ Shape, Dimension, dtype
+- ✅ Indexing & Slicing
+- ✅ Reshape
+- ✅ Broadcasting
+- ✅ Universal Functions
+- ✅ Statistical Operations
+- ✅ Argmax
+- ✅ Argmin
+- ✅ np.any()
+- ✅ np.all()
 
-### Web Scraping (Optional)
-- [ ] Requests
-- [ ] BeautifulSoup Basics
-- [ ] Simple Dataset Collection
+---
 
-## 📈 Phase 3 — Math & Statistics for AI
+### Sorting
 
-- [ ] Linear Algebra
-- [ ] Calculus
-- [ ] Statistics
-- [ ] Probability
-- [ ] Gradient Descent
+- ✅ np.sort()
+- ✅ ndarray.sort()
+- ✅ Axis Sorting
+- ✅ np.argsort()
+- ✅ Descending Sort
 
-## 🤖 Phase 4 — Machine Learning Fundamentals
+---
 
-- [ ] Concept of Machine Learning
-- [ ] Supervised Learning
-- [ ] Unsupervised Learning
-- [ ] Model Evaluation
-- [ ] Feature Engineering
-- [ ] Data Preprocessing
-- [ ] Scikit-learn
-- [ ] Project ML
+### Searching
 
-## 🧠 Phase 5 — Deep Learning
+- ✅ np.where()
+- ✅ np.nonzero()
+- ✅ np.searchsorted()
+- ✅ np.extract()
 
-- [ ] Perceptron & MLP
-- [ ] Forward & Backpropagation
-- [ ] Activation & Loss Function
-- [ ] CNN
-- [ ] RNN / LSTM
-- [ ] Transformer & Attention
-- [ ] PyTorch / TensorFlow
-- [ ] Transfer Learning
-- [ ] Project Deep Learning
+---
 
-## 🚀 Phase 6 — Generative AI & AI Workflow
+### Array Manipulation
 
-- [ ] Foundation of Generative AI
-- [ ] Prompt Engineering
-- [ ] Working with LLM API
-- [ ] RAG
-- [ ] LangChain / LlamaIndex
-- [ ] AI Agent
-- [ ] Automation (n8n / Make)
-- [ ] Deployment (Streamlit / FastAPI)
-- [ ] Capstone AI Workflow
+- ✅ np.append()
+- ✅ np.insert()
+- ✅ np.delete()
+- ✅ np.concatenate()
 
-## 📍 Progress Notes
+#### Stack Operations
 
-- Phase 1: completed
-- Phase 2: in progress
-- Current focus: NumPy -> Sorting & Searching
-- Phase 3-6: locked until their prerequisites are ready
+- ✅ np.stack()
+- ✅ np.hstack()
+- ✅ np.vstack()
+
+#### Split Operations
+
+- ✅ np.split()
+- ✅ np.hsplit()
+- ✅ np.vsplit()
+
+**Status:** ✅ Completed
+
+---
+
+### 🟨 Current Quest
+
+## Mathematical Operations
+
+- ⬜ Basic Arithmetic (+, -, *, /)
+- ⬜ np.add()
+- ⬜ np.subtract()
+- ⬜ np.multiply()
+- ⬜ np.divide()
+- ⬜ Power Operations
+- ⬜ Modulus Operations
+
+---
+
+### Next Modules
+
+- ⬜ Linear Algebra
+- ⬜ Random Module
+- ⬜ File I/O NumPy
+- ⬜ Performance Optimization
+- ⬜ NumPy Capstone
+
+---
+
+## Other Data Libraries
+
+- 🔒 Pandas
+- 🔒 Matplotlib
+- 🔒 Seaborn
+- 🔒 Jupyter Notebook / Google Colab
+- 🔒 Web Scraping (Optional)
+
+---
+
+# 📈 PHASE 3 — MATHEMATICS & STATISTICS
+
+- 🔒 Linear Algebra
+- 🔒 Calculus
+- 🔒 Statistics
+- 🔒 Probability
+- 🔒 Gradient Descent
+
+---
+
+# 🤖 PHASE 4 — MACHINE LEARNING
+
+- 🔒 Machine Learning Fundamentals
+- 🔒 Supervised Learning
+- 🔒 Unsupervised Learning
+- 🔒 Model Evaluation
+- 🔒 Feature Engineering
+- 🔒 Data Preprocessing
+- 🔒 Scikit-learn
+- 🔒 Machine Learning Project
+
+---
+
+# 🧠 PHASE 5 — DEEP LEARNING
+
+- 🔒 Perceptron & MLP
+- 🔒 Forward & Backpropagation
+- 🔒 Activation Functions
+- 🔒 CNN
+- 🔒 RNN / LSTM
+- 🔒 Transformer & Attention
+- 🔒 PyTorch / TensorFlow
+- 🔒 Transfer Learning
+- 🔒 Deep Learning Project
+
+---
+
+# 🚀 PHASE 6 — GENERATIVE AI & AI WORKFLOW
+
+- 🔒 Generative AI Fundamentals
+- 🔒 Prompt Engineering
+- 🔒 LLM API
+- 🔒 Retrieval Augmented Generation (RAG)
+- 🔒 LangChain / LlamaIndex
+- 🔒 AI Agent
+- 🔒 Automation (n8n / Make)
+- 🔒 Deployment (Streamlit / FastAPI)
+- 🔒 AI Workflow Capstone
+
+---
+
+# 📍 CURRENT STATUS
+
+**Current Phase**
+
+> Phase 2 — Python for Data
+
+**Current Module**
+
+> NumPy
+
+**Current Quest**
+
+> Mathematical Operations
+
+**Next Quest**
+
+> Linear Algebra
+
+---
+
+# 🏆 COMPLETED MILESTONES
+
+- ✅ Python Foundation (100%)
+- ✅ NumPy Foundation
+- ✅ Sorting
+- ✅ Searching
+- ✅ Array Manipulation
+
+---
+
+# 🎯 Learning Rule
+
+Progress is updated **only after a topic has been validated** through exercises and mini projects.
+
+No module is marked as completed before validation.

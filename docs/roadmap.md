@@ -56,7 +56,8 @@ The learning path follows six phases:
 - [x] Argmin
 - [x] np.any()
 - [x] np.all()
-- [ ] Sorting & Searching
+- [x] Sorting & Searching
+- [ ] Array Manipulation
 - [ ] Linear Algebra
 - [ ] Random Module
 - [ ] File I/O NumPy

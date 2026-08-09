@@ -1,71 +1,149 @@
-# Roadmap Belajar AI Workflow: Dari 0 (Python) hingga Generative AI
+# 🚀 Learn AI Workflow Roadmap
 
-> Roadmap ini dibagi jadi 6 fase besar, dari dasar pemrograman sampai bisa membangun AI workflow/agent sendiri (chatbot, automation, RAG, dll). Tiap fase punya target skill, materi, dan project praktik biar nggak cuma teori.
+> A structured journey from Python fundamentals to Data Science, Machine Learning, Deep Learning, and AI Workflow Engineering.
 
-## Gambaran Umum
+## 📖 About
 
-| Fase | Fokus | Estimasi Waktu |
-|---|---|---|
-| 1 | Dasar Python | 3–4 minggu |
-| 2 | Python untuk Data (Numpy, Pandas, Visualisasi) | 3–4 minggu |
-| 3 | Matematika & Statistika untuk AI | 3–4 minggu (paralel dgn fase 2/4) |
-| 4 | Machine Learning Fundamental | 4–6 minggu |
-| 5 | Deep Learning & Neural Network | 4–6 minggu |
-| 6 | Generative AI & AI Workflow (LLM, Prompting, RAG, Agent) | 6–8 minggu |
+This roadmap documents the learning path for building AI workflows from the ground up. The goal is not just to study theory, but to turn each phase into practical progress, portfolio projects, and a future AI Learning Assistant.
 
-## Fase 1 — Dasar Python (Fondasi)
+## 🎯 Objectives
 
-- Variabel, tipe data, operator
-- Percabangan (if/elif/else) & perulangan (for/while)
-- Fungsi, parameter, return value, scope
-- Struktur data: list, tuple, dict, set
-- String manipulation & formatting (f-string)
-- Error handling (try/except)
-- File I/O (baca/tulis file txt/csv)
-- OOP: class, object, inheritance
-- Virtual environment & pip (`venv`, `pip install`)
+- Learn Data Science systematically
+- Build AI projects step by step
+- Track progress with an RPG Skill Tree style roadmap
+- Grow a public portfolio on GitHub
+- Develop an AI Learning Assistant over time
 
-## Fase 2 — Python untuk Data
+## 🌳 Roadmap
 
-- NumPy — array, operasi matriks, broadcasting
-- Pandas — DataFrame, filtering, groupby, merge, handling missing data
-- Matplotlib & Seaborn — visualisasi data
-- Jupyter Notebook / Google Colab
-- Web scraping dasar (requests, BeautifulSoup) — opsional tapi berguna
+The learning path follows six phases:
 
-## Fase 3 — Matematika & Statistika untuk AI
+1. Python Fundamentals
+2. Python for Data
+3. Math & Statistics for AI
+4. Machine Learning Fundamentals
+5. Deep Learning & Neural Networks
+6. Generative AI & AI Workflow
 
-- Aljabar linear: vektor, matriks, dot product, eigenvalue
-- Kalkulus: turunan, gradient
-- Statistika & probabilitas: mean, variance, distribusi, Bayes theorem
-- Optimisasi dasar: gradient descent
+---
 
-## Fase 4 — Machine Learning Fundamental
+## 🐍 Phase 1 — Python Fundamentals
 
-- Konsep dasar: supervised vs unsupervised learning, overfitting/underfitting, train-test split
-- Supervised learning: Linear Regression, Logistic Regression, Decision Tree, Random Forest, KNN, SVM
-- Unsupervised learning: K-Means Clustering, PCA
-- Evaluasi model: accuracy, precision, recall, F1-score, confusion matrix, cross-validation
-- Feature engineering & data preprocessing
-- Library utama: Scikit-learn
+- [x] Variables, Data Types, Operators
+- [x] Conditionals (if/elif/else)
+- [x] Loops (for/while)
+- [x] Functions, Parameters, Return, Scope
+- [x] Data Structures (List, Tuple, Dict, Set)
+- [x] String Manipulation & Formatting
+- [x] Error Handling (try/except)
+- [x] File I/O
+- [x] OOP (Class, Object, Inheritance)
+- [x] Virtual Environment & pip
+- [x] Project Python Dasar
 
-## Fase 5 — Deep Learning & Neural Network
+## 📊 Phase 2 — Python for Data
 
-- Perceptron, Multi-Layer Perceptron (MLP)
-- Forward propagation, backpropagation, loss function, activation function
-- CNN
-- RNN/LSTM
-- Transformer & Attention mechanism
-- Framework: PyTorch atau TensorFlow/Keras
-- Transfer learning
+### NumPy
+- [x] Array
+- [x] Operations
+- [x] Shape, Dimension, dtype
+- [x] Indexing & Slicing
+- [x] Reshape
+- [x] Broadcasting
+- [x] Universal Functions
+- [x] Statistical Operations
+- [x] Argmax
+- [x] Argmin
+- [x] np.any()
+- [x] np.all()
+- [ ] Sorting & Searching
+- [ ] Linear Algebra
+- [ ] Random Module
+- [ ] File I/O NumPy
+- [ ] Performance Optimization
+- [ ] Capstone NumPy
 
-## Fase 6 — Generative AI & AI Workflow
+### Pandas
+- [ ] DataFrame Basics
+- [ ] Filtering
+- [ ] Groupby
+- [ ] Merge / Join
+- [ ] Missing Data Handling
+- [ ] Data Cleaning
 
-- Cara kerja LLM secara garis besar
-- Prompt engineering
-- Bekerja dengan API LLM
-- RAG (Retrieval-Augmented Generation)
-- LangChain atau LlamaIndex
-- AI Agent
-- No-code/low-code automation: n8n atau Make.com
-- Deployment sederhana: Streamlit/Gradio atau FastAPI
+### Matplotlib
+- [ ] Basic Plotting
+- [ ] Line Plot
+- [ ] Bar Plot
+- [ ] Histogram
+- [ ] Scatter Plot
+- [ ] Subplots
+- [ ] Styling & Labels
+
+### Seaborn
+- [ ] Distribution Plot
+- [ ] Count Plot
+- [ ] Box Plot
+- [ ] Heatmap
+- [ ] Pair Plot
+- [ ] Categorical Plot
+
+### Jupyter Notebook / Google Colab
+- [ ] Notebook Basics
+- [ ] Markdown & Code Cells
+- [ ] Working with Colab
+
+### Web Scraping (Optional)
+- [ ] Requests
+- [ ] BeautifulSoup Basics
+- [ ] Simple Dataset Collection
+
+## 📈 Phase 3 — Math & Statistics for AI
+
+- [ ] Linear Algebra
+- [ ] Calculus
+- [ ] Statistics
+- [ ] Probability
+- [ ] Gradient Descent
+
+## 🤖 Phase 4 — Machine Learning Fundamentals
+
+- [ ] Concept of Machine Learning
+- [ ] Supervised Learning
+- [ ] Unsupervised Learning
+- [ ] Model Evaluation
+- [ ] Feature Engineering
+- [ ] Data Preprocessing
+- [ ] Scikit-learn
+- [ ] Project ML
+
+## 🧠 Phase 5 — Deep Learning
+
+- [ ] Perceptron & MLP
+- [ ] Forward & Backpropagation
+- [ ] Activation & Loss Function
+- [ ] CNN
+- [ ] RNN / LSTM
+- [ ] Transformer & Attention
+- [ ] PyTorch / TensorFlow
+- [ ] Transfer Learning
+- [ ] Project Deep Learning
+
+## 🚀 Phase 6 — Generative AI & AI Workflow
+
+- [ ] Foundation of Generative AI
+- [ ] Prompt Engineering
+- [ ] Working with LLM API
+- [ ] RAG
+- [ ] LangChain / LlamaIndex
+- [ ] AI Agent
+- [ ] Automation (n8n / Make)
+- [ ] Deployment (Streamlit / FastAPI)
+- [ ] Capstone AI Workflow
+
+## 📍 Progress Notes
+
+- Phase 1: completed
+- Phase 2: in progress
+- Current focus: NumPy -> Sorting & Searching
+- Phase 3-6: locked until their prerequisites are ready

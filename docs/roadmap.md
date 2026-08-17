@@ -31,7 +31,9 @@
 
 # 📊 PHASE 2 — PYTHON FOR DATA
 
-## 📦 NumPy 🟨 CURRENT MODULE
+## 📦 NumPy
+
+**Status:** ✅ Completed — 100%
 
 ### Foundation
 
@@ -48,8 +50,6 @@
 - ✅ np.any()
 - ✅ np.all()
 
----
-
 ### Sorting
 
 - ✅ np.sort()
@@ -58,16 +58,12 @@
 - ✅ np.argsort()
 - ✅ Descending Sort
 
----
-
 ### Searching
 
 - ✅ np.where()
 - ✅ np.nonzero()
 - ✅ np.searchsorted()
 - ✅ np.extract()
-
----
 
 ### Array Manipulation
 
@@ -88,37 +84,103 @@
 - ✅ np.hsplit()
 - ✅ np.vsplit()
 
-**Status:** ✅ Completed
+### Next NumPy Modules
+
+- 🔒 Linear Algebra
+- 🔒 Random Module
+- 🔒 File I/O NumPy
+- 🔒 Performance Optimization
+- 🔒 NumPy Capstone
 
 ---
 
-### 🟨 Current Quest
+## 🐼 Pandas 🟨 CURRENT MODULE
 
-## Mathematical Operations
+### Fundamentals
 
-- ⬜ Basic Arithmetic (+, -, *, /)
-- ⬜ np.add()
-- ⬜ np.subtract()
-- ⬜ np.multiply()
-- ⬜ np.divide()
-- ⬜ Power Operations
-- ⬜ Modulus Operations
+- ✅ Series
+- ✅ DataFrame
+- ✅ Creating Data
+- ✅ Index
+- ✅ Columns
+- ✅ Shape
+- ✅ head()
+- ✅ tail()
+- ✅ info()
+- ✅ describe()
 
----
+### Data Selection
 
-### Next Modules
+- ✅ Single Column
+- ✅ Multiple Column
+- ✅ Series vs DataFrame
+- ✅ iloc() Row Selection
+- ✅ iloc() Row & Column Selection
+- ✅ loc()
 
-- ⬜ Linear Algebra
-- ⬜ Random Module
-- ⬜ File I/O NumPy
-- ⬜ Performance Optimization
-- ⬜ NumPy Capstone
+### Filtering Data
+
+- ✅ Operator Perbandingan
+- ✅ Filter Satu Kondisi
+- ✅ Filter Multi Kondisi (&, |)
+- ✅ isin()
+- ✅ between()
+- ✅ query()
+
+### Sorting Data
+
+- ✅ sort_values()
+- ✅ Multi-column Sorting
+- ✅ sort_index()
+- ✅ reset_index()
+
+### Column Manipulation
+
+- ✅ Menambah Kolom
+- ✅ Mengubah Kolom
+- ✅ Rename Column
+- ✅ Drop Column
+- ✅ Insert Column
+
+### Row Manipulation
+
+- ✅ Menambah Baris
+- ✅ Drop Row
+- ✅ Reset Index
+- ✅ Set Index
+
+### Missing Value
+
+- ✅ isnull()
+- ✅ notnull()
+- ✅ fillna()
+- ✅ dropna()
+
+**Status:** ✅ Completed — 100%
+
+### 📈 Statistics 🟨 CURRENT SUBMODULE
+
+- 🟨 mean() — CURRENT LESSON
+- ⬜ sum()
+- ⬜ count()
+- ⬜ min()
+- ⬜ max()
+- ⬜ median()
+- ⬜ mode()
+- ⬜ std()
+- ⬜ value_counts()
+
+### Next Pandas Modules
+
+- 🔒 GroupBy
+- 🔒 Merge & Join
+- 🔒 Import / Export
+- 🔒 👑 Pandas Capstone
 
 ---
 
 ## Other Data Libraries
 
-- 🔒 Pandas
 - 🔒 Matplotlib
 - 🔒 Seaborn
 - 🔒 Jupyter Notebook / Google Colab
@@ -185,25 +247,34 @@
 
 **Current Module**
 
-> NumPy
+> Pandas
+
+**Current Submodule**
+
+> Statistics
 
 **Current Quest**
 
-> Mathematical Operations
+> mean()
 
 **Next Quest**
 
-> Linear Algebra
+> sum()
 
 ---
 
 # 🏆 COMPLETED MILESTONES
 
 - ✅ Python Foundation (100%)
-- ✅ NumPy Foundation
-- ✅ Sorting
-- ✅ Searching
-- ✅ Array Manipulation
+- ✅ NumPy (100%)
+- ✅ Pandas Fundamentals
+- ✅ Pandas Data Selection
+- ✅ Pandas Filtering
+- ✅ Pandas Sorting
+- ✅ Pandas Column Manipulation
+- ✅ Pandas Row Manipulation
+- ✅ Pandas Missing Value
+- 🏆 Review Queue Completed
 
 ---
 

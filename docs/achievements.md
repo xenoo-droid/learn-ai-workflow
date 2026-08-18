@@ -3,6 +3,7 @@
 ## Unlocked
 - Python Master
 - NumPy Explorer
+- Pandas Statistics
 
 ## Planned
 - Data Wrangler

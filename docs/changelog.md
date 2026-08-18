@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-08-18
+
+- Completed Pandas → Statistics with validated score 250/250
+- Marked mean(), sum(), count(), min(), max(), median(), mode(), std(), and value_counts() as completed
+- Recorded Pandas Statistics as a completed milestone and achievement
+- Advanced current quest to Pandas → GroupBy
+- Set next quest to Pandas → Merge & Join
+
 ## 2026-08-17
 
 - Saved validated learning progress checkpoint

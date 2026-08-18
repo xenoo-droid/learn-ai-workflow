@@ -185,23 +185,23 @@
 - ✅ fillna()
 - ✅ dropna()
 
+### 📈 Statistics
+
 **Status:** ✅ Completed — 100%
 
-### 📈 Statistics 🟨 CURRENT SUBMODULE
-
-- 🟨 mean() — CURRENT LESSON
-- ⬜ sum()
-- ⬜ count()
-- ⬜ min()
-- ⬜ max()
-- ⬜ median()
-- ⬜ mode()
-- ⬜ std()
-- ⬜ value_counts()
+- ✅ mean()
+- ✅ sum()
+- ✅ count()
+- ✅ min()
+- ✅ max()
+- ✅ median()
+- ✅ mode()
+- ✅ std()
+- ✅ value_counts()
 
 ### Next Pandas Modules
 
-- 🔒 GroupBy
+- 🟨 GroupBy — CURRENT MODULE
 - 🔒 Merge & Join
 - 🔒 Import / Export
 - 🔒 👑 Pandas Capstone
@@ -280,15 +280,15 @@
 
 **Current Submodule**
 
-> Statistics
+> GroupBy
 
 **Current Quest**
 
-> mean()
+> GroupBy
 
 **Next Quest**
 
-> sum()
+> Merge & Join
 
 ---
 
@@ -303,6 +303,7 @@
 - ✅ Pandas Column Manipulation
 - ✅ Pandas Row Manipulation
 - ✅ Pandas Missing Value
+- 🏆 Pandas Statistics (100%)
 - 🏆 Review Queue Completed
 
 ---

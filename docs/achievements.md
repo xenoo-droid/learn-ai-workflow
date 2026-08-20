@@ -6,6 +6,8 @@
 - Pandas Statistics
 - Pandas GroupBy
 - Pandas Merge & Join
+- Pandas Import / Export
+- Pandas Capstone — 220/220
 
 ## Planned
 - Data Wrangler

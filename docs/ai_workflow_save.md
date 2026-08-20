@@ -14,10 +14,10 @@
 - Phase 6 — Generative AI & AI Workflow: Locked
 
 ## CURRENT QUEST
-- Pandas → Import / Export
+- Pandas → Pandas Capstone — Completed 220/220
 
 ## NEXT QUEST
-- Pandas → Pandas Capstone
+- Belum ditetapkan
 
 ## PANDAS COMPLETED SUBMODULES
 - Fundamentals
@@ -30,6 +30,8 @@
 - Statistics
 - GroupBy
 - Merge & Join
+- Import / Export
+- Pandas Capstone — 220/220
 
 ## REVIEW QUEUE
 - Error Handling: Completed
@@ -58,9 +60,11 @@
 - Pandas Statistics
 - Pandas GroupBy
 - Pandas Merge & Join
+- Pandas Import / Export
+- Pandas Capstone — 220/220
 
 ## CHANGELOG
-- 2026-08-20: Completed Pandas → GroupBy and Pandas → Merge & Join; advanced current quest to Import / Export
+- 2026-08-20: Completed Pandas → Import / Export and Pandas → Pandas Capstone with validated score 220/220; completed Pandas milestone set
 - 2026-08-18: Completed Pandas → Statistics with 250/250 and advanced current quest to GroupBy
 - 2026-08-17: Saved validated learning progress checkpoint at Pandas → Statistics → `mean()`
 - 2026-08-08: Initialized repository and roadmap

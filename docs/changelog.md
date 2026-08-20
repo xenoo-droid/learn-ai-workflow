@@ -2,10 +2,10 @@
 
 ## 2026-08-20
 
-- Completed Pandas → GroupBy with validated exercises and mini challenge
-- Completed Pandas → Merge & Join with validated exercises and mini challenge
-- Advanced current quest to Pandas → Import / Export
-- Set next quest to Pandas → Pandas Capstone
+- Completed Pandas → Import / Export with validated exercises and mini challenge
+- Completed Pandas → Pandas Capstone with validated score 220/220
+- Recorded Pandas Capstone as a completed milestone and achievement
+- Advanced current state beyond Pandas Capstone; next quest not yet set
 
 ## 2026-08-18
 

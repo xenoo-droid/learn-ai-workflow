@@ -203,8 +203,8 @@
 
 - ✅ GroupBy — Completed
 - ✅ Merge & Join — Completed
-- 🟨 Import / Export — CURRENT MODULE
-- 🔒 👑 Pandas Capstone
+- ✅ Import / Export — Completed
+- 🏆 👑 Pandas Capstone — COMPLETED — 220/220
 
 ---
 
@@ -280,15 +280,15 @@
 
 **Current Submodule**
 
-> Import / Export
+> Pandas Capstone
 
 **Current Quest**
 
-> Import / Export
+> Pandas Capstone — Completed 220/220
 
 **Next Quest**
 
-> Pandas Capstone
+> Belum ditetapkan
 
 ---
 
@@ -306,6 +306,8 @@
 - 🏆 Pandas Statistics (100%)
 - 🏆 Pandas GroupBy (100%)
 - 🏆 Pandas Merge & Join (100%)
+- 🏆 Pandas Import / Export (100%)
+- 🏆 Pandas Capstone (220/220)
 - 🏆 Review Queue Completed
 
 ---

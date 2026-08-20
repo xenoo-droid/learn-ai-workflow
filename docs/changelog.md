@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-20
+
+- Completed Pandas → GroupBy with validated exercises and mini challenge
+- Completed Pandas → Merge & Join with validated exercises and mini challenge
+- Advanced current quest to Pandas → Import / Export
+- Set next quest to Pandas → Pandas Capstone
+
 ## 2026-08-18
 
 - Completed Pandas → Statistics with validated score 250/250

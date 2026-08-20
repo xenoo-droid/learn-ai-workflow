@@ -201,9 +201,9 @@
 
 ### Next Pandas Modules
 
-- 🟨 GroupBy — CURRENT MODULE
-- 🔒 Merge & Join
-- 🔒 Import / Export
+- ✅ GroupBy — Completed
+- ✅ Merge & Join — Completed
+- 🟨 Import / Export — CURRENT MODULE
 - 🔒 👑 Pandas Capstone
 
 ---
@@ -280,15 +280,15 @@
 
 **Current Submodule**
 
-> GroupBy
+> Import / Export
 
 **Current Quest**
 
-> GroupBy
+> Import / Export
 
 **Next Quest**
 
-> Merge & Join
+> Pandas Capstone
 
 ---
 
@@ -304,6 +304,8 @@
 - ✅ Pandas Row Manipulation
 - ✅ Pandas Missing Value
 - 🏆 Pandas Statistics (100%)
+- 🏆 Pandas GroupBy (100%)
+- 🏆 Pandas Merge & Join (100%)
 - 🏆 Review Queue Completed
 
 ---

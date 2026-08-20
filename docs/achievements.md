@@ -4,6 +4,8 @@
 - Python Master
 - NumPy Explorer
 - Pandas Statistics
+- Pandas GroupBy
+- Pandas Merge & Join
 
 ## Planned
 - Data Wrangler

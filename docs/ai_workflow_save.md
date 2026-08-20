@@ -14,10 +14,10 @@
 - Phase 6 — Generative AI & AI Workflow: Locked
 
 ## CURRENT QUEST
-- Pandas → GroupBy
+- Pandas → Import / Export
 
 ## NEXT QUEST
-- Pandas → Merge & Join
+- Pandas → Pandas Capstone
 
 ## PANDAS COMPLETED SUBMODULES
 - Fundamentals
@@ -28,6 +28,8 @@
 - Row Manipulation
 - Missing Value
 - Statistics
+- GroupBy
+- Merge & Join
 
 ## REVIEW QUEUE
 - Error Handling: Completed
@@ -54,8 +56,11 @@
 - Pandas Row Manipulation
 - Pandas Missing Value
 - Pandas Statistics
+- Pandas GroupBy
+- Pandas Merge & Join
 
 ## CHANGELOG
+- 2026-08-20: Completed Pandas → GroupBy and Pandas → Merge & Join; advanced current quest to Import / Export
 - 2026-08-18: Completed Pandas → Statistics with 250/250 and advanced current quest to GroupBy
 - 2026-08-17: Saved validated learning progress checkpoint at Pandas → Statistics → `mean()`
 - 2026-08-08: Initialized repository and roadmap

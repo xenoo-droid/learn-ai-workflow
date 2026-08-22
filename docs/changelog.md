@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-08-22
+
+- Adopted Roadmap v2 as the project single source of truth
+- Preserved all validated learning progress
+- Advanced current learning state to Matplotlib → Figure & Axes (`fig`, `ax/axes`)
+- Preserved Portfolio World 1 lock until Phase 2 reaches 100%
+
 ## 2026-08-20
 
 - Completed Pandas → Import / Export with validated exercises and mini challenge

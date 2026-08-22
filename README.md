@@ -1,6 +1,6 @@
 # 🚀 Learn AI Workflow
 
-> A structured journey from Python fundamentals to Data Science, Machine Learning, Deep Learning, and AI Workflow Engineering.
+> A structured journey to become a Data Scientist / Data Analyst who is AI-native — strong in Data Science/Data Analytics and highly familiar with AI as a force multiplier.
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-Data%20Science-orange.svg)](https://numpy.org/)
@@ -9,26 +9,26 @@
 
 ## 📖 About
 
-This repository documents a long-term learning path for building AI workflows from the ground up. The goal is not just to study theory, but to turn each phase into practical progress, portfolio projects, and a future AI Learning Assistant.
+This repository documents a long-term learning path for building practical Data Science, Data Analytics, and AI-enhanced workflows. The goal is to turn validated learning into practical progress, portfolio projects, and a future AI Learning Assistant.
 
 ## 🎯 Objectives
 
 - Learn Data Science systematically
-- Build AI projects step by step
+- Build AI-enhanced data projects step by step
 - Track progress with an RPG Skill Tree style roadmap
 - Grow a public portfolio on GitHub
 - Develop an AI Learning Assistant over time
 
 ## 🌳 Roadmap
 
-The learning path follows six phases:
+The project follows six phases defined in the current Roadmap v2:
 
-1. Python Fundamentals
-2. Python for Data
-3. Math & Statistics for AI
-4. Machine Learning Fundamentals
-5. Deep Learning & Neural Networks
-6. Generative AI & AI Workflow
+1. Python Foundation
+2. Data Science & Data Analytics
+3. Mathematics & Statistics for Data/AI
+4. Machine Learning Fundamental
+5. Deep Learning & Neural Network
+6. Generative AI & AI-Enhanced Data Workflow
 
 See the full roadmap in [`docs/roadmap.md`](docs/roadmap.md).
 
@@ -43,14 +43,14 @@ The project is designed like a skill tree game:
 
 ## 🏗️ Portfolio Roadmap
 
-Planned portfolio projects include:
+Planned portfolio progression:
 
 - Data Analysis Report
-- Math Notebook Exploration
+- Mathematics / Statistics Notebook
 - Prediction / Classification Model
-- Image / Text Classifier
-- RAG-based Q&A System
-- AI Agent Capstone
+- Deep Learning Classifier
+- RAG Application
+- AI-Enhanced Data Workflow Capstone
 
 ## 📂 Repository Structure
 
@@ -77,30 +77,29 @@ learn-ai-workflow/
 - NumPy
 - Pandas
 - Matplotlib
+- Seaborn
 - Scikit-learn
 - PyTorch / TensorFlow
 - FastAPI
 - Streamlit
-- LangChain / LlamaIndex
 - Git & GitHub
 
 ## 📈 Current Progress
 
-- Python Fundamentals: 100%
-- NumPy: In Progress
-- Pandas: Locked
+- Python Foundation: 100%
+- NumPy: 100%
+- Pandas: 100%
+- Matplotlib: Current Module
+- Seaborn: Locked
+- Jupyter / Google Colab: Locked
+- SQL & Database: Locked
 - Machine Learning: Locked
 - Deep Learning: Locked
-- AI Workflow: Locked
+- Generative AI & AI Workflow: Locked
 
-## 🚀 Future Features
+## 🔒 Portfolio Lock
 
-- RPG Skill Tree dashboard
-- Portfolio tracker
-- XP and achievement system
-- Study analytics
-- AI mentor / learning assistant
-- Automation and agent workflows
+Data Analysis Report remains locked until Phase 2 reaches 100%.
 
 ## 📜 License
 

@@ -2,22 +2,34 @@
 
 ## PLAYER
 - Level: 12
-- Class: AI Engineer Apprentice
+- Class: Data Professional Apprentice
 - Current XP: 82%
 
 ## ROADMAP
-- Phase 1 — Dasar Python: Completed
-- Phase 2 — Python untuk Data: In Progress
-- Phase 3 — Matematika & Statistika: Locked
-- Phase 4 — Machine Learning: Locked
-- Phase 5 — Deep Learning: Locked
-- Phase 6 — Generative AI & AI Workflow: Locked
+- Roadmap v2: Single Source of Truth
+- Phase 1 — Python Foundation: Completed
+- Phase 2 — Data Science & Data Analytics: In Progress
+- Phase 3 — Mathematics & Statistics for Data/AI: Locked
+- Phase 4 — Machine Learning Fundamental: Locked
+- Phase 5 — Deep Learning & Neural Network: Locked
+- Phase 6 — Generative AI & AI-Enhanced Data Workflow: Locked
 
 ## CURRENT QUEST
-- Pandas → Pandas Capstone — Completed 220/220
+- Matplotlib → Figure & Axes (`fig`, `ax/axes`)
 
 ## NEXT QUEST
-- Belum ditetapkan
+- Matplotlib → Boxplot
+
+## MATPLOTLIB COMPLETED SUBMODULES
+- Pengenalan & Line Plot
+- Bar Plot
+- Histogram
+- Scatter Plot — 250/250
+- Subplots — 250/250
+- Styling & Labels — 250/250
+
+## NUMPY COMPLETED
+- NumPy — 100%
 
 ## PANDAS COMPLETED SUBMODULES
 - Fundamentals
@@ -40,16 +52,23 @@
 
 ## PORTFOLIO
 - Data Analysis Report: Locked until Phase 2 reaches 100%
-- Math Notebook Exploration: Locked
+- Mathematics / Statistics Notebook: Locked
 - Prediction / Classification Model: Locked
-- Image / Text Classifier: Locked
-- RAG-based Q&A System: Locked
-- AI Agent Capstone: Locked
+- Deep Learning Classifier: Locked
+- RAG Application: Locked
+- AI-Enhanced Data Workflow Capstone: Locked
 
 ## ACHIEVEMENTS
 - Python Foundation Completed
 - NumPy Completed
+- Pandas Completed
 - Review Queue Completed
+- Matplotlib Line Plot
+- Matplotlib Bar Plot
+- Matplotlib Histogram
+- Matplotlib Scatter Plot — 250/250
+- Matplotlib Subplots — 250/250
+- Matplotlib Styling & Labels — 250/250
 - Pandas Fundamentals
 - Pandas Data Selection
 - Pandas Filtering
@@ -64,6 +83,7 @@
 - Pandas Capstone — 220/220
 
 ## CHANGELOG
+- 2026-08-22: Adopted Roadmap v2 as the project single source of truth; preserved validated progress and advanced current learning state to Matplotlib → Figure & Axes (`fig`, `ax/axes`)
 - 2026-08-20: Completed Pandas → Import / Export and Pandas → Pandas Capstone with validated score 220/220; completed Pandas milestone set
 - 2026-08-18: Completed Pandas → Statistics with 250/250 and advanced current quest to GroupBy
 - 2026-08-17: Saved validated learning progress checkpoint at Pandas → Statistics → `mean()`

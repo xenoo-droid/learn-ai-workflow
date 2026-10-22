@@ -27,25 +27,9 @@ Diperbarui: 2026-10-22
 │
 ├── 🐼 PANDAS                                     🏆 LEGACY
 │
-└── 📈 MATPLOTLIB                                 ⚔️ BOSS BATTLE
-    │
-    ├── 📉 Pengenalan & Line Plot                 ✅ LEGACY
-    ├── 📊 Bar Plot                               ✅ LEGACY
-    ├── 📊 Histogram                              ✅ LEGACY
-    ├── 🔵 Scatter Plot                           ✅ LEGACY
-    ├── 🧩 Subplots                               ✅ LEGACY
-    ├── 🎨 Styling & Labels                       ✅ LEGACY
-    ├── 🖼️ Figure & Axes                          ✅ LEGACY
-    ├── 📦 Boxplot                                ✅ LEGACY
-    ├── 📏 Errorbar                               ✅ LEGACY
-    ├── 📐 Axis Limits & Scale                    ✅ LEGACY
-    ├── 🏷️ Legend & Tick Formatting               ✅ LEGACY
-    ├── 💾 savefig()                              ✅ VALIDATED
-    │
-    └── 🏆 MATPLOTLIB REVIEW                      ⚔️ CURRENT QUEST ◀
-         │
-         ▼
-    🎨 SEABORN                                    🔒 LOCKED
+├── 📈 MATPLOTLIB                                 🏆 SELESAI
+│
+└── 🎨 SEABORN                                    ⚔️ CURRENT QUEST ◀
          │
          ▼
     🔹 Jupyter / Google Colab                     🔒 LOCKED
@@ -88,11 +72,11 @@ Diperbarui: 2026-10-22
 
 ═══════════════════════════════════════════════════
 
-🎯 CURRENT QUEST : 🏆 Matplotlib Review
-➡️ NEXT QUEST    : 🎨 Seaborn
-🏆 LATEST WIN    : 💾 savefig() — VALIDATED
+🎯 CURRENT QUEST : 🎨 Seaborn
+➡️ NEXT QUEST    : 🔹 Jupyter / Google Colab
+🏆 LATEST WIN    : 🏆 Matplotlib Review — VALIDATED
 
 📍 CURRENT POSITION
-WORLD 2 → Matplotlib → 🏆 Matplotlib Review
+WORLD 2 → 🎨 Seaborn
 ═══════════════════════════════════════════════════
 ```

@@ -1,0 +1,19 @@
+﻿id: 2026-10-22-matplotlib-review
+modul: matplotlib_review
+tanggal: 2026-10-22
+jenis: validasi
+skor_persen: 88
+mode_ai: review
+level_soal: "3 soal retrieval, 1 challenge transfer L3"
+bukti:
+  - "notebooks/matplotlib_review/Challenge.ipynb"
+  - "notebooks/matplotlib_review/Analisis Challenge.png"
+pemahaman: >
+  Keputusan 1: Menggunakan subplots dengan 2 baris dan 2 kolom
+  agar tiga analisis utama dan satu analisis tambahan dapat
+  ditampilkan dalam satu figure.
+
+  Keputusan 2: Menggunakan errorbar dengan variasi_waktu sebagai
+  yerr untuk menampilkan rentang variasi waktu penyelesaian.
+keputusan: validated
+

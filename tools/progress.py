@@ -12,6 +12,7 @@ Perintah:
     python tools/progress.py due                daftar review yang jatuh tempo
     python tools/progress.py learned <id>       tandai quest aktif sudah dipelajari (belum diuji)
     python tools/progress.py apply <entri.yaml> [--dry]   terapkan Evidence Entry
+    python tools/progress.py inbox [--dry]      terapkan semua entri di state/inbox/ (dipakai workflow GitHub)
 
 Opsi global: --root <folder repo>  --today YYYY-MM-DD
 Kebutuhan: Python 3.9+ dan PyYAML (pip install pyyaml).
@@ -20,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import re
 import shutil
 import sys
 import unicodedata
@@ -41,6 +43,8 @@ JEDA_RETRIEVAL = 7
 KONFIRMASI = 30
 ULANG_GAGAL = 3
 LEGACY_PER_SESI = 2
+ID_ENTRI = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{2,79}$")  # dipakai sebagai nama file; tanpa titik/garis miring
+BATAS_ENTRI_BYTE = 64 * 1024
 
 # --------------------------------------------------------------------------
 # Presentasi dashboard (bukan data progres, jadi tidak disimpan di state)
@@ -440,12 +444,39 @@ def due(data, today: dt.date):
 # --------------------------------------------------------------------------
 # apply (Evidence Entry)
 # --------------------------------------------------------------------------
-def validate_entry(e) -> list:
+def periksa_bukti(root: Path, bukti: list) -> list:
+    """Setiap bukti: URL http(s), atau path relatif yang benar-benar ada di dalam repo."""
+    err = []
+    base = root.resolve()
+    for b in bukti:
+        if not isinstance(b, str) or not b.strip():
+            err.append("bukti berisi item kosong atau bukan teks")
+            continue
+        if b.startswith(("http://", "https://")):
+            continue
+        p = Path(b.replace("\\", "/"))
+        if p.is_absolute() or ".." in p.parts:
+            err.append(f"bukti harus path relatif di dalam repo: {b}")
+            continue
+        if not (base / p).resolve().is_file():
+            err.append(f"bukti tidak ditemukan di repo: {b} (commit dan push file buktinya dulu)")
+    return err
+
+
+def validate_entry(e, root: Path | None = None) -> list:
+    if not isinstance(e, dict):
+        return ["isi entri harus berupa pemetaan YAML (kunci: nilai)"]
     err = []
     for k in ("id", "modul", "tanggal", "jenis", "skor_persen", "mode_ai", "bukti", "keputusan"):
         if e.get(k) in (None, "", []):
             err.append(f"kolom wajib kosong: {k}")
     if err:
+        return err
+    if not isinstance(e["id"], str) or not ID_ENTRI.match(e["id"]):
+        err.append("id hanya boleh huruf, angka, '-' dan '_' (3-80 karakter), tanpa titik atau garis miring")
+        return err
+    if not isinstance(e["modul"], str):
+        err.append("modul harus berupa teks (id quest di state.yaml)")
         return err
     try:
         to_date(e["tanggal"])
@@ -459,6 +490,8 @@ def validate_entry(e) -> list:
         err.append("skor_persen harus angka 0-100")
     if not isinstance(e["bukti"], list):
         err.append("bukti harus berupa daftar")
+    elif root is not None:
+        err.extend(periksa_bukti(root, e["bukti"]))
     if e.get("jenis") == "validasi" and not e.get("pemahaman"):
         err.append("jenis validasi wajib mengisi pemahaman (dua keputusan beserta alasannya)")
     if e.get("jenis") == "mastery" and len(e.get("konteks") or []) < 2:
@@ -468,10 +501,18 @@ def validate_entry(e) -> list:
 
 def apply_entry(repo: Repo, entry_path: Path, today: dt.date, dry=False):
     data, header = repo.load()
-    e = yaml.safe_load(entry_path.read_text(encoding="utf-8"))
-    errs = validate_entry(e)
+    if entry_path.stat().st_size > BATAS_ENTRI_BYTE:
+        raise StateError(f"Entri ditolak: ukuran berkas melebihi {BATAS_ENTRI_BYTE // 1024} KB")
+    try:
+        e = yaml.safe_load(entry_path.read_text(encoding="utf-8"))
+    except (yaml.YAMLError, UnicodeDecodeError) as x:
+        raise StateError(f"Entri ditolak: berkas bukan YAML yang valid ({type(x).__name__})")
+    errs = validate_entry(e, repo.root)
     if errs:
         raise StateError("Entri ditolak:\n  - " + "\n  - ".join(errs))
+    if (repo.evidence_dir / f"{e['id']}.yaml").exists() and \
+            entry_path.resolve() != (repo.evidence_dir / f"{e['id']}.yaml").resolve():
+        raise StateError(f"Entri ditolak: id '{e['id']}' sudah pernah dipakai (state/evidence/{e['id']}.yaml sudah ada)")
     pos, rec = find(data, e["modul"])
     if rec is None:
         raise StateError(f"Entri ditolak: modul '{e['modul']}' tidak ada di state.yaml")
@@ -584,10 +625,55 @@ def mark_learned(repo: Repo, item_id: str, today: dt.date):
     return f"{rec['item']['nama']}: aktif → learned (menunggu ujian validasi)"
 
 
+def proses_inbox(repo: Repo, today: dt.date, dry: bool = False):
+    """Terapkan semua entri di state/inbox/ (urut nama berkas).
+
+    Entri yang diterima dihapus dari inbox (salinannya sudah ada di state/evidence/).
+    Entri yang ditolak dipindah ke state/inbox/ditolak/ bersama berkas alasan,
+    supaya tidak mengganjal proses berikutnya dan alasannya bisa dibaca.
+    """
+    inbox = repo.root / "state" / "inbox"
+    if not inbox.is_dir():
+        return [], []
+    berkas = sorted(p for p in inbox.iterdir() if p.is_file() and p.suffix.lower() in (".yaml", ".yml"))
+    diterima, ditolak = [], []
+    for p in berkas:
+        try:
+            msgs, _ = apply_entry(repo, p, today, dry=dry)
+        except Exception as x:  # satu entri bermasalah tidak boleh menghentikan yang lain
+            alasan = str(x) if isinstance(x, StateError) else f"Kesalahan tak terduga: {type(x).__name__}: {x}"
+            ditolak.append((p.name, alasan))
+            if not dry:
+                tujuan_dir = inbox / "ditolak"
+                tujuan_dir.mkdir(parents=True, exist_ok=True)
+                tujuan, n = tujuan_dir / p.name, 2
+                while tujuan.exists():
+                    tujuan = tujuan_dir / f"{p.stem}-{n}{p.suffix}"
+                    n += 1
+                shutil.move(str(p), str(tujuan))
+                (tujuan_dir / f"{tujuan.name}.alasan.txt").write_text(
+                    f"Ditolak pada {today}\n\n{alasan}\n", encoding="utf-8")
+        else:
+            diterima.append((p.name, msgs))
+            if not dry:
+                p.unlink()
+    return diterima, ditolak
+
+
 # --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
+def pakai_utf8():
+    """Paksa keluaran UTF-8 agar emoji aman di Windows (cp1252) dan saat output dialihkan."""
+    for s in (sys.stdout, sys.stderr):
+        try:
+            s.reconfigure(encoding="utf-8")
+        except (AttributeError, ValueError):
+            pass
+
+
 def main(argv=None) -> int:
+    pakai_utf8()
     ap = argparse.ArgumentParser(description="Penjaga aturan progres Learn A.I Workflow")
     ap.add_argument("--root", default=str(Path(__file__).resolve().parent.parent))
     ap.add_argument("--today", default=None)
@@ -601,6 +687,8 @@ def main(argv=None) -> int:
     a = sub.add_parser("apply")
     a.add_argument("entri")
     a.add_argument("--dry", action="store_true")
+    ib = sub.add_parser("inbox")
+    ib.add_argument("--dry", action="store_true")
     args = ap.parse_args(argv)
 
     repo = Repo(Path(args.root))
@@ -643,6 +731,21 @@ def main(argv=None) -> int:
                 print("•", m)
             if note:
                 print(note)
+        elif args.cmd == "inbox":
+            diterima, ditolak = proses_inbox(repo, today, dry=args.dry)
+            if not diterima and not ditolak:
+                print("Inbox kosong.")
+            for nama, msgs in diterima:
+                print(f"✅ diterapkan: {nama}")
+                for m in msgs:
+                    print("   •", m)
+            for nama, alasan in ditolak:
+                print(f"❌ ditolak: {nama}")
+                for baris in alasan.splitlines():
+                    print("   ", baris)
+            if args.dry:
+                print("DRY-RUN: tidak ada file yang diubah")
+            return 1 if ditolak else 0
         return 0
     except StateError as x:
         print(f"❌ {x}")

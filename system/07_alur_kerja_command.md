@@ -11,10 +11,12 @@ peran: Arti setiap command dan alur dari belajar sampai commit. Dibaca mentor da
 | Pelaku | Tugas |
 |---|---|
 | **Mentor AI** (ChatGPT Project) | Mengajar, menguji, memberi umpan balik, mengusulkan Evidence Entry |
+| **ChatGPT Work** (bila dipakai) | Hanya menaruh file Evidence Entry di `state/inbox/` pada repo. Tidak mengubah file lain |
 | **`tools/progress.py`** | Memeriksa entri terhadap rubrik, mengubah `state.yaml`, membuat dashboard, menghitung review |
-| **Rafa** | Mengerjakan ujian, menyetujui, menjalankan script, commit, dan mengunggah ulang file state ke Project |
+| **Workflow GitHub** (`progres.yml`) | Menjalankan `progress.py` di server pada setiap push ke `main`, lalu bot meng-commit hasilnya |
+| **Rafa** | Mengerjakan ujian, menyetujui entri, memastikan file bukti sudah di-push, dan mengunggah ulang file state ke Project |
 
-Mentor tidak mengubah state dan tidak melakukan commit.
+Mentor dan Work tidak mengubah `state.yaml`, `dashboard.md`, atau `state/evidence/`, dan tidak menyatakan status naik. Hanya `progress.py` yang mengubahnya.
 
 ## Command
 
@@ -57,13 +59,28 @@ Hanya persiapan, tidak mengubah apa pun. Mentor memeriksa Evidence Entry: kolom 
 
 ### `commit progres`
 
-Mentor memberi langkah persis untuk dijalankan Rafa (di bawah). Mentor sendiri tidak melakukan commit.
+Mentor memberi langkah persis untuk jalur yang sedang dipakai Rafa (Jalur A atau B di bawah), termasuk nama berkas entri `state/inbox/<tanggal>-<modul>.yaml`. Mentor sendiri tidak melakukan commit.
 
-## Langkah milestone untuk Rafa
+## Langkah milestone
 
-Simpan Evidence Entry dari mentor ke sebuah file di akar repo, misalnya `entri.yaml` (nama `entri*.yaml` diabaikan git, jadi tidak ikut ter-commit; salinan resminya otomatis dibuat di `state/evidence/`). Lalu di PowerShell dari folder repo:
+Syarat untuk kedua jalur: **file bukti** (notebook, gambar, dan sebagainya) sudah ada di repo. Setiap path di `bukti:` harus nyata, kalau tidak entri ditolak.
+
+### Jalur A: otomatis lewat inbox (default)
+
+1. Rafa meng-commit dan push file bukti ke `main`.
+2. Evidence Entry ditaruh di `state/inbox/<tanggal>-<modul>.yaml` pada branch `main`. Pelakunya Rafa sendiri atau ChatGPT Work (contoh perintah ada di `docs/panduan_chatgpt_project.md`). Hanya file entri itu yang boleh ditambahkan.
+3. Push ke `main` memicu workflow `progres`. Ia menjalankan tes, `progress.py inbox`, dan `progress.py check`, lalu bot meng-commit `state.yaml`, `dashboard.md`, dan `state/evidence/`.
+4. Di GitHub, run hijau berarti entri diterima. Run merah berarti ada yang ditolak: alasannya ada di `state/inbox/ditolak/<nama>.alasan.txt`. Perbaiki entrinya bersama mentor lalu kirim ulang dengan `id` baru.
+5. Rafa menjalankan `git pull`, lalu **mengganti dua file di ChatGPT Project**: hapus versi lama `state.yaml` dan `dashboard.md`, unggah versi baru. Tanpa langkah ini mentor masih membaca state lama.
+
+Selalu `git pull` sebelum bekerja di komputer lokal, karena bot menambahkan commit di `main`.
+
+### Jalur B: manual di komputer (cadangan)
+
+Simpan Evidence Entry ke berkas di akar repo, misalnya `entri.yaml` (nama `entri*.yaml` di akar repo diabaikan git; salinan resminya otomatis dibuat di `state/evidence/`). Di PowerShell dari folder repo:
 
 ```powershell
+git pull
 python tools\progress.py apply entri.yaml --dry    # simulasi, tidak mengubah file
 python tools\progress.py apply entri.yaml          # terapkan
 python tools\progress.py check                     # pastikan state konsisten
@@ -72,13 +89,17 @@ git commit -m "docs: validasi <nama modul>"
 git push
 ```
 
-Lalu **ganti dua file di ChatGPT Project**: hapus versi lama `state.yaml` dan `dashboard.md`, unggah versi baru. Tanpa langkah ini mentor masih membaca state lama.
+Lalu ganti dua file di ChatGPT Project seperti langkah 5 Jalur A.
 
-Jika `apply` menolak entri, pesan galatnya menyebut aturan mana yang dilanggar. Perbaiki entrinya bersama mentor; jangan mengedit `state.yaml` manual untuk menyiasatinya.
+### Jika entri ditolak
+
+Pesan galat menyebut aturan mana yang dilanggar. Perbaiki entrinya bersama mentor; jangan mengedit `state.yaml` manual untuk menyiasatinya. Penyuntingan langsung `state.yaml` akan membuat run GitHub merah (tes dan `check` gagal).
 
 ## Alur singkat
 
 ```text
-Belajar → ujian → mentor usul Evidence Entry → Rafa jalankan apply → check
-       → commit + push → ganti state.yaml & dashboard.md di Project → lanjut
+Belajar → ujian → mentor usul Evidence Entry
+  Jalur A: push bukti → entri ke state/inbox/ → workflow GitHub menerapkan → git pull
+  Jalur B: Rafa jalankan apply → check → commit + push
+→ ganti state.yaml & dashboard.md di Project → lanjut
 ```

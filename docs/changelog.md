@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-22 (otomatisasi progres)
+
+- Menambahkan `state/inbox/` dan perintah `progress.py inbox`: entri bukti ditaruh di inbox, lalu diterapkan otomatis
+- Menambahkan workflow `.github/workflows/progres.yml`: pada setiap push ke `main` menjalankan tes, memproses inbox, memeriksa konsistensi state, dan bot meng-commit hasilnya (zona waktu WIB)
+- Memperketat pemeriksaan entri: `id` aman dan unik, file di `bukti` harus ada di repo, batas ukuran berkas, isi YAML wajib valid
+- Memindahkan data tes ke `tests/fixtures/state/` agar tes tidak patah ketika `state.yaml` asli maju
+- Memperbarui `system/04`, `system/07`, dan `docs/panduan_chatgpt_project.md` (Jalur A otomatis, Jalur B manual, prompt untuk ChatGPT Work)
+- Matplotlib Review divalidasi (skor 88, mode review) sebagai milestone pertama dengan alur baru
+
 ## 2026-10-22 (reboot sistem)
 
 - Membangun ulang sistem belajar: file di repo menjadi sumber kebenaran progres, ChatGPT Project menjadi ruang mentor

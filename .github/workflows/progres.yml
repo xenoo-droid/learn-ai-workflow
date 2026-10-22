@@ -1,0 +1,66 @@
+name: progres
+
+# Penjaga progres belajar di sisi server.
+# - Setiap push ke main: jalankan tes, terapkan entri di state/inbox/, lalu periksa konsistensi state.
+# - Hanya script tools/progress.py yang mengubah state/state.yaml dan state/dashboard.md.
+#   Pihak lain (termasuk ChatGPT Work) cukup menaruh Evidence Entry di state/inbox/.
+# - Entri yang melanggar rubrik dipindah ke state/inbox/ditolak/ beserta alasannya,
+#   dan run ini diberi tanda merah.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: progres
+  cancel-in-progress: false
+
+env:
+  TZ: Asia/Jakarta   # tanggal entri ditulis dalam WIB; tanpa ini entri dini hari bisa dianggap "masa depan"
+
+jobs:
+  jaga:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pasang dependensi
+        run: pip install -r requirements.txt
+
+      - name: Tes otomatis
+        run: python -m unittest discover -s tests
+
+      - name: Terapkan entri dari inbox
+        id: inbox
+        continue-on-error: true
+        run: python tools/progress.py inbox
+
+      - name: Periksa konsistensi state
+        run: python tools/progress.py check
+
+      - name: Simpan hasil ke repo
+        run: |
+          git config user.name "progres-bot"
+          git config user.email "progres-bot@users.noreply.github.com"
+          git add -A state
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan untuk disimpan."
+          else
+            git commit -m "chore(progres): terapkan entri dari inbox [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Tandai gagal bila ada entri ditolak
+        if: steps.inbox.outcome == 'failure'
+        run: |
+          echo "Ada entri yang ditolak. Lihat state/inbox/ditolak/ untuk alasannya."
+          exit 1

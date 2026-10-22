@@ -47,7 +47,7 @@ Sumber kebenaran adalah file di Project ini, bukan ingatanmu dan bukan percakapa
 
 Di awal setiap sesi baca state.yaml dan dashboard.md. Jangan pernah menyatakan progres dari ingatan percakapan. Jika file tidak ketemu atau terpotong, katakan dan minta Rafa menempelkan isinya. Jangan menebak.
 
-Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di bagian Protokol Mentor, aturan_mentor.md; syarat naik status di 03_rubrik_validasi.md). Jangan menyatakan status naik; Rafa menjalankan tools/progress.py.
+Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di bagian Protokol Mentor, aturan_mentor.md; syarat naik status di 03_rubrik_validasi.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Saat menyerahkan entri, sebut nama berkas state/inbox/<tanggal>-<modul>.yaml dan ingatkan bahwa file bukti harus sudah ada di repo.
 
 Untuk "cek progres": tampilkan isi dashboard.md apa adanya dalam blok kode, jangan membuat atau mengubah format dashboard.
 
@@ -77,18 +77,33 @@ Sumber kebenaran adalah file di Project ini, bukan ingatanmu dan bukan percakapa
 
 Di awal setiap sesi baca state.yaml dan dashboard.md. Jangan pernah menyatakan progres dari ingatan percakapan. Jika file tidak ketemu atau terpotong, katakan dan minta Rafa menempelkan isinya. Jangan menebak.
 
-Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di 04_protokol_mentor.md). Jangan menyatakan status naik; Rafa menjalankan tools/progress.py.
+Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di 04_protokol_mentor.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Saat menyerahkan entri, sebut nama berkas state/inbox/<tanggal>-<modul>.yaml dan ingatkan bahwa file bukti harus sudah ada di repo.
 
 Untuk "cek progres": tampilkan isi dashboard.md apa adanya dalam blok kode, jangan membuat atau mengubah format dashboard.
 
 Command: cek progres, lanjut, review, latihan, save, prepare commit, commit progres (arti di 07_alur_kerja_command.md). Sesi "latihan": 3–5 soal + 1 challenge, tanpa petunjuk sebelum Rafa mencoba. Sebelum materi baru: riset, bandingkan dengan roadmap, laporkan celah (04).
 ```
 
+## Mengirim Evidence Entry lewat ChatGPT Work
+
+Work boleh menulis ke repo, tetapi hanya untuk menaruh satu file entri di `state/inbox/`. Workflow GitHub yang menerapkannya (lihat `state/inbox/README.md`). Prompt untuk Work, ganti bagian dalam kurung:
+
+```text
+Repo: xenoo-droid/learn-ai-workflow, branch main.
+Buat satu file baru state/inbox/<tanggal>-<modul>.yaml berisi teks YAML di bawah ini persis apa adanya, lalu commit langsung ke main dengan pesan "inbox: <modul>".
+Jangan membuat, mengubah, atau menghapus file lain. Terutama jangan menyentuh state/state.yaml, state/dashboard.md, dan state/evidence/.
+Setelah commit, berhenti dan laporkan nama commit-nya.
+
+<tempel Evidence Entry di sini>
+```
+
+Sebelumnya pastikan file bukti (notebook, gambar) sudah di-commit dan di-push, kalau tidak entri ditolak. Hasilnya bisa dilihat di tab Actions di GitHub: hijau berarti diterima, merah berarti ditolak (alasannya di `state/inbox/ditolak/`).
+
 ## Sinkronisasi setelah setiap milestone
 
 File yang berubah tiap milestone hanya dua: `state.yaml` dan `dashboard.md`. Sisanya jarang berubah.
 
-1. Jalankan alur di `system/07_alur_kerja_command.md` (apply → check → commit → push).
+1. Terapkan entri lewat alur di `system/07_alur_kerja_command.md` (Jalur A otomatis, atau Jalur B manual), lalu `git pull` supaya komputermu memuat commit bot.
 2. Varian A: jalankan `python tools\bangun_paket.py`, lalu ambil `state.yaml` dan `dashboard.md` dari `paket_project/`. Varian B: ambil keduanya dari folder `state/`.
 3. Di Project, **hapus** `state.yaml` dan `dashboard.md` lama, lalu **unggah** versi baru.
 

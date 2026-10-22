@@ -9,10 +9,15 @@
 | `python tools\progress.py due` | Daftar review yang jatuh tempo dan antrean legacy |
 | `python tools\progress.py learned <id>` | Tandai quest aktif sudah dipelajari, belum diuji |
 | `python tools\progress.py apply <entri.yaml> [--dry]` | Terapkan Evidence Entry; `--dry` hanya simulasi |
+| `python tools\progress.py inbox [--dry]` | Terapkan semua entri di `state/inbox/`; yang ditolak dipindah ke `state/inbox/ditolak/` beserta alasannya. Dijalankan otomatis oleh workflow GitHub |
 
 Opsi global: `--root <folder repo>` dan `--today YYYY-MM-DD`.
 
-Aturan yang dijalankan ada di `system/03_rubrik_validasi.md`. Tes: `python -m unittest discover -s tests -v`.
+Aturan yang dijalankan ada di `system/03_rubrik_validasi.md`. Selain rubrik, setiap entri diperiksa: `id` aman dan belum pernah dipakai, file di `bukti` benar-benar ada di repo, ukuran berkas wajar.
+
+Tes: `python -m unittest discover -s tests -v`. Tes memakai state beku di `tests/fixtures/state/`, jadi tidak berubah saat `state.yaml` asli maju; satu tes tambahan memeriksa bahwa `state.yaml` asli tetap konsisten.
+
+Di GitHub, `.github/workflows/progres.yml` menjalankan tes, `inbox`, dan `check` pada setiap push ke `main`, lalu bot meng-commit hasilnya.
 
 ## bangun_paket.py
 

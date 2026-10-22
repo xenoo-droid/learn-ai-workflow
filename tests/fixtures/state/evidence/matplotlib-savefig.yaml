@@ -1,0 +1,20 @@
+# Evidence Entry (format: system/03_rubrik_validasi.md bagian 8)
+id: matplotlib-savefig
+modul: savefig         # id quest di state.yaml
+tanggal: null          # belum tercatat di sistem lama
+jenis: validasi
+skor_persen: null      # belum tercatat
+mode_ai: null          # belum tercatat
+level_soal: null       # belum tercatat
+bukti:
+  - "Dipindahkan dari 04_Learning_Evidence_Log (checkpoint savefig); tautan notebook belum ada"
+ringkasan: >
+  Membedakan show() dan savefig(); memakai workflow ekspor yang tepat;
+  output PNG; dpi=300; bbox_inches="tight"; menyelesaikan challenge ekspor
+  visualisasi berupa histogram data acak berdistribusi normal.
+pemahaman: null        # dua keputusan beserta alasan, belum tercatat
+keputusan: validated
+catatan: >
+  Challenge ini adalah mini-challenge pembelajaran, BUKAN Portfolio Project
+  resmi.
+kelengkapan: sebagian  # lengkapi tanggal, skor, mode_ai, dan tautan bukti

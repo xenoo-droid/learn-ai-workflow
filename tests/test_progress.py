@@ -1,8 +1,10 @@
 """Tes untuk tools/progress.py. Jalankan dari akar repo:
     python -m unittest discover -s tests -v
 """
+import contextlib
 import datetime as dt
 import importlib.util
+import io
 import shutil
 import tempfile
 import unittest
@@ -17,18 +19,24 @@ spec.loader.exec_module(P)
 
 D = dt.date
 
+# State uji dibekukan di tests/fixtures/state (kondisi sebelum Matplotlib Review divalidasi),
+# supaya tes tidak ikut berubah ketika state.yaml asli maju setelah tiap milestone.
+FIXTURE = ROOT / "tests" / "fixtures" / "state"
+
 
 class Base(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
-        shutil.copytree(ROOT / "state", self.tmp / "state")
+        shutil.copytree(FIXTURE, self.tmp / "state")
+        (self.tmp / "notebooks").mkdir()
+        (self.tmp / "notebooks" / "matplotlib_review.ipynb").write_text("{}", encoding="utf-8")
         self.repo = P.Repo(self.tmp)
         self.today = D(2026, 10, 22)
 
     def tearDown(self):
         shutil.rmtree(self.tmp, ignore_errors=True)
 
-    def entry(self, **kw):
+    def entry(self, dir=None, **kw):
         e = {
             "id": "uji-1", "modul": "matplotlib_review", "tanggal": D(2026, 10, 22),
             "jenis": "validasi", "skor_persen": 90, "mode_ai": "assisted",
@@ -37,7 +45,7 @@ class Base(unittest.TestCase):
             "keputusan": "validated",
         }
         e.update(kw)
-        p = self.tmp / f"{e['id']}.yaml"
+        p = (dir or self.tmp) / f"{e['id']}.yaml"
         p.write_text(yaml.safe_dump(e, allow_unicode=True, sort_keys=False), encoding="utf-8")
         return p
 
@@ -50,8 +58,13 @@ class Base(unittest.TestCase):
 
 
 class TestState(Base):
-    def test_state_asli_konsisten(self):
+    def test_state_fixture_konsisten(self):
         errors, _ = P.check(self.repo)
+        self.assertEqual(errors, [])
+
+    def test_state_hidup_konsisten(self):
+        """state/state.yaml yang sebenarnya harus konsisten (inilah yang dijaga di GitHub)."""
+        errors, _ = P.check(P.Repo(ROOT))
         self.assertEqual(errors, [])
 
     def test_roundtrip_tidak_mengubah_data(self):
@@ -200,12 +213,139 @@ class TestDueDanDashboard(Base):
         self.assertNotIn("COMPLETED", out)
 
     def test_dashboard_dari_cli_tulis(self):
-        rc = P.main(["--root", str(self.tmp), "--today", "2026-10-22", "dashboard", "--tulis"])
+        with contextlib.redirect_stdout(io.StringIO()):
+            rc = P.main(["--root", str(self.tmp), "--today", "2026-10-22", "dashboard", "--tulis"])
         self.assertEqual(rc, 0)
         self.assertTrue((self.tmp / "state" / "dashboard.md").exists())
         errors, warnings = P.check(self.repo)
         self.assertEqual(errors, [])
         self.assertFalse(any("tidak sinkron" in w for w in warnings))
+
+
+class TestKeamananEntri(Base):
+    """Entri bisa datang dari pihak otomatis (mis. ChatGPT Work), jadi diperiksa ketat."""
+
+    def test_bukti_harus_ada_di_repo(self):
+        with self.assertRaisesRegex(P.StateError, "bukti tidak ditemukan"):
+            self.apply(bukti=["notebooks/tidak_ada.ipynb"])
+
+    def test_bukti_url_diterima(self):
+        self.apply(bukti=["https://github.com/xenoo-droid/learn-ai-workflow/blob/main/x.ipynb"])
+        self.assertEqual(self.item("matplotlib_review")["status"], "validated")
+
+    def test_bukti_di_luar_repo_ditolak(self):
+        for b in ("../rahasia.txt", "/etc/passwd", "C:/Windows/win.ini"):
+            with self.assertRaises(P.StateError, msg=b):
+                self.apply(bukti=[b])
+
+    def test_bukti_boleh_garis_miring_windows(self):
+        self.apply(bukti=["notebooks\\matplotlib_review.ipynb"])
+        self.assertEqual(self.item("matplotlib_review")["status"], "validated")
+
+    def test_id_berbahaya_ditolak(self):
+        for bad in ("../../x", "a.b", "a/b", "ab", "x" * 81, ""):
+            p = self.entry(id="aman-1")
+            data = yaml.safe_load(p.read_text(encoding="utf-8"))
+            data["id"] = bad
+            p.write_text(yaml.safe_dump(data, allow_unicode=True), encoding="utf-8")
+            with self.assertRaises(P.StateError, msg=repr(bad)):
+                P.apply_entry(self.repo, p, self.today)
+        self.assertEqual(list((self.tmp / "state" / "evidence").glob("*")),
+                         [self.tmp / "state" / "evidence" / "matplotlib-savefig.yaml"])
+
+    def test_id_ganda_ditolak(self):
+        self.apply(id="sekali-saja")
+        with self.assertRaisesRegex(P.StateError, "sudah pernah dipakai"):
+            self.apply(id="sekali-saja", modul="numpy")
+
+    def test_entri_bukan_pemetaan_ditolak(self):
+        p = self.tmp / "daftar.yaml"
+        p.write_text("- a\n- b\n", encoding="utf-8")
+        with self.assertRaises(P.StateError):
+            P.apply_entry(self.repo, p, self.today)
+
+    def test_yaml_rusak_ditolak(self):
+        p = self.tmp / "rusak.yaml"
+        p.write_text("id: [belum ditutup\n  modul: x: y", encoding="utf-8")
+        with self.assertRaises(P.StateError):
+            P.apply_entry(self.repo, p, self.today)
+
+    def test_entri_terlalu_besar_ditolak(self):
+        p = self.tmp / "besar.yaml"
+        p.write_text("x: " + "a" * (P.BATAS_ENTRI_BYTE + 10), encoding="utf-8")
+        with self.assertRaisesRegex(P.StateError, "ukuran"):
+            P.apply_entry(self.repo, p, self.today)
+
+
+class TestInbox(Base):
+    def setUp(self):
+        super().setUp()
+        self.inbox = self.tmp / "state" / "inbox"
+        self.inbox.mkdir()
+        (self.inbox / "README.md").write_text("abaikan", encoding="utf-8")
+
+    def jalan(self, *extra):
+        with contextlib.redirect_stdout(io.StringIO()):
+            return P.main(["--root", str(self.tmp), "--today", "2026-10-22", "inbox", *extra])
+
+    def test_inbox_kosong_aman(self):
+        self.assertEqual(self.jalan(), 0)
+        self.assertEqual(self.item("matplotlib_review")["status"], "aktif")
+
+    def test_tanpa_folder_inbox_aman(self):
+        shutil.rmtree(self.inbox)
+        self.assertEqual(self.jalan(), 0)
+
+    def test_entri_valid_diterapkan_dan_inbox_dikosongkan(self):
+        self.entry(dir=self.inbox)
+        self.assertEqual(self.jalan(), 0)
+        self.assertEqual(self.item("matplotlib_review")["status"], "validated")
+        self.assertEqual(self.item("seaborn")["status"], "aktif")
+        self.assertFalse((self.inbox / "uji-1.yaml").exists())
+        self.assertTrue((self.tmp / "state" / "evidence" / "uji-1.yaml").exists())
+        self.assertTrue((self.inbox / "README.md").exists())  # README tidak disentuh
+        errors, warnings = P.check(self.repo)
+        self.assertEqual(errors, [])
+        self.assertFalse(any("tidak sinkron" in w for w in warnings))
+
+    def test_entri_ditolak_dipindah_dengan_alasan(self):
+        self.entry(dir=self.inbox, skor_persen=70, keputusan="validated")  # keputusan tak cocok
+        self.assertEqual(self.jalan(), 1)
+        self.assertEqual(self.item("matplotlib_review")["status"], "aktif")
+        self.assertFalse((self.inbox / "uji-1.yaml").exists())
+        self.assertTrue((self.inbox / "ditolak" / "uji-1.yaml").exists())
+        alasan = (self.inbox / "ditolak" / "uji-1.yaml.alasan.txt").read_text(encoding="utf-8")
+        self.assertIn("hasil perhitungan", alasan)
+        self.assertFalse((self.tmp / "state" / "evidence" / "uji-1.yaml").exists())
+
+    def test_satu_ditolak_tidak_menghentikan_yang_lain(self):
+        self.entry(dir=self.inbox, id="a-rusak", skor_persen=10, keputusan="validated")
+        self.entry(dir=self.inbox, id="b-bagus")
+        self.assertEqual(self.jalan(), 1)
+        self.assertEqual(self.item("matplotlib_review")["status"], "validated")
+        self.assertTrue((self.inbox / "ditolak" / "a-rusak.yaml").exists())
+
+    def test_urutan_nama_berkas_dihormati(self):
+        self.entry(dir=self.inbox, id="b-seaborn", modul="seaborn")  # butuh review lulus lebih dulu
+        self.entry(dir=self.inbox, id="a-review")
+        self.assertEqual(self.jalan(), 0)
+        self.assertEqual(self.item("matplotlib_review")["status"], "validated")
+        self.assertEqual(self.item("seaborn")["status"], "validated")
+
+    def test_entri_dengan_nama_berkas_sama_ditolak_ganda(self):
+        self.entry(dir=self.inbox, skor_persen=10, keputusan="validated")
+        self.assertEqual(self.jalan(), 1)
+        self.entry(dir=self.inbox, skor_persen=10, keputusan="validated")
+        self.assertEqual(self.jalan(), 1)
+        self.assertTrue((self.inbox / "ditolak" / "uji-1-2.yaml").exists())
+
+    def test_dry_run_tidak_mengubah_apa_pun(self):
+        self.entry(dir=self.inbox)
+        before = (self.tmp / "state" / "state.yaml").read_text(encoding="utf-8")
+        self.assertEqual(self.jalan("--dry"), 0)
+        self.assertEqual(before, (self.tmp / "state" / "state.yaml").read_text(encoding="utf-8"))
+        self.assertTrue((self.inbox / "uji-1.yaml").exists())
+        self.assertFalse((self.tmp / "state" / "evidence" / "uji-1.yaml").exists())
 
 
 if __name__ == "__main__":

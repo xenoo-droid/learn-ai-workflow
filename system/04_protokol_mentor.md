@@ -79,7 +79,7 @@ Validated → jeda waktu / konteks baru → soal retrieval tanpa catatan → buk
 
 ## Mengusulkan progres: Evidence Entry
 
-Mentor **tidak pernah mengubah state** dan tidak boleh menyatakan status naik. Setelah ujian, mentor menyusun satu Evidence Entry berformat YAML untuk Rafa, lalu Rafa menjalankan `tools/progress.py`. Contoh:
+Mentor **tidak pernah mengubah state** dan tidak boleh menyatakan status naik. Setelah ujian, mentor menyusun satu Evidence Entry berformat YAML untuk Rafa, lalu entri itu diterapkan oleh `tools/progress.py` (otomatis lewat `state/inbox/` atau manual; lihat `system/07_alur_kerja_command.md`). Saat menyerahkan entri, mentor menyebut nama berkas yang disarankan, yaitu `state/inbox/<tanggal>-<modul>.yaml`, dan mengingatkan bahwa file di `bukti:` harus sudah ada di repo. Contoh:
 
 ```yaml
 id: 2026-10-30-seaborn          # unik; tanggal + modul
@@ -98,6 +98,8 @@ keputusan: validated            # status baru bila lulus; tulis "tetap" bila sko
 ```
 
 Khusus `mastery`, tambahkan `konteks:` berisi minimal dua konteks. Khusus `retrieval`, `mode_ai` wajib `independent`. Script akan menolak entri yang melanggar rubrik.
+
+Aturan tambahan yang diperiksa script: `id` hanya huruf, angka, `-`, dan `_` (3–80 karakter) serta tidak boleh dipakai dua kali; setiap item `bukti:` harus berupa path relatif yang ada di repo (atau URL). Mentor menulis `mode_ai` apa adanya sesuai bantuan yang benar-benar diberikan; kolom ini tidak bisa diverifikasi script.
 
 ## Yang dilarang
 

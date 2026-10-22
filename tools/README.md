@@ -13,3 +13,13 @@
 Opsi global: `--root <folder repo>` dan `--today YYYY-MM-DD`.
 
 Aturan yang dijalankan ada di `system/03_rubrik_validasi.md`. Tes: `python -m unittest discover -s tests -v`.
+
+## bangun_paket.py
+
+Untuk ChatGPT Project paket Free (batas 5 file).
+
+| Perintah | Fungsi |
+|---|---|
+| `python tools\bangun_paket.py` | Buat folder `paket_project/` berisi 5 file siap unggah |
+
+`aturan_mentor.md` di dalamnya adalah gabungan otomatis dari lima dokumen `system/`. Folder `paket_project/` diabaikan git karena hanya turunan; sumbernya tetap `system/` dan `state/`. Detail: `docs/panduan_chatgpt_project.md`.

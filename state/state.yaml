@@ -1,0 +1,139 @@
+# ============================================================================
+# state.yaml : SUMBER KEBENARAN PROGRES (Learn A.I Workflow for Data Science)
+# ============================================================================
+# Aturan:
+#  - File ini hanya diubah lewat tools/progress.py (atau oleh Rafa secara sadar).
+#  - Mentor AI TIDAK PERNAH mengubah file ini. Mentor hanya mengusulkan
+#    Evidence Entry (lihat system/03_rubrik_validasi.md bagian 8).
+#  - Jika ingatan mentor berbeda dengan file ini, yang berlaku adalah file ini.
+#  - Urutan modul dalam daftar = urutan roadmap (system/02_roadmap.md).
+#
+# Nilai status yang sah:
+#   belum             : belum dimulai (terkunci bila bukan quest aktif)
+#   aktif             : quest yang sedang dikerjakan (hanya boleh satu)
+#   learned           : materi dipelajari, belum lulus ujian
+#   validated         : lulus ujian validasi, bukti lengkap
+#   validated_legacy  : dinyatakan selesai sebelum rubrik ada, bukti belum lengkap
+#   retained          : lulus retrieval review setelah jeda >= 7 hari
+#   mastered          : terbukti dipakai mandiri di >= 2 konteks
+#
+# Modul yang punya daftar `quest` tidak menyimpan status sendiri; statusnya
+# diturunkan dari quest-nya. Tipe modul: materi (default) | review | portfolio |
+# capstone. Modul `opsional: true` tidak dihitung untuk membuka Portfolio.
+# Portfolio dalam sebuah World terbuka bila semua modul non-opsional dan non-
+# portfolio di World itu sudah selesai (>= validated_legacy).
+#
+# Bidang opsional per modul: tanggal_validasi, evidence (daftar id di
+# state/evidence/), review_berikutnya (YYYY-MM-DD), perlu_review (true/false),
+# catatan.
+# ============================================================================
+
+versi_skema: 1
+diperbarui: 2026-10-22
+pemain: Rafa
+target: "AI-Enhanced Data Professional (Data Scientist / Data Analyst yang AI-native)"
+
+posisi_saat_ini:
+  world: 2
+  modul: matplotlib
+  quest: matplotlib_review
+quest_berikutnya: seaborn
+kemenangan_terbaru: savefig
+
+worlds:
+  # --------------------------------------------------------------------------
+  - id: 1
+    nama: "PYTHON FOUNDATION"
+    modul:
+      - {id: python_fundamentals, nama: "Python Fundamentals", status: validated_legacy}
+      - {id: data_structures, nama: "Data Structures", status: validated_legacy}
+      - {id: functions_modules, nama: "Functions & Modules", status: validated_legacy}
+      - {id: error_handling, nama: "Error Handling", status: validated_legacy, catatan: "Lolos Review Queue lama; bukti tidak terdokumentasi"}
+      - {id: file_io, nama: "File I/O", status: validated_legacy, catatan: "Lolos Review Queue lama; bukti tidak terdokumentasi"}
+      - {id: venv_pip, nama: "Virtual Environment & pip", status: validated_legacy, catatan: "Lolos Review Queue lama; bukti tidak terdokumentasi"}
+      - {id: oop_dasar, nama: "OOP Dasar", status: validated_legacy, catatan: "Dikonfirmasi selesai oleh Rafa pada 2026-10-22; tidak tercantum di state lama"}
+      - {id: python_mini_project, nama: "Python Mini Project", status: validated_legacy, catatan: "Dikonfirmasi selesai oleh Rafa pada 2026-10-22; tidak tercantum di state lama"}
+
+  # --------------------------------------------------------------------------
+  - id: 2
+    nama: "DATA SCIENCE & DATA ANALYTICS"
+    modul:
+      - {id: numpy, nama: "NumPy", status: validated_legacy}
+      - {id: pandas, nama: "Pandas", status: validated_legacy}
+      - id: matplotlib
+        nama: "Matplotlib"
+        quest:
+          - {id: line_plot, nama: "Pengenalan & Line Plot", status: validated_legacy}
+          - {id: bar_plot, nama: "Bar Plot", status: validated_legacy}
+          - {id: histogram, nama: "Histogram", status: validated_legacy}
+          - {id: scatter_plot, nama: "Scatter Plot", status: validated_legacy}
+          - {id: subplots, nama: "Subplots", status: validated_legacy}
+          - {id: styling_labels, nama: "Styling & Labels", status: validated_legacy}
+          - {id: figure_axes, nama: "Figure & Axes", status: validated_legacy}
+          - {id: boxplot, nama: "Boxplot", status: validated_legacy}
+          - {id: errorbar, nama: "Errorbar", status: validated_legacy}
+          - {id: axis_limits_scale, nama: "Axis Limits & Scale", status: validated_legacy}
+          - {id: legend_tick_formatting, nama: "Legend & Tick Formatting", status: validated_legacy}
+          - id: savefig
+            nama: "savefig()"
+            status: validated
+            tanggal_validasi: null   # belum tercatat; lengkapi bila Rafa ingat
+            evidence: [matplotlib-savefig]
+            catatan: "Bukti sebagian: tanggal, skor, dan mode AI belum tercatat"
+          - {id: matplotlib_review, nama: "Matplotlib Review", tipe: review, status: aktif}
+      - {id: seaborn, nama: "Seaborn", status: belum}
+      - {id: jupyter_colab, nama: "Jupyter / Google Colab", status: belum}
+      - {id: web_scraping, nama: "Web Scraping", status: belum, opsional: true}
+      - {id: sql_database, nama: "SQL & Database Fundamentals", status: belum}
+      - {id: ai_untuk_data, nama: "AI untuk Pekerjaan Data", status: belum}
+      - {id: portfolio_1, nama: "Portfolio #1: Data Analysis Report", tipe: portfolio, status: belum}
+
+  # --------------------------------------------------------------------------
+  - id: 3
+    nama: "MATHEMATICS & STATISTICS FOR DATA/AI"
+    modul:
+      - {id: linear_algebra, nama: "Linear Algebra", status: belum}
+      - {id: calculus, nama: "Calculus", status: belum}
+      - {id: statistics, nama: "Statistics", status: belum}
+      - {id: probability, nama: "Probability", status: belum}
+      - {id: optimization, nama: "Optimization (Gradient Descent)", status: belum}
+      - {id: ai_literacy, nama: "AI Literacy", status: belum}
+      - {id: portfolio_math, nama: "Portfolio: Notebook Eksplorasi Matematika/Statistika", tipe: portfolio, status: belum}
+
+  # --------------------------------------------------------------------------
+  - id: 4
+    nama: "MACHINE LEARNING FUNDAMENTAL"
+    modul:
+      - {id: ml_fundamentals, nama: "Machine Learning Fundamentals", status: belum}
+      - {id: supervised_learning, nama: "Supervised Learning", status: belum}
+      - {id: unsupervised_learning, nama: "Unsupervised Learning", status: belum}
+      - {id: ml_evaluation, nama: "Evaluation", status: belum}
+      - {id: scikit_learn, nama: "Scikit-learn", status: belum}
+      - {id: se_formal, nama: "Software Engineering: Formal Introduction", status: belum}
+      - {id: portfolio_2, nama: "Portfolio #2: Prediction / Classification Model", tipe: portfolio, status: belum}
+
+  # --------------------------------------------------------------------------
+  - id: 5
+    nama: "DEEP LEARNING & NEURAL NETWORK"
+    modul:
+      - {id: neural_network, nama: "Neural Network", status: belum}
+      - {id: deep_learning, nama: "Deep Learning (CNN, RNN/LSTM, Transformer, Transfer Learning)", status: belum}
+      - {id: dl_framework, nama: "Framework Utama (PyTorch atau TensorFlow/Keras)", status: belum}
+      - {id: portfolio_3, nama: "Portfolio #3: Image / Text Classifier", tipe: portfolio, status: belum}
+
+  # --------------------------------------------------------------------------
+  - id: 6
+    nama: "GENERATIVE AI & AI-ENHANCED DATA WORKFLOW"
+    modul:
+      - {id: genai_fundamentals, nama: "6A Generative AI Fundamentals", status: belum}
+      - {id: prompt_context, nama: "6B Prompt & Context Engineering", status: belum}
+      - {id: llm_api, nama: "6C LLM API", status: belum}
+      - {id: rag, nama: "6D RAG", status: belum}
+      - {id: workflow_vs_agent, nama: "6E AI Workflow vs AI Agent", status: belum}
+      - {id: ai_automation, nama: "6F AI Automation", status: belum}
+      - {id: ai_evaluation, nama: "6G AI Evaluation", status: belum}
+      - {id: guardrails_hitl, nama: "6H Guardrails & Human-in-the-loop", status: belum}
+      - {id: observability, nama: "6I Observability", status: belum}
+      - {id: mcp, nama: "6J MCP", status: belum}
+      - {id: deployment, nama: "6K Deployment", status: belum}
+      - {id: capstone, nama: "Capstone: AI-Enhanced Data Workflow", tipe: capstone, status: belum}

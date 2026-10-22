@@ -1,27 +1,38 @@
 # 🚀 Learn AI Workflow
 
-> A structured journey to become a Data Scientist / Data Analyst who is AI-native — strong in Data Science/Data Analytics and highly familiar with AI as a force multiplier.
+> Sistem belajar mandiri untuk menjadi **Data Scientist / Data Analyst yang AI-native**: kuat di fondasi data, dengan AI sebagai pengganda kemampuan.
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-Data%20Science-orange.svg)](https://numpy.org/)
-[![Roadmap](https://img.shields.io/badge/Roadmap-AI%20Workflow-purple.svg)](docs/roadmap.md)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Roadmap](https://img.shields.io/badge/Roadmap-v2-purple.svg)](system/02_roadmap.md)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📖 About
+## 📍 Status saat ini
 
-This repository documents a long-term learning path for building practical Data Science, Data Analytics, and AI-enhanced workflows. The goal is to turn validated learning into practical progress, portfolio projects, and a future AI Learning Assistant.
+Lihat dashboard yang dihasilkan otomatis dari state: [`state/dashboard.md`](state/dashboard.md).
 
-## 🎯 Objectives
+## 📖 Tentang
 
-- Learn Data Science systematically
-- Build AI-enhanced data projects step by step
-- Track progress with an RPG Skill Tree style roadmap
-- Grow a public portfolio on GitHub
-- Develop an AI Learning Assistant over time
+Repositori ini adalah **sumber kebenaran** sebuah sistem belajar yang dijalankan bersama mentor AI (ChatGPT Project). Mentor mengajar dan menguji. Progres dicatat di file, bukan di ingatan AI, dan hanya berubah lewat bukti yang lolos pemeriksaan script.
+
+## ⚙️ Cara kerja
+
+```text
+Belajar & ujian bersama mentor AI
+        ↓
+Mentor mengusulkan Evidence Entry (bukti)
+        ↓
+tools/progress.py memeriksa terhadap rubrik
+        ↓
+state/state.yaml diperbarui + dashboard dibuat otomatis
+        ↓
+Commit ke GitHub → file state diunggah ulang ke ChatGPT Project
+```
+
+Prinsipnya: **bukti → validasi → pembaruan progres → umpan balik → baru lanjut**.
 
 ## 🌳 Roadmap
 
-The project follows six phases defined in the current Roadmap v2:
+Enam World, mengikuti Roadmap v2 di [`system/02_roadmap.md`](system/02_roadmap.md):
 
 1. Python Foundation
 2. Data Science & Data Analytics
@@ -30,77 +41,45 @@ The project follows six phases defined in the current Roadmap v2:
 5. Deep Learning & Neural Network
 6. Generative AI & AI-Enhanced Data Workflow
 
-See the full roadmap in [`docs/roadmap.md`](docs/roadmap.md).
+## 🏅 Lima status progres
 
-## 🎮 RPG Skill Tree
+Learned → Validated → Retained → Mastered, ditambah Validated (legacy) untuk modul yang selesai sebelum rubrik ada. Syaratnya ada di [`system/03_rubrik_validasi.md`](system/03_rubrik_validasi.md).
 
-The project is designed like a skill tree game:
-
-- Only the current module is expanded in detail
-- Completed modules are summarized as done
-- Locked modules stay compact until prerequisites are met
-- Progress is tracked like a quest log
-
-## 🏗️ Portfolio Roadmap
-
-Planned portfolio progression:
-
-- Data Analysis Report
-- Mathematics / Statistics Notebook
-- Prediction / Classification Model
-- Deep Learning Classifier
-- RAG Application
-- AI-Enhanced Data Workflow Capstone
-
-## 📂 Repository Structure
+## 📂 Struktur repositori
 
 ```text
 learn-ai-workflow/
 ├── README.md
-├── LICENSE
-├── .gitignore
-├── docs/
-│   ├── roadmap.md
-│   ├── ai_workflow_save.md
-│   ├── changelog.md
-│   ├── achievements.md
-│   └── portfolio.md
-├── notebooks/
-├── projects/
-├── assets/
-└── src/
+├── system/        aturan sistem (dimuat ke ChatGPT Project)
+├── state/         state.yaml · dashboard.md · evidence/
+├── tools/         progress.py (penjaga aturan progres)
+├── tests/         tes otomatis untuk progress.py
+├── notebooks/     notebook belajar
+├── projects/      proyek portofolio
+├── src/           kode pendukung proyek
+├── assets/        data, gambar, diagram
+├── docs/          changelog, portofolio, sumber belajar, panduan ChatGPT Project
+└── archive/       dokumen lama (hanya untuk riwayat)
 ```
 
-## 🛠️ Tech Stack
+## 🛠️ Cara memakai
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- PyTorch / TensorFlow
-- FastAPI
-- Streamlit
-- Git & GitHub
+Kebutuhan: Python 3.9+ dan PyYAML.
 
-## 📈 Current Progress
+```powershell
+pip install -r requirements.txt
+python tools\progress.py check        # periksa konsistensi state
+python tools\progress.py dashboard    # tampilkan dashboard
+python tools\progress.py due          # review yang jatuh tempo
+python -m unittest discover -s tests  # jalankan tes
+```
 
-- Python Foundation: 100%
-- NumPy: 100%
-- Pandas: 100%
-- Matplotlib: Current Module
-- Seaborn: Locked
-- Jupyter / Google Colab: Locked
-- SQL & Database: Locked
-- Machine Learning: Locked
-- Deep Learning: Locked
-- Generative AI & AI Workflow: Locked
+Alur lengkap dari ujian sampai commit ada di [`system/07_alur_kerja_command.md`](system/07_alur_kerja_command.md). Cara menyiapkan ChatGPT Project ada di [`docs/panduan_chatgpt_project.md`](docs/panduan_chatgpt_project.md).
 
-## 🔒 Portfolio Lock
+## 🏗️ Portofolio
 
-Data Analysis Report remains locked until Phase 2 reaches 100%.
+Proyek portofolio dibuka bertahap sesuai roadmap. Rinciannya di [`docs/portfolio.md`](docs/portfolio.md).
 
-## 📜 License
+## 📜 Lisensi
 
-MIT
+MIT. Lihat [`LICENSE`](LICENSE).

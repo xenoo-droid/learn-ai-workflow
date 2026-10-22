@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-10-22 (reboot sistem)
+
+- Membangun ulang sistem belajar: file di repo menjadi sumber kebenaran progres, ChatGPT Project menjadi ruang mentor
+- Menambahkan `state/state.yaml` sebagai sumber kebenaran progres, dengan `state/evidence/` untuk bukti dan `state/dashboard.md` yang dihasilkan otomatis
+- Menambahkan `tools/progress.py` (check, dashboard, due, learned, apply) beserta tes otomatis di `tests/`
+- Menetapkan lima status progres (Learned, Validated, Retained, Mastered, Validated (legacy)) dan rubrik validasi dengan ambang 80%
+- Semua progres sebelumnya dipertahankan; modul tanpa bukti terdokumentasi diberi status Validated (legacy), bukan dihapus
+- Menyusun dokumen sistem berbahasa Indonesia di `system/` (konstitusi, rubrik, protokol mentor, spesifikasi dashboard, alur command) dan memindahkan roadmap v2 serta kebijakan referensi ke sana tanpa mengubah isinya
+- Memindahkan dokumen progres tulisan tangan yang usang ke `archive/progres-lama/`
+- Menambahkan `docs/panduan_chatgpt_project.md` dan menulis ulang `README.md`
+- Menambahkan pola rahasia dan kode pemulihan ke `.gitignore`
+- Tidak mengubah isi Roadmap v2
+
 ## 2026-10-22
 
 - Added `docs/learning-references.md` to define source priorities for learning materials

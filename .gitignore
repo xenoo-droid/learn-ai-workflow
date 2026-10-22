@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Rahasia & kode pemulihan akun (jangan pernah di-commit)
+*recovery*
+*.codes.txt
+*.pem
+*.key
+/entri*.yaml

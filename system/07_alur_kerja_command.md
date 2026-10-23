@@ -13,8 +13,9 @@ peran: Arti setiap command dan alur dari belajar sampai commit. Dibaca mentor da
 | **Mentor AI** (ChatGPT Project) | Mengajar, menguji, memberi umpan balik, mengusulkan Evidence Entry |
 | **ChatGPT Work** (bila dipakai) | Hanya menaruh file Evidence Entry di `state/inbox/` pada repo. Tidak mengubah file lain |
 | **`tools/progress.py`** | Memeriksa entri terhadap rubrik, mengubah `state.yaml`, membuat dashboard, menghitung review |
-| **Workflow GitHub** (`progres.yml`) | Menjalankan `progress.py` di server pada setiap push ke `main`, lalu bot meng-commit hasilnya |
-| **Rafa** | Mengerjakan ujian, menyetujui entri, memastikan file bukti sudah di-push, dan mengunggah ulang file state ke Project |
+| **`tools/simpan.py`** | Satu perintah untuk Rafa: ambil entri dari clipboard, periksa, terapkan lewat `progress.py`, satu commit + push, bangun ulang paket Project |
+| **Workflow GitHub** (`progres.yml`) | Pengaman di server: pada setiap push ke `main` menjalankan tes dan `check`, serta memproses `state/inbox/` bila ada entri (jalur ChatGPT Work). Bot hanya meng-commit bila ada entri di inbox |
+| **Rafa** | Mengerjakan ujian, menyalin entri dari mentor, menjalankan `python tools\simpan.py`, dan mengganti `state.yaml` + `dashboard.md` di Project |
 
 Mentor dan Work tidak mengubah `state.yaml`, `dashboard.md`, atau `state/evidence/`, dan tidak menyatakan status naik. Hanya `progress.py` yang mengubahnya.
 
@@ -59,23 +60,42 @@ Hanya persiapan, tidak mengubah apa pun. Mentor memeriksa Evidence Entry: kolom 
 
 ### `commit progres`
 
-Mentor memberi langkah persis untuk jalur yang sedang dipakai Rafa (Jalur A atau B di bawah), termasuk nama berkas entri `state/inbox/<tanggal>-<modul>.yaml`. Mentor sendiri tidak melakukan commit.
+Mentor menyerahkan Evidence Entry sebagai satu blok kode YAML dan mengingatkan Rafa menyalinnya lalu menjalankan `python tools\simpan.py` (jalur utama di bawah). Nama berkas `state/inbox/<tanggal>-<modul>.yaml` hanya disebut bila Rafa memakai jalur inbox (ChatGPT Work). Mentor sendiri tidak melakukan commit.
 
 ## Langkah milestone
 
-Syarat untuk kedua jalur: **file bukti** (notebook, gambar, dan sebagainya) sudah ada di repo. Setiap path di `bukti:` harus nyata, kalau tidak entri ditolak.
+### Jalur utama: satu perintah (`tools/simpan.py`)
 
-### Jalur A: otomatis lewat inbox (default)
+1. Selesaikan ujian. Mentor menyerahkan Evidence Entry sebagai **satu blok kode YAML**.
+2. Pastikan file bukti (notebook, gambar, dan sebagainya) **sudah tersimpan di folder repo** dan path-nya cocok dengan `bukti:`. Tidak perlu di-commit atau di-push lebih dulu; `simpan.py` memasukkannya ke commit yang sama.
+3. Salin blok entri itu (ke clipboard), lalu dari folder repo jalankan:
 
-1. Rafa meng-commit dan push file bukti ke `main`.
-2. Evidence Entry ditaruh di `state/inbox/<tanggal>-<modul>.yaml` pada branch `main`. Pelakunya Rafa sendiri atau ChatGPT Work (contoh perintah ada di `docs/panduan_chatgpt_project.md`). Hanya file entri itu yang boleh ditambahkan.
-3. Push ke `main` memicu workflow `progres`. Ia menjalankan tes, `progress.py inbox`, dan `progress.py check`, lalu bot meng-commit `state.yaml`, `dashboard.md`, dan `state/evidence/`.
-4. Di GitHub, run hijau berarti entri diterima. Run merah berarti ada yang ditolak: alasannya ada di `state/inbox/ditolak/<nama>.alasan.txt`. Perbaiki entrinya bersama mentor lalu kirim ulang dengan `id` baru.
-5. Rafa menjalankan `git pull`, lalu **mengganti dua file di ChatGPT Project**: hapus versi lama `state.yaml` dan `dashboard.md`, unggah versi baru. Tanpa langkah ini mentor masih membaca state lama.
+```powershell
+python tools\simpan.py
+```
 
-Selalu `git pull` sebelum bekerja di komputer lokal, karena bot menambahkan commit di `main`.
+   `simpan.py` mengerjakan, berurutan: `git pull --rebase --autostash`, simulasi rubrik, menerapkan entri, `check` (bila gagal semua perubahan dikembalikan), **satu commit** berisi file bukti dan state (file lain yang sedang kamu kerjakan tidak ikut), `git push`, membangun ulang `paket_project/`, lalu membuka folder unggahan.
+4. Di ChatGPT Project, ganti dua file: hapus `state.yaml` dan `dashboard.md` lama, unggah yang baru dari folder yang terbuka. Ini satu-satunya langkah manual yang tersisa karena Project tidak punya cara otomatis untuk itu.
 
-### Jalur B: manual di komputer (cadangan)
+Tidak perlu `git pull` sesudahnya dan tidak perlu menunggu bot: state sudah diterapkan di komputermu sebelum push. Workflow GitHub tetap berjalan sebagai pengaman (tes dan `check`).
+
+Opsi: `--dry` (periksa dan simulasi saja), `--berkas <file.yaml>` (baca dari berkas, bukan clipboard), `--tanpa-push`, `--tanpa-git`, `--varian plus` (buka folder `state/`, untuk paket Plus/Go), `--tidak-buka`, `--tanpa-paket`.
+
+**Jika entri ditolak:** pesan menyebut aturan yang dilanggar dan tidak ada file yang berubah. Perbaiki entrinya bersama mentor lalu jalankan lagi dengan `id` baru. Jangan mengedit `state.yaml` manual untuk menyiasatinya.
+
+**Jika push gagal, atau kamu sedang tanpa internet:** pakai `--tanpa-push` (atau biarkan gagal): progres sudah diterapkan dan di-commit di komputermu. Setelah online, jalankan `git pull --rebase` lalu `git push`, dan ganti file di Project seperti biasa.
+
+### Jalur inbox (ChatGPT Work, atau komputer tanpa Python)
+
+1. File bukti harus sudah ada di repo: commit dan push dulu ke `main`. Setiap path di `bukti:` harus nyata, kalau tidak entri ditolak.
+2. Evidence Entry ditaruh di `state/inbox/<tanggal>-<modul>.yaml` pada branch `main`, oleh Rafa sendiri atau ChatGPT Work (contoh perintah ada di `docs/panduan_chatgpt_project.md`). Hanya file entri itu yang boleh ditambahkan.
+3. Push ke `main` memicu workflow `progres`: tes, `progress.py inbox`, dan `progress.py check`, lalu bot meng-commit `state.yaml`, `dashboard.md`, dan `state/evidence/`.
+4. Di GitHub, run hijau berarti entri diterima. Run merah berarti ada yang ditolak: alasannya ada di `state/inbox/ditolak/<nama>.alasan.txt`.
+5. Rafa menjalankan `git pull`, lalu mengganti `state.yaml` dan `dashboard.md` di ChatGPT Project.
+
+Selalu `git pull` sebelum bekerja di komputer lokal, karena bot menambahkan commit di `main` pada jalur ini.
+
+### Jalur manual (cadangan)
 
 Simpan Evidence Entry ke berkas di akar repo, misalnya `entri.yaml` (nama `entri*.yaml` di akar repo diabaikan git; salinan resminya otomatis dibuat di `state/evidence/`). Di PowerShell dari folder repo:
 
@@ -89,17 +109,12 @@ git commit -m "docs: validasi <nama modul>"
 git push
 ```
 
-Lalu ganti dua file di ChatGPT Project seperti langkah 5 Jalur A.
-
-### Jika entri ditolak
-
-Pesan galat menyebut aturan mana yang dilanggar. Perbaiki entrinya bersama mentor; jangan mengedit `state.yaml` manual untuk menyiasatinya. Penyuntingan langsung `state.yaml` akan membuat run GitHub merah (tes dan `check` gagal).
+Lalu ganti dua file di ChatGPT Project.
 
 ## Alur singkat
 
 ```text
-Belajar → ujian → mentor usul Evidence Entry
-  Jalur A: push bukti → entri ke state/inbox/ → workflow GitHub menerapkan → git pull
-  Jalur B: Rafa jalankan apply → check → commit + push
-→ ganti state.yaml & dashboard.md di Project → lanjut
+Belajar → ujian → mentor menyerahkan Evidence Entry (satu blok YAML)
+  → salin → python tools\simpan.py   (periksa → terapkan → commit + push → bangun paket)
+  → ganti state.yaml & dashboard.md di Project → lanjut
 ```

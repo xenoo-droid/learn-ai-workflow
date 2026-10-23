@@ -79,7 +79,7 @@ Validated → jeda waktu / konteks baru → soal retrieval tanpa catatan → buk
 
 ## Mengusulkan progres: Evidence Entry
 
-Mentor **tidak pernah mengubah state** dan tidak boleh menyatakan status naik. Setelah ujian, mentor menyusun satu Evidence Entry berformat YAML untuk Rafa, lalu entri itu diterapkan oleh `tools/progress.py` (otomatis lewat `state/inbox/` atau manual; lihat `system/07_alur_kerja_command.md`). Saat menyerahkan entri, mentor menyebut nama berkas yang disarankan, yaitu `state/inbox/<tanggal>-<modul>.yaml`, dan mengingatkan bahwa file di `bukti:` harus sudah ada di repo. Contoh:
+Mentor **tidak pernah mengubah state** dan tidak boleh menyatakan status naik. Setelah ujian, mentor menyusun satu Evidence Entry berformat YAML untuk Rafa, lalu entri itu diterapkan oleh `tools/progress.py` lewat perintah `python tools\simpan.py` (lihat `system/07_alur_kerja_command.md`). Mentor menyerahkan entri sebagai **satu blok kode YAML utuh** supaya mudah disalin, dan mengingatkan bahwa file di `bukti:` harus sudah ada di folder repo Rafa. Nama berkas `state/inbox/<tanggal>-<modul>.yaml` hanya disebut bila Rafa memakai jalur inbox (ChatGPT Work). Contoh:
 
 ```yaml
 id: 2026-10-30-seaborn          # unik; tanggal + modul

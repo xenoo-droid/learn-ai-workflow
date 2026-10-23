@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-23 (simpan progres satu perintah)
+
+- Menambahkan `tools/simpan.py`: salin Evidence Entry dari mentor lalu jalankan satu perintah. Script melakukan pull, simulasi rubrik, penerapan, `check` (dipulihkan bila gagal), satu commit berisi bukti + state, push, dan membangun ulang `paket_project/`
+- Tidak perlu lagi push bukti lebih dulu, membuat berkas di `state/inbox/`, menunggu bot, atau `git pull` setelahnya; satu-satunya langkah manual yang tersisa adalah mengganti `state.yaml` dan `dashboard.md` di ChatGPT Project
+- Alur inbox dan workflow GitHub tetap ada: workflow menjadi pengaman (tes + `check`), dan inbox dipakai oleh ChatGPT Work
+- Memperbarui `system/04`, `system/07`, `tools/README.md`, `README.md`, dan `docs/panduan_chatgpt_project.md`; menambahkan `tests/test_simpan.py`
+- Rubrik, konstitusi, dan roadmap tidak diubah
+
 ## 2026-10-22 (otomatisasi progres)
 
 - Menambahkan `state/inbox/` dan perintah `progress.py inbox`: entri bukti ditaruh di inbox, lalu diterapkan otomatis

@@ -68,6 +68,7 @@ Kebutuhan: Python 3.9+ dan PyYAML.
 
 ```powershell
 pip install -r requirements.txt
+python tools\simpan.py                # simpan progres: salin entri dari mentor, jalankan sekali
 python tools\progress.py check        # periksa konsistensi state
 python tools\progress.py dashboard    # tampilkan dashboard
 python tools\progress.py due          # review yang jatuh tempo

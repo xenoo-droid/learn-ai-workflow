@@ -17,7 +17,26 @@ Aturan yang dijalankan ada di `system/03_rubrik_validasi.md`. Selain rubrik, set
 
 Tes: `python -m unittest discover -s tests -v`. Tes memakai state beku di `tests/fixtures/state/`, jadi tidak berubah saat `state.yaml` asli maju; satu tes tambahan memeriksa bahwa `state.yaml` asli tetap konsisten.
 
-Di GitHub, `.github/workflows/progres.yml` menjalankan tes, `inbox`, dan `check` pada setiap push ke `main`, lalu bot meng-commit hasilnya.
+Di GitHub, `.github/workflows/progres.yml` menjalankan tes, `inbox`, dan `check` pada setiap push ke `main`. Bila entri sudah diterapkan lewat `simpan.py`, inbox kosong dan bot tidak perlu meng-commit apa pun.
+
+## simpan.py
+
+Satu perintah untuk menyimpan progres belajar. Salin Evidence Entry dari mentor, lalu jalankan:
+
+```powershell
+python tools\simpan.py
+```
+
+| Perintah | Fungsi |
+|---|---|
+| `python tools\simpan.py` | Baca entri dari clipboard (pagar ```yaml dibuang otomatis), `git pull --rebase --autostash`, simulasi rubrik, terapkan, `check`, satu commit (bukti + state), push, bangun ulang `paket_project/`, buka folder unggahan |
+| `... --dry` | Hanya periksa dan simulasi; tidak ada yang berubah |
+| `... --berkas <file.yaml>` | Baca entri dari berkas, bukan clipboard |
+| `... --tanpa-push` | Commit lokal saja (tanpa pull dan push); untuk saat tanpa internet |
+| `... --tanpa-git` | Terapkan ke file saja (tanpa pull, commit, push) |
+| `... --varian plus` | Untuk paket Plus/Go: buka folder `state/`, tanpa membangun paket 5 file |
+
+Aturan keselamatan: entri ditolak berarti tidak ada file yang berubah; bila `check` gagal setelah diterapkan, `state.yaml`, `dashboard.md`, dan salinan evidence dikembalikan; hanya file state dan file di `bukti:` yang masuk ke commit. Tes: `tests/test_simpan.py` (memakai repo git sementara dengan remote bare).
 
 ## bangun_paket.py
 

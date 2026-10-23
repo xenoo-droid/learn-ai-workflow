@@ -47,7 +47,7 @@ Sumber kebenaran adalah file di Project ini, bukan ingatanmu dan bukan percakapa
 
 Di awal setiap sesi baca state.yaml dan dashboard.md. Jangan pernah menyatakan progres dari ingatan percakapan. Jika file tidak ketemu atau terpotong, katakan dan minta Rafa menempelkan isinya. Jangan menebak.
 
-Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di bagian Protokol Mentor, aturan_mentor.md; syarat naik status di 03_rubrik_validasi.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Saat menyerahkan entri, sebut nama berkas state/inbox/<tanggal>-<modul>.yaml dan ingatkan bahwa file bukti harus sudah ada di repo.
+Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di bagian Protokol Mentor, aturan_mentor.md; syarat naik status di 03_rubrik_validasi.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Serahkan entri sebagai satu blok kode YAML utuh, lalu ingatkan Rafa menyalinnya dan menjalankan `python tools\simpan.py`; file bukti harus sudah ada di folder repo.
 
 Untuk "cek progres": tampilkan isi dashboard.md apa adanya dalam blok kode, jangan membuat atau mengubah format dashboard.
 
@@ -77,7 +77,7 @@ Sumber kebenaran adalah file di Project ini, bukan ingatanmu dan bukan percakapa
 
 Di awal setiap sesi baca state.yaml dan dashboard.md. Jangan pernah menyatakan progres dari ingatan percakapan. Jika file tidak ketemu atau terpotong, katakan dan minta Rafa menempelkan isinya. Jangan menebak.
 
-Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di 04_protokol_mentor.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Saat menyerahkan entri, sebut nama berkas state/inbox/<tanggal>-<modul>.yaml dan ingatkan bahwa file bukti harus sudah ada di repo.
+Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di 04_protokol_mentor.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Serahkan entri sebagai satu blok kode YAML utuh, lalu ingatkan Rafa menyalinnya dan menjalankan `python tools\simpan.py`; file bukti harus sudah ada di folder repo.
 
 Untuk "cek progres": tampilkan isi dashboard.md apa adanya dalam blok kode, jangan membuat atau mengubah format dashboard.
 
@@ -103,13 +103,12 @@ Sebelumnya pastikan file bukti (notebook, gambar) sudah di-commit dan di-push, k
 
 File yang berubah tiap milestone hanya dua: `state.yaml` dan `dashboard.md`. Sisanya jarang berubah.
 
-1. Terapkan entri lewat alur di `system/07_alur_kerja_command.md` (Jalur A otomatis, atau Jalur B manual), lalu `git pull` supaya komputermu memuat commit bot.
-2. Varian A: jalankan `python tools\bangun_paket.py`, lalu ambil `state.yaml` dan `dashboard.md` dari `paket_project/`. Varian B: ambil keduanya dari folder `state/`.
-3. Di Project, **hapus** `state.yaml` dan `dashboard.md` lama, lalu **unggah** versi baru.
+1. Jalankan `python tools\simpan.py` (alur lengkap di `system/07_alur_kerja_command.md`). Di akhir, ia membangun ulang `paket_project/` dan membuka foldernya. Varian B: tambahkan `--varian plus`, maka yang dibuka folder `state/`.
+2. Di Project, **hapus** `state.yaml` dan `dashboard.md` lama, lalu **unggah** dua file baru dari folder yang terbuka.
 
-Jika `system/` yang berubah (jarang), varian A perlu mengganti juga `aturan_mentor.md`, `02_roadmap.md`, dan `03_rubrik_validasi.md`; varian B mengganti file `system/` yang berubah.
+Jika `system/` yang berubah (jarang), varian A perlu mengganti juga `aturan_mentor.md`, `02_roadmap.md`, dan `03_rubrik_validasi.md` (semuanya ada di `paket_project/` setelah `simpan.py` atau `bangun_paket.py` dijalankan); varian B mengganti file `system/` yang berubah.
 
-Tanpa langkah 3, mentor masih membaca state lama. Aku belum bisa memastikan apakah ChatGPT bisa menyinkronkan Project langsung dari GitHub, jadi alur ini sengaja manual.
+Tanpa langkah 2, mentor masih membaca state lama. Aku belum bisa memastikan apakah ChatGPT bisa menyinkronkan Project langsung dari GitHub, jadi langkah ini sengaja manual.
 
 ## Tips supaya RAG bekerja baik
 

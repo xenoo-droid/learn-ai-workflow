@@ -1,21 +1,30 @@
 # 📓 Notebooks
 
-Folder ini berisi notebook pembelajaran dan eksperimen selama perjalanan belajar AI Workflow.
+Notebook belajar dan latihan selama perjalanan Learn AI Workflow, disusun per World lalu per modul sesuai Roadmap v2 (`system/02_roadmap.md`).
 
-## Tujuan
+## Struktur
 
-Notebook dipakai untuk latihan, eksplorasi konsep, dan pencatatan proses belajar sebelum menjadi project final.
-
-## Penamaan yang disarankan
-
-- `01_numpy.ipynb`
-- `02_pandas.ipynb`
-- `03_matplotlib.ipynb`
-- `04_scikit_learn.ipynb`
+```text
+notebooks/
+├── 1_python_foundation/        World 1: Python Foundation
+│   ├── 00_Review Queue.ipynb     Review Queue (Error Handling, File I/O, venv & pip)
+│   └── 01–06_Python_Dasar_Part_*.ipynb
+├── 2_data_science/             World 2: Data Science & Data Analytics
+│   ├── numpy/                    materi, latihan, review, NumPy Capstone + file data (.npy, .txt)
+│   ├── pandas/                   materi 1–6, latihan, 👑 Pandas Capstone + file data (.csv, .json, .xlsx)
+│   ├── matplotlib/               materi, latihan, Answer.md + gambar hasil
+│   └── seaborn/                  materi dan latihan (quest aktif)
+└── matplotlib_review/          Bukti validasi Matplotlib Review (dirujuk oleh state/evidence/, jangan dipindah)
+```
 
 ## Aturan
 
-- Notebook dipakai untuk belajar dan eksplorasi.
-- Simpan notebook sesuai urutan materi.
+- File data disimpan **di samping notebook yang memakainya**, supaya notebook bisa dijalankan ulang tanpa mengubah path.
+- Notebook baru masuk ke folder World dan modulnya, misalnya `2_data_science/seaborn/`.
+- Jangan memindahkan atau mengganti nama notebook yang sudah dirujuk di `bukti:` sebuah Evidence Entry (lihat `state/evidence/`), karena path-nya harus tetap ada.
 - Jika notebook sudah menjadi project final, pindahkan ke folder `projects/`.
-- Gunakan nama file yang singkat, jelas, dan konsisten.
+- `.ipynb_checkpoints/` tidak di-commit (diabaikan `.gitignore`).
+
+## Catatan
+
+Notebook di `1_python_foundation/` dan `2_data_science/` (kecuali `seaborn/`) berasal dari masa sebelum rubrik validasi ada. Modulnya berstatus Validated (legacy) di `state/state.yaml`. Notebook ini bisa dijadikan bukti untuk menaikkan modul legacy menjadi Validated (lihat `system/03_rubrik_validasi.md` bagian 7).

@@ -21,7 +21,7 @@ Dashboard tidak boleh mengarang, menyimpulkan, atau menimpa progres.
 ## Siapa yang membuat dashboard
 
 - **Hanya `tools/progress.py`** yang membuat `state/dashboard.md`. Perintahnya: `python tools/progress.py dashboard --tulis`. Perintah `apply` juga membuatnya ulang otomatis.
-- **Mentor AI menampilkan isi `state/dashboard.md` apa adanya** dalam blok kode saat Rafa mengetik `cek progres`. Mentor tidak membuat dashboard sendiri dan tidak merapikan atau mengubah isinya.
+- **Mentor AI menampilkan isi `state/dashboard.md` apa adanya** (dibuka langsung dari GitHub, lihat `system/04_protokol_mentor.md`) dalam blok kode saat Rafa mengetik `cek progres`. Mentor tidak membuat dashboard sendiri dan tidak merapikan atau mengubah isinya.
 - File itu ditandai "dihasilkan otomatis". Jangan diedit manual; `python tools/progress.py check` memberi peringatan bila isinya tidak sinkron dengan state.
 
 ## Pola tampilan (gaya skill tree / world map)

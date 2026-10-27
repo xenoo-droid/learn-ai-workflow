@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
-"""Bangun paket 5 file untuk ChatGPT Project paket Free (batas 5 file).
+"""Bangun paket 3 file aturan untuk ChatGPT Project paket Free (batas 5 file).
 
 Pemakaian (dari folder repo):
     python tools\\bangun_paket.py
 
-Hasil: folder `paket_project/` berisi 5 file siap unggah. Folder itu turunan,
+Hasil: folder `paket_project/` berisi 3 file siap unggah. Progres (state.yaml, dashboard.md)
+tidak ikut, karena mentor membacanya langsung dari GitHub. Folder itu turunan,
 bukan sumber kebenaran, dan diabaikan git. Sumbernya tetap `system/` dan `state/`.
-Jalankan ulang setiap kali `system/` atau `state/` berubah, lalu ganti file di Project.
+Jalankan ulang setiap kali `system/` berubah, lalu ganti file yang berubah di Project.
 """
 from __future__ import annotations
 
@@ -27,8 +28,6 @@ GABUNG = [
 
 # File yang disalin apa adanya: (asal, nama di paket)
 SALIN = [
-    ("state/state.yaml", "state.yaml"),
-    ("state/dashboard.md", "dashboard.md"),
     ("system/02_roadmap.md", "02_roadmap.md"),
     ("system/03_rubrik_validasi.md", "03_rubrik_validasi.md"),
 ]
@@ -60,7 +59,7 @@ def main(argv=None) -> int:
             s.reconfigure(encoding="utf-8")
         except (AttributeError, ValueError):
             pass
-    ap = argparse.ArgumentParser(description="Bangun paket 5 file untuk ChatGPT Project (Free)")
+    ap = argparse.ArgumentParser(description="Bangun paket 3 file aturan untuk ChatGPT Project (Free)")
     ap.add_argument("--root", default=".", help="folder repo (default: folder saat ini)")
     ap.add_argument("--keluar", default="paket_project", help="nama folder hasil")
     a = ap.parse_args(argv)
@@ -90,7 +89,7 @@ def main(argv=None) -> int:
     print(f"✅ Paket dibuat di: {keluar}")
     for f in sorted(keluar.iterdir()):
         print(f"  {f.name}  ({f.stat().st_size / 1024:.1f} KB)")
-    print("Unggah kelima file itu ke ChatGPT Project (batas Free: 5 file).")
+    print("Unggah ketiga file itu ke ChatGPT Project hanya bila system/ berubah. Progres dibaca mentor dari GitHub.")
     return 0
 
 

@@ -25,7 +25,7 @@ tools/progress.py memeriksa terhadap rubrik
         ↓
 state/state.yaml diperbarui + dashboard dibuat otomatis
         ↓
-Commit ke GitHub → file state diunggah ulang ke ChatGPT Project
+Commit + push ke GitHub → mentor membaca state terbaru langsung dari GitHub
 ```
 
 Prinsipnya: **bukti → validasi → pembaruan progres → umpan balik → baru lanjut**.
@@ -68,7 +68,7 @@ Kebutuhan: Python 3.9+ dan PyYAML.
 
 ```powershell
 pip install -r requirements.txt
-python tools\simpan.py                # simpan progres: salin entri dari mentor, jalankan sekali
+python tools\simpan.py                # simpan progres (atau klik dua kali "Simpan Progres.bat")
 python tools\progress.py check        # periksa konsistensi state
 python tools\progress.py dashboard    # tampilkan dashboard
 python tools\progress.py due          # review yang jatuh tempo

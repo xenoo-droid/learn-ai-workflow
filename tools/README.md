@@ -21,29 +21,32 @@ Di GitHub, `.github/workflows/progres.yml` menjalankan tes, `inbox`, dan `check`
 
 ## simpan.py
 
-Satu perintah untuk menyimpan progres belajar. Salin Evidence Entry dari mentor, lalu jalankan:
+Satu perintah untuk menyimpan progres belajar. Salin Evidence Entry dari mentor, lalu **klik dua kali `Simpan Progres.bat`** di akar repo, atau jalankan:
 
 ```powershell
 python tools\simpan.py
 ```
 
+Setelah push, mentor membaca state terbaru langsung dari GitHub, jadi tidak ada file yang perlu diunggah ke ChatGPT Project.
+
 | Perintah | Fungsi |
 |---|---|
-| `python tools\simpan.py` | Baca entri dari clipboard (pagar ```yaml dibuang otomatis), `git pull --rebase --autostash`, simulasi rubrik, terapkan, `check`, satu commit (bukti + state), push, bangun ulang `paket_project/`, buka folder unggahan |
+| `python tools\simpan.py` | Baca entri dari clipboard (pagar ```yaml dibuang otomatis), `git pull --rebase --autostash`, simulasi rubrik, terapkan, `check`, satu commit (bukti + state), push, bangun ulang `paket_project/` |
 | `... --dry` | Hanya periksa dan simulasi; tidak ada yang berubah |
 | `... --berkas <file.yaml>` | Baca entri dari berkas, bukan clipboard |
 | `... --tanpa-push` | Commit lokal saja (tanpa pull dan push); untuk saat tanpa internet |
 | `... --tanpa-git` | Terapkan ke file saja (tanpa pull, commit, push) |
-| `... --varian plus` | Untuk paket Plus/Go: buka folder `state/`, tanpa membangun paket 5 file |
+| `... --buka` | Buka folder `paket_project/` setelah selesai (berguna bila `system/` berubah) |
+| `... --tanpa-paket` | Jangan membangun ulang `paket_project/` |
 
 Aturan keselamatan: entri ditolak berarti tidak ada file yang berubah; bila `check` gagal setelah diterapkan, `state.yaml`, `dashboard.md`, dan salinan evidence dikembalikan; hanya file state dan file di `bukti:` yang masuk ke commit. Tes: `tests/test_simpan.py` (memakai repo git sementara dengan remote bare).
 
 ## bangun_paket.py
 
-Untuk ChatGPT Project paket Free (batas 5 file).
+Untuk ChatGPT Project paket Free (batas 5 file). Paketnya hanya berisi aturan; progres dibaca mentor dari GitHub.
 
 | Perintah | Fungsi |
 |---|---|
-| `python tools\bangun_paket.py` | Buat folder `paket_project/` berisi 5 file siap unggah |
+| `python tools\bangun_paket.py` | Buat folder `paket_project/` berisi 3 file aturan siap unggah (`aturan_mentor.md`, `02_roadmap.md`, `03_rubrik_validasi.md`) |
 
 `aturan_mentor.md` di dalamnya adalah gabungan otomatis dari lima dokumen `system/`. Folder `paket_project/` diabaikan git karena hanya turunan; sumbernya tetap `system/` dan `state/`. Detail: `docs/panduan_chatgpt_project.md`.

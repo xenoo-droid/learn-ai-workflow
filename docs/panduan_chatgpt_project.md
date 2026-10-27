@@ -4,21 +4,31 @@ Panduan menyiapkan ChatGPT Project sebagai ruang mentor, dengan repo ini sebagai
 
 ## Fakta yang membentuk rancangan
 
-- ChatGPT Project membaca file lewat **retrieval teks**: mengambil potongan yang relevan, bukan membaca semuanya. Banyak file yang mirip membuat potongan saling berebut masuk ke jawaban.
+- ChatGPT Project membaca file unggahan lewat **retrieval teks**: mengambil potongan yang relevan, bukan membaca semuanya. Banyak file yang mirip membuat potongan saling berebut masuk ke jawaban.
 - Batas jumlah file per project: 5 (Free), 25 (Plus/Go), 40 (Pro/Business/Edu/Enterprise). Sumber: [OpenAI Help Center, Projects in ChatGPT](https://help.openai.com/en/articles/8555545-projects-in-chatgpt).
-- Karena itu pack dibuat kecil, satu topik per file, tanpa duplikat, tanpa arsip. Ada dua varian sesuai paket langganan (lihat bawah).
-- Percakapan lama di dalam Project bukan file dan tidak dihitung ke batas file. Per 2026-10-22 diuji: `cek progres` tetap membaca `state.yaml`, bukan percakapan lama. Teks instruksi sengaja menyatakan bahwa `state.yaml` menang atas percakapan lama.
+- Repo ini publik. Per 2026-10-27 diuji: mentor di Project berhasil membuka `state/dashboard.md` langsung dari GitHub dan menyebut quest aktif dengan benar. Karena itu **progres tidak lagi diunggah ke Project**; mentor membacanya dari GitHub di awal setiap sesi.
+- GitHub bisa menyimpan cache file mentah (raw) selama beberapa menit. Setelah `simpan.py` push, beri jeda ±5 menit sebelum `cek progres`, atau minta mentor membuka alamat cadangan.
+- Percakapan lama di dalam Project bukan file dan tidak dihitung ke batas file. Teks instruksi sengaja menyatakan bahwa state di GitHub menang atas percakapan lama.
+
+## Alamat progres di GitHub
+
+| File | Alamat utama (raw) | Alamat cadangan |
+|---|---|---|
+| Dashboard | https://raw.githubusercontent.com/xenoo-droid/learn-ai-workflow/main/state/dashboard.md | https://github.com/xenoo-droid/learn-ai-workflow/blob/main/state/dashboard.md |
+| State | https://raw.githubusercontent.com/xenoo-droid/learn-ai-workflow/main/state/state.yaml | https://github.com/xenoo-droid/learn-ai-workflow/blob/main/state/state.yaml |
 
 ## Pilih varian
 
-| Varian | Kapan | Jumlah file |
+Yang diunggah ke Project hanya aturan, yang jarang berubah.
+
+| Varian | Kapan | File yang diunggah |
 |---|---|---|
-| **A. Paket 5 file** | Paket Free | 5 |
-| **B. Paket 9 file** | Plus/Go atau lebih | 9 |
+| **A. Paket 3 file** | Paket Free | 3 |
+| **B. Paket 7 file** | Plus/Go atau lebih | 7 |
 
-Jangan unggah `archive/`, `notebooks/`, atau `docs/` di varian mana pun.
+Jangan unggah `state.yaml`, `dashboard.md`, `archive/`, `notebooks/`, atau `docs/` di varian mana pun. Salinan state di Project akan basi dan bisa terbaca sebagai progres lama.
 
-## Varian A: paket 5 file (Free)
+## Varian A: paket 3 file (Free)
 
 Dari folder repo, jalankan:
 
@@ -33,28 +43,29 @@ Skrip membuat folder `paket_project/` (diabaikan git; hanya turunan) berisi:
 | 1 | `aturan_mentor.md` | Gabungan otomatis: konstitusi, protokol mentor, alur command, spesifikasi dashboard, kebijakan referensi |
 | 2 | `02_roadmap.md` | Materi dan urutan |
 | 3 | `03_rubrik_validasi.md` | Syarat naik status |
-| 4 | `state.yaml` | **Progres terkini** |
-| 5 | `dashboard.md` | **Tampilan progres terkini** |
 
-Unggah kelimanya dari `paket_project/`. Jangan menyimpan `aturan_mentor.md` di dalam folder `system/`, supaya tidak ada dua versi aturan di repo.
+Unggah ketiganya dari `paket_project/`. Jangan menyimpan `aturan_mentor.md` di dalam folder `system/`, supaya tidak ada dua versi aturan di repo.
 
 Teks instruksi Project (tempel di Tingkat lanjut / Instruksi):
 
 ```text
 Kamu mentor belajar Rafa untuk "Learn A.I Workflow for Data Science" (target: Data Scientist/Data Analyst yang AI-native). Bahasa: Indonesia.
 
-Sumber kebenaran adalah file di Project ini, bukan ingatanmu dan bukan percakapan lama di Project ini. Urutan otoritas: aturan_mentor.md (bagian Konstitusi) > 02_roadmap.md > state.yaml. Jika percakapan lama bertentangan dengan state.yaml, state.yaml yang benar.
+Sumber kebenaran aturan adalah file di Project ini. Sumber kebenaran PROGRES adalah file di GitHub, bukan ingatanmu, bukan percakapan lama, dan bukan file lain. Urutan otoritas: aturan_mentor.md (bagian Konstitusi) > 02_roadmap.md > state.yaml di GitHub.
 
-Di awal setiap sesi baca state.yaml dan dashboard.md. Jangan pernah menyatakan progres dari ingatan percakapan. Jika file tidak ketemu atau terpotong, katakan dan minta Rafa menempelkan isinya. Jangan menebak.
+Di awal setiap sesi, dan setiap kali Rafa mengetik "cek progres", buka versi terbaru:
+- https://raw.githubusercontent.com/xenoo-droid/learn-ai-workflow/main/state/dashboard.md
+- https://raw.githubusercontent.com/xenoo-droid/learn-ai-workflow/main/state/state.yaml
+Jika gagal, pakai alamat github.com/xenoo-droid/learn-ai-workflow/blob/main/state/... untuk file yang sama. Jika keduanya gagal atau terpotong, katakan terus terang dan minta Rafa menempelkan isinya. Jangan menebak dan jangan menyatakan progres dari ingatan.
 
-Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di bagian Protokol Mentor, aturan_mentor.md; syarat naik status di 03_rubrik_validasi.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Serahkan entri sebagai satu blok kode YAML utuh, lalu ingatkan Rafa menyalinnya dan menjalankan `python tools\simpan.py`; file bukti harus sudah ada di folder repo.
+Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di bagian Protokol Mentor, aturan_mentor.md; syarat naik status di 03_rubrik_validasi.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py. Serahkan entri sebagai satu blok kode YAML utuh, lalu ingatkan Rafa menyalinnya dan menjalankan "Simpan Progres" (atau python tools\simpan.py); file bukti harus sudah ada di folder repo.
 
-Untuk "cek progres": tampilkan isi dashboard.md apa adanya dalam blok kode, jangan membuat atau mengubah format dashboard.
+Untuk "cek progres": tampilkan isi dashboard.md dari GitHub apa adanya dalam blok kode, jangan membuat atau mengubah format dashboard. Sebut tanggal "Diperbarui" di dashboard; jika Rafa baru saja menyimpan progres tetapi tanggal/isinya belum berubah, katakan bahwa GitHub mungkin masih menyimpan cache dan sarankan mencoba lagi beberapa menit kemudian.
 
 Command: cek progres, lanjut, review, latihan, save, prepare commit, commit progres (arti di bagian Alur Kerja dan Command, aturan_mentor.md). Sesi "latihan": 3–5 soal + 1 challenge, tanpa petunjuk sebelum Rafa mencoba. Sebelum materi baru: riset, bandingkan dengan roadmap, laporkan celah (Protokol Mentor).
 ```
 
-## Varian B: paket 9 file (Plus/Go atau lebih)
+## Varian B: paket 7 file (Plus/Go atau lebih)
 
 | # | File | Fungsi |
 |---|---|---|
@@ -65,24 +76,8 @@ Command: cek progres, lanjut, review, latihan, save, prepare commit, commit prog
 | 5 | `system/05_spesifikasi_dashboard.md` | Aturan tampilan |
 | 6 | `system/06_kebijakan_referensi.md` | Sumber belajar yang dipercaya |
 | 7 | `system/07_alur_kerja_command.md` | Arti command dan alur commit |
-| 8 | `state/state.yaml` | **Progres terkini** |
-| 9 | `state/dashboard.md` | **Tampilan progres terkini** |
 
-Teks instruksi Project:
-
-```text
-Kamu mentor belajar Rafa untuk "Learn A.I Workflow for Data Science" (target: Data Scientist/Data Analyst yang AI-native). Bahasa: Indonesia.
-
-Sumber kebenaran adalah file di Project ini, bukan ingatanmu dan bukan percakapan lama di Project ini. Urutan otoritas: 01_constitution > 02_roadmap > state.yaml > evidence. Jika percakapan lama bertentangan dengan state.yaml, state.yaml yang benar.
-
-Di awal setiap sesi baca state.yaml dan dashboard.md. Jangan pernah menyatakan progres dari ingatan percakapan. Jika file tidak ketemu atau terpotong, katakan dan minta Rafa menempelkan isinya. Jangan menebak.
-
-Kamu hanya MENGUSULKAN perubahan progres lewat Evidence Entry (format di 04_protokol_mentor.md). Jangan menyatakan status naik; perubahan status hanya dilakukan tools/progress.py (otomatis lewat state/inbox/ atau dijalankan Rafa). Serahkan entri sebagai satu blok kode YAML utuh, lalu ingatkan Rafa menyalinnya dan menjalankan `python tools\simpan.py`; file bukti harus sudah ada di folder repo.
-
-Untuk "cek progres": tampilkan isi dashboard.md apa adanya dalam blok kode, jangan membuat atau mengubah format dashboard.
-
-Command: cek progres, lanjut, review, latihan, save, prepare commit, commit progres (arti di 07_alur_kerja_command.md). Sesi "latihan": 3–5 soal + 1 challenge, tanpa petunjuk sebelum Rafa mencoba. Sebelum materi baru: riset, bandingkan dengan roadmap, laporkan celah (04).
-```
+Teks instruksi Project: sama dengan Varian A, dengan dua perubahan. Urutan otoritas menjadi `01_constitution > 02_roadmap > state.yaml di GitHub > evidence`, dan rujukan "aturan_mentor.md" diganti nama file `system/` yang sesuai (format Evidence Entry di `04_protokol_mentor.md`, arti command di `07_alur_kerja_command.md`).
 
 ## Mengirim Evidence Entry lewat ChatGPT Work
 
@@ -99,21 +94,15 @@ Setelah commit, berhenti dan laporkan nama commit-nya.
 
 Sebelumnya pastikan file bukti (notebook, gambar) sudah di-commit dan di-push, kalau tidak entri ditolak. Hasilnya bisa dilihat di tab Actions di GitHub: hijau berarti diterima, merah berarti ditolak (alasannya di `state/inbox/ditolak/`).
 
-## Sinkronisasi setelah setiap milestone
+## Sinkronisasi
 
-File yang berubah tiap milestone hanya dua: `state.yaml` dan `dashboard.md`. Sisanya jarang berubah.
+- **Setiap milestone:** tidak ada yang perlu diunggah. `simpan.py` push ke GitHub, dan mentor membaca dari sana.
+- **Bila `system/` berubah (jarang):** varian A menjalankan `python tools\bangun_paket.py` lalu mengganti file yang berubah di Project (hapus yang lama, unggah yang baru); varian B mengganti file `system/` yang berubah.
+- **Pindah dari cara lama:** hapus `state.yaml` dan `dashboard.md` dari Project, ganti `aturan_mentor.md` dengan versi baru, dan tempel teks instruksi baru di atas.
 
-1. Jalankan `python tools\simpan.py` (alur lengkap di `system/07_alur_kerja_command.md`). Di akhir, ia membangun ulang `paket_project/` dan membuka foldernya. Varian B: tambahkan `--varian plus`, maka yang dibuka folder `state/`.
-2. Di Project, **hapus** `state.yaml` dan `dashboard.md` lama, lalu **unggah** dua file baru dari folder yang terbuka.
+## Tips supaya mentor membaca dengan benar
 
-Jika `system/` yang berubah (jarang), varian A perlu mengganti juga `aturan_mentor.md`, `02_roadmap.md`, dan `03_rubrik_validasi.md` (semuanya ada di `paket_project/` setelah `simpan.py` atau `bangun_paket.py` dijalankan); varian B mengganti file `system/` yang berubah.
-
-Tanpa langkah 2, mentor masih membaca state lama. Aku belum bisa memastikan apakah ChatGPT bisa menyinkronkan Project langsung dari GitHub, jadi langkah ini sengaja manual.
-
-## Tips supaya RAG bekerja baik
-
-- Sebut nama file saat bertanya, misalnya "baca `state.yaml` lalu tampilkan quest aktifku".
-- Jika jawaban mentor tidak menyebut isi state, minta: "baca `state.yaml` dulu".
+- Jika jawaban mentor tidak menyebut isi state, minta: "buka dashboard.md dari GitHub dulu".
 - Jangan mengunggah dua versi file yang sama; retrieval bisa mengambil yang lama.
 - Jika menambah dokumen sistem baru, pastikan satu topik per file dan beri judul yang jelas. Di varian A, daftarkan dokumen baru ke `GABUNG` di `tools/bangun_paket.py`.
-- Jika ragu mentor membaca file yang benar, tempel isi `state.yaml` langsung ke chat.
+- Jika mentor gagal membuka GitHub, tempel isi `state/dashboard.md` langsung ke chat.

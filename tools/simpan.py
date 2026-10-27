@@ -4,6 +4,7 @@
 Alur lama: push bukti, buat file entri, push lagi, tunggu bot, git pull,
 ganti file di Project. Alur baru: salin entri dari mentor, jalankan satu perintah.
 
+    Simpan Progres.bat                      klik dua kali (sama dengan perintah di bawah)
     python tools\\simpan.py                  baca entri dari clipboard
     python tools\\simpan.py --berkas e.yaml  baca entri dari berkas
     python tools\\simpan.py --dry            hanya periksa dan simulasi, tidak mengubah apa pun
@@ -15,10 +16,10 @@ Yang dikerjakan, berurutan:
     4. Menerapkan entri ke state/state.yaml, dashboard, dan state/evidence/
     5. Memeriksa konsistensi; bila gagal, semua perubahan dikembalikan
     6. Satu commit berisi file bukti + state, lalu push
-    7. Membangun ulang paket ChatGPT Project dan membuka folder unggahan
+    7. Membangun ulang paket_project/ (aturan untuk ChatGPT Project; hanya perlu diunggah bila system/ berubah)
 
-Satu-satunya langkah manual yang tersisa: mengganti state.yaml dan dashboard.md
-di ChatGPT Project (tidak ada cara otomatis untuk itu).
+Tidak ada langkah manual sesudahnya: mentor di ChatGPT Project membaca state.yaml
+dan dashboard.md langsung dari GitHub (lihat docs/panduan_chatgpt_project.md).
 
 Workflow GitHub tetap berjalan sebagai pengaman (tes + check), tetapi bot tidak
 perlu meng-commit apa pun, jadi tidak perlu git pull setelahnya.
@@ -127,7 +128,7 @@ def pulihkan(snap: dict, evidence: Path) -> None:
 
 
 def proses(root: Path, teks: str, today: dt.date, *, dry=False, pakai_git=True, push=True,
-           bangun=True, buka=False, varian="gratis", runner=subprocess.run) -> int:
+           bangun=True, buka=False, runner=subprocess.run) -> int:
     root = Path(root)
     repo = P.Repo(root)
 
@@ -207,7 +208,7 @@ def proses(root: Path, teks: str, today: dt.date, *, dry=False, pakai_git=True, 
         print("6/6 Commit dilewati (--tanpa-git)")
 
     # paket Project (kegagalan di sini tidak membatalkan penyimpanan)
-    folder = root / ("paket_project" if varian == "gratis" else "state")
+    folder = root / "paket_project"
     if bangun:
         try:
             spec = importlib.util.spec_from_file_location("bangun_paket", Path(__file__).resolve().parent / "bangun_paket.py")
@@ -217,7 +218,11 @@ def proses(root: Path, teks: str, today: dt.date, *, dry=False, pakai_git=True, 
         except Exception as x:  # noqa: BLE001
             print(f"⚠️  Paket Project gagal dibuat ({type(x).__name__}: {x}). Jalankan manual: python tools\\bangun_paket.py")
     print("\n✅ Progres tersimpan.")
-    print(f"Langkah terakhir (manual): di ChatGPT Project, ganti state.yaml dan dashboard.md dengan yang ada di:\n  {folder}")
+    if pakai_git and push:
+        print("Mentor membaca progres terbaru langsung dari GitHub; tidak ada file yang perlu diunggah.")
+        print("Beri jeda ±5 menit sebelum 'cek progres' (cache GitHub).")
+    else:
+        print("Progres belum di-push, jadi mentor belum bisa melihatnya. Jalankan git push saat siap.")
     if buka:
         buka_folder(folder)
     return 0
@@ -244,9 +249,8 @@ def main(argv=None) -> int:
     ap.add_argument("--dry", action="store_true", help="hanya periksa dan simulasi")
     ap.add_argument("--tanpa-push", action="store_true", help="commit saja, jangan push")
     ap.add_argument("--tanpa-git", action="store_true", help="terapkan ke file saja, tanpa pull/commit/push")
-    ap.add_argument("--varian", choices=["gratis", "plus"], default="gratis",
-                    help="gratis: buka paket_project/ (5 file); plus: buka state/")
-    ap.add_argument("--tidak-buka", action="store_true", help="jangan membuka folder unggahan")
+    ap.add_argument("--buka", action="store_true", help="buka folder paket_project/ setelah selesai")
+    ap.add_argument("--tidak-buka", action="store_true", help=argparse.SUPPRESS)  # kompatibilitas lama
     ap.add_argument("--tanpa-paket", action="store_true", help="jangan membangun ulang paket_project/")
     a = ap.parse_args(argv)
 
@@ -254,8 +258,8 @@ def main(argv=None) -> int:
     try:
         teks = baca_berkas(a.berkas) if a.berkas else baca_clipboard()
         return proses(Path(a.root), teks, today, dry=a.dry, pakai_git=not a.tanpa_git,
-                      push=not a.tanpa_push, bangun=a.varian == "gratis" and not a.tanpa_paket,
-                      buka=not a.tidak_buka, varian=a.varian)
+                      push=not a.tanpa_push, bangun=not a.tanpa_paket,
+                      buka=a.buka and not a.tidak_buka)
     except P.StateError as x:
         print(f"❌ {x}")
         return 1

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-27 (save progres tanpa upload)
+
+- Mentor kini membuka `state/dashboard.md` dan `state/state.yaml` langsung dari GitHub (diuji 2026-10-27), jadi tidak ada lagi file progres yang diunggah ulang ke ChatGPT Project setelah setiap milestone
+- Menambahkan `Simpan Progres.bat` di akar repo: salin entri dari mentor, lalu klik dua kali; tidak perlu membuka terminal
+- `simpan.py` tidak lagi membuka folder unggahan (opsi `--buka` bila perlu); opsi `--varian` dihapus
+- `bangun_paket.py` kini membuat 3 file aturan saja (tanpa `state.yaml` dan `dashboard.md`)
+- Memperbarui `system/04`, `system/05`, `system/07`, `docs/panduan_chatgpt_project.md`, `docs/panduan_save_progres.md`, `tools/README.md`, `README.md`; `.bat` dijaga berakhir CRLF lewat `.gitattributes`
+- Rubrik, konstitusi, dan roadmap tidak diubah
+
 ## 2026-10-23 (simpan progres satu perintah)
 
 - Menambahkan `tools/simpan.py`: salin Evidence Entry dari mentor lalu jalankan satu perintah. Script melakukan pull, simulasi rubrik, penerapan, `check` (dipulihkan bila gagal), satu commit berisi bukti + state, push, dan membangun ulang `paket_project/`

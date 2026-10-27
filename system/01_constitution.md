@@ -47,6 +47,7 @@ Jika dua sumber bertentangan, yang lebih atas menang:
 | Apa yang harus dipelajari, dalam urutan apa? | `system/02_roadmap.md` |
 | Kapan modul boleh naik status? | `system/03_rubrik_validasi.md` |
 | Bagaimana mentor bekerja? | `system/04_protokol_mentor.md` |
+| Bagaimana materi disajikan? | `system/08_penyajian_materi.md` |
 | Bagaimana dashboard ditampilkan? | `system/05_spesifikasi_dashboard.md` |
 | Sumber belajar apa yang dipercaya? | `system/06_kebijakan_referensi.md` |
 | Apa arti setiap command? | `system/07_alur_kerja_command.md` |

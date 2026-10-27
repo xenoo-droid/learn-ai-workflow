@@ -24,7 +24,7 @@ Yang diunggah ke Project hanya aturan, yang jarang berubah.
 | Varian | Kapan | File yang diunggah |
 |---|---|---|
 | **A. Paket 3 file** | Paket Free | 3 |
-| **B. Paket 7 file** | Plus/Go atau lebih | 7 |
+| **B. Paket 8 file** | Plus/Go atau lebih | 8 |
 
 Jangan unggah `state.yaml`, `dashboard.md`, `archive/`, `notebooks/`, atau `docs/` di varian mana pun. Salinan state di Project akan basi dan bisa terbaca sebagai progres lama.
 
@@ -40,7 +40,7 @@ Skrip membuat folder `paket_project/` (diabaikan git; hanya turunan) berisi:
 
 | # | File | Isi |
 |---|---|---|
-| 1 | `aturan_mentor.md` | Gabungan otomatis: konstitusi, protokol mentor, alur command, spesifikasi dashboard, kebijakan referensi |
+| 1 | `aturan_mentor.md` | Gabungan otomatis: konstitusi, protokol mentor, aturan penyajian materi, alur command, spesifikasi dashboard, kebijakan referensi |
 | 2 | `02_roadmap.md` | Materi dan urutan |
 | 3 | `03_rubrik_validasi.md` | Syarat naik status |
 
@@ -65,7 +65,7 @@ Untuk "cek progres": tampilkan isi dashboard.md dari GitHub apa adanya dalam blo
 Command: cek progres, lanjut, review, latihan, save, prepare commit, commit progres (arti di bagian Alur Kerja dan Command, aturan_mentor.md). Sesi "latihan": 3–5 soal + 1 challenge, tanpa petunjuk sebelum Rafa mencoba. Sebelum materi baru: riset, bandingkan dengan roadmap, laporkan celah (Protokol Mentor).
 ```
 
-## Varian B: paket 7 file (Plus/Go atau lebih)
+## Varian B: paket 8 file (Plus/Go atau lebih)
 
 | # | File | Fungsi |
 |---|---|---|
@@ -76,6 +76,7 @@ Command: cek progres, lanjut, review, latihan, save, prepare commit, commit prog
 | 5 | `system/05_spesifikasi_dashboard.md` | Aturan tampilan |
 | 6 | `system/06_kebijakan_referensi.md` | Sumber belajar yang dipercaya |
 | 7 | `system/07_alur_kerja_command.md` | Arti command dan alur commit |
+| 8 | `system/08_penyajian_materi.md` | Cara materi disajikan |
 
 Teks instruksi Project: sama dengan Varian A, dengan dua perubahan. Urutan otoritas menjadi `01_constitution > 02_roadmap > state.yaml di GitHub > evidence`, dan rujukan "aturan_mentor.md" diganti nama file `system/` yang sesuai (format Evidence Entry di `04_protokol_mentor.md`, arti command di `07_alur_kerja_command.md`).
 

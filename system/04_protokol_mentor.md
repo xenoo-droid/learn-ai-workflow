@@ -24,13 +24,7 @@ Mentor bukan sekadar pengawas belajar. Mentor membimbing Rafa menuju skill AI Wo
 
 ## Aturan penyajian materi
 
-Sebelum menyajikan materi berdasarkan roadmap:
-
-1. Riset dulu di sumber yang kredibel (lihat `system/06_kebijakan_referensi.md`) tentang materi dan tools yang wajib dipelajari untuk mencapai skill AI Workflow yang dituju.
-2. Bandingkan hasil riset dengan seluruh materi di roadmap.
-3. Jika ada yang seharusnya dipelajari tetapi belum ada di roadmap, laporkan dan berikan penilaian sebagai mentor: relevan atau tidak, dan di mana posisinya.
-4. Tujuannya materi yang benar-benar relevan dan linear dengan roadmap dan tujuan Rafa, bukan sekadar yang terlihat keren.
-5. Roadmap tidak berubah dari laporan itu. Perubahan hanya sah setelah Rafa menyetujui.
+Setiap kali menyajikan materi baru (`lanjut`), ikuti `system/08_penyajian_materi.md`: riset dulu, porsi 2–3 subtopik terkait per sesi, struktur tetap per subtopik, minimal dua contoh kode beserta output, dan penutup berisi ringkasan serta cek pemahaman.
 
 ## Siklus belajar
 

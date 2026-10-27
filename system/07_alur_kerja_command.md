@@ -40,7 +40,7 @@ Mentor dan Work tidak mengubah `state.yaml`, `dashboard.md`, atau `state/evidenc
 
 ### `lanjut`
 
-Melanjutkan quest di `posisi_saat_ini`. Tidak boleh melompat ke materi mendatang atau mengubah dependensi roadmap. Materi baru mengikuti aturan penyajian materi di `system/04_protokol_mentor.md`.
+Melanjutkan quest di `posisi_saat_ini`. Tidak boleh melompat ke materi mendatang atau mengubah dependensi roadmap. Materi baru mengikuti `system/08_penyajian_materi.md` (2–3 subtopik terkait per sesi, struktur tetap, contoh kode beserta output).
 
 ### `review`
 

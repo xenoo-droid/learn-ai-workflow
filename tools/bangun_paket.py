@@ -21,6 +21,7 @@ from pathlib import Path
 GABUNG = [
     ("KONSTITUSI (aturan tertinggi)", "system/01_constitution.md"),
     ("PROTOKOL MENTOR", "system/04_protokol_mentor.md"),
+    ("ATURAN PENYAJIAN MATERI", "system/08_penyajian_materi.md"),
     ("ALUR KERJA DAN COMMAND", "system/07_alur_kerja_command.md"),
     ("SPESIFIKASI DASHBOARD", "system/05_spesifikasi_dashboard.md"),
     ("KEBIJAKAN REFERENSI BELAJAR", "system/06_kebijakan_referensi.md"),

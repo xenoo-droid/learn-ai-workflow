@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-27 (aturan penyajian materi)
+
+- Menambahkan `system/08_penyajian_materi.md`: porsi 2–3 subtopik terkait per sesi, struktur tetap per subtopik (apa dan kenapa, sintaks, contoh dasar, parameter penting, contoh realistis, kesalahan umum, kapan dipakai), minimal dua contoh kode beserta output, penutup berisi ringkasan, hubungan dengan materi lama, cek pemahaman, dan sumber
+- Aturan riset sebelum materi dipindah dari `system/04` ke `system/08`; laporan celah roadmap dibatasi maksimal 3 poin di akhir sesi
+- `system/08` ikut digabung ke `aturan_mentor.md` oleh `bangun_paket.py`; konstitusi mendapat satu baris rujukan di tabel pemisahan tanggung jawab
+
 ## 2026-10-27 (save progres tanpa upload)
 
 - Mentor kini membuka `state/dashboard.md` dan `state/state.yaml` langsung dari GitHub (diuji 2026-10-27), jadi tidak ada lagi file progres yang diunggah ulang ke ChatGPT Project setelah setiap milestone

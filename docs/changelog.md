@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-10-29 (koreksi cakupan Seaborn)
+
+- Entri `2026-10-29-seaborn-distribution-plots` (skor 86) ditulis untuk modul `seaborn` utuh, padahal ujiannya hanya distribution plots; akibatnya seluruh Seaborn tercatat validated dan quest aktif melompat ke Jupyter/Colab
+- Dengan persetujuan Rafa, Seaborn dipecah menjadi quest sesuai roadmap: Pengenalan & Distribution Plots (validated, skor 86 tetap tercatat), Categorical Plots (aktif), Relationship Plots, Heatmap, Pairplot, Seaborn Review. Pencapaian tidak dihapus, hanya dipindah ke cakupan yang benar
+- Jupyter/Colab, SQL & Database Fundamentals, dan AI untuk Pekerjaan Data juga dipecah menjadi quest sesuai daftar materi di roadmap (isi roadmap tidak berubah)
+- `progress.py` menolak entri yang memakai id modul induk ber-quest dengan pesan yang menyebut id quest yang sah; perbaikan tampilan dashboard untuk modul ber-quest yang belum dimulai; tes baru di `tests/test_progress.py`
+- `system/04`: kolom `modul` wajib id quest yang benar-benar diuji
+
 ## 2026-10-27 (aturan penyajian materi)
 
 - Menambahkan `system/08_penyajian_materi.md`: porsi 2–3 subtopik terkait per sesi, struktur tetap per subtopik (apa dan kenapa, sintaks, contoh dasar, parameter penting, contoh realistis, kesalahan umum, kapan dipakai), minimal dua contoh kode beserta output, penutup berisi ringkasan, hubungan dengan materi lama, cek pemahaman, dan sumber

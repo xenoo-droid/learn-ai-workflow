@@ -348,5 +348,27 @@ class TestInbox(Base):
         self.assertFalse((self.tmp / "state" / "evidence" / "uji-1.yaml").exists())
 
 
+class TestModulBerquest(Base):
+    def test_entri_untuk_modul_induk_ditolak(self):
+        with self.assertRaises(P.StateError) as cm:
+            self.apply(modul="matplotlib")
+        self.assertIn("id quest yang benar-benar diuji", str(cm.exception))
+        self.assertIn("matplotlib_review", str(cm.exception))
+
+    def test_dashboard_dengan_modul_berquest_setelah_quest_aktif(self):
+        data, _ = self.repo.load()
+        w2 = next(w for w in data["worlds"] if w["id"] == 2)
+        k = next(i for i, m in enumerate(w2["modul"]) if m["id"] == "jupyter_colab")
+        w2["modul"][k] = {"id": "jupyter_colab", "nama": "Jupyter / Google Colab",
+                          "quest": [{"id": "jq1", "nama": "Q1", "status": "belum"}]}
+        teks = P.render_dashboard(data)
+        self.assertIn("Jupyter / Google Colab", teks)
+
+    def test_state_hidup_memakai_quest_untuk_seaborn(self):
+        data, _ = P.Repo(ROOT).load()
+        _, rec = P.find(data, "seaborn")
+        self.assertIsNone(rec, "seaborn harus berupa modul dengan quest, bukan satu item")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -58,6 +58,9 @@ IKON = {
     "errorbar": "📏", "axis_limits_scale": "📐", "legend_tick_formatting": "🏷️",
     "savefig": "💾", "matplotlib_review": "🏆", "seaborn": "🎨", "sql_database": "🗄️",
     "portfolio_1": "📊",
+    "seaborn_distribusi": "📊", "seaborn_categorical": "📦", "seaborn_relationship": "🔵",
+    "seaborn_heatmap": "🟥", "seaborn_pairplot": "🔗", "seaborn_review": "🏆",
+    "jupyter_colab": "📓", "ai_untuk_data": "🤖",
 }
 IKON_TIPE = {"review": "🏆", "portfolio": "📊", "capstone": "👑"}
 IKON_DEFAULT = "🔹"
@@ -376,7 +379,8 @@ def render_dashboard(data) -> str:
             for m in mods[k_aktif + 1:]:
                 L.append("         │")
                 L.append("         ▼")
-                tail = LABEL["belum"] if m["status"] == "belum" else LABEL[m["status"]]
+                st = module_state(m)
+                tail = LABEL["belum"] if st == "belum" else ("✅ SELESAI" if st == "selesai" else LABEL[st])
                 extra = " (opsional)" if m.get("opsional") else ""
                 nama = m["nama"].upper() if tipe_of(m) in ("portfolio", "capstone") or m["id"] in ("seaborn", "sql_database") else m["nama"]
                 L.append(pad(f"    {ikon(m)} {nama}{extra}", KOL_ITEM) + tail)
@@ -515,6 +519,11 @@ def apply_entry(repo: Repo, entry_path: Path, today: dt.date, dry=False):
         raise StateError(f"Entri ditolak: id '{e['id']}' sudah pernah dipakai (state/evidence/{e['id']}.yaml sudah ada)")
     pos, rec = find(data, e["modul"])
     if rec is None:
+        induk = next((m for w in data["worlds"] for m in w["modul"] if m["id"] == e["modul"] and "quest" in m), None)
+        if induk is not None:
+            ids = ", ".join(q["id"] for q in induk["quest"])
+            raise StateError(f"Entri ditolak: '{e['modul']}' adalah modul yang terdiri dari beberapa quest. "
+                             f"Isi kolom modul dengan id quest yang benar-benar diuji: {ids}")
         raise StateError(f"Entri ditolak: modul '{e['modul']}' tidak ada di state.yaml")
     it = rec["item"]
     tgl = to_date(e["tanggal"])

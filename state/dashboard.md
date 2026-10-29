@@ -29,9 +29,18 @@ Diperbarui: 2026-10-29
 │
 ├── 📈 MATPLOTLIB                                 🏆 SELESAI
 │
-├── 🎨 SEABORN                                    🏆 VALIDATED
-│
-└── 🔹 JUPYTER / GOOGLE COLAB                     ⚔️ CURRENT QUEST ◀
+└── 🎨 SEABORN                                    ⚔️ BOSS BATTLE
+    │
+    ├── 📊 Pengenalan & Distribution Plots        ✅ VALIDATED
+    ├── 📦 Categorical Plots                      ⚔️ CURRENT QUEST ◀
+    ├── 🔵 Relationship Plots                     🔒 LOCKED
+    ├── 🟥 Heatmap                                🔒 LOCKED
+    ├── 🔗 Pairplot                               🔒 LOCKED
+    │
+    └── 🏆 SEABORN REVIEW                         🔒 LOCKED
+         │
+         ▼
+    📓 Jupyter / Google Colab                     🔒 LOCKED
          │
          ▼
     🔹 Web Scraping (opsional)                    🔒 LOCKED
@@ -40,7 +49,7 @@ Diperbarui: 2026-10-29
     🗄️ SQL & DATABASE FUNDAMENTALS                🔒 LOCKED
          │
          ▼
-    🔹 AI untuk Pekerjaan Data                    🔒 LOCKED
+    🤖 AI untuk Pekerjaan Data                    🔒 LOCKED
          │
          ▼
     📊 PORTFOLIO #1: DATA ANALYSIS REPORT         🔒 LOCKED
@@ -71,11 +80,11 @@ Diperbarui: 2026-10-29
 
 ═══════════════════════════════════════════════════
 
-🎯 CURRENT QUEST : 🔹 Jupyter / Google Colab
-➡️ NEXT QUEST    : 🗄️ SQL & Database Fundamentals
-🏆 LATEST WIN    : 🎨 Seaborn — VALIDATED
+🎯 CURRENT QUEST : 📦 Categorical Plots
+➡️ NEXT QUEST    : 🔵 Relationship Plots
+🏆 LATEST WIN    : 📊 Pengenalan & Distribution Plots — VALIDATED
 
 📍 CURRENT POSITION
-WORLD 2 → 🔹 Jupyter / Google Colab
+WORLD 2 → Seaborn → 📦 Categorical Plots
 ═══════════════════════════════════════════════════
 ```

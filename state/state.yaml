@@ -32,9 +32,9 @@ versi_skema: 1
 diperbarui: 2026-10-29
 pemain: Rafa
 target: AI-Enhanced Data Professional (Data Scientist / Data Analyst yang AI-native)
-posisi_saat_ini: {world: 2, modul: jupyter_colab, quest: null}
-quest_berikutnya: sql_database
-kemenangan_terbaru: seaborn
+posisi_saat_ini: {world: 2, modul: seaborn, quest: seaborn_categorical}
+quest_berikutnya: seaborn_relationship
+kemenangan_terbaru: seaborn_distribusi
 worlds:
 - id: 1
   nama: PYTHON FOUNDATION
@@ -81,14 +81,40 @@ worlds:
       evidence: [2026-10-22-matplotlib-review]
   - id: seaborn
     nama: Seaborn
-    status: validated
-    tanggal_validasi: 2026-10-29
-    review_berikutnya: 2026-11-05
-    evidence: [2026-10-29-seaborn-distribution-plots]
-  - {id: jupyter_colab, nama: Jupyter / Google Colab, status: aktif}
+    quest:
+    - id: seaborn_distribusi
+      nama: Pengenalan & Distribution Plots
+      status: validated
+      tanggal_validasi: 2026-10-29
+      review_berikutnya: 2026-11-05
+      evidence: [2026-10-29-seaborn-distribution-plots]
+      catatan: Koreksi cakupan 2026-10-29; entri asli ditulis untuk modul seaborn, tetapi ujiannya hanya distribution plots
+    - {id: seaborn_categorical, nama: Categorical Plots, status: aktif}
+    - {id: seaborn_relationship, nama: Relationship Plots, status: belum}
+    - {id: seaborn_heatmap, nama: Heatmap, status: belum}
+    - {id: seaborn_pairplot, nama: Pairplot, status: belum}
+    - {id: seaborn_review, nama: Seaborn Review, tipe: review, status: belum}
+  - id: jupyter_colab
+    nama: Jupyter / Google Colab
+    quest:
+    - {id: jupyter_notebook_markdown, nama: Notebook Workflow & Markdown, status: belum}
+    - {id: jupyter_reproducibility, nama: Reproducibility & Kernel/Runtime, status: belum}
   - {id: web_scraping, nama: Web Scraping, status: belum, opsional: true}
-  - {id: sql_database, nama: SQL & Database Fundamentals, status: belum}
-  - {id: ai_untuk_data, nama: AI untuk Pekerjaan Data, status: belum}
+  - id: sql_database
+    nama: SQL & Database Fundamentals
+    quest:
+    - {id: sql_select_where, nama: 'SELECT, WHERE, ORDER BY', status: belum}
+    - {id: sql_groupby_agg, nama: GROUP BY & Aggregation, status: belum}
+    - {id: sql_join_subquery, nama: JOIN & Subquery Dasar, status: belum}
+    - {id: sql_relational_sqlite, nama: Relational Database & SQLite, status: belum}
+    - {id: sql_postgresql, nama: PostgreSQL Fundamentals, status: belum}
+  - id: ai_untuk_data
+    nama: AI untuk Pekerjaan Data
+    quest:
+    - {id: ai_python_sql, nama: AI-assisted Python & SQL, status: belum}
+    - {id: ai_debugging, nama: Debugging dengan AI, status: belum}
+    - {id: ai_eda_cleaning, nama: AI untuk EDA & Data Cleaning, status: belum}
+    - {id: ai_viz_docs_insight, nama: 'AI untuk Visualisasi, Dokumentasi & Insight', status: belum}
   - {id: portfolio_1, nama: 'Portfolio #1: Data Analysis Report', tipe: portfolio, status: belum}
 - id: 3
   nama: MATHEMATICS & STATISTICS FOR DATA/AI

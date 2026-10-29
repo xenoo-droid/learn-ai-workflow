@@ -58,8 +58,9 @@ IKON = {
     "errorbar": "📏", "axis_limits_scale": "📐", "legend_tick_formatting": "🏷️",
     "savefig": "💾", "matplotlib_review": "🏆", "seaborn": "🎨", "sql_database": "🗄️",
     "portfolio_1": "📊",
-    "seaborn_distribusi": "📊", "seaborn_categorical": "📦", "seaborn_relationship": "🔵",
-    "seaborn_heatmap": "🟥", "seaborn_pairplot": "🔗", "seaborn_review": "🏆",
+    "seaborn_distribusi": "📊", "seaborn_categorical": "📦", "seaborn_relational": "🔵",
+    "seaborn_regression": "📈", "seaborn_matrix": "🟥", "seaborn_grids": "🔗",
+    "seaborn_aesthetics": "🎨", "seaborn_review": "🏆",
     "jupyter_colab": "📓", "ai_untuk_data": "🤖",
 }
 IKON_TIPE = {"review": "🏆", "portfolio": "📊", "capstone": "👑"}

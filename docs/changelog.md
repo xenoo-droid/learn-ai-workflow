@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-10-29 (kurikulum semua World)
+
+- Menambahkan `system/09_kurikulum.md`: setiap modul roadmap dirinci menjadi quest beserta fungsi/konsep wajib dan fokus ujian (102 quest/modul). Roadmap v2 tidak diubah; kurikulum merinci isinya
+- Seaborn disusun ulang mengikuti API reference resmi: Distribution (lulus) → Categorical (aktif) → Relational → Regression → Matrix → Multi-plot Grids → Aesthetics & Palettes → Review. Quest yang belum dimulai diganti nama; status yang ada tidak berubah
+- Modul World 3–6 dipecah menjadi quest di `state.yaml` sesuai kurikulum. Modul yang sudah selesai (World 1, NumPy, Pandas, Matplotlib) tidak diubah; rinciannya menjadi cakupan retrieval review
+- Aturan: ujian validasi quest wajib mencakup semua item *Wajib*-nya (`system/04`, `system/08`); konstitusi mendapat rujukan ke kurikulum
+- `bangun_paket.py` kini membuat 4 file (tambahan `09_kurikulum.md`); tes baru memastikan id di `state.yaml` dan kurikulum selalu sama
+- Celah yang ditemukan (window functions/CTE SQL, time series Pandas, uji hipotesis) dicatat di akhir kurikulum, belum masuk wajib
+
 ## 2026-10-29 (koreksi cakupan Seaborn)
 
 - Entri `2026-10-29-seaborn-distribution-plots` (skor 86) ditulis untuk modul `seaborn` utuh, padahal ujiannya hanya distribution plots; akibatnya seluruh Seaborn tercatat validated dan quest aktif melompat ke Jupyter/Colab

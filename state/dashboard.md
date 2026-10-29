@@ -33,9 +33,11 @@ Diperbarui: 2026-10-29
     │
     ├── 📊 Pengenalan & Distribution Plots        ✅ VALIDATED
     ├── 📦 Categorical Plots                      ⚔️ CURRENT QUEST ◀
-    ├── 🔵 Relationship Plots                     🔒 LOCKED
-    ├── 🟥 Heatmap                                🔒 LOCKED
-    ├── 🔗 Pairplot                               🔒 LOCKED
+    ├── 🔵 Relational Plots                       🔒 LOCKED
+    ├── 📈 Regression Plots                       🔒 LOCKED
+    ├── 🟥 Matrix Plots (Heatmap & Clustermap)    🔒 LOCKED
+    ├── 🔗 Multi-plot Grids                       🔒 LOCKED
+    ├── 🎨 Figure Aesthetics & Color Palettes     🔒 LOCKED
     │
     └── 🏆 SEABORN REVIEW                         🔒 LOCKED
          │
@@ -81,7 +83,7 @@ Diperbarui: 2026-10-29
 ═══════════════════════════════════════════════════
 
 🎯 CURRENT QUEST : 📦 Categorical Plots
-➡️ NEXT QUEST    : 🔵 Relationship Plots
+➡️ NEXT QUEST    : 🔵 Relational Plots
 🏆 LATEST WIN    : 📊 Pengenalan & Distribution Plots — VALIDATED
 
 📍 CURRENT POSITION

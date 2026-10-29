@@ -18,6 +18,7 @@ Aturan ini adalah **constraint**, bukan saran. Tujuannya materi yang cukup dalam
 
 ## 2. Porsi per sesi
 
+- Subtopik diambil dari daftar *Wajib* quest aktif di `system/09_kurikulum.md`; semua item wajib harus tersaji sebelum quest diujikan.
 - Satu sesi `lanjut` menyajikan **2–3 subtopik yang saling terkait** dari quest aktif (contoh Seaborn: `histplot`, `kdeplot`, `displot`).
 - Jangan menyajikan satu modul penuh sekaligus, dan jangan hanya satu potongan kecil.
 - Jangan memakai fungsi atau konsep yang belum diajarkan kecuali dijelaskan di tempat.

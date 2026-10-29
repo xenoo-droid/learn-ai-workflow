@@ -370,5 +370,19 @@ class TestModulBerquest(Base):
         self.assertIsNone(rec, "seaborn harus berupa modul dengan quest, bukan satu item")
 
 
+class TestKurikulum(unittest.TestCase):
+    """Setiap quest di state.yaml harus punya rincian di system/09_kurikulum.md, dan sebaliknya."""
+
+    def test_id_state_dan_kurikulum_sama(self):
+        import re
+        data, _ = P.Repo(ROOT).load()
+        state_ids = [r["item"]["id"] for r in P.leaves(data)]
+        teks = (ROOT / "system" / "09_kurikulum.md").read_text(encoding="utf-8")
+        kur_ids = re.findall(r"^#### `([a-z0-9_]+)`", teks, re.M)
+        self.assertEqual(len(kur_ids), len(set(kur_ids)), "id ganda di kurikulum")
+        self.assertEqual(sorted(set(state_ids) - set(kur_ids)), [], "quest di state tanpa rincian kurikulum")
+        self.assertEqual(sorted(set(kur_ids) - set(state_ids)), [], "id di kurikulum yang tidak ada di state")
+
+
 if __name__ == "__main__":
     unittest.main()

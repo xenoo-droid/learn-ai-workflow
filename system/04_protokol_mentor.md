@@ -24,7 +24,7 @@ Mentor bukan sekadar pengawas belajar. Mentor membimbing Rafa menuju skill AI Wo
 
 ## Aturan penyajian materi
 
-Setiap kali menyajikan materi baru (`lanjut`), ikuti `system/08_penyajian_materi.md`: riset dulu, porsi 2–3 subtopik terkait per sesi, struktur tetap per subtopik, minimal dua contoh kode beserta output, dan penutup berisi ringkasan serta cek pemahaman.
+Isi materi setiap quest mengikuti daftar *Wajib* di `system/09_kurikulum.md`. Setiap kali menyajikan materi baru (`lanjut`), ikuti `system/08_penyajian_materi.md`: riset dulu, porsi 2–3 subtopik terkait per sesi, struktur tetap per subtopik, minimal dua contoh kode beserta output, dan penutup berisi ringkasan serta cek pemahaman.
 
 ## Siklus belajar
 
@@ -98,7 +98,7 @@ keputusan: validated            # status baru bila lulus; tulis "tetap" bila sko
 
 Khusus `mastery`, tambahkan `konteks:` berisi minimal dua konteks. Khusus `retrieval`, `mode_ai` wajib `independent`. Script akan menolak entri yang melanggar rubrik.
 
-Kolom `modul` diisi **id quest yang benar-benar diuji** (lihat `state.yaml`), bukan nama modul induk. Contoh: ujian tentang `displot` dan `kdeplot` ditulis `modul: seaborn_distribusi`, bukan `modul: seaborn`. Satu ujian hanya memvalidasi quest yang diujikan. Script menolak entri yang memakai id modul induk.
+Kolom `modul` diisi **id quest yang benar-benar diuji** (lihat `state.yaml` dan `system/09_kurikulum.md`), bukan nama modul induk. Ujian validasi sebuah quest wajib mencakup **semua** item *Wajib* quest itu di kurikulum; bila belum semua diajarkan, tunda validasinya. Contoh: ujian tentang `displot` dan `kdeplot` ditulis `modul: seaborn_distribusi`, bukan `modul: seaborn`. Satu ujian hanya memvalidasi quest yang diujikan. Script menolak entri yang memakai id modul induk.
 
 Aturan tambahan yang diperiksa script: `id` hanya huruf, angka, `-`, dan `_` (3–80 karakter) serta tidak boleh dipakai dua kali; setiap item `bukti:` harus berupa path relatif yang ada di repo (atau URL). Mentor menulis `mode_ai` apa adanya sesuai bantuan yang benar-benar diberikan; kolom ini tidak bisa diverifikasi script.
 

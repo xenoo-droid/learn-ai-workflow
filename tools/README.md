@@ -47,6 +47,6 @@ Untuk ChatGPT Project paket Free (batas 5 file). Paketnya hanya berisi aturan; p
 
 | Perintah | Fungsi |
 |---|---|
-| `python tools\bangun_paket.py` | Buat folder `paket_project/` berisi 3 file aturan siap unggah (`aturan_mentor.md`, `02_roadmap.md`, `03_rubrik_validasi.md`) |
+| `python tools\bangun_paket.py` | Buat folder `paket_project/` berisi 4 file aturan siap unggah (`aturan_mentor.md`, `02_roadmap.md`, `03_rubrik_validasi.md`, `09_kurikulum.md`) |
 
 `aturan_mentor.md` di dalamnya adalah gabungan otomatis dari lima dokumen `system/`. Folder `paket_project/` diabaikan git karena hanya turunan; sumbernya tetap `system/` dan `state/`. Detail: `docs/panduan_chatgpt_project.md`.

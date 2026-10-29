@@ -33,7 +33,7 @@ diperbarui: 2026-10-29
 pemain: Rafa
 target: AI-Enhanced Data Professional (Data Scientist / Data Analyst yang AI-native)
 posisi_saat_ini: {world: 2, modul: seaborn, quest: seaborn_categorical}
-quest_berikutnya: seaborn_relationship
+quest_berikutnya: seaborn_relational
 kemenangan_terbaru: seaborn_distribusi
 worlds:
 - id: 1
@@ -90,9 +90,11 @@ worlds:
       evidence: [2026-10-29-seaborn-distribution-plots]
       catatan: Koreksi cakupan 2026-10-29; entri asli ditulis untuk modul seaborn, tetapi ujiannya hanya distribution plots
     - {id: seaborn_categorical, nama: Categorical Plots, status: aktif}
-    - {id: seaborn_relationship, nama: Relationship Plots, status: belum}
-    - {id: seaborn_heatmap, nama: Heatmap, status: belum}
-    - {id: seaborn_pairplot, nama: Pairplot, status: belum}
+    - {id: seaborn_relational, nama: Relational Plots, status: belum}
+    - {id: seaborn_regression, nama: Regression Plots, status: belum}
+    - {id: seaborn_matrix, nama: Matrix Plots (Heatmap & Clustermap), status: belum}
+    - {id: seaborn_grids, nama: Multi-plot Grids, status: belum}
+    - {id: seaborn_aesthetics, nama: Figure Aesthetics & Color Palettes, status: belum}
     - {id: seaborn_review, nama: Seaborn Review, tipe: review, status: belum}
   - id: jupyter_colab
     nama: Jupyter / Google Colab
@@ -119,42 +121,130 @@ worlds:
 - id: 3
   nama: MATHEMATICS & STATISTICS FOR DATA/AI
   modul:
-  - {id: linear_algebra, nama: Linear Algebra, status: belum}
-  - {id: calculus, nama: Calculus, status: belum}
-  - {id: statistics, nama: Statistics, status: belum}
-  - {id: probability, nama: Probability, status: belum}
+  - id: linear_algebra
+    nama: Linear Algebra
+    quest:
+    - {id: la_vektor_matriks, nama: 'Vektor, Matriks & Operasinya', status: belum}
+    - {id: la_dot_product, nama: Dot Product, status: belum}
+    - {id: la_eigen, nama: 'Intuisi Eigenvalue & Eigenvector', status: belum}
+  - id: calculus
+    nama: Calculus
+    quest:
+    - {id: calc_derivative, nama: Derivative, status: belum}
+    - {id: calc_gradient, nama: 'Gradient & Intuisi Optimization', status: belum}
+  - id: statistics
+    nama: Statistics
+    quest:
+    - {id: stat_deskriptif, nama: Statistik Deskriptif, status: belum}
+    - {id: stat_distribusi_sampling, nama: 'Distribusi & Sampling', status: belum}
+    - {id: stat_korelasi_kovarians, nama: 'Korelasi & Kovarians', status: belum}
+  - id: probability
+    nama: Probability
+    quest:
+    - {id: prob_dasar, nama: Probability Basics, status: belum}
+    - {id: prob_bersyarat_bayes, nama: 'Conditional Probability & Bayes', status: belum}
   - {id: optimization, nama: Optimization (Gradient Descent), status: belum}
   - {id: ai_literacy, nama: AI Literacy, status: belum}
   - {id: portfolio_math, nama: 'Portfolio: Notebook Eksplorasi Matematika/Statistika', tipe: portfolio, status: belum}
 - id: 4
   nama: MACHINE LEARNING FUNDAMENTAL
   modul:
-  - {id: ml_fundamentals, nama: Machine Learning Fundamentals, status: belum}
-  - {id: supervised_learning, nama: Supervised Learning, status: belum}
-  - {id: unsupervised_learning, nama: Unsupervised Learning, status: belum}
-  - {id: ml_evaluation, nama: Evaluation, status: belum}
-  - {id: scikit_learn, nama: Scikit-learn, status: belum}
-  - {id: se_formal, nama: 'Software Engineering: Formal Introduction', status: belum}
+  - id: ml_fundamentals
+    nama: Machine Learning Fundamentals
+    quest:
+    - {id: mlf_konsep, nama: Konsep Machine Learning, status: belum}
+    - {id: mlf_preprocessing, nama: 'Data Preprocessing & Feature Engineering', status: belum}
+  - id: supervised_learning
+    nama: Supervised Learning
+    quest:
+    - {id: sl_regresi_linear, nama: Linear Regression, status: belum}
+    - {id: sl_logistic, nama: Logistic Regression, status: belum}
+    - {id: sl_tree_forest, nama: 'Decision Tree & Random Forest', status: belum}
+    - {id: sl_knn_svm, nama: 'KNN & SVM', status: belum}
+  - id: unsupervised_learning
+    nama: Unsupervised Learning
+    quest:
+    - {id: ul_kmeans, nama: K-Means, status: belum}
+    - {id: ul_pca, nama: PCA, status: belum}
+  - id: ml_evaluation
+    nama: Evaluation
+    quest:
+    - {id: ev_klasifikasi, nama: Evaluasi Klasifikasi, status: belum}
+    - {id: ev_regresi, nama: Evaluasi Regresi, status: belum}
+    - {id: ev_cross_validation, nama: Cross-validation, status: belum}
+  - id: scikit_learn
+    nama: Scikit-learn
+    quest:
+    - {id: sk_api_pipeline, nama: 'Scikit-learn API & Pipeline', status: belum}
+    - {id: sk_model_selection, nama: Model Selection, status: belum}
+  - id: se_formal
+    nama: 'Software Engineering: Formal Introduction'
+    quest:
+    - {id: se_struktur_modular, nama: 'Struktur Proyek & Kode Modular', status: belum}
+    - {id: se_testing_logging, nama: 'Testing, Logging & Reproducibility', status: belum}
   - {id: portfolio_2, nama: 'Portfolio #2: Prediction / Classification Model', tipe: portfolio, status: belum}
 - id: 5
   nama: DEEP LEARNING & NEURAL NETWORK
   modul:
-  - {id: neural_network, nama: Neural Network, status: belum}
-  - {id: deep_learning, nama: 'Deep Learning (CNN, RNN/LSTM, Transformer, Transfer Learning)', status: belum}
-  - {id: dl_framework, nama: Framework Utama (PyTorch atau TensorFlow/Keras), status: belum}
+  - id: neural_network
+    nama: Neural Network
+    quest:
+    - {id: nn_perceptron_mlp, nama: 'Perceptron & MLP', status: belum}
+    - {id: nn_forward_backprop, nama: 'Forward Propagation, Loss & Backpropagation', status: belum}
+  - id: deep_learning
+    nama: 'Deep Learning (CNN, RNN/LSTM, Transformer, Transfer Learning)'
+    quest:
+    - {id: dl_cnn, nama: CNN, status: belum}
+    - {id: dl_rnn_lstm, nama: 'RNN/LSTM (konseptual)', status: belum}
+    - {id: dl_transformer_attention, nama: 'Transformer & Attention', status: belum}
+    - {id: dl_transfer_learning, nama: Transfer Learning, status: belum}
+  - id: dl_framework
+    nama: Framework Utama (PyTorch atau TensorFlow/Keras)
+    quest:
+    - {id: fw_tensor_autograd, nama: 'Tensor & Autograd', status: belum}
+    - {id: fw_training_loop, nama: 'Dataset, Model & Training Loop', status: belum}
   - {id: portfolio_3, nama: 'Portfolio #3: Image / Text Classifier', tipe: portfolio, status: belum}
 - id: 6
   nama: GENERATIVE AI & AI-ENHANCED DATA WORKFLOW
   modul:
-  - {id: genai_fundamentals, nama: 6A Generative AI Fundamentals, status: belum}
-  - {id: prompt_context, nama: 6B Prompt & Context Engineering, status: belum}
-  - {id: llm_api, nama: 6C LLM API, status: belum}
-  - {id: rag, nama: 6D RAG, status: belum}
-  - {id: workflow_vs_agent, nama: 6E AI Workflow vs AI Agent, status: belum}
-  - {id: ai_automation, nama: 6F AI Automation, status: belum}
+  - id: genai_fundamentals
+    nama: 6A Generative AI Fundamentals
+    quest:
+    - {id: gf_llm_token_embedding, nama: 'LLM, Tokenization, Embedding & Context Window', status: belum}
+    - {id: gf_attention_generation, nama: 'Attention & Autoregressive Generation', status: belum}
+    - {id: gf_prompting_rag_ft, nama: Prompting vs RAG vs Fine-tuning, status: belum}
+  - id: prompt_context
+    nama: 6B Prompt & Context Engineering
+    quest:
+    - {id: pc_prompting, nama: Prompting, status: belum}
+    - {id: pc_context, nama: Context Engineering, status: belum}
+  - id: llm_api
+    nama: 6C LLM API
+    quest:
+    - {id: api_dasar, nama: LLM API Dasar, status: belum}
+    - {id: api_structured_coding, nama: 'Structured Responses & AI Coding Workflow', status: belum}
+  - id: rag
+    nama: 6D RAG
+    quest:
+    - {id: rag_konsep, nama: Konsep RAG, status: belum}
+    - {id: rag_pipeline, nama: RAG Pipeline, status: belum}
+  - id: workflow_vs_agent
+    nama: 6E AI Workflow vs AI Agent
+    quest:
+    - {id: wa_workflow, nama: AI Workflow Deterministik, status: belum}
+    - {id: wa_agent, nama: AI Agent Dasar, status: belum}
+  - id: ai_automation
+    nama: 6F AI Automation
+    quest:
+    - {id: auto_konsep_n8n, nama: AI Automation dengan n8n/Make, status: belum}
+    - {id: auto_integrasi, nama: 'Integrasi API & Human Approval', status: belum}
   - {id: ai_evaluation, nama: 6G AI Evaluation, status: belum}
   - {id: guardrails_hitl, nama: 6H Guardrails & Human-in-the-loop, status: belum}
   - {id: observability, nama: 6I Observability, status: belum}
   - {id: mcp, nama: 6J MCP, status: belum}
-  - {id: deployment, nama: 6K Deployment, status: belum}
+  - id: deployment
+    nama: 6K Deployment
+    quest:
+    - {id: dep_streamlit, nama: Deployment dengan Streamlit, status: belum}
+    - {id: dep_api_hosting, nama: 'API Dasar & Hosting', status: belum}
   - {id: capstone, nama: 'Capstone: AI-Enhanced Data Workflow', tipe: capstone, status: belum}

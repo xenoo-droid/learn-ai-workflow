@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Bangun paket 3 file aturan untuk ChatGPT Project paket Free (batas 5 file).
+"""Bangun paket 4 file aturan untuk ChatGPT Project paket Free (batas 5 file).
 
 Pemakaian (dari folder repo):
     python tools\\bangun_paket.py
 
-Hasil: folder `paket_project/` berisi 3 file siap unggah. Progres (state.yaml, dashboard.md)
+Hasil: folder `paket_project/` berisi 4 file siap unggah. Progres (state.yaml, dashboard.md)
 tidak ikut, karena mentor membacanya langsung dari GitHub. Folder itu turunan,
 bukan sumber kebenaran, dan diabaikan git. Sumbernya tetap `system/` dan `state/`.
 Jalankan ulang setiap kali `system/` berubah, lalu ganti file yang berubah di Project.
@@ -31,6 +31,7 @@ GABUNG = [
 SALIN = [
     ("system/02_roadmap.md", "02_roadmap.md"),
     ("system/03_rubrik_validasi.md", "03_rubrik_validasi.md"),
+    ("system/09_kurikulum.md", "09_kurikulum.md"),
 ]
 
 KEPALA = """\
@@ -44,7 +45,8 @@ Isi, berurutan:
 
 Petunjuk membaca: rujukan ke file seperti `system/04_protokol_mentor.md` berarti bagian
 yang bersangkutan di file ini. Rujukan ke `system/03_rubrik_validasi.md` dan
-`system/02_roadmap.md` berarti file `03_rubrik_validasi.md` dan `02_roadmap.md` di Project.
+`system/02_roadmap.md` berarti file `03_rubrik_validasi.md` dan `02_roadmap.md` di Project,
+dan rujukan ke `system/09_kurikulum.md` berarti file `09_kurikulum.md` di Project.
 """
 
 FRONT = re.compile(r"\A---\s*\n.*?\n---\s*\n", re.S)
@@ -60,7 +62,7 @@ def main(argv=None) -> int:
             s.reconfigure(encoding="utf-8")
         except (AttributeError, ValueError):
             pass
-    ap = argparse.ArgumentParser(description="Bangun paket 3 file aturan untuk ChatGPT Project (Free)")
+    ap = argparse.ArgumentParser(description="Bangun paket 4 file aturan untuk ChatGPT Project (Free)")
     ap.add_argument("--root", default=".", help="folder repo (default: folder saat ini)")
     ap.add_argument("--keluar", default="paket_project", help="nama folder hasil")
     a = ap.parse_args(argv)
@@ -90,7 +92,7 @@ def main(argv=None) -> int:
     print(f"✅ Paket dibuat di: {keluar}")
     for f in sorted(keluar.iterdir()):
         print(f"  {f.name}  ({f.stat().st_size / 1024:.1f} KB)")
-    print("Unggah ketiga file itu ke ChatGPT Project hanya bila system/ berubah. Progres dibaca mentor dari GitHub.")
+    print("Unggah keempat file itu ke ChatGPT Project hanya bila system/ berubah. Progres dibaca mentor dari GitHub.")
     return 0
 
 

@@ -1,5 +1,5 @@
 <!-- DIHASILKAN OTOMATIS oleh tools/progress.py dari state/state.yaml. JANGAN DIEDIT MANUAL. -->
-Diperbarui: 2026-10-22
+Diperbarui: 2026-10-29
 
 ```text
 🌳 LEARN A.I WORKFLOW FOR DATA SCIENCE
@@ -29,10 +29,9 @@ Diperbarui: 2026-10-22
 │
 ├── 📈 MATPLOTLIB                                 🏆 SELESAI
 │
-└── 🎨 SEABORN                                    ⚔️ CURRENT QUEST ◀
-         │
-         ▼
-    🔹 Jupyter / Google Colab                     🔒 LOCKED
+├── 🎨 SEABORN                                    🏆 VALIDATED
+│
+└── 🔹 JUPYTER / GOOGLE COLAB                     ⚔️ CURRENT QUEST ◀
          │
          ▼
     🔹 Web Scraping (opsional)                    🔒 LOCKED
@@ -72,11 +71,11 @@ Diperbarui: 2026-10-22
 
 ═══════════════════════════════════════════════════
 
-🎯 CURRENT QUEST : 🎨 Seaborn
-➡️ NEXT QUEST    : 🔹 Jupyter / Google Colab
-🏆 LATEST WIN    : 🏆 Matplotlib Review — VALIDATED
+🎯 CURRENT QUEST : 🔹 Jupyter / Google Colab
+➡️ NEXT QUEST    : 🗄️ SQL & Database Fundamentals
+🏆 LATEST WIN    : 🎨 Seaborn — VALIDATED
 
 📍 CURRENT POSITION
-WORLD 2 → 🎨 Seaborn
+WORLD 2 → 🔹 Jupyter / Google Colab
 ═══════════════════════════════════════════════════
 ```

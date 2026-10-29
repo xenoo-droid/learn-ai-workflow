@@ -29,12 +29,12 @@
 # ============================================================================
 
 versi_skema: 1
-diperbarui: 2026-10-22
+diperbarui: 2026-10-29
 pemain: Rafa
 target: AI-Enhanced Data Professional (Data Scientist / Data Analyst yang AI-native)
-posisi_saat_ini: {world: 2, modul: seaborn, quest: null}
-quest_berikutnya: jupyter_colab
-kemenangan_terbaru: matplotlib_review
+posisi_saat_ini: {world: 2, modul: jupyter_colab, quest: null}
+quest_berikutnya: sql_database
+kemenangan_terbaru: seaborn
 worlds:
 - id: 1
   nama: PYTHON FOUNDATION
@@ -79,8 +79,13 @@ worlds:
       tanggal_validasi: 2026-10-22
       review_berikutnya: 2026-10-29
       evidence: [2026-10-22-matplotlib-review]
-  - {id: seaborn, nama: Seaborn, status: aktif}
-  - {id: jupyter_colab, nama: Jupyter / Google Colab, status: belum}
+  - id: seaborn
+    nama: Seaborn
+    status: validated
+    tanggal_validasi: 2026-10-29
+    review_berikutnya: 2026-11-05
+    evidence: [2026-10-29-seaborn-distribution-plots]
+  - {id: jupyter_colab, nama: Jupyter / Google Colab, status: aktif}
   - {id: web_scraping, nama: Web Scraping, status: belum, opsional: true}
   - {id: sql_database, nama: SQL & Database Fundamentals, status: belum}
   - {id: ai_untuk_data, nama: AI untuk Pekerjaan Data, status: belum}

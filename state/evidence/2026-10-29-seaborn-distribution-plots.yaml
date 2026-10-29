@@ -1,0 +1,20 @@
+id: 2026-10-29-seaborn-distribution-plots
+modul: seaborn
+tanggal: 2026-10-29
+jenis: validasi
+skor_persen: 86
+mode_ai: assisted
+level_soal: "4 soal L1-L2, 1 challenge L2"
+bukti:
+  - notebooks/2_data_science/seaborn/latihan.ipynb
+pemahaman: >
+  Keputusan 1: Memilih displot(kind='hist', col='Kelas')
+  untuk membuat histogram terpisah berdasarkan kelas karena
+  membutuhkan antarmuka figure-level dan perbandingan distribusi.
+  Keputusan 2: Memilih kdeplot dengan hue='kelas' untuk
+  membandingkan bentuk distribusi durasi secara halus.
+  Bandwidth 0.5 dipilih untuk mempertahankan detail kurva,
+  dengan pemahaman bahwa bandwidth perlu dievaluasi agar tidak
+  menonjolkan variasi acak. Bandwidth 1.5 akan menghasilkan
+  penghalusan lebih besar, tetapi dampaknya bergantung pada data.
+keputusan: validated

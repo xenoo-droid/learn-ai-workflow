@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-30 (Salin Dashboard)
+
+- Menambahkan `Salin Dashboard.bat` dan `tools/salin_dashboard.py`. Bila mentor tidak bisa membuka state dari GitHub (gagal, terpotong, atau cache lama), satu klik menyalin isi `state/dashboard.md` dan konsep lemah (bila ada) dari repo lokal ke clipboard untuk ditempel ke mentor. Script hanya membaca dan memberi peringatan bila ada commit yang belum di-push
+- `system/04` aturan awal sesi nomor 4 dan `system/07` (`cek progres`) kini meminta Rafa memakai Salin Dashboard; panduan save progres dan `tools/README.md` diperbarui; tes baru `tests/test_salin_dashboard.py`
+
 ## 2026-10-30 (penguatan validasi, notebook, dataset, dan roadmap World 2)
 
 Disetujui Rafa pada 2026-10-30. Pengingat review otomatis diusulkan tetapi **tidak** dipakai, atas keputusan Rafa.

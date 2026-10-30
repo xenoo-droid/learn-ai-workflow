@@ -108,6 +108,8 @@ Tekan tombol apa saja untuk menutup jendela.
 
 Tunggu ±5 menit (GitHub menyimpan cache sebentar), lalu ketik `cek progres` di ChatGPT Project. Tanggal "Diperbarui" dan quest aktif di dashboard seharusnya sudah berubah.
 
+**Mentor tidak bisa membuka state, atau masih menampilkan yang lama?** Klik dua kali **Salin Dashboard** (`Salin Dashboard.bat` di folder repo). Dashboard terbaru dari komputermu (dan konsep lemah, bila ada) langsung tersalin ke clipboard. Tempel (Ctrl+V) di chat mentor, lalu ketik `cek progres`. Script ini hanya membaca; tidak ada file yang berubah. Bisa juga dibuatkan shortcut di Desktop seperti Simpan Progres.
+
 ---
 
 ## 🧭 Jenis entri
@@ -158,7 +160,8 @@ Script **tidak mengubah apa pun** bila entri ditolak. Baca pesannya, perbaiki, l
 | `git pull ... gagal` | Tidak ada internet atau masalah GitHub | Pakai `python tools\simpan.py --tanpa-push`, lalu saat online: `git pull --rebase` dan `git push` |
 | `Progres SUDAH diterapkan ... belum tersimpan ke GitHub` | Push gagal setelah commit | Saat online jalankan `git push` dari folder repo |
 | `'python' is not recognized` / `'py' is not recognized` | Python tidak ada di PATH | Pasang Python dari python.org dengan opsi *Add to PATH*, atau jalankan lewat terminal yang biasa kamu pakai |
-| Mentor masih menampilkan progres lama | Cache GitHub | Tunggu beberapa menit lalu `cek progres` lagi, atau minta mentor membuka alamat `github.com/.../blob/main/state/dashboard.md` |
+| Mentor masih menampilkan progres lama, atau tidak bisa membuka state | Cache GitHub atau alamat gagal dibuka | Klik dua kali **Salin Dashboard**, tempel hasilnya ke mentor, lalu `cek progres`. Atau tunggu beberapa menit lalu coba lagi |
+| `Ada ... commit yang belum di-push` (saat Salin Dashboard) | Progres baru tersimpan di komputer | Jalankan `git push` dari folder repo supaya mentor bisa membacanya sendiri |
 
 Masih buntu? Salin seluruh pesan error ke mentor atau ke Claude.
 

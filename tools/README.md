@@ -50,6 +50,16 @@ Setelah push, mentor membaca state terbaru langsung dari GitHub, jadi tidak ada 
 
 Aturan keselamatan: entri ditolak atau notebook bukti gagal dijalankan ulang berarti tidak ada file yang berubah; bila `check` gagal setelah diterapkan, `state.yaml`, `dashboard.md`, dan salinan evidence dikembalikan; hanya file state dan file di `bukti:` yang masuk ke commit. Tes: `tests/test_simpan.py` (memakai repo git sementara dengan remote bare).
 
+## salin_dashboard.py
+
+Dipakai saat mentor tidak bisa membuka state dari GitHub (alamat gagal, terpotong, atau masih cache). Klik dua kali **`Salin Dashboard.bat`** di akar repo, atau jalankan:
+
+```powershell
+python tools\salin_dashboard.py
+```
+
+Isi `state/dashboard.md` apa adanya dan konsep lemah (bila ada) tersalin ke clipboard dengan kalimat pembuka untuk mentor; tinggal tempel di chat. Ditolak bila `dashboard.md` tidak sinkron dengan `state.yaml`. Memberi peringatan bila ada commit yang belum di-push. Hanya membaca; tidak ada file yang berubah. Opsi `--tanpa-clipboard` hanya menampilkan teksnya.
+
 ## cek_notebook.py
 
 Menjalankan ulang notebook `.ipynb` yang dirujuk di `bukti:` dari awal sampai akhir, di salinan sementara (notebook asli tidak diubah). Folder kerjanya folder notebook itu, jadi file data harus ada di sampingnya. Sel yang sengaja error diberi tag `raises-exception`.

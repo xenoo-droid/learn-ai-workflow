@@ -33,7 +33,7 @@ Mentor dan Work tidak mengubah `state.yaml`, `dashboard.md`, atau `state/evidenc
 
 ### `cek progres`
 
-1. Mentor membuka `state/dashboard.md` dan `state/state.yaml` terbaru langsung dari GitHub (alamat di `system/04_protokol_mentor.md`).
+1. Mentor membuka `state/dashboard.md` dan `state/state.yaml` terbaru langsung dari GitHub (alamat di `system/04_protokol_mentor.md`). Jika gagal dibuka atau masih cache lama (misalnya tanggal "Diperbarui" belum berubah padahal Rafa baru menyimpan), mentor meminta Rafa menjalankan **Salin Dashboard** (`Salin Dashboard.bat`) dan menempelkan hasilnya, lalu menampilkan dashboard dari teks itu (langkah 2). Teks itu tidak memuat jadwal review, jadi langkah 3 dilewati.
 2. Menampilkan isi `dashboard.md` **apa adanya** dalam blok kode.
 3. Menyebut review yang jatuh tempo berdasarkan `review_berikutnya` dan `perlu_review` di `state.yaml`. Daftar resminya: `python tools/progress.py due`.
 4. Jika Rafa melaporkan kemajuan baru, mentor meminta bukti lalu mengusulkan Evidence Entry. Mentor tidak mengubah status. Jika tidak ada kemajuan, jangan mengarang kemajuan.

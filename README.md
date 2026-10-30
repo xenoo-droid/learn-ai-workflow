@@ -69,6 +69,7 @@ Kebutuhan: Python 3.9+ dan PyYAML.
 ```powershell
 pip install -r requirements.txt
 python tools\simpan.py                # simpan progres (atau klik dua kali "Simpan Progres.bat")
+python tools\salin_dashboard.py       # salin dashboard untuk mentor bila GitHub cache (atau "Salin Dashboard.bat")
 python tools\progress.py check        # periksa konsistensi state
 python tools\progress.py dashboard    # tampilkan dashboard
 python tools\progress.py due          # review yang jatuh tempo

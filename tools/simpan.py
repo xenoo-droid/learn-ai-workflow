@@ -12,7 +12,8 @@ ganti file di Project. Alur baru: salin entri dari mentor, jalankan satu perinta
 Yang dikerjakan, berurutan:
     1. Mengambil entri (clipboard atau berkas), membuang pagar ```yaml bila ada
     2. git pull --rebase --autostash, supaya state lokal terbaru (dilewati bila --tanpa-push)
-    3. Simulasi aturan rubrik (progress.py apply --dry); ditolak berarti berhenti, tidak ada yang berubah
+    3. Simulasi aturan rubrik (progress.py apply --dry); ditolak berarti berhenti, tidak ada yang berubah.
+       Notebook di bukti: juga dijalankan ulang (tools/cek_notebook.py) bila nbclient terpasang
     4. Menerapkan entri ke state/state.yaml, dashboard, dan state/evidence/
     5. Memeriksa konsistensi; bila gagal, semua perubahan dikembalikan
     6. Satu commit berisi file bukti + state, lalu push
@@ -41,6 +42,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import progress as P  # noqa: E402
+import cek_notebook as CN  # noqa: E402
 
 import yaml  # noqa: E402
 
@@ -109,6 +111,34 @@ def jalur_bukti(root: Path, bukti: list) -> list:
 
 
 # --------------------------------------------------------------------------
+# Notebook bukti harus bisa dijalankan ulang
+# --------------------------------------------------------------------------
+def cek_notebook_entri(root: Path, e: dict, pemeriksa=None) -> None:
+    """Jalankan ulang notebook di bukti:. Gagal berarti StateError (belum ada yang berubah)."""
+    daftar = CN.notebook_dari_entri(root, e)
+    if not daftar:
+        return
+    if pemeriksa is None:
+        if not CN.siap():
+            print("    ℹ️  Cek notebook dilewati: nbclient belum terpasang "
+                  "(pip install -r requirements-notebook.txt). GitHub tetap mengeceknya setelah push.")
+            return
+        pemeriksa = lambda rel: CN.jalankan(root, rel)  # noqa: E731
+    gagal = []
+    for rel in daftar:
+        lolos, pesan = pemeriksa(rel)
+        print(f"    {'✅' if lolos else '❌'} notebook {rel.as_posix()}: {pesan}")
+        if not lolos:
+            gagal.append(f"{rel.as_posix()}: {pesan}")
+    if gagal:
+        raise P.StateError("Notebook bukti tidak bisa dijalankan ulang dari awal sampai akhir; belum ada yang berubah:\n  - "
+                           + "\n  - ".join(gagal)
+                           + "\nPerbaiki notebooknya (Restart & Run All), pastikan file data ada di samping notebook, "
+                           "atau beri tag raises-exception pada sel yang memang sengaja error. "
+                           "Bila tetap ingin menyimpan, jalankan dengan --tanpa-cek-notebook.")
+
+
+# --------------------------------------------------------------------------
 # Inti
 # --------------------------------------------------------------------------
 def snapshot(repo: P.Repo) -> dict:
@@ -128,7 +158,7 @@ def pulihkan(snap: dict, evidence: Path) -> None:
 
 
 def proses(root: Path, teks: str, today: dt.date, *, dry=False, pakai_git=True, push=True,
-           bangun=True, buka=False, runner=subprocess.run) -> int:
+           bangun=True, buka=False, cek_nb=True, pemeriksa_nb=None, runner=subprocess.run) -> int:
     root = Path(root)
     repo = P.Repo(root)
 
@@ -161,6 +191,8 @@ def proses(root: Path, teks: str, today: dt.date, *, dry=False, pakai_git=True, 
         print("3/6 Lolos pemeriksaan rubrik:")
         for m in msgs:
             print("    •", m)
+        if cek_nb:
+            cek_notebook_entri(root, e, pemeriksa_nb)
         if dry:
             print("\nDRY-RUN: tidak ada file yang diubah")
             return 0
@@ -252,6 +284,7 @@ def main(argv=None) -> int:
     ap.add_argument("--buka", action="store_true", help="buka folder paket_project/ setelah selesai")
     ap.add_argument("--tidak-buka", action="store_true", help=argparse.SUPPRESS)  # kompatibilitas lama
     ap.add_argument("--tanpa-paket", action="store_true", help="jangan membangun ulang paket_project/")
+    ap.add_argument("--tanpa-cek-notebook", action="store_true", help="jangan menjalankan ulang notebook bukti")
     a = ap.parse_args(argv)
 
     today = P.to_date(a.today) if a.today else dt.date.today()
@@ -259,7 +292,7 @@ def main(argv=None) -> int:
         teks = baca_berkas(a.berkas) if a.berkas else baca_clipboard()
         return proses(Path(a.root), teks, today, dry=a.dry, pakai_git=not a.tanpa_git,
                       push=not a.tanpa_push, bangun=not a.tanpa_paket,
-                      buka=a.buka and not a.tidak_buka)
+                      buka=a.buka and not a.tidak_buka, cek_nb=not a.tanpa_cek_notebook)
     except P.StateError as x:
         print(f"❌ {x}")
         return 1

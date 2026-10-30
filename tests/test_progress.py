@@ -12,6 +12,8 @@ from pathlib import Path
 
 import yaml
 
+from bantuan_uji import lengkapi
+
 ROOT = Path(__file__).resolve().parent.parent
 spec = importlib.util.spec_from_file_location("progress", ROOT / "tools" / "progress.py")
 P = importlib.util.module_from_spec(spec)
@@ -22,12 +24,14 @@ D = dt.date
 # State uji dibekukan di tests/fixtures/state (kondisi sebelum Matplotlib Review divalidasi),
 # supaya tes tidak ikut berubah ketika state.yaml asli maju setelah tiap milestone.
 FIXTURE = ROOT / "tests" / "fixtures" / "state"
+FIXTURE_SYSTEM = ROOT / "tests" / "fixtures" / "system"
 
 
 class Base(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp())
         shutil.copytree(FIXTURE, self.tmp / "state")
+        shutil.copytree(FIXTURE_SYSTEM, self.tmp / "system")
         (self.tmp / "notebooks").mkdir()
         (self.tmp / "notebooks" / "matplotlib_review.ipynb").write_text("{}", encoding="utf-8")
         self.repo = P.Repo(self.tmp)
@@ -45,6 +49,7 @@ class Base(unittest.TestCase):
             "keputusan": "validated",
         }
         e.update(kw)
+        e = lengkapi(e, kw)
         p = (dir or self.tmp) / f"{e['id']}.yaml"
         p.write_text(yaml.safe_dump(e, allow_unicode=True, sort_keys=False), encoding="utf-8")
         return p

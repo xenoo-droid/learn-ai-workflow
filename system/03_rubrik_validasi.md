@@ -1,7 +1,7 @@
 ---
 dokumen: rubrik_validasi
-versi: 1.0
-tanggal: 2026-10-22
+versi: 1.1
+tanggal: 2026-10-30
 peran: Menjawab "kapan sebuah modul boleh naik status?" Dibaca oleh mentor AI dan oleh tools/progress.py.
 otoritas: Di bawah constitution.md, di atas protokol_mentor.md
 ---
@@ -30,7 +30,9 @@ Istilah `COMPLETED` tidak dipakai lagi. Skor tinggi atau challenge yang sukses t
 | Review modul | Matplotlib Review | 1 challenge transfer Level 3 pada dataset baru yang memakai ≥2 skill sebelumnya + 3 soal retrieval |
 | Portfolio | Data Analysis Report | Proyek lengkap + README + refleksi (apa masalahnya, keputusan, keterbatasan) |
 
-Level soal: **L1** terpandu, **L2** terapan (memilih konsep sendiri), **L3** transfer (masalah baru, pendekatan dipilih sendiri). Setiap ujian memuat minimal satu soal L2, dan semakin tinggi World, semakin banyak L3.
+Level soal: **L1** terpandu, **L2** terapan (memilih konsep sendiri), **L3** transfer (masalah baru, pendekatan dipilih sendiri). Setiap ujian memuat minimal satu soal L2 (atau L3), dan semakin tinggi World, semakin banyak L3.
+
+Jumlah soal yang diperiksa script: quest materi **3–5 soal + 1 challenge**; review modul **tepat 3 soal + 1 challenge L3**; retrieval **2–3 soal tanpa challenge**.
 
 ## 3. Syarat Validated
 
@@ -38,7 +40,11 @@ Semua syarat harus terpenuhi:
 
 1. **Akurasi ≥ 80%** pada skor gabungan (soal 50%, challenge 50%). Challenge tidak punya gerbang terpisah: bila challenge kurang berhasil, dampaknya cukup tercermin di skor gabungan.
 2. **Pemahaman:** Rafa menjelaskan alasan dari **dua keputusan** yang ia ambil (bukan hanya sintaks).
-3. **Bukti tersimpan:** notebook atau file yang bisa dibuka kembali, dirujuk di Evidence Entry.
+3. **Bukti tersimpan:** notebook atau file yang bisa dibuka kembali, dirujuk di Evidence Entry. Notebook bukti harus **bisa dijalankan ulang dari awal sampai akhir** (*Restart & Run All*) tanpa error, dengan file datanya tersimpan di samping notebook. Sel yang memang sengaja menampilkan error diberi tag `raises-exception`. `tools/simpan.py` dan workflow GitHub `notebook` menjalankannya ulang untuk memastikan.
+4. **Cakupan lengkap:** kolom `cakupan` memuat **semua** item *Wajib* quest itu di `system/09_kurikulum.md`. Untuk modul review, `cakupan` berisi id quest yang dipakai di challenge (minimal sesuai angka "≥N" di kurikulumnya; bila tidak disebut, minimal 2).
+5. **Rekaman ujian:** kolom `ujian` mencatat setiap soal (level, pertanyaan, skor) dan challenge (level, deskripsi, skor). Script menghitung ulang skor gabungan dari rekaman ini; `skor_persen` yang berbeda lebih dari 1 poin ditolak.
+
+Syarat 4 dan 5 berlaku untuk validasi quest aktif (materi dan review). Modul legacy yang naik karena bukti lama ditemukan (bagian 7) tidak wajib mengisinya, dan Portfolio dinilai dengan rubrik portfolio.
 
 Jika tidak lulus: status tetap Learned. Mentor memberi umpan balik, dan Rafa boleh mengulang kapan saja dengan soal berbeda, tanpa batas jumlah percobaan. Rubrik ini dibuat untuk belajar otodidak: tujuannya mendiagnosis, bukan menghukum.
 
@@ -57,7 +63,7 @@ Aturan:
 ## 5. Syarat Retained (retrieval review)
 
 - Dilakukan **minimal 7 hari** setelah tanggal Validated.
-- 2–3 soal **retrieval** tanpa membuka catatan, pada **konteks baru** (bukan contoh yang sama dengan saat belajar).
+- 2–3 soal **retrieval** tanpa membuka catatan, pada **konteks baru** (bukan contoh yang sama dengan saat belajar). Soal diambil dari item *Wajib* modulnya (`cakupan` minimal satu item) dan diutamakan dari `konsep_lemah` modul itu di `state.yaml`. Rekaman `ujian` wajib; skornya rata-rata soal.
 - Akurasi **≥ 80%**, mode **Independent**.
 - Jadwal otomatis: review pertama H+7 setelah tanggal Validated. Setelah lulus, konfirmasi dijadwalkan pada H+30 dari tanggal Validated (paling cepat 7 hari setelah retrieval). Untuk modul legacy yang tidak punya tanggal Validated, konfirmasi jatuh 30 hari setelah retrieval pertama.
 - Setelah konfirmasi lulus, tidak ada review terjadwal lagi; jalur berikutnya adalah Mastered.
@@ -94,9 +100,17 @@ Setiap perubahan status harus disertai satu entri dengan kolom berikut:
 | bukti | Path file atau tautan commit |
 | pemahaman | Dua keputusan beserta alasannya |
 | konteks | Khusus `mastery`: minimal dua konteks berbeda beserta bukti masing-masing |
+| cakupan | Item *Wajib* yang diuji, disalin dari `system/09_kurikulum.md` (lihat bagian 3 dan 5). Daftar siap salin: `python tools/progress.py cakupan <id>` |
+| ujian | `soal:` daftar `{level, pertanyaan, skor}`; `challenge:` `{level, deskripsi, skor}` (validasi saja). Boleh ditambah `jawaban` atau `catatan` singkat per soal |
+| kesalahan | Opsional. Konsep yang masih lemah, format `"konsep: catatan singkat"`. Dicatat ke `konsep_lemah` modul itu, juga bila ujian tidak lulus |
+| teratasi | Opsional. Nama konsep lemah lama yang kini sudah dikuasai; dihapus dari `konsep_lemah` |
 | keputusan | Status baru yang diusulkan; tulis `tetap` bila ujian tidak lulus |
 
 `tools/progress.py` menghitung sendiri hasil akhirnya. Bila `keputusan` tidak sama dengan hasil perhitungan, entri ditolak.
+
+## 8a. Konsep lemah
+
+`konsep_lemah` di `state.yaml` adalah daftar konsep per modul yang pernah salah di ujian (dari kolom `kesalahan`). Daftar ini tidak memengaruhi status dan tidak menurunkan apa pun; gunanya mengarahkan retrieval review ke bagian yang paling perlu diulang. Konsep keluar dari daftar lewat kolom `teratasi` setelah Rafa menjawabnya dengan benar di ujian berikutnya. Ringkasannya: `python tools/progress.py statistik`.
 
 ## 9. Siapa yang boleh mengubah state?
 

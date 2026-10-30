@@ -19,9 +19,9 @@ Repositori ini adalah **sumber kebenaran** sebuah sistem belajar yang dijalankan
 ```text
 Belajar & ujian bersama mentor AI
         ↓
-Mentor mengusulkan Evidence Entry (bukti)
+Mentor mengusulkan Evidence Entry (bukti: cakupan, rekaman ujian, notebook)
         ↓
-tools/progress.py memeriksa terhadap rubrik
+tools/progress.py memeriksa terhadap rubrik dan kurikulum; notebook dijalankan ulang
         ↓
 state/state.yaml diperbarui + dashboard dibuat otomatis
         ↓
@@ -52,12 +52,12 @@ learn-ai-workflow/
 ├── README.md
 ├── system/        aturan sistem (dimuat ke ChatGPT Project)
 ├── state/         state.yaml · dashboard.md · evidence/
-├── tools/         progress.py (penjaga aturan progres)
-├── tests/         tes otomatis untuk progress.py
+├── tools/         progress.py (penjaga aturan progres) · simpan.py · cek_notebook.py · buat_dataset.py
+├── tests/         tes otomatis untuk tools/ dan konsistensi dokumen
 ├── notebooks/     notebook belajar
 ├── projects/      proyek portofolio
 ├── src/           kode pendukung proyek
-├── assets/        data, gambar, diagram
+├── assets/        bank dataset latihan (assets/data/), gambar, diagram
 ├── docs/          changelog, portofolio, sumber belajar, panduan ChatGPT Project
 └── archive/       dokumen lama (hanya untuk riwayat)
 ```
@@ -72,6 +72,8 @@ python tools\simpan.py                # simpan progres (atau klik dua kali "Simp
 python tools\progress.py check        # periksa konsistensi state
 python tools\progress.py dashboard    # tampilkan dashboard
 python tools\progress.py due          # review yang jatuh tempo
+python tools\progress.py statistik    # tren skor dan konsep lemah
+python tools\cek_notebook.py          # jalankan ulang notebook bukti (pip install -r requirements-notebook.txt)
 python -m unittest discover -s tests  # jalankan tes
 ```
 

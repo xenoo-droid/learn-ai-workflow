@@ -12,7 +12,7 @@ Kotak masuk Evidence Entry. Di sinilah mentor AI (atau Rafa) menaruh entri; **bu
 
 ## Aturan berkas
 
-- Nama berkas: `<tanggal>-<modul>.yaml`, misalnya `2026-10-30-seaborn.yaml`. Entri diproses berurutan menurut nama.
+- Nama berkas: `<tanggal>-<modul>.yaml`, misalnya `2026-11-02-seaborn_categorical.yaml`. Entri diproses berurutan menurut nama.
 - Format isi: lihat `system/04_protokol_mentor.md` (bagian Evidence Entry).
 - `id` hanya huruf, angka, `-` dan `_`. Satu `id` hanya boleh dipakai sekali.
 - Setiap path di `bukti` harus sudah ada di repo (commit dan push file buktinya **sebelum** entri masuk), atau berupa URL.

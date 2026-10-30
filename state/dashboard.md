@@ -1,5 +1,5 @@
 <!-- DIHASILKAN OTOMATIS oleh tools/progress.py dari state/state.yaml. JANGAN DIEDIT MANUAL. -->
-Diperbarui: 2026-10-29
+Diperbarui: 2026-10-30
 
 ```text
 🌳 LEARN A.I WORKFLOW FOR DATA SCIENCE
@@ -51,7 +51,13 @@ Diperbarui: 2026-10-29
     🗄️ SQL & DATABASE FUNDAMENTALS                🔒 LOCKED
          │
          ▼
+    📐 Statistika Terapan untuk Analisis          🔒 LOCKED
+         │
+         ▼
     🤖 AI untuk Pekerjaan Data                    🔒 LOCKED
+         │
+         ▼
+    🗣️ Data Storytelling & Komunikasi Insight     🔒 LOCKED
          │
          ▼
     📊 PORTFOLIO #1: DATA ANALYSIS REPORT         🔒 LOCKED

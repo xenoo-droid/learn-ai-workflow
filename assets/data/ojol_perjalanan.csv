@@ -1,0 +1,1501 @@
+id_perjalanan,waktu_pesan,kota,layanan,jarak_km,durasi_menit,cuaca,pakai_promo,tarif_rp,rating_driver
+OJ00001,2025-06-01 00:23,Jakarta,Motor,5.5,16,Cerah,True,11000,4.1
+OJ00002,2025-06-01 02:49,Medan,Motor,4.5,13,Cerah,True,9000,
+OJ00003,2025-06-01 03:47,Surabaya,Motor,9.5,22,Cerah,False,24000,5.0
+OJ00004,2025-06-01 04:24,Bandung,Motor,5.7,18,Cerah,False,14000,5.0
+OJ00005,2025-06-01 04:38,Jakarta,Motor,12.0,30,Cerah,False,30000,4.0
+OJ00006,2025-06-01 06:37,Jakarta,Motor,3.0,12,Cerah,False,7500,4.9
+OJ00007,2025-06-01 08:03,Bandung,Mobil,8.0,40,Cerah,False,45000,5.0
+OJ00008,2025-06-01 08:09,Jakarta,Motor,9.3,37,Cerah,True,23000,4.6
+OJ00009,2025-06-01 08:56,Bandung,Mobil,7.6,40,Cerah,False,43000,
+OJ00010,2025-06-01 09:17,Medan,Motor,9.8,23,Cerah,False,24500,5.0
+OJ00011,2025-06-01 10:12,Jakarta,Motor,1.7,9,Cerah,False,5000,4.5
+OJ00012,2025-06-01 12:06,Jakarta,Kirim Barang,5.1,14,Cerah,True,12500,4.9
+OJ00013,2025-06-01 12:20,Surabaya,Mobil,6.3,21,Cerah,False,28500,4.7
+OJ00014,2025-06-01 12:57,Jakarta,Mobil,2.1,9,Cerah,True,7500,4.9
+OJ00015,2025-06-01 15:49,Surabaya,Motor,7.8,20,Cerah,True,15500,4.4
+OJ00016,2025-06-01 17:43,Surabaya,Motor,1.0,11,Cerah,True,5000,5.0
+OJ00017,2025-06-01 18:27,Jakarta,Kirim Barang,10.8,43,Cerah,False,40500,4.2
+OJ00018,2025-06-01 19:09,Jakarta,Kirim Barang,2.7,11,Cerah,False,10000,4.2
+OJ00019,2025-06-01 21:15,Surabaya,Motor,2.2,8,Hujan,False,7000,4.9
+OJ00020,2025-06-01 23:02,Medan,Mobil,2.8,12,Hujan,True,13000,4.5
+OJ00021,2025-06-01 23:30,Surabaya,Motor,1.2,7,Cerah,True,4000,4.3
+OJ00022,2025-06-02 01:10,Surabaya,Kirim Barang,16.5,37,Cerah,False,49500,4.7
+OJ00023,2025-06-02 01:27,Medan,Motor,1.0,6,Cerah,False,5000,5.0
+OJ00024,2025-06-02 01:42,Surabaya,Motor,8.5,22,Hujan,True,21000,4.6
+OJ00025,2025-06-02 02:36,Jakarta,Mobil,14.2,39,Cerah,False,64000,4.5
+OJ00026,2025-06-02 03:13,Bandung,Motor,4.3,16,Cerah,False,11000,4.8
+OJ00027,2025-06-02 03:29,Bandung,Mobil,3.3,13,Cerah,True,12000,4.3
+OJ00028,2025-06-02 05:28,Surabaya,Motor,8.5,23,Cerah,False,21000,4.7
+OJ00029,2025-06-02 06:56,Medan,Motor,4.5,17,Hujan,False,14000,4.5
+OJ00030,2025-06-02 06:59,Jakarta,Motor,3.8,13,Cerah,True,7500,4.9
+OJ00031,2025-06-02 07:27,Surabaya,Motor,5.4,19,Cerah,False,17000,4.4
+OJ00032,2025-06-02 07:29,Bandung,Motor,3.2,17,Cerah,False,10000,4.9
+OJ00033,2025-06-02 07:34,Bandung,Motor,9.2,32,Cerah,False,29000,5.0
+OJ00034,2025-06-02 08:28,Jakarta,Motor,2.2,14,Hujan,True,5500,4.5
+OJ00035,2025-06-02 10:36,Jakarta,Mobil,5.8,18,Cerah,False,26000,4.7
+OJ00036,2025-06-02 11:33,Medan,Motor,6.0,19,Cerah,False,15000,4.6
+OJ00037,2025-06-02 13:21,Medan,Motor,6.0,16,Cerah,False,15000,5.0
+OJ00038,2025-06-02 15:28,Jakarta,Kirim Barang,2.4,6,Cerah,False,7000,4.5
+OJ00039,2025-06-02 15:39,Jakarta,Kirim Barang,3.4,11,Cerah,False,10000,4.2
+OJ00040,2025-06-02 16:51,Surabaya,Motor,22.0,48,Cerah,False,55000,4.3
+OJ00041,2025-06-02 18:56,Jakarta,Mobil,4.6,22,Cerah,True,21000,4.4
+OJ00042,2025-06-02 20:01,Surabaya,Motor,10.5,26,Cerah,True,21000,4.4
+OJ00043,2025-06-02 20:11,Surabaya,Mobil,0.9,7,Cerah,True,7000,4.7
+OJ00044,2025-06-02 20:22,Surabaya,Mobil,6.4,20,Cerah,True,23000,4.5
+OJ00045,2025-06-02 21:37,Jakarta,Mobil,4.5,19,Hujan,False,25500,4.9
+OJ00046,2025-06-02 22:21,Medan,Kirim Barang,5.8,15,Cerah,False,17500,4.8
+OJ00047,2025-06-02 22:46,Surabaya,Mobil,3.3,15,Hujan,False,18500,3.9
+OJ00048,2025-06-02 22:51,Medan,Motor,6.9,26,Hujan,True,17000,4.8
+OJ00049,2025-06-02 23:25,Jakarta,Mobil,3.9,13,Cerah,True,14000,4.3
+OJ00050,2025-06-03 02:12,Surabaya,Mobil,3.0,16,Hujan,False,17000,4.8
+OJ00051,2025-06-03 02:15,Surabaya,Motor,8.3,21,Cerah,False,21000,4.9
+OJ00052,2025-06-03 02:19,Jakarta,Mobil,9.3,39,Hujan,False,52500,5.0
+OJ00053,2025-06-03 02:22,Jakarta,Motor,10.8,26,Cerah,False,27000,5.0
+OJ00054,2025-06-03 02:23,Jakarta,Kirim Barang,2.8,11,Cerah,True,7000,5.0
+OJ00055,2025-06-03 04:33,Medan,Motor,2.2,9,Hujan,True,5500,4.8
+OJ00056,2025-06-03 05:15,Jakarta,Mobil,1.2,8,Hujan,False,11000,5.0
+OJ00057,2025-06-03 05:30,Surabaya,Motor,0.9,4,Cerah,True,4000,4.5
+OJ00058,2025-06-03 06:08,Bandung,Motor,6.2,17,Cerah,False,15500,4.8
+OJ00059,2025-06-03 06:28,Surabaya,Mobil,11.2,34,Cerah,False,50500,4.3
+OJ00060,2025-06-03 07:30,Medan,Mobil,3.4,20,Cerah,True,15000,5.0
+OJ00061,2025-06-03 08:14,Medan,Kirim Barang,5.4,22,Cerah,False,20500,5.0
+OJ00062,2025-06-03 08:39,Surabaya,Motor,3.8,13,Cerah,False,12000,4.2
+OJ00063,2025-06-03 09:05,Jakarta,Motor,1.2,4,Hujan,False,6000,4.8
+OJ00064,2025-06-03 09:12,Surabaya,Kirim Barang,6.5,14,Cerah,False,19500,4.7
+OJ00065,2025-06-03 09:30,Surabaya,Motor,2.8,9,Cerah,False,7000,4.6
+OJ00066,2025-06-03 11:06,Surabaya,Motor,5.4,12,Cerah,True,11000,4.7
+OJ00067,2025-06-03 13:26,Medan,Motor,3.3,8,Cerah,False,8000,4.7
+OJ00068,2025-06-03 14:21,Jakarta,Mobil,5.9,18,Cerah,False,26500,4.8
+OJ00069,2025-06-03 16:55,Jakarta,Motor,1.8,6,Cerah,True,4000,4.6
+OJ00070,2025-06-03 18:25,Surabaya,Motor,10.7,44,Cerah,False,33500,4.2
+OJ00071,2025-06-03 18:30,Surabaya,Motor,7.7,29,Cerah,True,19000,
+OJ00072,2025-06-03 19:33,Jakarta,Mobil,0.9,9,Cerah,False,11000,5.0
+OJ00073,2025-06-03 20:40,Medan,Motor,6.2,20,Cerah,False,15500,5.0
+OJ00074,2025-06-03 20:45,Surabaya,Kirim Barang,7.8,19,Cerah,False,23500,4.6
+OJ00075,2025-06-03 20:54,Bandung,Kirim Barang,4.3,16,Cerah,True,10500,5.0
+OJ00076,2025-06-03 21:54,Bandung,Motor,1.4,4,Cerah,False,5000,4.5
+OJ00077,2025-06-03 22:29,Surabaya,Mobil,7.3,24,Cerah,False,33000,4.5
+OJ00078,2025-06-04 00:05,Medan,Kirim Barang,2.8,9,Cerah,True,7000,4.8
+OJ00079,2025-06-04 00:16,Jakarta,Motor,2.2,8,Cerah,False,5500,4.7
+OJ00080,2025-06-04 01:49,Medan,Kirim Barang,15.2,40,Cerah,False,45500,4.6
+OJ00081,2025-06-04 02:24,Jakarta,Kirim Barang,7.6,21,Cerah,False,23000,4.0
+OJ00082,2025-06-04 02:27,Bandung,Mobil,2.8,12,Cerah,False,12500,4.6
+OJ00083,2025-06-04 02:49,Jakarta,Motor,4.2,11,Cerah,False,10500,4.3
+OJ00084,2025-06-04 03:21,Jakarta,Motor,6.9,17,Cerah,False,17000,5.0
+OJ00085,2025-06-04 04:09,Medan,Mobil,9.7,30,Cerah,True,35000,
+OJ00086,2025-06-04 04:48,Medan,Motor,5.5,15,Cerah,True,11000,4.6
+OJ00087,2025-06-04 05:30,Jakarta,Motor,8.5,25,Cerah,True,17000,4.6
+OJ00088,2025-06-04 05:36,Surabaya,Motor,3.5,7,Cerah,False,9000,5.0
+OJ00089,2025-06-04 06:15,Bandung,Motor,8.8,21,Cerah,False,22000,4.4
+OJ00090,2025-06-04 06:49,Bandung,Motor,3.1,11,Cerah,False,8000,5.0
+OJ00091,2025-06-04 07:13,Surabaya,Mobil,9.1,58,Hujan,False,51000,4.6
+OJ00092,2025-06-04 08:00,Surabaya,Mobil,4.2,28,Hujan,False,23500,5.0
+OJ00093,2025-06-04 09:42,Jakarta,Kirim Barang,3.8,13,Cerah,False,11500,4.8
+OJ00094,2025-06-04 10:20,Bandung,Motor,12.4,28,Cerah,False,31000,4.7
+OJ00095,2025-06-04 10:52,Jakarta,Motor,7.7,28,Hujan,True,19000,5.0
+OJ00096,2025-06-04 15:17,Jakarta,Motor,12.8,31,Cerah,False,32000,5.0
+OJ00097,2025-06-04 19:05,Bandung,Motor,7.5,31,Cerah,False,23500,5.0
+OJ00098,2025-06-04 20:00,Surabaya,Motor,5.7,18,Cerah,True,11000,5.0
+OJ00099,2025-06-04 22:13,Bandung,Mobil,2.1,12,Cerah,True,7500,4.8
+OJ00100,2025-06-04 22:14,Bandung,Motor,11.2,27,Cerah,True,22500,4.6
+OJ00101,2025-06-04 22:49,Bandung,Mobil,3.5,16,Hujan,False,19500,5.0
+OJ00102,2025-06-05 00:38,Jakarta,Motor,10.8,33,Hujan,False,34000,4.7
+OJ00103,2025-06-05 02:18,Medan,Kirim Barang,1.3,8,Cerah,True,5000,5.0
+OJ00104,2025-06-05 03:33,Bandung,Mobil,5.7,19,Cerah,False,25500,4.9
+OJ00105,2025-06-05 03:47,Bandung,Motor,15.8,39,Cerah,False,39500,4.3
+OJ00106,2025-06-05 04:54,Medan,Motor,5.6,15,Cerah,False,14000,4.6
+OJ00107,2025-06-05 06:02,Jakarta,Motor,2.8,11,Cerah,False,7000,5.0
+OJ00108,2025-06-05 06:06,Bandung,Mobil,3.4,12,Cerah,False,15500,4.7
+OJ00109,2025-06-05 08:12,Jakarta,Motor,4.4,23,Cerah,False,14000,4.8
+OJ00110,2025-06-05 09:10,Medan,Motor,0.6,5,Cerah,False,5000,4.6
+OJ00111,2025-06-05 09:16,Jakarta,Motor,4.9,12,Cerah,True,9500,4.7
+OJ00112,2025-06-05 11:17,Jakarta,Motor,13.2,30,Cerah,False,33000,4.6
+OJ00113,2025-06-05 11:21,Surabaya,Mobil,11.7,34,Cerah,False,52500,5.0
+OJ00114,2025-06-05 14:51,Surabaya,Kirim Barang,10.3,28,Cerah,True,25000,3.6
+OJ00115,2025-06-05 15:01,Surabaya,Motor,3.5,11,Cerah,True,7000,4.7
+OJ00116,2025-06-05 22:19,Medan,Motor,5.7,17,Cerah,False,14000,5.0
+OJ00117,2025-06-05 22:26,Medan,Kirim Barang,2.8,10,Cerah,False,8500,4.8
+OJ00118,2025-06-05 23:21,Jakarta,Motor,6.6,19,Cerah,False,16500,4.2
+OJ00119,2025-06-05 23:29,Jakarta,Motor,15.7,53,Hujan,False,49000,4.1
+OJ00120,2025-06-06 00:47,Bandung,Mobil,7.1,34,Hujan,False,40000,3.9
+OJ00121,2025-06-06 01:01,Bandung,Motor,5.6,17,Cerah,True,11000,4.7
+OJ00122,2025-06-06 03:06,Jakarta,Motor,7.2,19,Cerah,False,18000,5.0
+OJ00123,2025-06-06 03:28,Jakarta,Motor,10.0,26,Cerah,False,25000,4.9
+OJ00124,2025-06-06 03:46,Bandung,Motor,3.3,15,Cerah,True,6500,5.0
+OJ00125,2025-06-06 04:36,Surabaya,Motor,3.7,15,Cerah,True,7000,5.0
+OJ00126,2025-06-06 04:41,Bandung,Motor,8.0,22,Cerah,False,20000,4.4
+OJ00127,2025-06-06 07:56,Jakarta,Motor,1.5,8,Cerah,False,6000,4.9
+OJ00128,2025-06-06 08:08,Jakarta,Motor,6.7,39,Hujan,True,17000,5.0
+OJ00129,2025-06-06 08:54,Jakarta,Motor,10.2,41,Cerah,False,32000,4.7
+OJ00130,2025-06-06 09:15,Bandung,Motor,10.0,26,Cerah,False,25000,4.9
+OJ00131,2025-06-06 09:51,Jakarta,Motor,13.0,35,Cerah,True,26000,5.0
+OJ00132,2025-06-06 09:57,Jakarta,Motor,5.2,19,Cerah,True,10500,5.0
+OJ00133,2025-06-06 10:11,Jakarta,Motor,3.5,9,Cerah,False,9000,5.0
+OJ00134,2025-06-06 10:41,Jakarta,Mobil,4.1,12,Cerah,False,18500,4.9
+OJ00135,2025-06-06 12:07,Bandung,Kirim Barang,3.8,18,Hujan,False,14000,5.0
+OJ00136,2025-06-06 12:22,Bandung,Motor,5.8,20,Hujan,False,18000,5.0
+OJ00137,2025-06-06 12:50,Surabaya,Motor,3.5,10,Cerah,False,9000,4.6
+OJ00138,2025-06-06 13:22,Bandung,Mobil,7.8,22,Cerah,False,35000,4.6
+OJ00139,2025-06-06 13:55,Surabaya,Motor,2.6,9,Cerah,False,6500,4.8
+OJ00140,2025-06-06 14:24,Medan,Mobil,23.0,68,Cerah,False,103500,
+OJ00141,2025-06-06 17:06,Surabaya,Motor,18.4,70,Cerah,False,57500,4.5
+OJ00142,2025-06-06 17:42,Jakarta,Motor,5.8,27,Cerah,False,18000,4.6
+OJ00143,2025-06-06 17:44,Medan,Motor,4.2,19,Cerah,False,13000,
+OJ00144,2025-06-06 18:58,Medan,Mobil,8.4,52,Hujan,True,37500,4.2
+OJ00145,2025-06-06 19:37,Surabaya,Motor,6.5,29,Cerah,False,20500,4.8
+OJ00146,2025-06-06 21:02,Surabaya,Mobil,13.1,41,Cerah,False,59000,4.7
+OJ00147,2025-06-06 21:05,Jakarta,Motor,1.2,5,Cerah,False,5000,5.0
+OJ00148,2025-06-06 21:36,Jakarta,Mobil,3.6,16,Cerah,True,13000,
+OJ00149,2025-06-06 22:58,Surabaya,Mobil,9.0,34,Hujan,True,40500,4.7
+OJ00150,2025-06-06 23:43,Surabaya,Motor,9.5,30,Hujan,False,29500,4.5
+OJ00151,2025-06-07 00:38,Bandung,Motor,4.9,15,Cerah,True,9500,4.3
+OJ00152,2025-06-07 00:41,Bandung,Mobil,3.9,20,Hujan,False,22000,5.0
+OJ00153,2025-06-07 02:10,Bandung,Kirim Barang,5.4,21,Hujan,True,16500,4.4
+OJ00154,2025-06-07 03:03,Medan,Motor,5.5,18,Cerah,True,11000,5.0
+OJ00155,2025-06-07 03:11,Surabaya,Mobil,7.9,24,Cerah,True,28500,4.6
+OJ00156,2025-06-07 03:13,Medan,Motor,4.1,10,Cerah,False,10000,4.5
+OJ00157,2025-06-07 03:27,Jakarta,Motor,6.6,20,Cerah,False,16500,5.0
+OJ00158,2025-06-07 04:14,Jakarta,Motor,6.6,19,Cerah,False,16500,5.0
+OJ00159,2025-06-07 05:31,Surabaya,Motor,9.1,19,Cerah,False,23000,4.1
+OJ00160,2025-06-07 08:11,Jakarta,Motor,9.1,38,Cerah,False,28500,4.8
+OJ00161,2025-06-07 09:15,Jakarta,Mobil,4.8,17,Cerah,True,17000,5.0
+OJ00162,2025-06-07 09:30,Surabaya,Motor,11.2,29,Cerah,False,28000,4.8
+OJ00163,2025-06-07 10:48,Bandung,Mobil,2.9,9,Cerah,True,10500,5.0
+OJ00164,2025-06-07 12:25,Surabaya,Motor,5.3,21,Hujan,False,16500,3.8
+OJ00165,2025-06-07 13:11,Surabaya,Motor,5.8,15,Cerah,True,11500,4.9
+OJ00166,2025-06-07 13:37,Bandung,Motor,2.5,10,Cerah,False,6000,5.0
+OJ00167,2025-06-07 14:44,Bandung,Motor,8.6,21,Cerah,False,21500,4.9
+OJ00168,2025-06-07 15:48,Medan,Motor,6.5,22,Hujan,False,20500,4.4
+OJ00169,2025-06-07 16:05,Jakarta,Kirim Barang,2.0,6,Cerah,True,5000,4.2
+OJ00170,2025-06-07 16:33,Surabaya,Mobil,4.0,19,Cerah,False,18000,4.5
+OJ00171,2025-06-07 16:39,Jakarta,Mobil,3.3,14,Cerah,False,15000,5.0
+OJ00172,2025-06-07 16:42,Jakarta,Motor,4.1,13,Cerah,False,10000,4.4
+OJ00173,2025-06-07 17:57,Jakarta,Kirim Barang,7.9,32,Cerah,False,29500,5.0
+OJ00174,2025-06-07 21:03,Jakarta,Mobil,15.2,44,Cerah,False,68500,4.8
+OJ00175,2025-06-07 21:10,Jakarta,Mobil,2.2,11,Cerah,True,8000,4.8
+OJ00176,2025-06-07 21:16,Surabaya,Motor,4.5,14,Cerah,False,11000,5.0
+OJ00177,2025-06-07 23:02,Surabaya,Kirim Barang,3.2,10,Cerah,False,9500,4.5
+OJ00178,2025-06-07 23:36,Surabaya,Mobil,7.6,23,Cerah,True,27000,4.4
+OJ00179,2025-06-07 23:39,Surabaya,Mobil,3.4,10,Cerah,True,12500,4.8
+OJ00180,2025-06-07 23:46,Surabaya,Mobil,7.0,21,Cerah,True,25000,4.5
+OJ00181,2025-06-07 23:49,Jakarta,Kirim Barang,9.7,27,Cerah,False,29000,4.7
+OJ00182,2025-06-08 00:07,Bandung,Kirim Barang,4.5,11,Cerah,False,13500,4.9
+OJ00183,2025-06-08 00:33,Jakarta,Mobil,2.6,9,Cerah,True,9000,4.6
+OJ00184,2025-06-08 00:43,Surabaya,Motor,7.7,20,Cerah,False,19000,5.0
+OJ00185,2025-06-08 03:18,Bandung,Mobil,2.1,11,Cerah,True,7500,4.2
+OJ00186,2025-06-08 03:39,Surabaya,Motor,2.7,11,Cerah,False,7000,
+OJ00187,2025-06-08 04:13,Surabaya,Motor,2.9,10,Cerah,False,7000,4.7
+OJ00188,2025-06-08 04:15,Bandung,Motor,11.4,27,Cerah,False,28500,4.8
+OJ00189,2025-06-08 04:30,Jakarta,Motor,4.1,13,Cerah,True,8000,4.5
+OJ00190,2025-06-08 05:54,Medan,Motor,6.2,16,Cerah,False,15500,5.0
+OJ00191,2025-06-08 06:30,Jakarta,Motor,8.3,29,Hujan,False,26000,4.6
+OJ00192,2025-06-08 07:32,Jakarta,Motor,13.3,54,Cerah,True,33000,4.5
+OJ00193,2025-06-08 09:08,Jakarta,Mobil,2.2,8,Cerah,False,10000,5.0
+OJ00194,2025-06-08 12:22,Jakarta,Motor,3.6,14,Cerah,False,9000,5.0
+OJ00195,2025-06-08 15:11,Bandung,Motor,2.3,7,Cerah,True,5000,4.3
+OJ00196,2025-06-08 18:17,Jakarta,Kirim Barang,1.7,8,Cerah,False,7500,4.8
+OJ00197,2025-06-08 19:05,Jakarta,Motor,4.7,21,Cerah,False,14500,5.0
+OJ00198,2025-06-08 19:51,Jakarta,Motor,16.3,63,Cerah,True,41000,4.5
+OJ00199,2025-06-08 20:04,Jakarta,Motor,8.8,23,Cerah,False,22000,4.5
+OJ00200,2025-06-08 21:37,Medan,Motor,5.2,104,Cerah,False,13000,4.8
+OJ00201,2025-06-08 22:23,Bandung,Motor,1.7,7,Cerah,True,4000,4.8
+OJ00202,2025-06-09 01:21,Surabaya,Motor,2.2,12,Hujan,True,5500,4.5
+OJ00203,2025-06-09 02:42,Bandung,Motor,5.8,17,Cerah,False,14500,5.0
+OJ00204,2025-06-09 03:40,Jakarta,Motor,7.1,16,Cerah,False,18000,5.0
+OJ00205,2025-06-09 04:06,Surabaya,Motor,4.8,11,Cerah,False,12000,5.0
+OJ00206,2025-06-09 04:15,Bandung,Mobil,5.6,18,Cerah,True,20000,4.2
+OJ00207,2025-06-09 04:54,Jakarta,Motor,6.1,23,Hujan,True,15000,4.8
+OJ00208,2025-06-09 05:42,Medan,Mobil,4.6,18,Cerah,False,20500,5.0
+OJ00209,2025-06-09 09:49,Bandung,Motor,5.2,12,Cerah,True,10500,4.6
+OJ00210,2025-06-09 10:56,Medan,Motor,6.4,16,Cerah,False,16000,4.2
+OJ00211,2025-06-09 11:00,Surabaya,Motor,2.7,12,Cerah,False,7000,
+OJ00212,2025-06-09 11:34,Medan,Mobil,6.5,24,Cerah,True,23000,4.2
+OJ00213,2025-06-09 12:40,Medan,Mobil,15.7,50,Cerah,True,56500,3.8
+OJ00214,2025-06-09 13:46,Surabaya,Motor,2.7,8,Cerah,True,5500,5.0
+OJ00215,2025-06-09 15:40,Jakarta,Motor,6.7,17,Cerah,False,17000,5.0
+OJ00216,2025-06-09 16:50,Surabaya,Kirim Barang,12.5,44,Hujan,False,47000,4.5
+OJ00217,2025-06-09 19:03,Jakarta,Motor,3.2,15,Cerah,False,10000,4.6
+OJ00218,2025-06-09 21:52,Bandung,Motor,14.8,47,Hujan,False,46000,4.1
+OJ00219,2025-06-09 23:00,Jakarta,Motor,5.6,18,Cerah,False,14000,4.9
+OJ00220,2025-06-09 23:19,Surabaya,Motor,1.8,6,Cerah,False,5000,4.2
+OJ00221,2025-06-10 01:04,Jakarta,Motor,8.1,21,Cerah,False,20000,4.6
+OJ00222,2025-06-10 02:13,Jakarta,Motor,7.6,19,Cerah,False,19000,4.7
+OJ00223,2025-06-10 04:40,Surabaya,Motor,5.7,18,Cerah,False,14000,4.9
+OJ00224,2025-06-10 04:42,Surabaya,Mobil,4.7,16,Cerah,False,21000,4.4
+OJ00225,2025-06-10 05:29,Jakarta,Kirim Barang,3.3,9,Cerah,False,10000,5.0
+OJ00226,2025-06-10 06:08,Medan,Motor,4.5,15,Cerah,False,11000,4.8
+OJ00227,2025-06-10 06:17,Jakarta,Motor,6.6,15,Cerah,True,13000,4.4
+OJ00228,2025-06-10 06:36,Jakarta,Motor,2.8,9,Cerah,True,5500,5.0
+OJ00229,2025-06-10 07:21,Bandung,Kirim Barang,6.8,30,Cerah,True,20500,5.0
+OJ00230,2025-06-10 07:25,Medan,Motor,2.5,14,Cerah,False,8000,4.9
+OJ00231,2025-06-10 07:57,Bandung,Motor,8.1,34,Cerah,False,25500,4.3
+OJ00232,2025-06-10 09:35,Surabaya,Motor,2.6,10,Cerah,False,6500,4.6
+OJ00233,2025-06-10 11:14,Jakarta,Motor,6.1,21,Hujan,False,19000,5.0
+OJ00234,2025-06-10 11:28,Jakarta,Motor,13.9,32,Cerah,False,35000,4.4
+OJ00235,2025-06-10 11:36,Medan,Motor,14.6,38,Cerah,True,29000,4.2
+OJ00236,2025-06-10 12:33,Surabaya,Motor,16.7,41,Cerah,False,42000,4.9
+OJ00237,2025-06-10 13:26,Surabaya,Motor,2.3,10,Cerah,True,5000,4.9
+OJ00238,2025-06-10 15:13,Jakarta,Mobil,6.6,30,Hujan,False,37000,4.7
+OJ00239,2025-06-10 16:46,Jakarta,Mobil,1.9,8,Cerah,False,9000,4.8
+OJ00240,2025-06-10 17:13,Jakarta,Mobil,3.8,23,Cerah,False,21500,4.6
+OJ00241,2025-06-10 17:26,Bandung,Motor,3.4,21,Hujan,False,10500,4.3
+OJ00242,2025-06-10 21:34,Jakarta,Motor,3.5,12,Hujan,True,9000,5.0
+OJ00243,2025-06-10 21:40,Medan,Motor,12.1,33,Cerah,False,30000,5.0
+OJ00244,2025-06-10 23:14,Medan,Motor,3.3,11,Cerah,False,8000,5.0
+OJ00245,2025-06-11 03:52,Jakarta,Mobil,9.5,29,Cerah,False,43000,5.0
+OJ00246,2025-06-11 04:51,Jakarta,Mobil,4.2,14,Cerah,False,19000,4.8
+OJ00247,2025-06-11 05:06,Surabaya,Mobil,1.3,9,Cerah,False,9000,4.8
+OJ00248,2025-06-11 06:02,Jakarta,Motor,5.6,18,Cerah,False,14000,4.2
+OJ00249,2025-06-11 06:35,Jakarta,Motor,2.8,13,Cerah,False,7000,5.0
+OJ00250,2025-06-11 07:51,Jakarta,Motor,5.5,26,Hujan,True,13500,4.3
+OJ00251,2025-06-11 08:05,Jakarta,Mobil,4.9,29,Cerah,False,27500,5.0
+OJ00252,2025-06-11 08:31,Jakarta,Kirim Barang,5.9,22,Cerah,False,22000,4.5
+OJ00253,2025-06-11 09:55,Jakarta,Motor,6.5,22,Hujan,False,20500,4.3
+OJ00254,2025-06-11 10:06,Jakarta,Motor,9.6,22,Cerah,False,24000,4.6
+OJ00255,2025-06-11 10:43,Medan,Mobil,8.5,34,Hujan,False,48000,4.9
+OJ00256,2025-06-11 11:21,Jakarta,Motor,6.9,18,Cerah,False,17000,4.2
+OJ00257,2025-06-11 11:46,Surabaya,Motor,5.4,13,Cerah,False,13500,4.4
+OJ00258,2025-06-11 14:18,Surabaya,Kirim Barang,9.2,25,Cerah,False,27500,5.0
+OJ00259,2025-06-11 14:23,Jakarta,Motor,4.3,11,Cerah,True,9000,4.7
+OJ00260,2025-06-11 16:47,Jakarta,Mobil,8.6,28,Cerah,False,38500,4.3
+OJ00261,2025-06-11 16:53,Bandung,Motor,6.2,19,Cerah,False,15500,4.5
+OJ00262,2025-06-11 17:50,Jakarta,Motor,4.5,21,Cerah,True,11000,4.5
+OJ00263,2025-06-11 18:23,Surabaya,Motor,4.7,24,Cerah,True,11500,5.0
+OJ00264,2025-06-11 18:26,Bandung,Motor,10.3,55,Hujan,False,32000,3.8
+OJ00265,2025-06-11 19:51,Jakarta,Motor,13.8,54,Cerah,True,34500,4.5
+OJ00266,2025-06-11 20:32,Jakarta,Motor,3.5,8,Cerah,False,9000,4.7
+OJ00267,2025-06-11 20:44,Surabaya,Mobil,5.3,22,Cerah,False,24000,4.3
+OJ00268,2025-06-11 21:23,Medan,Kirim Barang,4.2,13,Cerah,False,12500,5.0
+OJ00269,2025-06-11 21:26,Medan,Motor,7.5,136,Cerah,False,19000,4.7
+OJ00270,2025-06-11 22:50,Surabaya,Mobil,5.8,18,Cerah,False,26000,4.7
+OJ00271,2025-06-11 23:11,Bandung,Mobil,11.0,31,Cerah,True,39500,4.8
+OJ00272,2025-06-11 23:26,Jakarta,Motor,7.1,16,Cerah,False,18000,4.3
+OJ00273,2025-06-12 00:33,Jakarta,Mobil,8.2,32,Hujan,False,46000,5.0
+OJ00274,2025-06-12 02:21,Surabaya,Motor,8.1,24,Cerah,True,16000,4.8
+OJ00275,2025-06-12 03:14,Surabaya,Motor,2.3,8,Cerah,False,6000,4.4
+OJ00276,2025-06-12 03:21,Jakarta,Kirim Barang,8.3,19,Cerah,False,25000,4.9
+OJ00277,2025-06-12 03:30,Bandung,Motor,4.4,10,Cerah,False,11000,4.9
+OJ00278,2025-06-12 04:06,Surabaya,Motor,15.6,35,Cerah,False,39000,5.0
+OJ00279,2025-06-12 07:15,Jakarta,Motor,6.9,29,Cerah,False,21500,5.0
+OJ00280,2025-06-12 07:47,Jakarta,Mobil,3.9,18,Cerah,True,17500,3.9
+OJ00281,2025-06-12 09:07,Bandung,Motor,9.3,25,Cerah,False,23000,5.0
+OJ00282,2025-06-12 09:43,Medan,Mobil,5.0,26,Hujan,False,28000,
+OJ00283,2025-06-12 09:46,Surabaya,Motor,5.1,16,Cerah,True,10500,5.0
+OJ00284,2025-06-12 09:51,Bandung,Motor,2.7,10,Cerah,True,5500,4.8
+OJ00285,2025-06-12 10:56,Surabaya,Motor,9.5,22,Cerah,False,24000,4.5
+OJ00286,2025-06-12 11:34,Surabaya,Motor,6.1,16,Cerah,False,15000,4.3
+OJ00287,2025-06-12 12:26,Jakarta,Motor,7.1,19,Cerah,True,14500,4.6
+OJ00288,2025-06-12 15:42,Jakarta,Kirim Barang,11.1,34,Hujan,False,41500,4.4
+OJ00289,2025-06-12 16:36,Jakarta,Motor,8.7,26,Cerah,True,17500,4.7
+OJ00290,2025-06-12 17:28,Jakarta,Motor,5.0,22,Cerah,False,15500,4.2
+OJ00291,2025-06-12 17:52,Jakarta,Kirim Barang,5.7,22,Cerah,True,17000,4.9
+OJ00292,2025-06-12 18:42,Surabaya,Kirim Barang,3.2,16,Cerah,True,9500,
+OJ00293,2025-06-12 18:45,Bandung,Mobil,5.3,25,Cerah,True,24000,4.6
+OJ00294,2025-06-12 19:02,Bandung,Motor,4.1,24,Cerah,False,13000,4.9
+OJ00295,2025-06-12 19:44,Medan,Kirim Barang,4.6,23,Hujan,False,17000,4.8
+OJ00296,2025-06-12 20:08,Surabaya,Motor,4.8,16,Cerah,False,12000,4.9
+OJ00297,2025-06-12 20:49,Bandung,Motor,4.7,16,Cerah,True,9500,5.0
+OJ00298,2025-06-12 21:17,Jakarta,Mobil,14.1,44,Cerah,False,63500,5.0
+OJ00299,2025-06-12 22:14,Jakarta,Motor,1.0,4,Cerah,True,4000,4.4
+OJ00300,2025-06-12 22:14,Surabaya,Mobil,1.2,10,Hujan,True,9000,4.6
+OJ00301,2025-06-13 02:54,Jakarta,Motor,3.8,10,Cerah,True,7500,4.5
+OJ00302,2025-06-13 03:46,Jakarta,Motor,4.8,15,Cerah,True,9500,4.8
+OJ00303,2025-06-13 03:57,Jakarta,Mobil,3.9,16,Cerah,False,17500,4.6
+OJ00304,2025-06-13 04:48,Jakarta,Motor,10.8,29,Cerah,False,27000,4.9
+OJ00305,2025-06-13 05:32,Surabaya,Motor,2.5,11,Cerah,False,6000,4.7
+OJ00306,2025-06-13 06:07,Bandung,Motor,4.6,12,Cerah,False,11500,4.1
+OJ00307,2025-06-13 06:49,Bandung,Mobil,5.2,19,Cerah,False,23500,4.6
+OJ00308,2025-06-13 07:38,Bandung,Mobil,3.2,19,Cerah,False,18000,4.9
+OJ00309,2025-06-13 07:46,Jakarta,Motor,12.6,62,Hujan,False,39500,3.9
+OJ00310,2025-06-13 07:50,Jakarta,Kirim Barang,6.2,26,Cerah,False,23000,5.0
+OJ00311,2025-06-13 10:10,Jakarta,Motor,13.9,34,Cerah,False,35000,4.2
+OJ00312,2025-06-13 10:56,Jakarta,Kirim Barang,7.3,20,Cerah,False,22000,4.4
+OJ00313,2025-06-13 11:51,Surabaya,Motor,4.3,15,Cerah,True,9000,4.8
+OJ00314,2025-06-13 12:00,Jakarta,Motor,14.6,42,Cerah,False,36500,4.9
+OJ00315,2025-06-13 14:40,Surabaya,Mobil,4.9,22,Hujan,False,27500,4.6
+OJ00316,2025-06-13 14:52,Medan,Motor,4.0,12,Cerah,False,10000,4.3
+OJ00317,2025-06-13 15:26,Bandung,Mobil,3.9,14,Cerah,False,17500,5.0
+OJ00318,2025-06-13 15:43,Surabaya,Mobil,2.1,8,Cerah,True,7500,4.7
+OJ00319,2025-06-13 15:57,Jakarta,Kirim Barang,2.0,11,Cerah,False,6000,4.6
+OJ00320,2025-06-13 16:09,Jakarta,Mobil,3.3,12,Cerah,True,12000,4.8
+OJ00321,2025-06-13 16:13,Jakarta,Motor,5.9,18,Cerah,False,15000,5.0
+OJ00322,2025-06-13 16:14,Surabaya,Motor,3.9,14,Cerah,False,10000,4.6
+OJ00323,2025-06-13 17:44,Medan,Motor,3.1,14,Cerah,False,9500,5.0
+OJ00324,2025-06-13 18:01,Jakarta,Motor,2.2,14,Cerah,False,7000,4.5
+OJ00325,2025-06-13 19:15,Jakarta,Motor,7.0,28,Cerah,False,22000,4.6
+OJ00326,2025-06-13 19:22,Jakarta,Mobil,4.3,23,Cerah,True,19000,4.6
+OJ00327,2025-06-13 19:23,Surabaya,Motor,5.6,22,Cerah,False,17500,4.7
+OJ00328,2025-06-13 20:55,Bandung,Motor,8.5,24,Cerah,False,21000,4.5
+OJ00329,2025-06-13 22:23,Jakarta,Mobil,9.2,25,Cerah,False,41500,4.8
+OJ00330,2025-06-13 23:19,Jakarta,Motor,19.6,48,Cerah,True,39000,3.6
+OJ00331,2025-06-13 23:34,Surabaya,Motor,10.3,27,Cerah,False,26000,4.7
+OJ00332,2025-06-13 23:50,Surabaya,Motor,4.3,13,Cerah,False,11000,4.9
+OJ00333,2025-06-14 00:51,Surabaya,Kirim Barang,5.3,13,Cerah,False,16000,4.5
+OJ00334,2025-06-14 01:03,Bandung,Motor,20.1,49,Cerah,False,50000,4.8
+OJ00335,2025-06-14 01:16,Surabaya,Mobil,8.1,32,Hujan,True,36500,5.0
+OJ00336,2025-06-14 01:53,Bandung,Motor,11.8,27,Cerah,True,23500,4.4
+OJ00337,2025-06-14 02:28,Surabaya,Mobil,5.2,18,Cerah,False,23500,4.9
+OJ00338,2025-06-14 03:07,Surabaya,Motor,10.3,28,Cerah,True,21000,4.5
+OJ00339,2025-06-14 03:12,Surabaya,Motor,12.3,29,Cerah,True,25000,4.9
+OJ00340,2025-06-14 06:29,Bandung,Mobil,2.5,12,Cerah,True,9000,4.9
+OJ00341,2025-06-14 08:02,Jakarta,Motor,1.7,10,Hujan,True,5000,4.3
+OJ00342,2025-06-14 08:45,Surabaya,Kirim Barang,6.0,25,Cerah,False,22500,5.0
+OJ00343,2025-06-14 11:24,Jakarta,Kirim Barang,12.5,39,Hujan,False,47000,4.6
+OJ00344,2025-06-14 14:11,Medan,Mobil,6.5,26,Cerah,False,29000,5.0
+OJ00345,2025-06-14 17:00,Surabaya,Motor,5.7,33,Hujan,False,18000,4.5
+OJ00346,2025-06-14 18:52,Bandung,Mobil,9.5,42,Cerah,True,43000,4.7
+OJ00347,2025-06-14 19:15,Jakarta,Motor,6.1,35,Hujan,False,19000,4.9
+OJ00348,2025-06-14 19:29,Bandung,Motor,8.0,31,Cerah,False,25000,5.0
+OJ00349,2025-06-14 19:40,Surabaya,Kirim Barang,6.0,27,Cerah,True,18000,4.6
+OJ00350,2025-06-14 20:26,Surabaya,Mobil,12.3,40,Cerah,True,44500,4.8
+OJ00351,2025-06-14 21:01,Medan,Mobil,9.6,34,Cerah,False,43000,4.4
+OJ00352,2025-06-14 21:34,Bandung,Motor,10.7,34,Hujan,False,33500,5.0
+OJ00353,2025-06-14 22:44,Jakarta,Mobil,3.6,17,Cerah,False,16000,4.7
+OJ00354,2025-06-14 23:22,Jakarta,Mobil,3.1,10,Cerah,False,14000,5.0
+OJ00355,2025-06-15 00:13,Surabaya,Motor,9.6,24,Cerah,False,24000,5.0
+OJ00356,2025-06-15 00:29,Medan,Motor,13.9,38,Cerah,False,35000,4.4
+OJ00357,2025-06-15 01:06,Jakarta,Motor,4.9,14,Cerah,False,12000,4.7
+OJ00358,2025-06-15 03:10,Jakarta,Mobil,4.6,19,Cerah,False,20500,5.0
+OJ00359,2025-06-15 03:56,Medan,Motor,11.4,27,Cerah,False,28500,4.7
+OJ00360,2025-06-15 04:18,Jakarta,Motor,2.4,11,Hujan,False,7500,5.0
+OJ00361,2025-06-15 04:19,Surabaya,Mobil,0.6,8,Cerah,False,9000,4.7
+OJ00362,2025-06-15 06:20,Medan,Motor,5.4,15,Cerah,True,11000,4.8
+OJ00363,2025-06-15 06:54,Jakarta,Motor,11.3,23,Cerah,True,22500,5.0
+OJ00364,2025-06-15 08:33,Surabaya,Mobil,5.6,36,Hujan,False,31500,5.0
+OJ00365,2025-06-15 09:29,Jakarta,Mobil,2.4,8,Cerah,False,11000,4.7
+OJ00366,2025-06-15 09:55,Medan,Motor,8.1,22,Cerah,False,20000,5.0
+OJ00367,2025-06-15 10:20,Bandung,Motor,2.0,7,Cerah,False,5000,4.9
+OJ00368,2025-06-15 10:45,Bandung,Mobil,6.5,23,Cerah,False,29000,4.8
+OJ00369,2025-06-15 11:57,Bandung,Mobil,10.5,31,Cerah,False,47000,5.0
+OJ00370,2025-06-15 13:03,Jakarta,Mobil,5.2,19,Cerah,False,23500,4.7
+OJ00371,2025-06-15 13:22,Surabaya,Motor,9.9,35,Hujan,True,25000,5.0
+OJ00372,2025-06-15 14:14,Bandung,Motor,9.2,26,Cerah,True,18500,4.1
+OJ00373,2025-06-15 14:42,Jakarta,Motor,7.8,18,Cerah,True,15500,4.5
+OJ00374,2025-06-15 15:33,Jakarta,Motor,3.1,12,Cerah,False,8000,4.4
+OJ00375,2025-06-15 16:37,Jakarta,Motor,8.6,23,Cerah,False,21500,4.3
+OJ00376,2025-06-15 17:18,Jakarta,Motor,3.5,16,Cerah,True,9000,3.9
+OJ00377,2025-06-15 20:30,Jakarta,Motor,4.8,13,Cerah,True,9500,4.4
+OJ00378,2025-06-15 21:08,Jakarta,Mobil,10.8,43,Hujan,False,61000,4.9
+OJ00379,2025-06-15 21:39,Surabaya,Motor,8.8,26,Cerah,False,22000,4.3
+OJ00380,2025-06-15 23:24,Jakarta,Mobil,2.8,12,Hujan,False,16000,4.9
+OJ00381,2025-06-15 23:26,Surabaya,Motor,3.5,10,Cerah,False,9000,5.0
+OJ00382,2025-06-15 23:30,Medan,Mobil,2.0,7,Cerah,True,7000,4.3
+OJ00383,2025-06-15 23:46,Bandung,Mobil,3.5,17,Hujan,False,19500,4.4
+OJ00384,2025-06-16 00:44,Jakarta,Mobil,7.1,23,Cerah,False,32000,4.7
+OJ00385,2025-06-16 02:26,Surabaya,Motor,7.6,21,Cerah,False,19000,
+OJ00386,2025-06-16 03:07,Medan,Motor,6.8,176,Cerah,True,13500,5.0
+OJ00387,2025-06-16 03:48,Jakarta,Mobil,8.3,30,Cerah,False,37500,4.6
+OJ00388,2025-06-16 04:28,Surabaya,Motor,5.4,14,Cerah,False,13500,4.9
+OJ00389,2025-06-16 05:56,Bandung,Mobil,5.2,16,Cerah,False,23500,5.0
+OJ00390,2025-06-16 09:08,Bandung,Motor,5.1,17,Cerah,False,13000,5.0
+OJ00391,2025-06-16 09:58,Jakarta,Motor,1.9,5,Cerah,False,5000,4.8
+OJ00392,2025-06-16 10:00,Jakarta,Mobil,1.7,12,Cerah,False,9000,4.2
+OJ00393,2025-06-16 10:15,Jakarta,Mobil,7.0,22,Cerah,True,25000,4.8
+OJ00394,2025-06-16 10:40,Jakarta,Mobil,4.5,19,Cerah,False,20000,4.4
+OJ00395,2025-06-16 11:40,Medan,Motor,9.9,29,Cerah,False,25000,5.0
+OJ00396,2025-06-16 11:58,Jakarta,Motor,3.1,10,Cerah,False,8000,4.8
+OJ00397,2025-06-16 12:21,Surabaya,Mobil,9.0,30,Cerah,True,32500,4.3
+OJ00398,2025-06-16 12:42,Surabaya,Motor,3.4,9,Cerah,False,8500,4.5
+OJ00399,2025-06-16 12:59,Surabaya,Mobil,5.8,21,Cerah,True,21000,4.4
+OJ00400,2025-06-16 13:23,Medan,Motor,5.0,11,Cerah,False,12500,4.3
+OJ00401,2025-06-16 13:51,Bandung,Kirim Barang,9.5,31,Hujan,False,35500,4.9
+OJ00402,2025-06-16 14:21,Jakarta,Motor,8.6,21,Cerah,False,21500,4.4
+OJ00403,2025-06-16 15:29,Jakarta,Mobil,2.3,12,Cerah,False,10500,4.7
+OJ00404,2025-06-16 16:55,Surabaya,Motor,6.1,24,Hujan,False,19000,4.9
+OJ00405,2025-06-16 17:48,Jakarta,Motor,6.2,24,Cerah,False,19500,
+OJ00406,2025-06-16 18:55,Jakarta,Motor,3.6,18,Cerah,False,11000,4.8
+OJ00407,2025-06-16 19:03,Medan,Mobil,3.9,23,Cerah,False,22000,4.4
+OJ00408,2025-06-16 20:23,Bandung,Mobil,6.1,23,Cerah,False,27500,
+OJ00409,2025-06-16 20:32,Surabaya,Kirim Barang,1.7,4,Cerah,False,6000,4.9
+OJ00410,2025-06-16 20:37,Surabaya,Motor,2.0,4,Cerah,False,5000,4.7
+OJ00411,2025-06-16 20:53,Surabaya,Mobil,6.0,23,Hujan,False,34000,4.5
+OJ00412,2025-06-16 21:55,Jakarta,Motor,11.2,26,Cerah,False,28000,4.7
+OJ00413,2025-06-16 23:03,Jakarta,Motor,7.1,13,Cerah,False,18000,4.9
+OJ00414,2025-06-16 23:08,Jakarta,Motor,15.3,38,Cerah,True,30500,4.9
+OJ00415,2025-06-16 23:25,Jakarta,Mobil,7.3,21,Cerah,False,33000,4.8
+OJ00416,2025-06-16 23:49,Jakarta,Mobil,2.7,13,Cerah,True,9500,4.3
+OJ00417,2025-06-17 01:31,Jakarta,Motor,13.6,34,Cerah,False,34000,5.0
+OJ00418,2025-06-17 03:03,Jakarta,Kirim Barang,4.8,13,Cerah,False,14500,4.0
+OJ00419,2025-06-17 04:55,Jakarta,Mobil,8.2,26,Cerah,False,37000,4.8
+OJ00420,2025-06-17 07:36,Jakarta,Motor,5.4,25,Cerah,False,17000,5.0
+OJ00421,2025-06-17 07:48,Bandung,Motor,5.2,21,Cerah,False,16000,4.6
+OJ00422,2025-06-17 10:06,Jakarta,Kirim Barang,9.8,26,Cerah,True,23500,4.2
+OJ00423,2025-06-17 15:32,Jakarta,Kirim Barang,3.0,5,Cerah,False,9000,4.3
+OJ00424,2025-06-17 16:01,Jakarta,Motor,9.2,24,Cerah,False,23000,4.9
+OJ00425,2025-06-17 16:33,Medan,Kirim Barang,9.4,29,Hujan,False,35000,4.5
+OJ00426,2025-06-17 17:00,Jakarta,Motor,3.4,16,Cerah,True,8500,4.2
+OJ00427,2025-06-17 17:50,Surabaya,Mobil,7.9,43,Cerah,False,44500,4.5
+OJ00428,2025-06-17 17:59,Surabaya,Motor,10.7,56,Hujan,True,27000,3.5
+OJ00429,2025-06-17 21:17,Bandung,Mobil,4.5,18,Hujan,False,25500,4.9
+OJ00430,2025-06-17 23:04,Jakarta,Mobil,5.0,20,Cerah,False,22500,5.0
+OJ00431,2025-06-17 23:04,Jakarta,Mobil,10.4,33,Cerah,False,47000,4.7
+OJ00432,2025-06-17 23:35,Medan,Motor,7.5,20,Cerah,False,19000,4.7
+OJ00433,2025-06-18 00:09,Medan,Kirim Barang,6.8,15,Cerah,True,16500,4.6
+OJ00434,2025-06-18 00:33,Jakarta,Mobil,2.6,13,Hujan,True,11500,4.6
+OJ00435,2025-06-18 01:11,Bandung,Motor,5.7,16,Cerah,False,14000,4.9
+OJ00436,2025-06-18 02:38,Jakarta,Motor,2.8,11,Hujan,False,9000,4.9
+OJ00437,2025-06-18 03:15,Bandung,Motor,5.4,20,Hujan,False,17000,5.0
+OJ00438,2025-06-18 03:21,Medan,Motor,9.0,24,Cerah,True,18000,4.9
+OJ00439,2025-06-18 06:51,Surabaya,Mobil,6.6,20,Cerah,False,29500,
+OJ00440,2025-06-18 07:53,Jakarta,Motor,9.5,49,Hujan,False,29500,4.0
+OJ00441,2025-06-18 09:36,Surabaya,Kirim Barang,11.4,25,Cerah,False,34000,5.0
+OJ00442,2025-06-18 09:47,Medan,Motor,6.9,19,Cerah,False,17000,
+OJ00443,2025-06-18 10:21,Jakarta,Motor,5.9,16,Cerah,True,12000,5.0
+OJ00444,2025-06-18 11:38,Jakarta,Motor,5.4,144,Cerah,True,11000,5.0
+OJ00445,2025-06-18 12:05,Bandung,Mobil,8.6,35,Hujan,False,48500,4.3
+OJ00446,2025-06-18 13:27,Jakarta,Motor,12.0,29,Cerah,False,30000,4.8
+OJ00447,2025-06-18 17:10,Surabaya,Motor,9.1,39,Cerah,False,28500,4.7
+OJ00448,2025-06-18 17:51,Surabaya,Motor,4.4,20,Cerah,False,14000,5.0
+OJ00449,2025-06-18 18:37,Jakarta,Mobil,7.1,40,Cerah,False,40000,4.7
+OJ00450,2025-06-18 18:53,Bandung,Motor,8.3,42,Hujan,True,21000,4.9
+OJ00451,2025-06-18 23:29,Jakarta,Motor,3.0,8,Cerah,False,7500,5.0
+OJ00452,2025-06-19 00:01,Jakarta,Kirim Barang,5.2,20,Hujan,False,19500,4.2
+OJ00453,2025-06-19 02:18,Surabaya,Motor,14.2,36,Cerah,True,28500,
+OJ00454,2025-06-19 03:35,Medan,Motor,8.1,20,Cerah,False,20000,5.0
+OJ00455,2025-06-19 04:01,Jakarta,Motor,8.9,23,Cerah,False,22000,5.0
+OJ00456,2025-06-19 05:21,Medan,Motor,10.0,27,Cerah,False,25000,5.0
+OJ00457,2025-06-19 05:34,Bandung,Motor,4.9,14,Cerah,False,12000,
+OJ00458,2025-06-19 07:10,Jakarta,Motor,6.4,35,Hujan,True,16000,4.8
+OJ00459,2025-06-19 07:13,Jakarta,Motor,6.0,22,Cerah,False,19000,5.0
+OJ00460,2025-06-19 07:30,Medan,Kirim Barang,5.7,24,Cerah,False,21500,5.0
+OJ00461,2025-06-19 08:24,Bandung,Mobil,2.8,22,Hujan,True,13000,4.2
+OJ00462,2025-06-19 08:31,Jakarta,Motor,12.0,46,Cerah,False,37500,
+OJ00463,2025-06-19 09:15,Medan,Motor,6.1,20,Hujan,True,15000,4.7
+OJ00464,2025-06-19 09:21,Surabaya,Motor,1.1,6,Cerah,False,5000,4.8
+OJ00465,2025-06-19 10:54,Surabaya,Kirim Barang,5.9,19,Cerah,True,14000,5.0
+OJ00466,2025-06-19 11:03,Bandung,Motor,6.1,13,Cerah,False,15000,5.0
+OJ00467,2025-06-19 11:30,Jakarta,Kirim Barang,10.4,27,Cerah,False,31000,4.4
+OJ00468,2025-06-19 11:45,Medan,Motor,3.9,16,Hujan,False,12000,4.3
+OJ00469,2025-06-19 13:16,Jakarta,Mobil,33.0,97,Cerah,False,148500,4.3
+OJ00470,2025-06-19 13:37,Jakarta,Motor,2.8,14,Cerah,False,7000,4.3
+OJ00471,2025-06-19 14:01,Bandung,Motor,4.1,10,Cerah,True,8000,4.5
+OJ00472,2025-06-19 14:52,Surabaya,Motor,1.9,9,Cerah,False,5000,4.6
+OJ00473,2025-06-19 15:41,Bandung,Mobil,8.0,28,Cerah,False,36000,4.9
+OJ00474,2025-06-19 17:11,Bandung,Motor,8.9,49,Hujan,True,22500,3.8
+OJ00475,2025-06-19 17:35,Bandung,Kirim Barang,4.6,26,Hujan,False,17000,4.9
+OJ00476,2025-06-19 20:35,Bandung,Mobil,11.9,49,Hujan,False,67000,4.5
+OJ00477,2025-06-19 22:26,Surabaya,Motor,4.2,13,Cerah,False,10500,4.4
+OJ00478,2025-06-19 22:45,Surabaya,Motor,2.3,10,Cerah,False,6000,4.8
+OJ00479,2025-06-19 23:27,Jakarta,Mobil,5.6,17,Cerah,False,25000,4.8
+OJ00480,2025-06-19 23:41,Surabaya,Motor,15.4,39,Cerah,True,31000,4.5
+OJ00481,2025-06-20 00:01,Surabaya,Mobil,10.3,31,Cerah,False,46500,5.0
+OJ00482,2025-06-20 00:37,Jakarta,Motor,2.7,7,Cerah,False,7000,4.7
+OJ00483,2025-06-20 01:19,Medan,Kirim Barang,5.7,14,Cerah,False,17000,5.0
+OJ00484,2025-06-20 01:31,Jakarta,Mobil,5.6,25,Hujan,True,25000,4.8
+OJ00485,2025-06-20 02:10,Jakarta,Motor,5.7,18,Cerah,True,11000,4.9
+OJ00486,2025-06-20 02:15,Jakarta,Motor,6.7,17,Cerah,False,17000,4.9
+OJ00487,2025-06-20 03:58,Surabaya,Mobil,7.2,20,Cerah,False,32500,4.5
+OJ00488,2025-06-20 06:12,Medan,Mobil,3.8,19,Hujan,False,21500,4.6
+OJ00489,2025-06-20 08:51,Bandung,Kirim Barang,4.0,23,Hujan,True,12000,4.8
+OJ00490,2025-06-20 09:47,Surabaya,Kirim Barang,1.3,7,Cerah,False,6000,5.0
+OJ00491,2025-06-20 10:47,Jakarta,Mobil,4.6,18,Cerah,False,20500,5.0
+OJ00492,2025-06-20 12:44,Jakarta,Motor,8.0,20,Cerah,False,20000,4.3
+OJ00493,2025-06-20 14:54,Medan,Motor,1.2,6,Cerah,True,4000,4.6
+OJ00494,2025-06-20 15:08,Surabaya,Kirim Barang,4.7,16,Cerah,False,14000,
+OJ00495,2025-06-20 16:21,Surabaya,Motor,4.6,17,Cerah,True,9000,4.6
+OJ00496,2025-06-20 16:41,Medan,Motor,2.4,9,Cerah,False,6000,4.3
+OJ00497,2025-06-20 16:46,Jakarta,Mobil,10.9,41,Hujan,False,61500,4.8
+OJ00498,2025-06-20 17:14,Medan,Motor,4.5,25,Hujan,False,14000,4.6
+OJ00499,2025-06-20 17:25,Jakarta,Motor,4.7,25,Hujan,False,14500,5.0
+OJ00500,2025-06-20 19:52,Jakarta,Motor,5.8,27,Cerah,True,14500,4.5
+OJ00501,2025-06-20 20:21,Bandung,Mobil,11.0,33,Cerah,True,39500,5.0
+OJ00502,2025-06-20 21:01,Jakarta,Mobil,7.9,26,Cerah,False,35500,4.9
+OJ00503,2025-06-20 21:05,Jakarta,Motor,9.9,24,Cerah,False,25000,4.7
+OJ00504,2025-06-20 21:20,Surabaya,Motor,6.1,15,Cerah,False,15000,4.9
+OJ00505,2025-06-20 22:44,Medan,Motor,2.8,12,Cerah,True,5500,4.7
+OJ00506,2025-06-20 22:58,Bandung,Motor,5.1,18,Hujan,False,16000,4.6
+OJ00507,2025-06-20 23:43,Surabaya,Motor,6.2,15,Cerah,False,15500,5.0
+OJ00508,2025-06-21 00:02,Medan,Motor,9.0,24,Cerah,False,22500,4.5
+OJ00509,2025-06-21 01:43,Surabaya,Mobil,3.2,10,Cerah,False,14500,4.1
+OJ00510,2025-06-21 02:42,Jakarta,Motor,6.8,15,Cerah,False,17000,4.6
+OJ00511,2025-06-21 07:00,Bandung,Motor,5.5,20,Cerah,True,13500,4.7
+OJ00512,2025-06-21 08:02,Jakarta,Mobil,10.9,67,Hujan,False,61500,4.5
+OJ00513,2025-06-21 08:41,Medan,Motor,4.6,19,Cerah,False,14500,4.5
+OJ00514,2025-06-21 09:54,Bandung,Motor,8.8,28,Cerah,False,22000,4.2
+OJ00515,2025-06-21 11:50,Bandung,Motor,4.4,17,Hujan,False,14000,4.4
+OJ00516,2025-06-21 12:25,Jakarta,Motor,10.6,27,Cerah,True,21000,4.3
+OJ00517,2025-06-21 15:16,Bandung,Motor,8.5,25,Cerah,False,21000,4.2
+OJ00518,2025-06-21 15:40,Surabaya,Motor,7.9,21,Cerah,False,20000,4.5
+OJ00519,2025-06-21 17:47,Jakarta,Kirim Barang,5.5,23,Cerah,False,20500,4.7
+OJ00520,2025-06-21 17:48,Medan,Motor,5.8,26,Cerah,False,18000,4.8
+OJ00521,2025-06-21 18:51,Medan,Kirim Barang,10.6,43,Cerah,False,40000,
+OJ00522,2025-06-21 20:45,Surabaya,Motor,5.9,18,Cerah,False,15000,4.5
+OJ00523,2025-06-22 01:28,Jakarta,Kirim Barang,11.6,33,Cerah,True,28000,4.6
+OJ00524,2025-06-22 02:18,Jakarta,Mobil,15.6,49,Cerah,True,56000,4.6
+OJ00525,2025-06-22 03:01,Surabaya,Motor,13.3,41,Hujan,True,33000,4.1
+OJ00526,2025-06-22 04:13,Bandung,Motor,8.0,24,Cerah,True,16000,4.5
+OJ00527,2025-06-22 04:38,Jakarta,Mobil,1.9,10,Cerah,False,9000,4.9
+OJ00528,2025-06-22 05:23,Bandung,Mobil,3.7,19,Cerah,False,16500,5.0
+OJ00529,2025-06-22 05:33,Surabaya,Motor,6.9,17,Cerah,True,13500,4.6
+OJ00530,2025-06-22 05:46,Jakarta,Motor,15.0,35,Cerah,False,37500,4.5
+OJ00531,2025-06-22 05:57,Jakarta,Mobil,8.9,27,Cerah,True,32000,4.3
+OJ00532,2025-06-22 05:57,Bandung,Mobil,5.1,14,Cerah,True,18500,4.7
+OJ00533,2025-06-22 06:16,Surabaya,Motor,6.1,15,Cerah,False,15000,5.0
+OJ00534,2025-06-22 06:41,Jakarta,Motor,1.5,8,Cerah,False,5000,5.0
+OJ00535,2025-06-22 06:47,Jakarta,Motor,12.1,29,Cerah,False,30000,4.9
+OJ00536,2025-06-22 07:36,Jakarta,Kirim Barang,1.4,14,Hujan,False,7500,4.8
+OJ00537,2025-06-22 08:16,Jakarta,Motor,4.1,21,Cerah,True,10500,4.9
+OJ00538,2025-06-22 09:15,Jakarta,Mobil,5.5,18,Cerah,True,20000,5.0
+OJ00539,2025-06-22 09:32,Bandung,Kirim Barang,1.8,8,Hujan,False,7500,4.9
+OJ00540,2025-06-22 10:26,Jakarta,Mobil,8.8,29,Cerah,False,39500,4.2
+OJ00541,2025-06-22 11:58,Jakarta,Motor,5.0,14,Cerah,False,12500,4.7
+OJ00542,2025-06-22 13:46,Surabaya,Kirim Barang,7.1,23,Cerah,False,21500,4.8
+OJ00543,2025-06-22 14:03,Jakarta,Kirim Barang,6.9,20,Cerah,False,20500,4.9
+OJ00544,2025-06-22 14:25,Jakarta,Mobil,5.5,21,Hujan,True,25000,4.5
+OJ00545,2025-06-22 15:38,Bandung,Motor,9.4,25,Cerah,False,23500,4.9
+OJ00546,2025-06-22 15:56,Surabaya,Motor,7.2,20,Cerah,False,18000,5.0
+OJ00547,2025-06-22 18:18,Jakarta,Motor,5.4,22,Cerah,False,17000,4.4
+OJ00548,2025-06-22 20:16,Jakarta,Motor,14.2,36,Cerah,True,28500,4.4
+OJ00549,2025-06-22 20:22,Bandung,Mobil,1.9,8,Cerah,False,9000,4.3
+OJ00550,2025-06-22 21:10,Surabaya,Mobil,4.8,21,Cerah,False,21500,5.0
+OJ00551,2025-06-22 22:12,Jakarta,Mobil,0.8,9,Cerah,True,7000,4.1
+OJ00552,2025-06-22 23:08,Surabaya,Motor,16.1,38,Cerah,True,32000,4.7
+OJ00553,2025-06-22 23:30,Surabaya,Mobil,2.6,11,Cerah,False,11500,4.7
+OJ00554,2025-06-22 23:38,Surabaya,Motor,18.3,42,Cerah,False,46000,4.6
+OJ00555,2025-06-23 03:09,Jakarta,Motor,2.4,9,Cerah,False,6000,4.6
+OJ00556,2025-06-23 04:08,Surabaya,Motor,11.3,34,Hujan,True,28500,4.7
+OJ00557,2025-06-23 04:31,Jakarta,Mobil,5.5,15,Cerah,True,20000,4.6
+OJ00558,2025-06-23 05:14,Surabaya,Motor,2.9,10,Cerah,False,7000,4.8
+OJ00559,2025-06-23 06:25,Jakarta,Motor,10.3,27,Cerah,True,21000,4.7
+OJ00560,2025-06-23 10:41,Surabaya,Mobil,3.2,15,Hujan,False,18000,5.0
+OJ00561,2025-06-23 10:45,Bandung,Motor,3.5,11,Cerah,True,7000,4.3
+OJ00562,2025-06-23 13:42,Bandung,Kirim Barang,5.5,15,Cerah,False,16500,4.2
+OJ00563,2025-06-23 14:37,Jakarta,Mobil,8.5,36,Hujan,False,48000,4.5
+OJ00564,2025-06-23 15:14,Bandung,Motor,7.1,17,Cerah,True,14500,
+OJ00565,2025-06-23 15:17,Bandung,Kirim Barang,3.6,9,Cerah,True,9000,4.2
+OJ00566,2025-06-23 17:29,Surabaya,Kirim Barang,6.1,25,Cerah,True,18500,4.9
+OJ00567,2025-06-23 17:30,Jakarta,Motor,3.4,16,Cerah,False,10500,5.0
+OJ00568,2025-06-23 18:17,Jakarta,Motor,5.7,24,Cerah,False,18000,3.8
+OJ00569,2025-06-23 19:07,Bandung,Motor,2.5,14,Cerah,False,8000,5.0
+OJ00570,2025-06-23 19:42,Bandung,Motor,3.2,14,Cerah,False,10000,5.0
+OJ00571,2025-06-23 20:06,Surabaya,Motor,3.4,12,Cerah,False,8500,4.3
+OJ00572,2025-06-23 20:07,Jakarta,Motor,1.8,6,Cerah,False,5000,4.8
+OJ00573,2025-06-23 20:23,Bandung,Motor,13.6,31,Cerah,False,34000,4.6
+OJ00574,2025-06-23 22:01,Jakarta,Kirim Barang,2.1,8,Cerah,True,5000,4.7
+OJ00575,2025-06-23 22:11,Medan,Motor,1.7,8,Cerah,True,4000,4.9
+OJ00576,2025-06-23 22:14,Bandung,Motor,4.4,13,Cerah,True,9000,4.4
+OJ00577,2025-06-23 22:26,Jakarta,Mobil,2.7,11,Cerah,False,12000,4.5
+OJ00578,2025-06-23 23:35,Surabaya,Motor,2.8,14,Hujan,False,9000,
+OJ00579,2025-06-24 01:11,Jakarta,Mobil,7.9,28,Cerah,False,35500,4.4
+OJ00580,2025-06-24 01:21,Jakarta,Kirim Barang,5.6,17,Cerah,False,17000,4.8
+OJ00581,2025-06-24 02:32,Jakarta,Mobil,7.5,27,Cerah,False,34000,4.7
+OJ00582,2025-06-24 03:48,Surabaya,Motor,6.2,26,Hujan,False,19500,5.0
+OJ00583,2025-06-24 07:39,Bandung,Motor,2.2,11,Cerah,False,7000,5.0
+OJ00584,2025-06-24 07:56,Bandung,Mobil,3.4,21,Cerah,False,19000,4.8
+OJ00585,2025-06-24 08:08,Jakarta,Motor,7.4,30,Cerah,False,23000,4.7
+OJ00586,2025-06-24 08:28,Jakarta,Motor,2.2,13,Cerah,False,7000,4.6
+OJ00587,2025-06-24 08:33,Medan,Motor,15.8,60,Cerah,False,49500,4.6
+OJ00588,2025-06-24 08:53,Surabaya,Motor,4.4,22,Cerah,False,14000,4.6
+OJ00589,2025-06-24 14:04,Medan,Motor,2.7,10,Cerah,False,7000,
+OJ00590,2025-06-24 14:32,Surabaya,Mobil,5.4,19,Cerah,False,24500,5.0
+OJ00591,2025-06-24 14:53,Surabaya,Mobil,12.6,47,Hujan,False,71000,3.8
+OJ00592,2025-06-24 16:02,Jakarta,Mobil,4.4,16,Cerah,False,20000,4.9
+OJ00593,2025-06-24 18:12,Surabaya,Mobil,5.6,29,Cerah,True,25000,4.5
+OJ00594,2025-06-24 19:44,Jakarta,Mobil,6.1,28,Cerah,False,34500,5.0
+OJ00595,2025-06-24 21:33,Jakarta,Motor,9.9,28,Cerah,False,25000,4.4
+OJ00596,2025-06-24 22:12,Jakarta,Motor,11.4,29,Cerah,False,28500,4.7
+OJ00597,2025-06-24 22:24,Jakarta,Motor,22.8,52,Cerah,False,57000,4.1
+OJ00598,2025-06-24 22:28,Jakarta,Motor,4.6,16,Cerah,False,11500,5.0
+OJ00599,2025-06-25 00:44,Medan,Motor,7.5,21,Cerah,False,19000,4.6
+OJ00600,2025-06-25 00:53,Jakarta,Mobil,4.1,20,Hujan,False,23000,4.7
+OJ00601,2025-06-25 00:58,Bandung,Mobil,1.6,10,Cerah,False,9000,4.5
+OJ00602,2025-06-25 01:38,Medan,Motor,9.8,27,Cerah,False,24500,4.6
+OJ00603,2025-06-25 02:26,Surabaya,Motor,7.4,18,Cerah,False,18500,5.0
+OJ00604,2025-06-25 07:30,Surabaya,Mobil,10.3,48,Cerah,False,58000,4.3
+OJ00605,2025-06-25 09:13,Jakarta,Motor,5.5,17,Cerah,True,11000,4.3
+OJ00606,2025-06-25 09:33,Medan,Motor,3.1,13,Hujan,True,7500,5.0
+OJ00607,2025-06-25 09:47,Jakarta,Motor,2.2,10,Cerah,True,4500,4.8
+OJ00608,2025-06-25 10:29,Medan,Motor,9.6,21,Cerah,False,24000,
+OJ00609,2025-06-25 10:55,Jakarta,Motor,3.4,11,Cerah,False,8500,4.8
+OJ00610,2025-06-25 11:42,Jakarta,Motor,1.7,8,Cerah,False,5000,5.0
+OJ00611,2025-06-25 11:55,Medan,Motor,6.1,17,Cerah,False,15000,4.4
+OJ00612,2025-06-25 12:40,Medan,Motor,4.5,18,Cerah,False,11000,4.8
+OJ00613,2025-06-25 13:20,Jakarta,Kirim Barang,12.9,33,Cerah,False,38500,4.9
+OJ00614,2025-06-25 15:48,Bandung,Mobil,2.1,7,Cerah,False,9500,4.8
+OJ00615,2025-06-25 17:17,Surabaya,Motor,24.1,90,Cerah,True,60500,4.3
+OJ00616,2025-06-25 17:26,Jakarta,Motor,1.0,9,Cerah,True,5000,5.0
+OJ00617,2025-06-25 17:44,Jakarta,Motor,3.6,14,Cerah,False,11000,5.0
+OJ00618,2025-06-25 19:14,Jakarta,Mobil,7.7,49,Hujan,False,43500,4.4
+OJ00619,2025-06-25 20:50,Medan,Motor,6.6,16,Cerah,False,16500,4.7
+OJ00620,2025-06-25 21:00,Jakarta,Motor,4.4,15,Cerah,False,11000,4.6
+OJ00621,2025-06-25 21:20,Jakarta,Mobil,5.5,23,Cerah,False,25000,4.4
+OJ00622,2025-06-25 22:04,Surabaya,Motor,1.4,9,Cerah,True,4000,5.0
+OJ00623,2025-06-25 22:17,Surabaya,Mobil,7.3,24,Cerah,True,26500,4.6
+OJ00624,2025-06-25 22:56,Medan,Mobil,17.6,52,Cerah,True,63000,3.8
+OJ00625,2025-06-25 23:03,Bandung,Mobil,10.9,35,Cerah,True,39000,4.7
+OJ00626,2025-06-25 23:29,Jakarta,Mobil,8.6,26,Cerah,False,38500,4.7
+OJ00627,2025-06-26 02:06,Bandung,Mobil,3.6,15,Cerah,False,16000,4.8
+OJ00628,2025-06-26 02:29,Surabaya,Mobil,3.1,13,Cerah,False,14000,5.0
+OJ00629,2025-06-26 03:55,Bandung,Kirim Barang,1.1,6,Cerah,False,6000,4.7
+OJ00630,2025-06-26 03:59,Bandung,Kirim Barang,9.3,31,Hujan,True,28000,4.6
+OJ00631,2025-06-26 04:11,Bandung,Motor,3.2,10,Cerah,False,8000,4.1
+OJ00632,2025-06-26 04:24,Jakarta,Mobil,16.4,63,Hujan,False,92000,3.8
+OJ00633,2025-06-26 06:23,Surabaya,Mobil,3.0,17,Hujan,False,17000,4.6
+OJ00634,2025-06-26 06:25,Surabaya,Mobil,5.1,17,Cerah,False,23000,4.7
+OJ00635,2025-06-26 07:04,Surabaya,Motor,2.1,10,Cerah,False,6500,5.0
+OJ00636,2025-06-26 08:31,Bandung,Mobil,9.4,61,Hujan,False,53000,3.8
+OJ00637,2025-06-26 08:32,Bandung,Motor,3.0,16,Hujan,False,9500,4.3
+OJ00638,2025-06-26 08:45,Medan,Motor,16.6,63,Cerah,False,52000,3.7
+OJ00639,2025-06-26 12:12,Jakarta,Motor,4.7,18,Hujan,False,14500,4.2
+OJ00640,2025-06-26 12:36,Jakarta,Motor,16.5,40,Cerah,False,41000,4.4
+OJ00641,2025-06-26 13:14,Bandung,Mobil,2.5,8,Cerah,True,9000,4.4
+OJ00642,2025-06-26 13:38,Jakarta,Mobil,11.2,32,Cerah,True,40500,4.3
+OJ00643,2025-06-26 14:04,Medan,Motor,4.6,13,Cerah,True,9000,4.2
+OJ00644,2025-06-26 14:18,Medan,Motor,5.3,17,Cerah,False,13000,4.5
+OJ00645,2025-06-26 15:46,Surabaya,Motor,7.9,21,Cerah,True,16000,4.7
+OJ00646,2025-06-26 15:50,Surabaya,Motor,8.0,21,Cerah,False,20000,4.4
+OJ00647,2025-06-26 16:42,Bandung,Motor,9.2,30,Hujan,False,29000,4.5
+OJ00648,2025-06-26 17:13,Bandung,Mobil,3.9,21,Cerah,False,22000,4.9
+OJ00649,2025-06-26 18:33,Jakarta,Kirim Barang,3.7,15,Cerah,False,14000,5.0
+OJ00650,2025-06-26 18:51,Bandung,Motor,3.9,21,Cerah,False,12000,3.9
+OJ00651,2025-06-26 19:50,Surabaya,Mobil,2.8,16,Cerah,False,16000,4.3
+OJ00652,2025-06-26 20:35,Jakarta,Motor,6.0,23,Hujan,False,19000,4.8
+OJ00653,2025-06-26 21:47,Surabaya,Motor,15.3,48,Hujan,True,38500,4.4
+OJ00654,2025-06-26 22:01,Medan,Motor,8.8,26,Cerah,False,22000,5.0
+OJ00655,2025-06-26 23:09,Jakarta,Motor,3.8,11,Cerah,True,7500,4.5
+OJ00656,2025-06-26 23:57,Jakarta,Motor,2.7,11,Cerah,False,7000,
+OJ00657,2025-06-27 03:48,Jakarta,Motor,5.3,15,Cerah,False,13000,4.6
+OJ00658,2025-06-27 04:33,Jakarta,Mobil,5.5,28,Hujan,False,31000,4.5
+OJ00659,2025-06-27 07:25,Surabaya,Motor,4.1,21,Hujan,False,13000,4.3
+OJ00660,2025-06-27 07:51,Jakarta,Motor,6.5,27,Cerah,False,20500,4.9
+OJ00661,2025-06-27 07:52,Surabaya,Motor,10.5,42,Cerah,False,33000,4.4
+OJ00662,2025-06-27 08:20,Bandung,Mobil,10.8,54,Cerah,False,61000,4.1
+OJ00663,2025-06-27 08:56,Medan,Motor,2.9,17,Hujan,False,9000,4.3
+OJ00664,2025-06-27 08:56,Jakarta,Motor,4.4,20,Cerah,False,14000,4.1
+OJ00665,2025-06-27 11:04,Jakarta,Motor,15.3,36,Cerah,False,38000,4.4
+OJ00666,2025-06-27 11:20,Bandung,Motor,8.7,22,Cerah,True,17500,5.0
+OJ00667,2025-06-27 11:23,Bandung,Motor,9.1,22,Cerah,False,23000,4.5
+OJ00668,2025-06-27 12:12,Bandung,Motor,1.8,9,Cerah,False,5000,5.0
+OJ00669,2025-06-27 13:24,Jakarta,Motor,4.8,12,Cerah,True,9500,4.4
+OJ00670,2025-06-27 14:34,Bandung,Mobil,9.9,34,Cerah,False,44500,5.0
+OJ00671,2025-06-27 15:09,Surabaya,Kirim Barang,9.7,29,Hujan,False,36500,4.7
+OJ00672,2025-06-27 16:18,Jakarta,Motor,5.5,15,Cerah,True,11000,5.0
+OJ00673,2025-06-27 17:30,Surabaya,Motor,2.4,12,Cerah,False,7500,4.6
+OJ00674,2025-06-27 18:28,Surabaya,Motor,4.5,21,Cerah,False,14000,4.5
+OJ00675,2025-06-27 18:33,Jakarta,Motor,4.2,16,Cerah,False,13000,4.6
+OJ00676,2025-06-27 18:45,Jakarta,Motor,4.9,22,Cerah,False,15500,4.7
+OJ00677,2025-06-27 18:55,Jakarta,Mobil,4.8,32,Hujan,False,27000,4.3
+OJ00678,2025-06-27 19:12,Surabaya,Mobil,1.8,14,Cerah,False,11000,4.8
+OJ00679,2025-06-27 19:46,Surabaya,Motor,3.4,18,Cerah,True,8500,4.4
+OJ00680,2025-06-27 19:57,Surabaya,Motor,9.1,37,Cerah,False,28500,4.4
+OJ00681,2025-06-27 20:37,Surabaya,Motor,5.6,19,Hujan,True,14000,4.8
+OJ00682,2025-06-27 21:22,Jakarta,Motor,14.8,38,Cerah,False,37000,4.3
+OJ00683,2025-06-27 21:41,Jakarta,Motor,5.0,16,Cerah,False,12500,5.0
+OJ00684,2025-06-28 00:29,Jakarta,Mobil,11.7,34,Cerah,True,42000,4.6
+OJ00685,2025-06-28 01:10,Medan,Mobil,2.7,9,Cerah,True,9500,5.0
+OJ00686,2025-06-28 01:38,Medan,Motor,5.8,20,Hujan,True,14500,4.4
+OJ00687,2025-06-28 04:27,Surabaya,Motor,1.4,10,Cerah,False,5000,4.5
+OJ00688,2025-06-28 04:53,Bandung,Mobil,15.8,47,Cerah,False,71000,4.1
+OJ00689,2025-06-28 05:38,Surabaya,Mobil,11.4,33,Cerah,True,41000,4.6
+OJ00690,2025-06-28 06:11,Medan,Kirim Barang,9.8,23,Cerah,True,23500,4.7
+OJ00691,2025-06-28 07:17,Medan,Motor,7.9,43,Hujan,True,19500,5.0
+OJ00692,2025-06-28 07:46,Jakarta,Motor,9.9,38,Cerah,False,31000,4.9
+OJ00693,2025-06-28 08:03,Bandung,Motor,8.7,46,Hujan,False,27000,3.9
+OJ00694,2025-06-28 10:38,Medan,Mobil,9.3,30,Cerah,False,42000,4.8
+OJ00695,2025-06-28 11:34,Jakarta,Motor,4.8,20,Hujan,False,15000,5.0
+OJ00696,2025-06-28 13:34,Jakarta,Motor,4.6,11,Cerah,False,11500,5.0
+OJ00697,2025-06-28 15:21,Jakarta,Motor,7.8,24,Cerah,True,15500,5.0
+OJ00698,2025-06-28 18:55,Jakarta,Motor,3.8,21,Cerah,True,9500,4.4
+OJ00699,2025-06-28 18:59,Bandung,Mobil,2.4,19,Cerah,True,11000,5.0
+OJ00700,2025-06-28 18:59,Bandung,Motor,5.9,25,Cerah,False,18500,4.7
+OJ00701,2025-06-28 19:53,Surabaya,Motor,3.0,14,Cerah,True,7500,4.1
+OJ00702,2025-06-28 20:23,Medan,Motor,13.0,31,Cerah,True,26000,4.7
+OJ00703,2025-06-28 20:50,Jakarta,Motor,12.2,29,Cerah,False,30500,5.0
+OJ00704,2025-06-28 20:54,Jakarta,Motor,5.3,18,Hujan,False,16500,4.6
+OJ00705,2025-06-28 21:53,Surabaya,Motor,6.8,16,Cerah,True,13500,4.7
+OJ00706,2025-06-29 00:10,Bandung,Mobil,4.4,15,Cerah,False,20000,4.8
+OJ00707,2025-06-29 00:33,Surabaya,Motor,4.4,11,Cerah,False,11000,4.9
+OJ00708,2025-06-29 02:22,Medan,Motor,9.4,34,Hujan,False,29500,5.0
+OJ00709,2025-06-29 04:53,Jakarta,Motor,6.9,22,Cerah,False,17000,4.7
+OJ00710,2025-06-29 07:08,Bandung,Mobil,11.6,55,Cerah,False,65000,4.9
+OJ00711,2025-06-29 09:39,Medan,Motor,6.1,18,Cerah,True,12000,5.0
+OJ00712,2025-06-29 10:13,Jakarta,Motor,5.2,17,Cerah,True,10500,4.5
+OJ00713,2025-06-29 11:40,Bandung,Motor,10.9,29,Cerah,False,27000,4.5
+OJ00714,2025-06-29 13:24,Surabaya,Mobil,8.9,27,Cerah,False,40000,4.9
+OJ00715,2025-06-29 14:13,Surabaya,Motor,1.3,8,Cerah,True,4000,5.0
+OJ00716,2025-06-29 15:02,Bandung,Kirim Barang,7.7,26,Cerah,True,18500,4.3
+OJ00717,2025-06-29 15:24,Surabaya,Motor,1.1,9,Cerah,False,5000,4.5
+OJ00718,2025-06-29 15:44,Jakarta,Motor,7.2,23,Cerah,False,18000,4.6
+OJ00719,2025-06-29 17:40,Surabaya,Kirim Barang,4.1,18,Cerah,False,15500,4.7
+OJ00720,2025-06-29 20:22,Jakarta,Motor,0.7,8,Cerah,False,5000,5.0
+OJ00721,2025-06-29 21:12,Bandung,Motor,10.1,24,Cerah,False,25000,4.9
+OJ00722,2025-06-29 21:50,Jakarta,Motor,2.5,6,Cerah,True,5000,
+OJ00723,2025-06-29 22:06,Surabaya,Mobil,7.2,22,Cerah,True,26000,4.5
+OJ00724,2025-06-29 23:14,Surabaya,Motor,5.4,18,Cerah,False,13500,5.0
+OJ00725,2025-06-30 01:22,Bandung,Motor,4.4,10,Cerah,False,11000,4.6
+OJ00726,2025-06-30 01:41,Surabaya,Motor,5.9,18,Cerah,True,12000,4.5
+OJ00727,2025-06-30 01:53,Bandung,Motor,1.9,7,Cerah,False,5000,4.5
+OJ00728,2025-06-30 02:09,Jakarta,Motor,2.9,11,Cerah,False,7000,4.9
+OJ00729,2025-06-30 03:22,Bandung,Mobil,8.0,26,Cerah,True,29000,5.0
+OJ00730,2025-06-30 04:49,Surabaya,Motor,13.0,31,Cerah,False,32500,4.4
+OJ00731,2025-06-30 05:35,Jakarta,Kirim Barang,9.8,25,Cerah,False,29500,4.2
+OJ00732,2025-06-30 08:49,Bandung,Kirim Barang,1.9,15,Cerah,False,7500,4.7
+OJ00733,2025-06-30 10:03,Jakarta,Mobil,8.7,25,Cerah,True,31000,4.7
+OJ00734,2025-06-30 10:13,Jakarta,Motor,4.8,18,Cerah,False,12000,4.8
+OJ00735,2025-06-30 12:30,Surabaya,Motor,7.0,22,Cerah,True,14000,4.4
+OJ00736,2025-06-30 13:10,Jakarta,Mobil,10.6,34,Cerah,False,47500,4.5
+OJ00737,2025-06-30 13:39,Surabaya,Mobil,2.7,13,Cerah,False,12000,4.3
+OJ00738,2025-06-30 14:03,Medan,Mobil,4.5,22,Hujan,True,20500,4.9
+OJ00739,2025-06-30 14:41,Jakarta,Mobil,10.0,41,Hujan,True,45000,4.8
+OJ00740,2025-06-30 15:54,Bandung,Mobil,4.4,16,Cerah,True,16000,4.4
+OJ00741,2025-06-30 17:54,Surabaya,Mobil,6.0,32,Cerah,True,27000,4.9
+OJ00742,2025-06-30 18:59,Jakarta,Motor,4.4,22,Cerah,False,14000,4.9
+OJ00743,2025-06-30 20:39,Bandung,Mobil,4.2,13,Cerah,False,19000,
+OJ00744,2025-06-30 20:50,Jakarta,Motor,5.4,15,Cerah,True,11000,4.8
+OJ00745,2025-06-30 21:03,Jakarta,Mobil,9.2,38,Hujan,False,52000,4.9
+OJ00746,2025-06-30 22:42,Bandung,Motor,5.2,13,Cerah,True,10500,4.8
+OJ00747,2025-06-30 22:46,Medan,Motor,3.7,15,Cerah,True,7000,4.9
+OJ00748,2025-06-30 23:03,Medan,Motor,2.5,11,Cerah,True,5000,4.5
+OJ00749,2025-07-01 00:30,Bandung,Mobil,5.3,19,Cerah,False,24000,4.3
+OJ00750,2025-07-01 01:27,Jakarta,Motor,4.3,13,Cerah,False,11000,4.9
+OJ00751,2025-07-01 02:14,Surabaya,Kirim Barang,2.5,8,Hujan,True,7500,4.7
+OJ00752,2025-07-01 03:43,Jakarta,Motor,5.9,18,Hujan,True,15000,4.5
+OJ00753,2025-07-01 04:24,Medan,Motor,3.4,10,Cerah,False,8500,4.3
+OJ00754,2025-07-01 05:07,Jakarta,Motor,4.8,14,Cerah,False,12000,
+OJ00755,2025-07-01 05:13,Medan,Kirim Barang,8.8,22,Cerah,False,26500,4.2
+OJ00756,2025-07-01 05:31,Jakarta,Kirim Barang,2.0,9,Cerah,False,6000,4.5
+OJ00757,2025-07-01 05:40,Bandung,Motor,7.5,25,Hujan,False,23500,4.5
+OJ00758,2025-07-01 05:43,Jakarta,Motor,4.9,14,Cerah,True,9500,4.4
+OJ00759,2025-07-01 06:39,Medan,Motor,5.9,21,Cerah,False,15000,5.0
+OJ00760,2025-07-01 07:29,Medan,Kirim Barang,8.1,33,Cerah,False,30500,4.5
+OJ00761,2025-07-01 07:35,Surabaya,Motor,9.4,50,Hujan,False,29500,4.3
+OJ00762,2025-07-01 10:05,Surabaya,Mobil,6.0,18,Cerah,True,21500,4.4
+OJ00763,2025-07-01 10:15,Jakarta,Motor,8.3,23,Cerah,True,17000,5.0
+OJ00764,2025-07-01 10:29,Surabaya,Motor,3.8,14,Cerah,False,9500,5.0
+OJ00765,2025-07-01 11:27,Jakarta,Motor,6.3,17,Cerah,False,16000,4.8
+OJ00766,2025-07-01 12:31,Surabaya,Motor,6.6,25,Hujan,False,20500,4.6
+OJ00767,2025-07-01 18:13,Surabaya,Motor,8.7,38,Cerah,True,21500,4.4
+OJ00768,2025-07-01 18:31,Jakarta,Kirim Barang,9.2,38,Cerah,True,27500,5.0
+OJ00769,2025-07-01 19:16,Jakarta,Motor,7.5,30,Cerah,True,19000,5.0
+OJ00770,2025-07-01 22:12,Jakarta,Motor,2.1,14,Cerah,False,5000,4.5
+OJ00771,2025-07-01 22:59,Jakarta,Motor,7.5,19,Cerah,False,19000,4.7
+OJ00772,2025-07-01 23:11,Jakarta,Kirim Barang,6.2,19,Cerah,False,18500,4.2
+OJ00773,2025-07-01 23:58,Surabaya,Motor,5.0,16,Cerah,False,12500,5.0
+OJ00774,2025-07-02 00:41,Medan,Mobil,3.2,13,Cerah,True,11500,4.6
+OJ00775,2025-07-02 00:48,Surabaya,Motor,4.9,16,Cerah,False,12000,4.4
+OJ00776,2025-07-02 01:50,Medan,Motor,3.7,12,Cerah,False,9000,4.8
+OJ00777,2025-07-02 02:05,Surabaya,Motor,2.1,10,Cerah,True,4000,4.8
+OJ00778,2025-07-02 02:17,Bandung,Motor,1.8,9,Cerah,True,4000,5.0
+OJ00779,2025-07-02 02:38,Jakarta,Motor,3.0,11,Cerah,True,6000,5.0
+OJ00780,2025-07-02 02:39,Jakarta,Motor,10.8,29,Cerah,False,27000,5.0
+OJ00781,2025-07-02 02:44,Medan,Motor,3.9,13,Hujan,False,12000,4.5
+OJ00782,2025-07-02 04:41,Bandung,Mobil,5.7,19,Cerah,True,20500,4.7
+OJ00783,2025-07-02 05:04,Bandung,Motor,3.3,15,Hujan,True,8500,5.0
+OJ00784,2025-07-02 05:47,Jakarta,Motor,2.7,10,Hujan,False,8500,5.0
+OJ00785,2025-07-02 05:51,Jakarta,Motor,3.3,9,Cerah,False,8000,5.0
+OJ00786,2025-07-02 06:42,Jakarta,Motor,3.0,13,Cerah,False,7500,4.4
+OJ00787,2025-07-02 07:40,Surabaya,Motor,3.2,15,Cerah,False,10000,5.0
+OJ00788,2025-07-02 07:41,Surabaya,Motor,6.1,27,Cerah,True,15000,4.8
+OJ00789,2025-07-02 07:49,Jakarta,Mobil,6.7,36,Cerah,False,37500,5.0
+OJ00790,2025-07-02 08:49,Jakarta,Motor,6.6,27,Cerah,False,20500,5.0
+OJ00791,2025-07-02 10:34,Jakarta,Kirim Barang,19.0,44,Cerah,False,57000,4.2
+OJ00792,2025-07-02 11:02,Surabaya,Mobil,7.8,26,Cerah,True,28000,5.0
+OJ00793,2025-07-02 12:54,Bandung,Mobil,9.3,40,Hujan,True,42000,4.6
+OJ00794,2025-07-02 14:18,Medan,Mobil,10.0,32,Cerah,False,45000,4.4
+OJ00795,2025-07-02 14:49,Jakarta,Mobil,3.4,16,Cerah,True,12500,4.9
+OJ00796,2025-07-02 14:55,Jakarta,Motor,2.7,13,Cerah,True,5500,5.0
+OJ00797,2025-07-02 16:45,Medan,Motor,2.4,12,Cerah,False,6000,4.8
+OJ00798,2025-07-02 17:01,Surabaya,Mobil,6.1,32,Cerah,False,34500,4.4
+OJ00799,2025-07-02 17:40,Medan,Motor,3.4,18,Cerah,False,10500,5.0
+OJ00800,2025-07-02 17:42,Jakarta,Motor,1.4,9,Cerah,False,6000,4.9
+OJ00801,2025-07-02 18:19,Surabaya,Motor,2.2,7,Cerah,False,7000,5.0
+OJ00802,2025-07-02 18:28,Surabaya,Motor,8.9,36,Cerah,False,28000,4.8
+OJ00803,2025-07-02 19:08,Jakarta,Mobil,2.9,14,Cerah,False,16500,4.2
+OJ00804,2025-07-02 20:51,Medan,Motor,4.4,15,Hujan,False,14000,4.7
+OJ00805,2025-07-02 21:27,Medan,Mobil,11.6,36,Cerah,False,52000,5.0
+OJ00806,2025-07-02 22:04,Medan,Motor,6.0,17,Cerah,True,12000,5.0
+OJ00807,2025-07-02 22:39,Jakarta,Motor,7.4,26,Hujan,False,23000,4.9
+OJ00808,2025-07-02 23:33,Jakarta,Motor,3.4,6,Cerah,False,8500,4.1
+OJ00809,2025-07-02 23:46,Bandung,Mobil,9.4,30,Cerah,False,42500,4.5
+OJ00810,2025-07-03 00:59,Bandung,Motor,4.4,12,Cerah,False,11000,5.0
+OJ00811,2025-07-03 02:42,Surabaya,Motor,5.3,12,Cerah,False,13000,4.5
+OJ00812,2025-07-03 02:56,Bandung,Motor,6.0,14,Cerah,False,15000,4.8
+OJ00813,2025-07-03 06:05,Jakarta,Motor,10.0,28,Cerah,False,25000,5.0
+OJ00814,2025-07-03 06:26,Medan,Motor,10.1,29,Cerah,False,25000,4.8
+OJ00815,2025-07-03 07:26,Surabaya,Mobil,6.4,34,Cerah,False,36000,4.5
+OJ00816,2025-07-03 10:28,Medan,Mobil,5.0,23,Hujan,True,22500,4.5
+OJ00817,2025-07-03 10:34,Medan,Kirim Barang,5.7,21,Hujan,True,17000,4.9
+OJ00818,2025-07-03 11:00,Bandung,Kirim Barang,1.5,7,Hujan,True,6000,4.9
+OJ00819,2025-07-03 11:11,Jakarta,Motor,9.4,29,Hujan,False,29500,4.7
+OJ00820,2025-07-03 11:37,Bandung,Motor,0.9,6,Cerah,False,5000,5.0
+OJ00821,2025-07-03 13:36,Medan,Mobil,4.7,21,Hujan,False,26500,5.0
+OJ00822,2025-07-03 14:35,Bandung,Mobil,3.8,17,Cerah,True,13500,4.4
+OJ00823,2025-07-03 15:39,Jakarta,Mobil,8.4,37,Hujan,False,47000,5.0
+OJ00824,2025-07-03 15:45,Surabaya,Motor,16.5,39,Cerah,False,41000,4.9
+OJ00825,2025-07-03 15:58,Bandung,Motor,3.8,11,Cerah,False,9500,4.9
+OJ00826,2025-07-03 16:01,Jakarta,Kirim Barang,9.2,20,Cerah,False,27500,5.0
+OJ00827,2025-07-03 17:13,Bandung,Motor,9.8,51,Hujan,True,24500,
+OJ00828,2025-07-03 18:30,Medan,Mobil,2.6,16,Cerah,True,11500,5.0
+OJ00829,2025-07-03 19:01,Surabaya,Mobil,4.0,24,Cerah,False,22500,4.1
+OJ00830,2025-07-03 19:38,Bandung,Motor,3.5,20,Hujan,False,11000,4.9
+OJ00831,2025-07-03 19:39,Jakarta,Mobil,2.7,15,Cerah,True,12000,4.8
+OJ00832,2025-07-03 20:53,Surabaya,Motor,11.8,40,Hujan,False,37000,4.8
+OJ00833,2025-07-04 00:10,Medan,Kirim Barang,6.9,22,Cerah,True,16500,5.0
+OJ00834,2025-07-04 03:58,Jakarta,Motor,7.5,24,Hujan,False,23500,5.0
+OJ00835,2025-07-04 06:27,Jakarta,Motor,2.8,10,Cerah,True,5500,
+OJ00836,2025-07-04 06:45,Surabaya,Mobil,5.5,25,Hujan,True,25000,4.5
+OJ00837,2025-07-04 07:26,Jakarta,Motor,8.3,45,Hujan,False,26000,
+OJ00838,2025-07-04 08:16,Bandung,Motor,4.8,28,Hujan,False,15000,5.0
+OJ00839,2025-07-04 08:18,Bandung,Motor,10.9,45,Cerah,True,27000,4.6
+OJ00840,2025-07-04 08:55,Bandung,Motor,6.0,34,Hujan,False,19000,4.9
+OJ00841,2025-07-04 11:35,Bandung,Mobil,5.3,21,Cerah,True,19000,5.0
+OJ00842,2025-07-04 12:14,Jakarta,Motor,2.8,9,Cerah,False,7000,4.6
+OJ00843,2025-07-04 12:17,Medan,Motor,11.6,28,Cerah,False,29000,4.3
+OJ00844,2025-07-04 12:26,Bandung,Kirim Barang,5.0,16,Cerah,True,12000,4.6
+OJ00845,2025-07-04 13:07,Surabaya,Kirim Barang,11.4,31,Cerah,True,27000,5.0
+OJ00846,2025-07-04 15:02,Jakarta,Kirim Barang,5.0,15,Cerah,False,15000,5.0
+OJ00847,2025-07-04 16:23,Surabaya,Mobil,10.7,33,Cerah,False,48000,4.7
+OJ00848,2025-07-04 17:02,Jakarta,Motor,6.9,28,Cerah,False,21500,5.0
+OJ00849,2025-07-04 18:59,Medan,Motor,9.3,33,Cerah,False,29000,4.8
+OJ00850,2025-07-04 19:35,Bandung,Kirim Barang,5.9,25,Cerah,False,22000,4.4
+OJ00851,2025-07-04 20:49,Surabaya,Motor,7.2,22,Cerah,True,14500,5.0
+OJ00852,2025-07-04 20:54,Surabaya,Motor,14.5,37,Cerah,True,29000,5.0
+OJ00853,2025-07-04 21:17,Jakarta,Mobil,2.7,13,Cerah,False,12000,4.8
+OJ00854,2025-07-04 22:41,Jakarta,Motor,5.8,17,Cerah,True,11500,4.6
+OJ00855,2025-07-04 23:26,Jakarta,Kirim Barang,11.2,28,Cerah,False,33500,5.0
+OJ00856,2025-07-05 00:02,Surabaya,Mobil,11.6,36,Cerah,False,52000,4.6
+OJ00857,2025-07-05 01:08,Jakarta,Mobil,4.9,17,Cerah,False,22000,4.9
+OJ00858,2025-07-05 01:50,Jakarta,Mobil,1.5,10,Cerah,True,7000,
+OJ00859,2025-07-05 01:55,Jakarta,Motor,10.6,24,Cerah,True,21000,4.4
+OJ00860,2025-07-05 02:01,Surabaya,Motor,4.3,18,Hujan,False,13500,5.0
+OJ00861,2025-07-05 02:51,Bandung,Motor,4.2,12,Cerah,False,10500,4.6
+OJ00862,2025-07-05 03:31,Surabaya,Kirim Barang,12.6,34,Cerah,True,30500,4.6
+OJ00863,2025-07-05 03:57,Surabaya,Motor,3.8,9,Cerah,True,7500,5.0
+OJ00864,2025-07-05 05:16,Jakarta,Mobil,8.3,200,Cerah,False,37500,4.4
+OJ00865,2025-07-05 08:18,Jakarta,Motor,9.0,49,Hujan,True,22500,4.1
+OJ00866,2025-07-05 11:02,Bandung,Motor,1.0,5,Cerah,True,4000,5.0
+OJ00867,2025-07-05 11:51,Jakarta,Motor,5.8,15,Cerah,False,14500,4.9
+OJ00868,2025-07-05 12:00,Jakarta,Motor,5.9,16,Cerah,False,15000,4.1
+OJ00869,2025-07-05 13:08,Jakarta,Mobil,8.3,28,Cerah,True,30000,4.0
+OJ00870,2025-07-05 13:28,Surabaya,Motor,5.3,16,Cerah,False,13000,5.0
+OJ00871,2025-07-05 13:57,Jakarta,Motor,5.7,18,Cerah,True,11000,4.8
+OJ00872,2025-07-05 14:12,Medan,Motor,5.9,17,Cerah,True,12000,4.7
+OJ00873,2025-07-05 15:38,Bandung,Kirim Barang,6.0,12,Cerah,True,14500,5.0
+OJ00874,2025-07-05 16:00,Jakarta,Mobil,14.3,42,Cerah,True,51500,5.0
+OJ00875,2025-07-05 16:14,Jakarta,Kirim Barang,5.5,18,Cerah,True,13000,4.3
+OJ00876,2025-07-05 16:41,Jakarta,Motor,6.5,20,Cerah,False,16000,4.8
+OJ00877,2025-07-05 18:44,Bandung,Motor,2.9,16,Cerah,True,7000,5.0
+OJ00878,2025-07-05 18:51,Jakarta,Motor,2.0,12,Cerah,False,6000,4.7
+OJ00879,2025-07-05 21:53,Bandung,Motor,8.3,21,Cerah,False,21000,4.5
+OJ00880,2025-07-05 22:18,Jakarta,Motor,2.6,11,Cerah,False,6500,4.3
+OJ00881,2025-07-05 23:02,Jakarta,Motor,6.9,17,Cerah,False,17000,4.9
+OJ00882,2025-07-05 23:18,Surabaya,Mobil,16.6,52,Cerah,True,59500,4.1
+OJ00883,2025-07-05 23:41,Surabaya,Kirim Barang,5.9,18,Cerah,False,17500,5.0
+OJ00884,2025-07-06 00:23,Jakarta,Motor,5.4,13,Cerah,False,13500,4.3
+OJ00885,2025-07-06 00:41,Medan,Motor,2.8,9,Cerah,True,5500,4.0
+OJ00886,2025-07-06 02:06,Surabaya,Motor,3.0,10,Cerah,False,7500,5.0
+OJ00887,2025-07-06 02:18,Medan,Kirim Barang,6.2,15,Cerah,False,18500,5.0
+OJ00888,2025-07-06 04:17,Bandung,Motor,6.7,20,Cerah,False,17000,4.8
+OJ00889,2025-07-06 05:29,Surabaya,Motor,4.2,18,Hujan,True,10500,4.6
+OJ00890,2025-07-06 06:05,Surabaya,Motor,3.3,11,Cerah,True,6500,4.4
+OJ00891,2025-07-06 06:14,Jakarta,Motor,7.7,20,Cerah,False,19000,4.5
+OJ00892,2025-07-06 10:29,Jakarta,Kirim Barang,3.2,11,Cerah,False,9500,5.0
+OJ00893,2025-07-06 10:50,Surabaya,Motor,6.4,17,Cerah,False,16000,4.3
+OJ00894,2025-07-06 11:05,Bandung,Motor,5.7,15,Cerah,True,11000,4.8
+OJ00895,2025-07-06 11:52,Surabaya,Motor,2.9,13,Cerah,False,7000,4.5
+OJ00896,2025-07-06 14:03,Jakarta,Motor,3.6,13,Cerah,False,9000,4.9
+OJ00897,2025-07-06 15:31,Bandung,Motor,3.1,9,Cerah,False,8000,4.3
+OJ00898,2025-07-06 16:27,Medan,Kirim Barang,13.8,34,Cerah,False,41500,4.4
+OJ00899,2025-07-06 17:45,Jakarta,Mobil,7.4,38,Cerah,False,41500,4.7
+OJ00900,2025-07-06 22:17,Jakarta,Motor,6.2,20,Cerah,False,15500,4.7
+OJ00901,2025-07-06 23:31,Surabaya,Motor,7.8,22,Cerah,False,19500,5.0
+OJ00902,2025-07-07 00:02,Jakarta,Mobil,1.9,11,Cerah,True,7000,4.2
+OJ00903,2025-07-07 00:25,Bandung,Kirim Barang,3.1,8,Cerah,False,9500,4.1
+OJ00904,2025-07-07 02:57,Surabaya,Motor,7.4,25,Hujan,False,23000,4.1
+OJ00905,2025-07-07 03:55,Jakarta,Kirim Barang,11.7,39,Hujan,False,44000,5.0
+OJ00906,2025-07-07 04:32,Jakarta,Kirim Barang,7.3,21,Cerah,False,22000,4.7
+OJ00907,2025-07-07 06:50,Jakarta,Motor,5.1,20,Hujan,False,16000,4.8
+OJ00908,2025-07-07 09:01,Jakarta,Mobil,10.4,40,Hujan,False,58500,
+OJ00909,2025-07-07 09:42,Bandung,Motor,6.8,17,Cerah,True,13500,4.7
+OJ00910,2025-07-07 10:42,Surabaya,Mobil,7.5,27,Cerah,False,34000,4.0
+OJ00911,2025-07-07 11:33,Surabaya,Motor,6.9,19,Cerah,False,17000,4.9
+OJ00912,2025-07-07 11:48,Jakarta,Kirim Barang,3.9,15,Cerah,False,11500,4.1
+OJ00913,2025-07-07 13:38,Jakarta,Motor,11.2,28,Cerah,False,28000,4.2
+OJ00914,2025-07-07 14:26,Jakarta,Motor,9.8,20,Cerah,True,19500,4.6
+OJ00915,2025-07-07 15:31,Medan,Motor,2.8,11,Cerah,False,7000,
+OJ00916,2025-07-07 16:00,Jakarta,Mobil,9.5,31,Cerah,False,43000,4.4
+OJ00917,2025-07-07 16:04,Jakarta,Mobil,2.5,11,Cerah,False,11000,4.4
+OJ00918,2025-07-07 16:56,Jakarta,Motor,7.2,15,Cerah,False,18000,4.9
+OJ00919,2025-07-07 18:44,Bandung,Motor,4.5,21,Cerah,True,11000,5.0
+OJ00920,2025-07-07 21:44,Jakarta,Mobil,4.1,16,Cerah,False,18500,4.8
+OJ00921,2025-07-07 22:10,Bandung,Motor,3.3,15,Hujan,True,8500,4.6
+OJ00922,2025-07-07 22:44,Jakarta,Motor,13.6,29,Cerah,False,34000,4.9
+OJ00923,2025-07-07 23:23,Surabaya,Motor,3.6,11,Cerah,True,7000,5.0
+OJ00924,2025-07-08 01:11,Jakarta,Mobil,3.8,19,Hujan,True,17000,4.2
+OJ00925,2025-07-08 01:28,Bandung,Kirim Barang,2.6,15,Hujan,False,10000,4.8
+OJ00926,2025-07-08 01:59,Bandung,Motor,5.2,16,Cerah,True,10500,4.5
+OJ00927,2025-07-08 02:07,Medan,Motor,5.9,17,Cerah,False,15000,4.9
+OJ00928,2025-07-08 04:05,Medan,Motor,5.5,21,Hujan,False,17000,5.0
+OJ00929,2025-07-08 07:12,Jakarta,Mobil,5.4,35,Hujan,True,24500,4.7
+OJ00930,2025-07-08 07:31,Surabaya,Mobil,8.2,50,Hujan,False,46000,4.0
+OJ00931,2025-07-08 08:11,Jakarta,Mobil,4.9,32,Hujan,True,22000,4.1
+OJ00932,2025-07-08 12:03,Jakarta,Motor,1.3,5,Cerah,False,5000,4.8
+OJ00933,2025-07-08 12:17,Jakarta,Mobil,4.7,15,Cerah,False,21000,4.6
+OJ00934,2025-07-08 12:50,Jakarta,Motor,10.1,26,Cerah,True,20000,4.9
+OJ00935,2025-07-08 13:53,Medan,Motor,3.5,10,Cerah,False,9000,4.8
+OJ00936,2025-07-08 13:55,Surabaya,Motor,4.7,12,Cerah,False,12000,4.5
+OJ00937,2025-07-08 13:57,Jakarta,Mobil,2.7,7,Cerah,False,12000,4.5
+OJ00938,2025-07-08 14:29,Jakarta,Motor,5.7,17,Cerah,False,14000,4.9
+OJ00939,2025-07-08 15:27,Jakarta,Motor,2.5,13,Hujan,False,8000,4.9
+OJ00940,2025-07-08 17:16,Bandung,Motor,12.2,46,Cerah,False,38000,4.2
+OJ00941,2025-07-08 17:22,Jakarta,Motor,3.0,15,Cerah,False,9500,4.3
+OJ00942,2025-07-08 17:23,Medan,Motor,8.7,36,Cerah,False,27000,5.0
+OJ00943,2025-07-08 19:01,Medan,Mobil,4.5,31,Hujan,False,25500,5.0
+OJ00944,2025-07-08 20:14,Jakarta,Motor,5.6,16,Cerah,True,11000,5.0
+OJ00945,2025-07-08 21:20,Bandung,Mobil,13.6,43,Cerah,False,61000,4.2
+OJ00946,2025-07-08 21:44,Jakarta,Mobil,17.0,51,Cerah,True,61000,4.4
+OJ00947,2025-07-08 22:18,Surabaya,Motor,2.5,13,Cerah,False,6000,4.6
+OJ00948,2025-07-08 22:28,Bandung,Mobil,4.3,20,Cerah,False,19500,4.7
+OJ00949,2025-07-08 23:25,Surabaya,Mobil,2.6,14,Cerah,False,11500,4.7
+OJ00950,2025-07-08 23:49,Jakarta,Motor,7.8,22,Cerah,True,15500,5.0
+OJ00951,2025-07-09 03:51,Medan,Motor,3.8,15,Hujan,False,12000,
+OJ00952,2025-07-09 05:01,Jakarta,Kirim Barang,5.6,17,Cerah,False,17000,4.7
+OJ00953,2025-07-09 05:08,Bandung,Motor,4.7,12,Cerah,False,12000,4.8
+OJ00954,2025-07-09 05:49,Surabaya,Mobil,2.9,15,Cerah,True,10500,4.9
+OJ00955,2025-07-09 06:45,Jakarta,Motor,16.6,52,Hujan,True,41500,3.7
+OJ00956,2025-07-09 07:40,Jakarta,Mobil,9.2,48,Cerah,False,52000,4.2
+OJ00957,2025-07-09 09:29,Surabaya,Mobil,6.4,28,Hujan,False,36000,4.8
+OJ00958,2025-07-09 10:24,Medan,Mobil,7.3,22,Cerah,False,33000,4.9
+OJ00959,2025-07-09 11:39,Surabaya,Mobil,11.9,45,Hujan,True,53500,4.7
+OJ00960,2025-07-09 13:19,Surabaya,Motor,6.6,20,Cerah,True,13000,4.6
+OJ00961,2025-07-09 15:21,Surabaya,Mobil,7.3,29,Hujan,False,41000,
+OJ00962,2025-07-09 15:23,Jakarta,Mobil,7.0,23,Cerah,False,31500,4.5
+OJ00963,2025-07-09 15:27,Medan,Mobil,2.2,13,Cerah,False,10000,4.7
+OJ00964,2025-07-09 15:59,Medan,Kirim Barang,4.7,12,Cerah,False,14000,4.3
+OJ00965,2025-07-09 16:05,Surabaya,Motor,5.2,14,Cerah,True,10500,5.0
+OJ00966,2025-07-09 16:14,Bandung,Motor,10.0,24,Cerah,False,25000,4.5
+OJ00967,2025-07-09 16:24,Bandung,Mobil,7.4,30,Hujan,True,33000,4.3
+OJ00968,2025-07-09 16:30,Jakarta,Kirim Barang,9.9,25,Cerah,False,29500,4.9
+OJ00969,2025-07-09 16:32,Surabaya,Mobil,5.6,24,Hujan,False,31500,5.0
+OJ00970,2025-07-09 16:43,Bandung,Kirim Barang,5.9,17,Cerah,True,14000,4.9
+OJ00971,2025-07-09 17:01,Surabaya,Mobil,7.4,39,Cerah,False,41500,4.4
+OJ00972,2025-07-09 17:11,Jakarta,Mobil,3.3,16,Cerah,False,18500,4.8
+OJ00973,2025-07-09 21:33,Surabaya,Motor,2.2,9,Cerah,False,5500,4.8
+OJ00974,2025-07-09 23:30,Medan,Mobil,8.4,36,Hujan,False,47000,4.7
+OJ00975,2025-07-10 00:17,Jakarta,Kirim Barang,5.0,17,Cerah,False,15000,5.0
+OJ00976,2025-07-10 00:17,Surabaya,Mobil,11.0,33,Cerah,True,39500,4.7
+OJ00977,2025-07-10 01:00,Surabaya,Kirim Barang,5.8,17,Hujan,False,22000,4.5
+OJ00978,2025-07-10 01:22,Bandung,Motor,1.5,6,Cerah,True,4000,5.0
+OJ00979,2025-07-10 03:00,Jakarta,Motor,4.5,15,Cerah,False,11000,4.9
+OJ00980,2025-07-10 04:12,Surabaya,Motor,12.4,41,Hujan,True,31000,4.8
+OJ00981,2025-07-10 04:35,Jakarta,Motor,5.3,13,Cerah,True,10500,4.7
+OJ00982,2025-07-10 04:37,Jakarta,Motor,12.6,32,Cerah,False,31500,
+OJ00983,2025-07-10 05:28,Jakarta,Mobil,3.5,9,Cerah,False,16000,4.8
+OJ00984,2025-07-10 07:21,Jakarta,Motor,4.6,18,Cerah,False,14500,4.9
+OJ00985,2025-07-10 07:33,Bandung,Motor,2.8,13,Cerah,False,9000,
+OJ00986,2025-07-10 11:24,Jakarta,Motor,4.1,13,Cerah,False,10000,4.4
+OJ00987,2025-07-10 11:51,Surabaya,Kirim Barang,3.4,10,Cerah,False,10000,4.6
+OJ00988,2025-07-10 12:21,Surabaya,Motor,13.4,30,Cerah,False,33500,4.7
+OJ00989,2025-07-10 13:19,Jakarta,Motor,9.2,20,Cerah,True,18500,4.4
+OJ00990,2025-07-10 13:29,Jakarta,Kirim Barang,1.9,11,Cerah,False,6000,4.4
+OJ00991,2025-07-10 13:38,Bandung,Kirim Barang,5.0,14,Cerah,False,15000,4.3
+OJ00992,2025-07-10 14:47,Bandung,Motor,3.8,10,Cerah,False,9500,4.2
+OJ00993,2025-07-10 16:58,Jakarta,Mobil,8.0,26,Cerah,True,29000,5.0
+OJ00994,2025-07-10 18:04,Bandung,Motor,0.7,8,Cerah,True,5000,4.8
+OJ00995,2025-07-10 19:22,Medan,Motor,1.4,10,Cerah,False,6000,4.3
+OJ00996,2025-07-10 19:38,Bandung,Motor,5.0,26,Cerah,False,15500,4.7
+OJ00997,2025-07-10 20:44,Bandung,Mobil,5.0,17,Cerah,False,22500,
+OJ00998,2025-07-10 21:15,Jakarta,Kirim Barang,3.3,10,Cerah,True,8000,4.5
+OJ00999,2025-07-10 22:47,Surabaya,Mobil,13.7,42,Cerah,True,49000,5.0
+OJ01000,2025-07-10 23:10,Medan,Mobil,3.8,18,Hujan,True,17000,4.7
+OJ01001,2025-07-10 23:24,Surabaya,Motor,14.4,34,Cerah,False,36000,4.5
+OJ01002,2025-07-11 03:08,Bandung,Motor,5.6,13,Cerah,False,14000,4.7
+OJ01003,2025-07-11 03:15,Surabaya,Motor,3.2,14,Cerah,False,8000,5.0
+OJ01004,2025-07-11 03:55,Jakarta,Motor,5.6,14,Cerah,False,14000,
+OJ01005,2025-07-11 07:19,Jakarta,Motor,11.3,48,Cerah,True,28500,4.5
+OJ01006,2025-07-11 08:54,Surabaya,Kirim Barang,4.4,19,Cerah,True,13000,
+OJ01007,2025-07-11 09:24,Bandung,Motor,1.8,9,Hujan,False,6000,4.8
+OJ01008,2025-07-11 10:38,Bandung,Motor,8.4,22,Cerah,True,17000,4.3
+OJ01009,2025-07-11 11:02,Jakarta,Motor,9.8,28,Cerah,False,24500,5.0
+OJ01010,2025-07-11 14:00,Jakarta,Motor,3.5,12,Cerah,True,7000,4.6
+OJ01011,2025-07-11 15:38,Surabaya,Kirim Barang,3.7,12,Cerah,False,11000,4.0
+OJ01012,2025-07-11 16:03,Jakarta,Motor,9.4,32,Hujan,False,29500,5.0
+OJ01013,2025-07-11 16:07,Jakarta,Kirim Barang,4.5,16,Hujan,False,17000,4.6
+OJ01014,2025-07-11 18:25,Bandung,Motor,9.2,40,Cerah,False,29000,4.9
+OJ01015,2025-07-11 18:35,Bandung,Mobil,5.9,42,Hujan,False,33000,4.8
+OJ01016,2025-07-11 20:53,Bandung,Motor,7.6,24,Cerah,False,19000,4.0
+OJ01017,2025-07-11 21:50,Medan,Motor,2.0,9,Cerah,False,5000,4.8
+OJ01018,2025-07-12 01:04,Jakarta,Motor,6.1,18,Cerah,False,15000,4.8
+OJ01019,2025-07-12 02:10,Jakarta,Motor,11.3,37,Hujan,True,28500,4.5
+OJ01020,2025-07-12 03:48,Medan,Motor,9.7,31,Hujan,False,30500,4.9
+OJ01021,2025-07-12 05:00,Surabaya,Motor,5.5,16,Cerah,False,14000,5.0
+OJ01022,2025-07-12 05:07,Jakarta,Motor,3.1,11,Cerah,False,8000,4.7
+OJ01023,2025-07-12 05:20,Jakarta,Mobil,2.9,10,Cerah,False,13000,4.9
+OJ01024,2025-07-12 07:34,Jakarta,Motor,4.0,20,Cerah,True,10000,4.8
+OJ01025,2025-07-12 13:11,Surabaya,Mobil,4.9,22,Hujan,True,22000,5.0
+OJ01026,2025-07-12 13:23,Jakarta,Motor,5.5,15,Cerah,False,14000,3.7
+OJ01027,2025-07-12 14:26,Surabaya,Mobil,6.0,20,Cerah,True,21500,4.7
+OJ01028,2025-07-12 15:16,Bandung,Mobil,17.7,54,Cerah,False,79500,3.5
+OJ01029,2025-07-12 16:54,Bandung,Mobil,5.3,17,Cerah,False,24000,4.6
+OJ01030,2025-07-12 17:30,Bandung,Motor,3.4,17,Cerah,False,10500,4.5
+OJ01031,2025-07-12 18:08,Surabaya,Motor,17.3,64,Cerah,False,54000,4.5
+OJ01032,2025-07-12 18:19,Surabaya,Motor,2.0,14,Cerah,False,6000,4.6
+OJ01033,2025-07-12 18:47,Jakarta,Kirim Barang,3.9,18,Cerah,False,14500,5.0
+OJ01034,2025-07-12 19:40,Bandung,Motor,4.2,20,Cerah,True,10500,4.3
+OJ01035,2025-07-12 21:22,Bandung,Kirim Barang,2.0,12,Cerah,False,6000,4.8
+OJ01036,2025-07-12 22:09,Bandung,Mobil,3.8,15,Cerah,True,13500,4.8
+OJ01037,2025-07-12 22:25,Surabaya,Motor,4.1,11,Cerah,False,10000,5.0
+OJ01038,2025-07-12 23:59,Surabaya,Motor,5.3,17,Cerah,False,13000,4.9
+OJ01039,2025-07-13 00:26,Bandung,Motor,8.8,23,Cerah,False,22000,5.0
+OJ01040,2025-07-13 00:35,Jakarta,Motor,7.4,21,Cerah,False,18500,4.4
+OJ01041,2025-07-13 01:03,Bandung,Motor,14.7,40,Cerah,False,37000,4.7
+OJ01042,2025-07-13 01:09,Jakarta,Mobil,4.2,17,Cerah,False,19000,4.7
+OJ01043,2025-07-13 01:53,Surabaya,Mobil,4.5,22,Cerah,True,16000,5.0
+OJ01044,2025-07-13 02:16,Surabaya,Motor,8.4,22,Cerah,False,21000,4.9
+OJ01045,2025-07-13 04:11,Bandung,Motor,3.2,13,Cerah,True,6500,5.0
+OJ01046,2025-07-13 04:33,Jakarta,Mobil,4.8,15,Cerah,False,21500,4.9
+OJ01047,2025-07-13 04:39,Medan,Mobil,17.9,67,Hujan,False,100500,4.0
+OJ01048,2025-07-13 04:39,Medan,Kirim Barang,1.9,8,Cerah,False,6000,4.8
+OJ01049,2025-07-13 04:52,Bandung,Motor,4.0,12,Cerah,True,8000,5.0
+OJ01050,2025-07-13 05:00,Medan,Motor,8.1,25,Hujan,True,20500,5.0
+OJ01051,2025-07-13 07:13,Bandung,Motor,9.0,36,Cerah,False,28000,5.0
+OJ01052,2025-07-13 07:23,Surabaya,Motor,4.0,21,Cerah,False,12500,
+OJ01053,2025-07-13 07:26,Bandung,Motor,2.4,12,Cerah,False,7500,5.0
+OJ01054,2025-07-13 07:36,Jakarta,Mobil,6.4,34,Cerah,False,36000,4.5
+OJ01055,2025-07-13 08:16,Surabaya,Motor,5.9,25,Cerah,True,15000,4.1
+OJ01056,2025-07-13 09:10,Medan,Kirim Barang,3.1,11,Cerah,True,7500,4.8
+OJ01057,2025-07-13 09:11,Jakarta,Mobil,4.2,15,Cerah,False,19000,4.6
+OJ01058,2025-07-13 10:44,Jakarta,Motor,2.6,10,Cerah,False,6500,5.0
+OJ01059,2025-07-13 11:12,Bandung,Mobil,6.2,20,Cerah,False,28000,
+OJ01060,2025-07-13 11:40,Jakarta,Motor,5.6,17,Hujan,False,17500,3.9
+OJ01061,2025-07-13 11:52,Jakarta,Mobil,6.2,24,Hujan,False,35000,5.0
+OJ01062,2025-07-13 12:00,Bandung,Motor,13.3,34,Cerah,True,26500,5.0
+OJ01063,2025-07-13 12:29,Jakarta,Motor,8.6,26,Cerah,False,21500,5.0
+OJ01064,2025-07-13 14:12,Jakarta,Motor,7.5,18,Cerah,False,19000,4.2
+OJ01065,2025-07-13 14:15,Surabaya,Motor,6.2,16,Cerah,False,15500,5.0
+OJ01066,2025-07-13 16:33,Bandung,Motor,4.6,14,Cerah,False,11500,5.0
+OJ01067,2025-07-13 17:15,Jakarta,Motor,2.1,15,Hujan,False,6500,5.0
+OJ01068,2025-07-13 18:54,Jakarta,Mobil,5.4,27,Cerah,True,24500,4.8
+OJ01069,2025-07-13 18:56,Jakarta,Motor,5.9,22,Cerah,False,18500,5.0
+OJ01070,2025-07-13 19:02,Surabaya,Motor,2.7,15,Cerah,False,8500,4.8
+OJ01071,2025-07-13 19:08,Bandung,Motor,5.0,22,Cerah,False,15500,4.5
+OJ01072,2025-07-13 19:10,Jakarta,Kirim Barang,1.7,14,Hujan,True,6000,5.0
+OJ01073,2025-07-13 19:23,Surabaya,Mobil,10.3,53,Cerah,False,58000,3.6
+OJ01074,2025-07-13 19:45,Jakarta,Mobil,20.1,95,Cerah,False,113000,4.2
+OJ01075,2025-07-13 19:52,Jakarta,Motor,6.5,31,Cerah,False,20500,5.0
+OJ01076,2025-07-13 21:17,Surabaya,Mobil,8.4,30,Cerah,False,38000,4.7
+OJ01077,2025-07-13 22:08,Jakarta,Motor,2.2,8,Cerah,True,4500,
+OJ01078,2025-07-13 22:43,Medan,Motor,8.4,25,Cerah,True,17000,4.9
+OJ01079,2025-07-13 23:23,Jakarta,Motor,3.4,11,Cerah,False,8500,4.3
+OJ01080,2025-07-13 23:50,Medan,Motor,4.9,15,Cerah,False,12000,4.6
+OJ01081,2025-07-14 01:37,Surabaya,Motor,2.2,8,Cerah,False,5500,4.8
+OJ01082,2025-07-14 02:41,Jakarta,Mobil,6.7,24,Cerah,False,30000,4.7
+OJ01083,2025-07-14 04:49,Jakarta,Mobil,2.6,11,Hujan,False,14500,4.2
+OJ01084,2025-07-14 04:53,Bandung,Kirim Barang,6.6,19,Cerah,True,16000,5.0
+OJ01085,2025-07-14 06:16,Jakarta,Kirim Barang,10.2,32,Hujan,True,30500,4.6
+OJ01086,2025-07-14 06:44,Jakarta,Motor,6.7,20,Cerah,False,17000,4.1
+OJ01087,2025-07-14 08:27,Jakarta,Motor,5.5,21,Cerah,False,17000,5.0
+OJ01088,2025-07-14 12:18,Jakarta,Motor,10.9,28,Cerah,False,27000,4.5
+OJ01089,2025-07-14 13:59,Surabaya,Motor,8.1,28,Hujan,False,25500,4.6
+OJ01090,2025-07-14 14:43,Bandung,Mobil,4.9,18,Cerah,False,22000,4.2
+OJ01091,2025-07-14 21:17,Surabaya,Motor,2.8,11,Cerah,True,5500,4.8
+OJ01092,2025-07-14 22:37,Surabaya,Mobil,5.1,22,Hujan,True,23000,4.4
+OJ01093,2025-07-14 22:45,Bandung,Motor,8.7,18,Cerah,False,22000,5.0
+OJ01094,2025-07-14 22:45,Bandung,Motor,4.2,10,Cerah,False,10500,5.0
+OJ01095,2025-07-14 23:27,Medan,Mobil,5.2,20,Cerah,True,19000,5.0
+OJ01096,2025-07-14 23:53,Surabaya,Mobil,5.9,29,Hujan,True,26500,4.6
+OJ01097,2025-07-15 01:01,Jakarta,Motor,4.7,16,Cerah,False,12000,4.0
+OJ01098,2025-07-15 02:19,Surabaya,Motor,6.8,20,Cerah,False,17000,4.6
+OJ01099,2025-07-15 03:57,Jakarta,Mobil,1.8,7,Cerah,False,9000,4.9
+OJ01100,2025-07-15 04:53,Medan,Motor,2.5,8,Cerah,True,5000,5.0
+OJ01101,2025-07-15 05:56,Surabaya,Motor,11.4,33,Hujan,False,35500,4.5
+OJ01102,2025-07-15 06:28,Surabaya,Kirim Barang,1.3,5,Cerah,False,6000,4.5
+OJ01103,2025-07-15 08:23,Jakarta,Motor,2.8,16,Hujan,False,9000,4.8
+OJ01104,2025-07-15 11:56,Surabaya,Motor,3.3,12,Cerah,False,8000,4.8
+OJ01105,2025-07-15 12:12,Jakarta,Mobil,2.2,13,Cerah,True,8000,5.0
+OJ01106,2025-07-15 13:11,Bandung,Mobil,14.4,42,Cerah,False,65000,4.4
+OJ01107,2025-07-15 16:30,Surabaya,Motor,3.4,14,Cerah,False,8500,4.7
+OJ01108,2025-07-15 18:02,Medan,Mobil,3.2,21,Cerah,True,14500,4.8
+OJ01109,2025-07-15 18:49,Surabaya,Motor,7.8,46,Hujan,True,19500,4.0
+OJ01110,2025-07-15 20:07,Bandung,Mobil,2.8,8,Cerah,False,12500,4.6
+OJ01111,2025-07-15 20:32,Jakarta,Motor,2.9,13,Cerah,True,5500,4.9
+OJ01112,2025-07-15 21:14,Surabaya,Mobil,5.6,20,Cerah,False,25000,5.0
+OJ01113,2025-07-15 21:57,Jakarta,Motor,9.7,26,Cerah,False,24000,4.6
+OJ01114,2025-07-15 22:07,Surabaya,Motor,2.4,9,Cerah,False,6000,5.0
+OJ01115,2025-07-15 22:54,Jakarta,Mobil,5.0,18,Cerah,False,22500,4.6
+OJ01116,2025-07-16 00:27,Jakarta,Motor,5.2,14,Cerah,False,13000,5.0
+OJ01117,2025-07-16 01:03,Medan,Motor,3.4,7,Cerah,True,7000,5.0
+OJ01118,2025-07-16 01:18,Surabaya,Motor,6.3,16,Cerah,False,16000,5.0
+OJ01119,2025-07-16 04:00,Surabaya,Mobil,2.0,5,Cerah,True,7000,4.0
+OJ01120,2025-07-16 06:37,Bandung,Mobil,5.1,18,Cerah,True,18500,4.6
+OJ01121,2025-07-16 07:11,Medan,Mobil,4.3,27,Cerah,False,24000,5.0
+OJ01122,2025-07-16 08:31,Medan,Motor,2.5,11,Cerah,False,8000,4.9
+OJ01123,2025-07-16 08:32,Surabaya,Motor,10.7,43,Cerah,True,27000,4.9
+OJ01124,2025-07-16 09:11,Jakarta,Motor,5.5,18,Hujan,False,17000,5.0
+OJ01125,2025-07-16 10:08,Medan,Motor,3.1,11,Cerah,False,8000,5.0
+OJ01126,2025-07-16 10:21,Bandung,Motor,7.6,20,Cerah,False,19000,4.9
+OJ01127,2025-07-16 11:47,Medan,Motor,3.0,13,Cerah,False,7500,4.7
+OJ01128,2025-07-16 11:56,Surabaya,Mobil,2.5,9,Cerah,True,9000,4.5
+OJ01129,2025-07-16 12:03,Surabaya,Motor,9.9,25,Cerah,True,20000,4.5
+OJ01130,2025-07-16 12:12,Medan,Motor,12.1,34,Cerah,True,24000,5.0
+OJ01131,2025-07-16 12:14,Jakarta,Mobil,5.8,19,Cerah,False,26000,4.6
+OJ01132,2025-07-16 14:17,Jakarta,Motor,4.0,17,Hujan,False,12500,4.6
+OJ01133,2025-07-16 15:04,Jakarta,Motor,10.4,29,Cerah,False,26000,3.9
+OJ01134,2025-07-16 16:06,Medan,Mobil,4.3,15,Cerah,False,19500,4.7
+OJ01135,2025-07-16 16:59,Jakarta,Kirim Barang,12.5,42,Hujan,True,37500,5.0
+OJ01136,2025-07-16 19:23,Jakarta,Mobil,8.7,49,Cerah,True,39000,4.1
+OJ01137,2025-07-16 20:32,Medan,Mobil,1.4,11,Cerah,False,9000,5.0
+OJ01138,2025-07-16 22:05,Medan,Mobil,4.8,18,Cerah,False,21500,4.6
+OJ01139,2025-07-16 22:09,Jakarta,Mobil,12.3,47,Hujan,False,69000,4.1
+OJ01140,2025-07-16 23:21,Surabaya,Motor,8.3,20,Cerah,False,21000,5.0
+OJ01141,2025-07-16 23:43,Surabaya,Motor,2.9,7,Hujan,True,7000,5.0
+OJ01142,2025-07-16 23:50,Jakarta,Kirim Barang,8.4,23,Cerah,True,20000,4.6
+OJ01143,2025-07-17 00:12,Jakarta,Motor,8.0,23,Cerah,True,16000,4.3
+OJ01144,2025-07-17 00:52,Jakarta,Motor,6.3,15,Cerah,False,16000,4.9
+OJ01145,2025-07-17 01:34,Jakarta,Kirim Barang,2.8,7,Cerah,True,7000,4.1
+OJ01146,2025-07-17 02:04,Medan,Mobil,1.0,10,Cerah,False,9000,4.4
+OJ01147,2025-07-17 02:22,Jakarta,Kirim Barang,2.5,13,Cerah,False,7500,4.5
+OJ01148,2025-07-17 02:23,Jakarta,Motor,8.5,23,Cerah,False,21000,4.7
+OJ01149,2025-07-17 03:00,Jakarta,Mobil,16.2,48,Cerah,False,73000,4.4
+OJ01150,2025-07-17 04:03,Surabaya,Mobil,0.7,6,Cerah,False,9000,4.9
+OJ01151,2025-07-17 04:43,Medan,Mobil,4.8,21,Hujan,False,27000,4.9
+OJ01152,2025-07-17 05:50,Jakarta,Motor,7.9,19,Cerah,False,20000,4.8
+OJ01153,2025-07-17 07:25,Bandung,Motor,12.2,49,Cerah,True,30500,4.5
+OJ01154,2025-07-17 07:27,Jakarta,Motor,9.1,37,Cerah,False,28500,4.9
+OJ01155,2025-07-17 08:32,Jakarta,Motor,5.6,26,Cerah,False,17500,4.3
+OJ01156,2025-07-17 09:14,Bandung,Mobil,15.8,60,Hujan,False,89000,3.7
+OJ01157,2025-07-17 09:54,Bandung,Motor,8.2,25,Cerah,False,20500,4.6
+OJ01158,2025-07-17 09:59,Bandung,Motor,3.7,12,Cerah,False,9000,5.0
+OJ01159,2025-07-17 11:19,Surabaya,Motor,14.6,34,Cerah,True,29000,5.0
+OJ01160,2025-07-17 11:20,Jakarta,Motor,4.5,16,Cerah,False,11000,4.3
+OJ01161,2025-07-17 12:47,Surabaya,Mobil,2.4,9,Cerah,True,9000,4.6
+OJ01162,2025-07-17 12:56,Medan,Motor,10.5,29,Cerah,True,21000,5.0
+OJ01163,2025-07-17 14:05,Surabaya,Motor,2.9,11,Cerah,False,7000,4.4
+OJ01164,2025-07-17 14:27,Jakarta,Mobil,3.3,13,Cerah,False,15000,4.5
+OJ01165,2025-07-17 14:40,Surabaya,Motor,4.8,12,Cerah,True,9500,4.2
+OJ01166,2025-07-17 18:08,Surabaya,Mobil,1.7,12,Cerah,False,11000,4.6
+OJ01167,2025-07-17 19:47,Surabaya,Motor,6.6,26,Cerah,True,16500,4.7
+OJ01168,2025-07-17 20:50,Jakarta,Motor,8.2,21,Cerah,False,20500,5.0
+OJ01169,2025-07-17 21:41,Surabaya,Motor,5.3,13,Cerah,False,13000,4.4
+OJ01170,2025-07-17 23:52,Medan,Motor,2.4,9,Cerah,False,6000,4.1
+OJ01171,2025-07-18 00:59,Jakarta,Motor,10.3,32,Cerah,False,26000,5.0
+OJ01172,2025-07-18 01:01,Bandung,Motor,1.2,3,Cerah,False,5000,5.0
+OJ01173,2025-07-18 01:13,Surabaya,Motor,9.4,23,Cerah,False,23500,5.0
+OJ01174,2025-07-18 02:28,Medan,Kirim Barang,18.5,43,Cerah,False,55500,4.5
+OJ01175,2025-07-18 04:21,Surabaya,Motor,7.6,23,Hujan,False,24000,4.4
+OJ01176,2025-07-18 05:25,Jakarta,Motor,1.6,8,Cerah,True,4000,4.9
+OJ01177,2025-07-18 05:43,Jakarta,Motor,7.6,20,Cerah,False,19000,4.0
+OJ01178,2025-07-18 09:41,Medan,Motor,5.7,15,Cerah,False,14000,5.0
+OJ01179,2025-07-18 11:19,Bandung,Motor,5.9,14,Cerah,False,15000,4.6
+OJ01180,2025-07-18 12:02,Medan,Motor,10.0,27,Cerah,False,25000,4.6
+OJ01181,2025-07-18 14:26,Jakarta,Motor,6.7,17,Cerah,True,13500,5.0
+OJ01182,2025-07-18 15:11,Jakarta,Motor,9.7,24,Cerah,False,24000,4.7
+OJ01183,2025-07-18 15:22,Surabaya,Motor,4.3,17,Cerah,False,11000,4.9
+OJ01184,2025-07-18 16:08,Jakarta,Motor,1.3,8,Cerah,False,5000,4.5
+OJ01185,2025-07-18 16:30,Bandung,Mobil,13.1,41,Cerah,False,59000,4.9
+OJ01186,2025-07-18 17:04,Jakarta,Motor,9.6,35,Cerah,True,24000,4.7
+OJ01187,2025-07-18 17:32,Surabaya,Motor,2.5,15,Cerah,False,8000,4.2
+OJ01188,2025-07-18 18:30,Surabaya,Mobil,2.4,18,Cerah,True,11000,
+OJ01189,2025-07-18 18:47,Surabaya,Mobil,3.3,19,Cerah,False,18500,4.9
+OJ01190,2025-07-18 19:06,Medan,Motor,11.6,56,Hujan,False,36000,4.3
+OJ01191,2025-07-18 23:52,Jakarta,Mobil,7.2,24,Cerah,True,26000,4.7
+OJ01192,2025-07-19 00:32,Bandung,Motor,3.4,12,Cerah,False,8500,5.0
+OJ01193,2025-07-19 01:46,Jakarta,Motor,4.2,11,Cerah,False,10500,4.9
+OJ01194,2025-07-19 04:33,Surabaya,Motor,2.3,7,Cerah,False,6000,4.3
+OJ01195,2025-07-19 05:20,Bandung,Motor,3.2,12,Cerah,False,8000,4.6
+OJ01196,2025-07-19 08:20,Surabaya,Motor,3.0,19,Hujan,True,7500,4.8
+OJ01197,2025-07-19 08:54,Jakarta,Motor,8.1,44,Hujan,False,25500,5.0
+OJ01198,2025-07-19 08:59,Surabaya,Motor,9.3,37,Cerah,False,29000,4.2
+OJ01199,2025-07-19 13:23,Bandung,Motor,11.8,38,Hujan,False,37000,5.0
+OJ01200,2025-07-19 13:42,Surabaya,Motor,3.1,10,Cerah,True,6500,4.8
+OJ01201,2025-07-19 17:47,Jakarta,Motor,0.8,10,Cerah,True,5000,4.5
+OJ01202,2025-07-19 18:37,Medan,Motor,9.5,36,Cerah,False,29500,4.5
+OJ01203,2025-07-19 19:18,Jakarta,Motor,5.6,25,Cerah,True,14000,4.2
+OJ01204,2025-07-19 20:13,Medan,Kirim Barang,6.5,18,Cerah,True,15500,4.7
+OJ01205,2025-07-19 20:43,Jakarta,Mobil,0.8,5,Cerah,False,9000,4.7
+OJ01206,2025-07-19 22:15,Surabaya,Mobil,3.2,15,Hujan,False,18000,5.0
+OJ01207,2025-07-20 00:39,Jakarta,Mobil,3.8,19,Cerah,False,17000,4.5
+OJ01208,2025-07-20 01:31,Surabaya,Kirim Barang,6.7,15,Cerah,True,16000,4.5
+OJ01209,2025-07-20 02:06,Jakarta,Kirim Barang,6.7,23,Hujan,False,25000,
+OJ01210,2025-07-20 02:11,Jakarta,Motor,2.5,9,Cerah,True,5000,4.5
+OJ01211,2025-07-20 02:39,Medan,Motor,8.5,28,Hujan,True,21000,4.7
+OJ01212,2025-07-20 02:47,Surabaya,Motor,9.6,19,Cerah,False,24000,4.9
+OJ01213,2025-07-20 04:05,Bandung,Motor,13.5,37,Cerah,True,27000,4.9
+OJ01214,2025-07-20 05:53,Medan,Motor,8.6,29,Hujan,True,21500,5.0
+OJ01215,2025-07-20 07:16,Jakarta,Motor,3.7,18,Cerah,False,11500,4.2
+OJ01216,2025-07-20 07:37,Bandung,Motor,5.3,21,Cerah,False,16500,4.8
+OJ01217,2025-07-20 08:44,Jakarta,Kirim Barang,5.6,23,Cerah,True,17000,4.7
+OJ01218,2025-07-20 08:44,Bandung,Motor,3.4,18,Cerah,False,10500,4.5
+OJ01219,2025-07-20 08:51,Surabaya,Mobil,1.7,14,Cerah,False,11000,4.7
+OJ01220,2025-07-20 10:13,Surabaya,Mobil,3.7,17,Hujan,False,21000,5.0
+OJ01221,2025-07-20 10:17,Jakarta,Motor,9.1,28,Hujan,True,23000,4.7
+OJ01222,2025-07-20 10:39,Jakarta,Motor,11.4,36,Hujan,False,35500,4.9
+OJ01223,2025-07-20 12:09,Surabaya,Motor,2.2,9,Cerah,False,5500,4.9
+OJ01224,2025-07-20 12:23,Jakarta,Motor,10.5,25,Cerah,False,26000,4.8
+OJ01225,2025-07-20 14:53,Surabaya,Motor,3.5,11,Cerah,True,7000,5.0
+OJ01226,2025-07-20 15:07,Jakarta,Motor,4.1,13,Cerah,False,10000,4.6
+OJ01227,2025-07-20 15:10,Jakarta,Motor,6.5,21,Cerah,False,16000,5.0
+OJ01228,2025-07-20 15:30,Jakarta,Mobil,8.4,37,Hujan,False,47000,4.7
+OJ01229,2025-07-20 15:33,Bandung,Kirim Barang,2.8,11,Hujan,False,10500,4.0
+OJ01230,2025-07-20 15:58,Surabaya,Mobil,16.2,50,Cerah,False,73000,4.4
+OJ01231,2025-07-20 16:28,Bandung,Motor,9.0,30,Hujan,False,28000,3.9
+OJ01232,2025-07-20 17:02,Jakarta,Motor,9.6,38,Cerah,True,24000,4.0
+OJ01233,2025-07-20 17:03,Jakarta,Motor,4.1,20,Cerah,False,13000,4.8
+OJ01234,2025-07-20 18:11,Surabaya,Motor,2.1,10,Cerah,True,5000,4.6
+OJ01235,2025-07-20 18:19,Bandung,Motor,12.0,63,Hujan,False,37500,4.1
+OJ01236,2025-07-20 18:42,Bandung,Motor,1.5,9,Cerah,True,5000,5.0
+OJ01237,2025-07-20 21:08,Medan,Motor,2.9,14,Hujan,False,9000,4.6
+OJ01238,2025-07-20 21:43,Jakarta,Motor,5.0,15,Cerah,False,12500,4.7
+OJ01239,2025-07-20 22:05,Bandung,Kirim Barang,4.6,14,Cerah,False,14000,4.6
+OJ01240,2025-07-20 22:39,Surabaya,Motor,7.4,21,Cerah,False,18500,4.5
+OJ01241,2025-07-21 00:21,Medan,Motor,3.2,7,Cerah,False,8000,4.6
+OJ01242,2025-07-21 00:43,Jakarta,Motor,4.6,15,Cerah,True,9000,4.8
+OJ01243,2025-07-21 01:23,Bandung,Motor,3.1,8,Cerah,False,8000,5.0
+OJ01244,2025-07-21 02:04,Medan,Mobil,13.6,46,Cerah,False,61000,3.7
+OJ01245,2025-07-21 03:01,Jakarta,Motor,2.3,11,Hujan,True,5500,4.6
+OJ01246,2025-07-21 03:48,Jakarta,Motor,7.6,21,Cerah,False,19000,4.2
+OJ01247,2025-07-21 03:49,Medan,Motor,3.2,16,Cerah,False,8000,5.0
+OJ01248,2025-07-21 08:09,Surabaya,Mobil,6.0,32,Cerah,False,34000,4.5
+OJ01249,2025-07-21 09:33,Jakarta,Mobil,5.6,21,Cerah,False,25000,4.5
+OJ01250,2025-07-21 10:11,Bandung,Motor,5.0,15,Cerah,True,10000,4.7
+OJ01251,2025-07-21 10:39,Surabaya,Motor,11.5,29,Cerah,False,29000,4.9
+OJ01252,2025-07-21 11:00,Medan,Kirim Barang,4.4,12,Cerah,False,13000,4.8
+OJ01253,2025-07-21 12:15,Jakarta,Motor,9.9,33,Hujan,False,31000,4.2
+OJ01254,2025-07-21 12:48,Jakarta,Motor,8.4,31,Hujan,True,21000,5.0
+OJ01255,2025-07-21 13:00,Surabaya,Mobil,6.4,21,Cerah,False,29000,4.6
+OJ01256,2025-07-21 13:04,Medan,Motor,3.6,11,Cerah,False,9000,4.4
+OJ01257,2025-07-21 13:06,Jakarta,Motor,8.7,25,Cerah,True,17500,5.0
+OJ01258,2025-07-21 14:54,Jakarta,Motor,6.1,18,Cerah,True,12000,5.0
+OJ01259,2025-07-21 15:04,Surabaya,Mobil,15.9,47,Cerah,False,71500,4.1
+OJ01260,2025-07-21 15:08,Jakarta,Mobil,1.9,5,Cerah,False,9000,4.3
+OJ01261,2025-07-21 16:32,Bandung,Motor,2.2,5,Cerah,False,5500,5.0
+OJ01262,2025-07-21 19:14,Medan,Motor,7.3,28,Cerah,False,23000,5.0
+OJ01263,2025-07-21 20:53,Jakarta,Motor,2.1,11,Cerah,False,5000,5.0
+OJ01264,2025-07-21 22:08,Jakarta,Motor,9.8,24,Cerah,False,24500,3.9
+OJ01265,2025-07-21 23:57,Surabaya,Motor,1.6,4,Cerah,False,5000,
+OJ01266,2025-07-22 02:15,Bandung,Mobil,4.3,18,Cerah,True,15500,4.9
+OJ01267,2025-07-22 02:21,Bandung,Motor,3.5,10,Cerah,False,9000,5.0
+OJ01268,2025-07-22 02:52,Jakarta,Motor,1.6,9,Cerah,True,4000,5.0
+OJ01269,2025-07-22 03:49,Surabaya,Motor,9.0,33,Hujan,False,28000,4.9
+OJ01270,2025-07-22 04:13,Jakarta,Motor,3.7,12,Cerah,False,9000,5.0
+OJ01271,2025-07-22 04:54,Jakarta,Motor,1.0,11,Hujan,False,6000,4.4
+OJ01272,2025-07-22 05:30,Surabaya,Kirim Barang,2.9,12,Cerah,False,8500,5.0
+OJ01273,2025-07-22 06:09,Jakarta,Motor,5.2,15,Cerah,False,13000,4.4
+OJ01274,2025-07-22 07:07,Jakarta,Kirim Barang,5.1,31,Hujan,False,19000,4.2
+OJ01275,2025-07-22 09:13,Medan,Kirim Barang,12.6,30,Cerah,False,38000,4.9
+OJ01276,2025-07-22 10:45,Surabaya,Motor,7.2,20,Cerah,False,18000,5.0
+OJ01277,2025-07-22 11:18,Surabaya,Kirim Barang,1.5,8,Cerah,True,5000,4.6
+OJ01278,2025-07-22 13:25,Surabaya,Kirim Barang,5.5,15,Cerah,True,13000,5.0
+OJ01279,2025-07-22 14:26,Bandung,Motor,3.0,6,Cerah,True,6000,5.0
+OJ01280,2025-07-22 15:09,Medan,Mobil,4.1,16,Cerah,True,15000,5.0
+OJ01281,2025-07-22 16:53,Jakarta,Motor,1.3,6,Hujan,False,6000,4.8
+OJ01282,2025-07-22 17:18,Jakarta,Mobil,8.4,41,Cerah,True,37500,4.8
+OJ01283,2025-07-22 18:26,Medan,Mobil,13.2,85,Hujan,False,74000,
+OJ01284,2025-07-22 18:45,Jakarta,Mobil,8.2,54,Hujan,False,46000,4.3
+OJ01285,2025-07-22 18:45,Jakarta,Motor,3.6,20,Hujan,False,11000,4.9
+OJ01286,2025-07-22 18:51,Jakarta,Motor,4.4,28,Hujan,False,14000,5.0
+OJ01287,2025-07-22 19:08,Surabaya,Mobil,3.8,23,Cerah,False,21500,4.2
+OJ01288,2025-07-22 21:30,Jakarta,Motor,4.5,14,Cerah,False,11000,4.7
+OJ01289,2025-07-22 22:28,Medan,Motor,3.5,8,Cerah,True,7000,4.6
+OJ01290,2025-07-22 23:35,Jakarta,Motor,2.4,9,Cerah,False,6000,4.5
+OJ01291,2025-07-23 03:08,Bandung,Kirim Barang,8.8,29,Hujan,True,26500,5.0
+OJ01292,2025-07-23 04:04,Jakarta,Motor,8.6,23,Cerah,False,21500,5.0
+OJ01293,2025-07-23 04:48,Surabaya,Mobil,17.0,51,Cerah,False,76500,4.3
+OJ01294,2025-07-23 06:11,Bandung,Motor,1.5,6,Cerah,False,5000,4.9
+OJ01295,2025-07-23 06:42,Bandung,Mobil,3.4,12,Cerah,False,15500,5.0
+OJ01296,2025-07-23 07:08,Jakarta,Motor,3.7,17,Cerah,False,11500,5.0
+OJ01297,2025-07-23 07:47,Jakarta,Motor,16.3,60,Cerah,True,41000,4.3
+OJ01298,2025-07-23 09:59,Bandung,Motor,4.1,14,Cerah,True,8000,
+OJ01299,2025-07-23 10:22,Surabaya,Motor,2.9,9,Cerah,False,7000,5.0
+OJ01300,2025-07-23 10:23,Bandung,Motor,4.6,20,Hujan,False,14500,4.9
+OJ01301,2025-07-23 10:51,Jakarta,Motor,4.8,15,Cerah,False,12000,4.8
+OJ01302,2025-07-23 10:52,Bandung,Mobil,5.0,18,Hujan,True,22500,4.7
+OJ01303,2025-07-23 12:29,Bandung,Kirim Barang,10.1,26,Cerah,False,30500,4.7
+OJ01304,2025-07-23 12:37,Surabaya,Mobil,6.1,19,Cerah,False,27500,4.4
+OJ01305,2025-07-23 12:49,Bandung,Kirim Barang,2.7,112,Hujan,False,10000,4.4
+OJ01306,2025-07-23 15:16,Jakarta,Motor,9.9,23,Cerah,True,20000,4.3
+OJ01307,2025-07-23 16:49,Surabaya,Kirim Barang,1.5,7,Cerah,False,6000,
+OJ01308,2025-07-23 17:28,Bandung,Motor,6.8,28,Cerah,False,21000,4.1
+OJ01309,2025-07-23 19:07,Jakarta,Mobil,11.7,62,Cerah,False,66000,4.1
+OJ01310,2025-07-23 19:21,Bandung,Motor,2.3,15,Cerah,False,7000,5.0
+OJ01311,2025-07-23 21:08,Jakarta,Motor,3.9,13,Cerah,False,10000,5.0
+OJ01312,2025-07-23 21:14,Bandung,Motor,9.8,29,Hujan,False,30500,5.0
+OJ01313,2025-07-23 23:37,Surabaya,Motor,3.4,15,Hujan,False,10500,4.8
+OJ01314,2025-07-24 01:45,Jakarta,Motor,3.9,13,Cerah,False,10000,4.7
+OJ01315,2025-07-24 01:53,Medan,Motor,18.6,45,Cerah,False,46500,4.6
+OJ01316,2025-07-24 02:28,Jakarta,Motor,7.2,20,Cerah,True,14500,
+OJ01317,2025-07-24 04:01,Bandung,Motor,9.8,29,Cerah,False,24500,4.6
+OJ01318,2025-07-24 05:30,Surabaya,Motor,3.1,8,Cerah,False,8000,4.2
+OJ01319,2025-07-24 08:35,Medan,Motor,9.9,37,Cerah,True,25000,4.6
+OJ01320,2025-07-24 08:40,Bandung,Mobil,2.8,16,Cerah,False,16000,5.0
+OJ01321,2025-07-24 09:19,Jakarta,Mobil,10.4,27,Cerah,False,47000,4.4
+OJ01322,2025-07-24 09:47,Bandung,Motor,4.1,9,Cerah,True,8000,4.5
+OJ01323,2025-07-24 09:47,Medan,Motor,2.6,9,Cerah,False,6500,4.5
+OJ01324,2025-07-24 11:27,Jakarta,Kirim Barang,10.5,27,Cerah,False,31500,4.6
+OJ01325,2025-07-24 11:57,Medan,Motor,5.3,16,Cerah,False,13000,5.0
+OJ01326,2025-07-24 12:08,Bandung,Mobil,6.5,22,Cerah,False,29000,5.0
+OJ01327,2025-07-24 12:35,Bandung,Motor,10.7,26,Cerah,False,27000,5.0
+OJ01328,2025-07-24 15:35,Jakarta,Motor,10.5,37,Hujan,True,26500,5.0
+OJ01329,2025-07-24 16:49,Bandung,Mobil,4.0,13,Cerah,False,18000,5.0
+OJ01330,2025-07-24 17:03,Jakarta,Motor,4.0,22,Hujan,True,10000,5.0
+OJ01331,2025-07-24 17:14,Bandung,Mobil,6.5,36,Cerah,False,36500,4.8
+OJ01332,2025-07-24 17:44,Jakarta,Mobil,14.1,66,Cerah,False,79500,4.2
+OJ01333,2025-07-24 18:17,Jakarta,Mobil,5.3,27,Cerah,True,24000,4.7
+OJ01334,2025-07-24 19:17,Jakarta,Kirim Barang,5.9,22,Cerah,False,22000,5.0
+OJ01335,2025-07-24 21:25,Bandung,Motor,4.4,13,Cerah,False,11000,4.8
+OJ01336,2025-07-24 23:15,Medan,Motor,4.2,14,Cerah,True,8500,4.7
+OJ01337,2025-07-25 00:09,Jakarta,Motor,3.1,11,Cerah,False,8000,3.9
+OJ01338,2025-07-25 01:11,Jakarta,Motor,3.5,13,Cerah,False,9000,4.7
+OJ01339,2025-07-25 02:16,Bandung,Motor,3.0,14,Cerah,True,6000,4.8
+OJ01340,2025-07-25 02:34,Medan,Motor,5.8,16,Cerah,False,14500,4.8
+OJ01341,2025-07-25 02:46,Bandung,Motor,5.9,14,Cerah,True,12000,4.6
+OJ01342,2025-07-25 02:51,Bandung,Kirim Barang,1.1,7,Cerah,True,5000,4.8
+OJ01343,2025-07-25 03:29,Medan,Kirim Barang,4.2,21,Hujan,True,13000,4.7
+OJ01344,2025-07-25 04:43,Bandung,Mobil,4.7,22,Cerah,False,21000,4.4
+OJ01345,2025-07-25 04:52,Jakarta,Kirim Barang,9.6,28,Hujan,False,36000,
+OJ01346,2025-07-25 06:10,Bandung,Mobil,6.7,22,Cerah,False,30000,4.7
+OJ01347,2025-07-25 06:34,Surabaya,Mobil,3.9,14,Cerah,False,17500,4.4
+OJ01348,2025-07-25 09:19,Bandung,Mobil,12.6,43,Cerah,True,45000,4.5
+OJ01349,2025-07-25 14:32,Medan,Kirim Barang,10.0,25,Cerah,True,24000,3.9
+OJ01350,2025-07-25 15:02,Bandung,Motor,1.2,5,Cerah,False,5000,
+OJ01351,2025-07-25 16:27,Medan,Motor,6.3,19,Cerah,False,16000,4.3
+OJ01352,2025-07-25 16:34,Jakarta,Motor,5.5,17,Cerah,False,14000,4.6
+OJ01353,2025-07-25 17:08,Medan,Motor,4.9,20,Cerah,False,15500,4.8
+OJ01354,2025-07-25 17:50,Bandung,Motor,6.8,26,Cerah,False,21000,5.0
+OJ01355,2025-07-25 18:13,Medan,Mobil,3.0,16,Cerah,False,17000,4.6
+OJ01356,2025-07-25 20:33,Bandung,Motor,10.5,26,Cerah,True,21000,4.7
+OJ01357,2025-07-25 20:34,Jakarta,Motor,6.1,19,Cerah,True,12000,4.9
+OJ01358,2025-07-25 22:57,Bandung,Motor,9.6,25,Cerah,True,19000,4.5
+OJ01359,2025-07-25 23:30,Surabaya,Mobil,9.0,26,Cerah,False,40500,3.6
+OJ01360,2025-07-25 23:39,Surabaya,Motor,7.6,24,Hujan,False,24000,
+OJ01361,2025-07-25 23:56,Surabaya,Motor,8.4,33,Hujan,True,21000,5.0
+OJ01362,2025-07-26 00:14,Medan,Mobil,5.4,22,Cerah,True,19500,4.7
+OJ01363,2025-07-26 02:02,Medan,Kirim Barang,7.7,21,Cerah,False,23000,4.6
+OJ01364,2025-07-26 03:41,Medan,Mobil,12.7,37,Cerah,True,45500,4.1
+OJ01365,2025-07-26 03:54,Jakarta,Motor,1.0,7,Cerah,False,5000,5.0
+OJ01366,2025-07-26 04:10,Jakarta,Motor,6.1,24,Hujan,False,19000,4.3
+OJ01367,2025-07-26 04:54,Bandung,Motor,10.8,29,Cerah,False,27000,5.0
+OJ01368,2025-07-26 06:47,Surabaya,Mobil,1.5,8,Cerah,True,7000,4.9
+OJ01369,2025-07-26 06:48,Medan,Motor,6.6,17,Cerah,True,13000,5.0
+OJ01370,2025-07-26 09:03,Jakarta,Motor,7.6,26,Hujan,False,24000,4.9
+OJ01371,2025-07-26 09:16,Jakarta,Motor,12.8,44,Hujan,False,40000,5.0
+OJ01372,2025-07-26 10:01,Surabaya,Motor,4.7,15,Cerah,True,9500,4.9
+OJ01373,2025-07-26 10:17,Medan,Motor,3.7,16,Hujan,False,11500,4.7
+OJ01374,2025-07-26 12:37,Surabaya,Motor,8.1,27,Hujan,False,25500,5.0
+OJ01375,2025-07-26 17:12,Jakarta,Motor,3.7,14,Cerah,False,11500,4.5
+OJ01376,2025-07-26 17:27,Jakarta,Kirim Barang,3.9,21,Cerah,True,11500,4.3
+OJ01377,2025-07-26 17:56,Jakarta,Motor,3.6,22,Cerah,True,9000,4.9
+OJ01378,2025-07-26 18:10,Jakarta,Mobil,11.6,58,Cerah,False,65000,3.8
+OJ01379,2025-07-26 18:17,Medan,Mobil,0.7,7,Cerah,False,11000,4.6
+OJ01380,2025-07-26 19:37,Jakarta,Motor,15.8,84,Hujan,False,49500,4.1
+OJ01381,2025-07-26 22:03,Surabaya,Kirim Barang,3.6,12,Cerah,True,9000,4.8
+OJ01382,2025-07-27 01:31,Surabaya,Motor,7.6,22,Cerah,True,15000,4.6
+OJ01383,2025-07-27 03:10,Surabaya,Mobil,6.0,20,Cerah,False,27000,4.6
+OJ01384,2025-07-27 03:34,Jakarta,Motor,2.2,7,Cerah,True,4500,4.6
+OJ01385,2025-07-27 04:04,Surabaya,Motor,3.1,11,Cerah,True,6500,4.9
+OJ01386,2025-07-27 04:28,Jakarta,Motor,11.7,29,Cerah,False,29000,4.7
+OJ01387,2025-07-27 05:36,Jakarta,Kirim Barang,4.0,15,Hujan,False,15000,4.7
+OJ01388,2025-07-27 06:25,Surabaya,Motor,11.9,29,Cerah,False,30000,4.6
+OJ01389,2025-07-27 06:37,Bandung,Motor,11.6,30,Cerah,False,29000,4.6
+OJ01390,2025-07-27 08:29,Bandung,Motor,2.9,18,Cerah,True,7000,5.0
+OJ01391,2025-07-27 08:45,Surabaya,Motor,4.6,22,Cerah,True,11500,4.1
+OJ01392,2025-07-27 09:00,Jakarta,Motor,13.2,44,Hujan,False,41000,4.6
+OJ01393,2025-07-27 10:49,Jakarta,Motor,1.1,5,Cerah,False,5000,5.0
+OJ01394,2025-07-27 11:46,Surabaya,Motor,7.7,20,Cerah,False,19000,4.5
+OJ01395,2025-07-27 12:59,Bandung,Motor,5.8,17,Cerah,False,14500,5.0
+OJ01396,2025-07-27 14:11,Surabaya,Motor,9.2,25,Cerah,True,18500,5.0
+OJ01397,2025-07-27 14:50,Bandung,Motor,3.8,13,Cerah,True,7500,5.0
+OJ01398,2025-07-27 15:08,Jakarta,Motor,11.2,28,Cerah,True,22500,4.3
+OJ01399,2025-07-27 16:24,Surabaya,Mobil,3.5,20,Hujan,False,19500,4.5
+OJ01400,2025-07-27 17:42,Jakarta,Motor,8.0,42,Hujan,False,25000,5.0
+OJ01401,2025-07-27 17:45,Jakarta,Mobil,5.1,26,Cerah,False,28500,5.0
+OJ01402,2025-07-27 17:47,Medan,Mobil,11.1,56,Cerah,False,62500,4.2
+OJ01403,2025-07-27 17:47,Jakarta,Motor,8.3,36,Cerah,False,26000,4.5
+OJ01404,2025-07-27 20:52,Jakarta,Motor,3.1,16,Hujan,False,9500,4.7
+OJ01405,2025-07-27 22:22,Jakarta,Mobil,0.8,5,Cerah,False,9000,4.5
+OJ01406,2025-07-27 22:32,Jakarta,Motor,9.0,21,Cerah,False,22500,
+OJ01407,2025-07-27 22:46,Medan,Motor,3.9,14,Cerah,False,10000,4.7
+OJ01408,2025-07-28 00:05,Jakarta,Motor,6.7,20,Cerah,False,17000,4.4
+OJ01409,2025-07-28 00:54,Surabaya,Motor,10.6,25,Cerah,False,26500,4.5
+OJ01410,2025-07-28 01:06,Jakarta,Motor,2.2,12,Hujan,True,5500,4.9
+OJ01411,2025-07-28 01:27,Jakarta,Mobil,8.1,26,Cerah,False,36500,5.0
+OJ01412,2025-07-28 01:39,Jakarta,Motor,8.3,23,Cerah,True,17000,4.1
+OJ01413,2025-07-28 02:08,Jakarta,Kirim Barang,1.3,10,Cerah,False,6000,4.1
+OJ01414,2025-07-28 04:00,Medan,Motor,12.5,31,Cerah,True,25000,4.5
+OJ01415,2025-07-28 05:28,Surabaya,Kirim Barang,3.3,11,Cerah,False,10000,
+OJ01416,2025-07-28 05:50,Jakarta,Kirim Barang,7.6,29,Hujan,False,28500,4.7
+OJ01417,2025-07-28 07:02,Jakarta,Mobil,1.2,6,Cerah,False,11000,4.6
+OJ01418,2025-07-28 07:20,Surabaya,Motor,5.5,21,Cerah,True,13500,5.0
+OJ01419,2025-07-28 07:44,Jakarta,Motor,8.1,31,Cerah,False,25500,4.9
+OJ01420,2025-07-28 09:01,Jakarta,Motor,1.0,7,Cerah,True,4000,4.9
+OJ01421,2025-07-28 11:00,Bandung,Kirim Barang,1.3,10,Cerah,False,6000,4.4
+OJ01422,2025-07-28 11:17,Bandung,Motor,7.5,18,Cerah,False,19000,3.9
+OJ01423,2025-07-28 11:45,Surabaya,Motor,2.3,14,Hujan,False,7000,4.8
+OJ01424,2025-07-28 12:46,Surabaya,Mobil,3.4,15,Cerah,True,12500,4.8
+OJ01425,2025-07-28 12:54,Surabaya,Motor,2.8,10,Cerah,True,5500,4.5
+OJ01426,2025-07-28 13:08,Jakarta,Mobil,4.2,17,Cerah,True,15000,4.9
+OJ01427,2025-07-28 13:19,Surabaya,Kirim Barang,3.9,12,Cerah,False,11500,4.3
+OJ01428,2025-07-28 13:20,Surabaya,Kirim Barang,4.8,10,Cerah,False,14500,4.6
+OJ01429,2025-07-28 13:48,Jakarta,Motor,2.8,9,Cerah,False,7000,
+OJ01430,2025-07-28 14:02,Jakarta,Motor,8.7,23,Cerah,True,17500,4.5
+OJ01431,2025-07-28 15:29,Bandung,Motor,10.5,25,Cerah,False,26000,5.0
+OJ01432,2025-07-28 18:53,Jakarta,Motor,3.2,17,Cerah,True,8000,4.8
+OJ01433,2025-07-28 19:19,Medan,Motor,5.8,32,Hujan,False,18000,5.0
+OJ01434,2025-07-28 19:39,Medan,Kirim Barang,14.0,51,Cerah,False,52500,3.6
+OJ01435,2025-07-28 20:10,Jakarta,Motor,2.7,12,Cerah,False,7000,4.2
+OJ01436,2025-07-28 22:06,Jakarta,Mobil,6.0,20,Cerah,True,21500,5.0
+OJ01437,2025-07-28 22:31,Bandung,Mobil,5.2,25,Hujan,False,29000,4.9
+OJ01438,2025-07-28 23:22,Medan,Mobil,7.8,24,Cerah,False,35000,4.4
+OJ01439,2025-07-28 23:45,Bandung,Mobil,2.0,12,Hujan,False,11000,5.0
+OJ01440,2025-07-29 01:17,Jakarta,Motor,3.9,9,Cerah,False,10000,5.0
+OJ01441,2025-07-29 02:24,Surabaya,Mobil,5.0,16,Cerah,True,18000,4.6
+OJ01442,2025-07-29 05:31,Surabaya,Motor,3.1,11,Cerah,True,6500,5.0
+OJ01443,2025-07-29 06:05,Surabaya,Mobil,6.0,26,Hujan,False,34000,4.7
+OJ01444,2025-07-29 07:12,Medan,Motor,11.3,46,Cerah,True,28500,3.7
+OJ01445,2025-07-29 07:30,Surabaya,Motor,4.6,21,Cerah,False,14500,4.9
+OJ01446,2025-07-29 08:35,Jakarta,Motor,6.7,28,Cerah,False,21000,4.6
+OJ01447,2025-07-29 09:03,Jakarta,Mobil,4.4,13,Cerah,False,20000,5.0
+OJ01448,2025-07-29 09:17,Surabaya,Motor,7.6,16,Cerah,False,19000,4.6
+OJ01449,2025-07-29 09:20,Surabaya,Motor,4.8,18,Hujan,False,15000,4.2
+OJ01450,2025-07-29 09:37,Bandung,Motor,9.8,24,Cerah,False,24500,4.4
+OJ01451,2025-07-29 11:12,Jakarta,Mobil,6.1,27,Hujan,True,27500,4.8
+OJ01452,2025-07-29 13:02,Medan,Mobil,4.6,14,Cerah,True,16500,4.8
+OJ01453,2025-07-29 16:05,Jakarta,Motor,5.3,15,Cerah,False,13000,4.6
+OJ01454,2025-07-29 17:35,Jakarta,Motor,4.4,27,Hujan,False,14000,4.7
+OJ01455,2025-07-29 18:53,Jakarta,Mobil,2.9,19,Cerah,True,13000,5.0
+OJ01456,2025-07-29 19:06,Medan,Motor,7.2,29,Cerah,True,18000,5.0
+OJ01457,2025-07-29 19:40,Jakarta,Motor,6.8,31,Cerah,False,21000,5.0
+OJ01458,2025-07-29 20:15,Bandung,Motor,1.1,7,Cerah,False,5000,5.0
+OJ01459,2025-07-29 21:40,Surabaya,Mobil,2.3,11,Cerah,False,10500,
+OJ01460,2025-07-29 21:52,Jakarta,Motor,2.8,10,Cerah,False,7000,5.0
+OJ01461,2025-07-29 22:22,Jakarta,Motor,7.1,21,Hujan,False,22000,4.7
+OJ01462,2025-07-29 23:05,Jakarta,Motor,5.7,17,Cerah,True,11000,4.6
+OJ01463,2025-07-29 23:16,Surabaya,Motor,7.8,21,Hujan,True,19500,4.9
+OJ01464,2025-07-30 02:40,Surabaya,Mobil,7.2,22,Cerah,False,32500,5.0
+OJ01465,2025-07-30 03:11,Surabaya,Motor,11.3,27,Cerah,False,28000,5.0
+OJ01466,2025-07-30 04:46,Surabaya,Motor,5.6,16,Cerah,False,14000,4.8
+OJ01467,2025-07-30 07:07,Surabaya,Mobil,1.5,10,Cerah,True,9000,4.9
+OJ01468,2025-07-30 09:05,Jakarta,Motor,6.8,19,Cerah,False,17000,4.6
+OJ01469,2025-07-30 10:36,Medan,Mobil,5.0,23,Hujan,False,28000,4.3
+OJ01470,2025-07-30 15:42,Jakarta,Mobil,2.9,11,Cerah,False,13000,4.6
+OJ01471,2025-07-30 15:49,Surabaya,Motor,4.5,12,Cerah,False,11000,4.7
+OJ01472,2025-07-30 18:09,Jakarta,Motor,3.0,16,Hujan,True,7500,4.5
+OJ01473,2025-07-30 18:40,Surabaya,Motor,4.4,19,Cerah,False,14000,4.4
+OJ01474,2025-07-30 18:41,Medan,Mobil,6.8,37,Cerah,False,38000,4.6
+OJ01475,2025-07-30 19:12,Jakarta,Motor,9.4,37,Cerah,False,29500,4.6
+OJ01476,2025-07-30 23:27,Jakarta,Motor,7.0,21,Cerah,True,14000,4.4
+OJ01477,2025-07-30 23:48,Medan,Motor,13.2,33,Cerah,False,33000,5.0
+OJ01478,2025-07-31 01:16,Jakarta,Kirim Barang,7.7,18,Cerah,False,23000,4.9
+OJ01479,2025-07-31 02:05,Medan,Motor,2.2,12,Cerah,True,4500,4.7
+OJ01480,2025-07-31 02:51,Jakarta,Motor,4.5,11,Cerah,True,9000,4.4
+OJ01481,2025-07-31 05:26,Jakarta,Motor,8.9,30,Hujan,True,22500,4.8
+OJ01482,2025-07-31 07:02,Surabaya,Motor,14.5,58,Cerah,False,45500,4.4
+OJ01483,2025-07-31 07:48,Surabaya,Motor,3.6,16,Cerah,True,9000,4.2
+OJ01484,2025-07-31 10:44,Surabaya,Mobil,5.4,20,Hujan,False,30500,4.6
+OJ01485,2025-07-31 11:19,Bandung,Mobil,1.4,6,Cerah,True,7000,4.5
+OJ01486,2025-07-31 12:13,Surabaya,Motor,10.7,27,Cerah,False,27000,4.5
+OJ01487,2025-07-31 12:41,Bandung,Mobil,7.7,24,Cerah,False,34500,5.0
+OJ01488,2025-07-31 14:44,Bandung,Kirim Barang,2.5,12,Cerah,False,7500,5.0
+OJ01489,2025-07-31 15:15,Bandung,Mobil,14.0,57,Hujan,False,79000,4.7
+OJ01490,2025-07-31 15:47,Jakarta,Motor,15.6,38,Cerah,True,31000,5.0
+OJ01491,2025-07-31 18:25,Surabaya,Motor,6.3,33,Hujan,False,19500,5.0
+OJ01492,2025-07-31 18:34,Bandung,Mobil,6.2,41,Hujan,False,35000,4.7
+OJ01493,2025-07-31 19:33,Surabaya,Motor,1.7,10,Cerah,False,6000,
+OJ01494,2025-07-31 20:35,Surabaya,Kirim Barang,7.7,20,Cerah,False,23000,5.0
+OJ01495,2025-07-31 20:36,Bandung,Mobil,1.4,10,Cerah,False,9000,4.7
+OJ01496,2025-07-31 21:44,Bandung,Motor,8.2,27,Hujan,True,20500,4.8
+OJ01497,2025-07-31 22:28,Jakarta,Motor,1.0,9,Cerah,True,4000,5.0
+OJ01498,2025-07-31 23:20,Surabaya,Mobil,6.8,21,Cerah,False,30500,4.4
+OJ01499,2025-07-31 23:31,Jakarta,Motor,4.7,15,Cerah,True,9500,4.4
+OJ01500,2025-07-31 23:46,Surabaya,Mobil,2.1,12,Hujan,False,12000,4.6

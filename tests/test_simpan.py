@@ -16,6 +16,8 @@ from pathlib import Path
 
 import yaml
 
+from bantuan_uji import lengkapi
+
 ROOT = Path(__file__).resolve().parent.parent
 spec = importlib.util.spec_from_file_location("simpan", ROOT / "tools" / "simpan.py")
 S = importlib.util.module_from_spec(spec)
@@ -23,6 +25,7 @@ spec.loader.exec_module(S)
 
 D = dt.date
 FIXTURE = ROOT / "tests" / "fixtures" / "state"
+FIXTURE_SYSTEM = ROOT / "tests" / "fixtures" / "system"
 
 
 def git(cwd, *args, check=True):
@@ -66,6 +69,7 @@ class Base(unittest.TestCase):
         git(self.work, "init", "-b", "main")
         siapkan_identitas(self.work)
         shutil.copytree(FIXTURE, self.work / "state")
+        shutil.copytree(FIXTURE_SYSTEM, self.work / "system")
         (self.work / "notebooks").mkdir()
         (self.work / "notebooks" / "matplotlib_review.ipynb").write_text("{}", encoding="utf-8")
         (self.work / "README.md").write_text("awal\n", encoding="utf-8")
@@ -88,11 +92,13 @@ class Base(unittest.TestCase):
             "keputusan": "validated",
         }
         e.update(kw)
+        e = lengkapi(e, kw)
         isi = yaml.safe_dump(e, allow_unicode=True, sort_keys=False)
         return f"Berikut entrinya:\n```yaml\n{isi}```\n"
 
     def jalankan(self, teks=None, **kw):
         kw.setdefault("bangun", False)
+        kw.setdefault("cek_nb", False)  # notebook uji berisi "{}"; cek notebook diuji terpisah di bawah
         out = io.StringIO()
         with contextlib.redirect_stdout(out):
             kode = S.proses(self.work, self.teks() if teks is None else teks, self.today, **kw)
@@ -223,6 +229,31 @@ class TestSimpan(Base):
             self.jalankan()
 
 
+class TestCekNotebook(Base):
+    def test_notebook_gagal_membatalkan_tanpa_perubahan(self):
+        sebelum = (self.work / "state" / "state.yaml").read_bytes()
+        n = self.jumlah_commit()
+        with self.assertRaises(S.P.StateError) as cm:
+            self.jalankan(cek_nb=True, pemeriksa_nb=lambda rel: (False, "sel error: FileNotFoundError"))
+        self.assertIn("tidak bisa dijalankan ulang", str(cm.exception))
+        self.assertIn("--tanpa-cek-notebook", str(cm.exception))
+        self.assertEqual((self.work / "state" / "state.yaml").read_bytes(), sebelum)
+        self.assertEqual(self.jumlah_commit(), n)
+
+    def test_notebook_lolos_lanjut_menyimpan(self):
+        dicek = []
+        kode, keluar = self.jalankan(cek_nb=True, pemeriksa_nb=lambda rel: (dicek.append(rel.as_posix()) or (True, "lolos")))
+        self.assertEqual(kode, 0)
+        self.assertEqual(dicek, ["notebooks/matplotlib_review.ipynb"])
+        self.assertIn("✅ notebook", keluar)
+
+    def test_bukti_bukan_notebook_tidak_dicek(self):
+        (self.work / "notebooks" / "grafik.png").write_bytes(b"png")
+        kode, _ = self.jalankan(self.teks(bukti=["notebooks/grafik.png"]), cek_nb=True,
+                                pemeriksa_nb=lambda rel: (False, "tidak boleh dipanggil"))
+        self.assertEqual(kode, 0)
+
+
 class TestCli(Base):
     def test_main_dari_berkas(self):
         berkas = self.tmp / "entri.yaml"
@@ -230,7 +261,7 @@ class TestCli(Base):
         out = io.StringIO()
         with contextlib.redirect_stdout(out):
             kode = S.main(["--root", str(self.work), "--berkas", str(berkas), "--today", "2026-10-22",
-                           "--tanpa-paket", "--tidak-buka"])
+                           "--tanpa-paket", "--tidak-buka", "--tanpa-cek-notebook"])
         self.assertEqual(kode, 0, out.getvalue())
         self.assertEqual(self.status_item("matplotlib_review"), "validated")
 

@@ -1,0 +1,11 @@
+# Untuk tools/cek_notebook.py (menjalankan ulang notebook bukti) dan workflow GitHub "notebook".
+# Pasang di komputer lokal: pip install -r requirements-notebook.txt
+nbclient>=0.10
+nbformat>=5.9
+ipykernel>=6.29
+numpy>=1.26
+pandas>=2.1
+matplotlib>=3.8
+seaborn>=0.13
+scipy>=1.11
+openpyxl>=3.1

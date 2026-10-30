@@ -1,7 +1,7 @@
 ---
 dokumen: kurikulum
-versi: 1.0
-tanggal: 2026-10-29
+versi: 1.1
+tanggal: 2026-10-30
 peran: Rincian setiap modul roadmap menjadi quest beserta fungsi/konsep wajib. Dipakai mentor untuk menyajikan materi, menyusun ujian, dan retrieval review.
 otoritas: Di bawah roadmap (system/02_roadmap.md). Roadmap menentukan modul dan urutannya; kurikulum ini merinci isi setiap modul.
 ---
@@ -12,6 +12,7 @@ otoritas: Di bawah roadmap (system/02_roadmap.md). Roadmap menentukan modul dan 
 
 - Setiap quest punya **id** yang sama persis dengan id di `state/state.yaml`. Kolom `modul` di Evidence Entry diisi id ini.
 - **Wajib** adalah daftar fungsi/konsep yang harus diajarkan (`lanjut`) dan **semuanya** diujikan saat validasi quest itu. Ujian yang hanya mencakup sebagian daftar tidak boleh memvalidasi quest; mentor menunda validasi sampai sisanya diajarkan dan diuji.
+- Satu item = satu bagian yang dipisah koma (koma di dalam kurung tidak memisah). Pada daftar bertingkat, satu sub-butir = satu item dengan kunci label sebelum titik dua. Kolom `cakupan` di Evidence Entry diisi item-item ini dan diperiksa `tools/progress.py`; daftar siap salin: `python tools/progress.py cakupan <id>`. Karena itu, ubah pemisahan item dengan hati-hati dan catat di changelog.
 - **Fokus ujian** memberi arah soal dan challenge sesuai `system/03_rubrik_validasi.md`.
 - Modul yang sudah selesai (status legacy/validated) tidak diubah statusnya. Rinciannya di sini menjadi **cakupan retrieval review**: soal review diambil dari daftar wajibnya.
 - Modul **review** (misalnya Seaborn Review) menguji gabungan semua quest di modulnya pada dataset baru (challenge L3), termasuk item yang belum sempat diujikan.
@@ -180,7 +181,7 @@ Rujukan: [seaborn API reference](https://seaborn.pydata.org/api) (dibaca 2026-10
 - **Fokus ujian:** menerjemahkan pertanyaan bisnis menjadi query filter
 
 #### `sql_groupby_agg` — GROUP BY & Aggregation
-- **Wajib:** `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`, `COUNT(DISTINCT ...)`, `GROUP BY`, `HAVING` vs `WHERE`
+- **Wajib:** `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`, hitung unik (`COUNT(DISTINCT kolom)`), `GROUP BY`, `HAVING` vs `WHERE`
 - **Fokus ujian:** ringkasan per kelompok, setara dengan `groupby` + `agg` di Pandas
 
 #### `sql_join_subquery` — JOIN & Subquery Dasar
@@ -194,6 +195,18 @@ Rujukan: [seaborn API reference](https://seaborn.pydata.org/api) (dibaca 2026-10
 #### `sql_postgresql` — PostgreSQL Fundamentals
 - **Wajib:** instalasi dan klien (`psql` atau pgAdmin), tipe data umum, perbedaan utama dengan SQLite, koneksi dari Python (psycopg atau SQLAlchemy), memuat CSV ke tabel
 - **Fokus ujian:** menjalankan analisis yang sama di PostgreSQL
+
+## 📐 Statistika Terapan untuk Analisis
+
+Rujukan: [SciPy — Statistical functions (`scipy.stats`)](https://docs.scipy.org/doc/scipy/reference/stats.html) dan [pandas User Guide](https://pandas.pydata.org/docs/user_guide/index.html). Ditambahkan 2026-10-30. Teori dan rumus diperdalam di World 3 (Statistics, Probability); di sini fokusnya memakai statistik untuk menjawab pertanyaan data.
+
+#### `stat_terapan_deskriptif` — Ringkasan & Perbandingan Kelompok
+- **Wajib:** mean vs median pada data skewed, persentil dan IQR (`quantile`), deteksi outlier dengan aturan 1.5×IQR, proporsi dan persentase (`value_counts(normalize=True)`), rasio dan pertumbuhan (`pct_change`, MoM/YoY), segmentasi dengan `groupby` + `describe`, tabulasi silang (`pd.crosstab` dengan `normalize`), memilih ringkasan berdasarkan bentuk distribusi
+- **Fokus ujian:** memilih ringkasan yang jujur untuk data nyata dan menjelaskan perbedaan antar kelompok
+
+#### `stat_terapan_inferensi` — Sampel, Confidence Interval & Uji Hipotesis Dasar
+- **Wajib:** populasi vs sampel dan sampling error, confidence interval untuk mean (rumus dan bootstrap dengan NumPy), hipotesis nol dan alternatif, p-value dan tingkat signifikansi (termasuk salah kaprah umumnya), uji t dua kelompok (`scipy.stats.ttest_ind` dengan `equal_var=False`), uji chi-square untuk tabel kontingensi (`scipy.stats.chi2_contingency`), A/B test sederhana (metrik, pembagian grup, membaca hasil), signifikan secara statistik vs penting secara praktis
+- **Fokus ujian:** menyimpulkan perbedaan dua kelompok dengan benar dan jujur tentang ketidakpastian
 
 ## 🤖 AI untuk Pekerjaan Data
 
@@ -212,6 +225,18 @@ Rujukan: [seaborn API reference](https://seaborn.pydata.org/api) (dibaca 2026-10
 #### `ai_viz_docs_insight` — AI untuk Visualisasi, Dokumentasi & Insight
 - **Wajib:** meminta usulan jenis grafik lalu menilainya, membuat README/dokumentasi, draft insight dengan kerangka *Observation → Interpretation → Implication → Next Question*, human validation sebelum dipakai
 - **Fokus ujian:** insight yang bisa dipertanggungjawabkan dari data
+
+## 🗣️ Data Storytelling & Komunikasi Insight
+
+Ditambahkan 2026-10-30. Rujukan utama: dokumentasi Matplotlib untuk anotasi ([Annotations](https://matplotlib.org/stable/users/explain/text/annotations.html)); bacaan pendukung yang disarankan ada di `docs/sumber-belajar.md`.
+
+#### `story_struktur_insight` — Struktur Insight & Laporan
+- **Wajib:** merumuskan pertanyaan bisnis dan audiens, struktur laporan (ringkasan eksekutif → temuan → rekomendasi → keterbatasan), judul berbentuk insight (bukan sekadar nama variabel), angka yang bermakna (pembanding, konteks, satuan), rekomendasi yang bisa ditindaklanjuti, menyebut keterbatasan data dan analisis
+- **Fokus ujian:** mengubah hasil analisis menjadi ringkasan satu halaman yang bisa dipahami non-teknis
+
+#### `story_visual_penjelas` — Grafik yang Menjelaskan
+- **Wajib:** memilih grafik sesuai pesan (perbandingan, tren, komposisi, distribusi, hubungan), decluttering (grid, spines, legend seperlunya), warna untuk penekanan (satu warna aksen), anotasi (`ax.annotate`, `ax.axhline`, `ax.text`), urutan kategori yang bermakna, mengenali grafik menyesatkan (sumbu terpotong, dual axis, pie berlebihan), menyusun 3–5 grafik menjadi satu alur cerita
+- **Fokus ujian:** merombak grafik eksplorasi menjadi grafik laporan yang langsung menyampaikan pesan
 
 ## 📊 Portfolio #1
 
@@ -338,7 +363,7 @@ Rujukan: [PyTorch — Learn the Basics](https://docs.pytorch.org/tutorials/begin
 #### `gf_attention_generation` — Attention & Autoregressive Generation
 - **Wajib:** attention secara intuitif, generasi token demi token, temperature, training vs inference
 #### `gf_prompting_rag_ft` — Prompting vs RAG vs Fine-tuning
-- **Wajib:** kapan memakai prompting, RAG, atau fine-tuning; multimodal AI secara konsep
+- **Wajib:** kapan memakai prompting vs RAG vs fine-tuning, multimodal AI secara konsep
 
 #### `pc_prompting` — Prompting
 - **Wajib:** zero-shot, few-shot, instruksi system vs user, structured output, output JSON, iterasi prompt
@@ -375,7 +400,7 @@ Rujukan: [PyTorch — Learn the Basics](https://docs.pytorch.org/tutorials/begin
 - **Wajib:** logging, error, latency, token/biaya, mencatat tool call, konsep tracing dasar
 
 #### `mcp` — MCP
-- **Wajib:** host, client, dan server; primitive tools, resources, dan prompts; transport stdio dan HTTP; prototype server sederhana
+- **Wajib:** arsitektur host/client/server, primitive (tools, resources, prompts), transport (stdio, HTTP), prototype server sederhana
 - Rujukan: [The Complete Guide to Model Context Protocol](https://machinelearningmastery.com/the-complete-guide-to-model-context-protocol/) (dibaca 2026-10-29); untuk implementasi gunakan dokumentasi resmi MCP
 
 #### `dep_streamlit` — Deployment dengan Streamlit
@@ -396,7 +421,8 @@ Daftar ini **bukan** bagian kurikulum wajib. Masuk hanya bila Rafa menyetujui.
 |---|---|---|
 | SQL window functions (`ROW_NUMBER`, `RANK`, `SUM() OVER`) dan CTE (`WITH`) | SQL, setelah `sql_join_subquery` | Sering muncul di pekerjaan dan tes teknis Data Analyst |
 | Pandas time series (`to_datetime`, `resample`, `rolling`) | Retrieval Pandas atau sebelum Portfolio #1 | Banyak dataset bisnis berbasis waktu |
-| Uji hipotesis dasar (t-test, p-value, confidence interval) | World 3, Statistics | Inti analisis A/B test dan pengambilan keputusan berbasis data |
+
+Uji hipotesis dasar (t-test, p-value, confidence interval) yang sebelumnya tercatat di sini sudah masuk sebagai `stat_terapan_inferensi` (2026-10-30).
 
 ## Sumber yang dibaca saat menyusun (2026-10-29)
 

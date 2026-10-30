@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-10-30 (penguatan validasi, notebook, dataset, dan roadmap World 2)
+
+Disetujui Rafa pada 2026-10-30. Pengingat review otomatis diusulkan tetapi **tidak** dipakai, atas keputusan Rafa.
+
+- **Evidence Entry lebih ketat** (`system/03_rubrik_validasi.md` v1.1, `system/04_protokol_mentor.md` v2.1, `system/07_alur_kerja_command.md` v2.1):
+  - `cakupan` wajib untuk validasi quest aktif dan retrieval, lalu dicocokkan `progress.py` dengan item *Wajib* di kurikulum. Validasi quest materi harus mencakup semuanya. Modul review menyebut id quest yang dipakai (minimal "≥N" di kurikulum). Ini mencegah kejadian seperti koreksi cakupan Seaborn 2026-10-29
+  - `ujian` merekam setiap soal (level, pertanyaan, skor) dan challenge. Jumlah soal dan level diperiksa, lalu skor gabungan dihitung ulang dan harus sama dengan `skor_persen` (toleransi 1 poin)
+  - `kesalahan` / `teratasi` (opsional) mengisi `konsep_lemah` per modul di `state.yaml`, juga saat ujian tidak lulus. Retrieval review mengutamakan konsep ini
+  - Entri lama di `state/evidence/` tidak diperiksa ulang. Modul legacy yang naik karena bukti lama dan Portfolio tidak wajib mengisi kolom baru
+- **Notebook bukti harus bisa dijalankan ulang**: `tools/cek_notebook.py` menjalankan notebook di `bukti:` pada salinan sementara. `simpan.py` memakainya sebelum menyimpan (opsi `--tanpa-cek-notebook`; dilewati bila `nbclient` belum terpasang). Workflow baru `.github/workflows/notebook.yml` mewajibkan entri format baru lolos dan hanya melaporkan entri lama. Dependensinya di `requirements-notebook.txt`
+  - Temuan saat pertama dijalankan: `notebooks/2_data_science/seaborn/latihan.ipynb` (bukti Seaborn Distribution) membaca `data_mahasiswa.csv` yang tidak ada di repo. Statusnya tidak berubah; file datanya perlu ditambahkan di samping notebook
+- **Roadmap v2, World 2**: dua modul baru sebelum Portfolio #1. **Statistika Terapan untuk Analisis** (`stat_terapan_deskriptif`, `stat_terapan_inferensi`) ditempatkan setelah SQL. **Data Storytelling & Komunikasi Insight** (`story_struktur_insight`, `story_visual_penjelas`) ditempatkan setelah AI untuk Pekerjaan Data. Keempat quest ditambahkan ke `state.yaml` secara manual dengan status `belum`; progres yang ada tidak berubah, dan quest aktif tetap Categorical Plots. Bagian "Portfolio Lock" (sebelumnya menyebut "Portfolio World 1") dan "Review Queue" di roadmap diselaraskan dengan sistem sekarang
+- Usulan BI tools, Excel lanjutan, Streamlit untuk analitik, dan Git kolaboratif **tidak** masuk Roadmap v2. Usulan ini dicatat di `docs/usulan_advanced_data_analyst.md` untuk sistem kedua
+- **Kurikulum v1.1**: rincian keempat quest baru; uji hipotesis dihapus dari daftar celah karena sudah masuk. Redaksi tiga baris *Wajib* dirapikan supaya bisa dipecah script tanpa mengubah isinya (`gf_prompting_rag_ft`, `mcp`, dan `COUNT(DISTINCT ...)` di `sql_groupby_agg`). Ditambah penjelasan cara item dipecah
+- **Penyajian materi v1.1**: checklist kualitas sesi berisi 5 butir yang bisa dipakai Rafa untuk meminta perbaikan materi
+- **Dokumen**: `docs/portfolio.md` ditulis ulang mengikuti penomoran World Roadmap v2, tanpa angka progres manual (status dibaca dari state). `docs/sumber-belajar.md` disusun per World dan dirujukkan ke kebijakan referensi; tautan baru dicek 2026-10-30
+- **Bank dataset sintetis** di `assets/data/`: 7 CSV dan 1 basis data SQLite, dibuat ulang dengan `tools/buat_dataset.py` (seed tetap). Katalognya di `assets/data/README.md`, untuk challenge L3, retrieval di konteks baru, dan bukti Mastered
+- **`progress.py`**: perintah baru `cakupan <id>` (daftar item siap salin) dan `statistik` (tren skor, rata-rata per jenis/mode, percobaan per modul, konsep lemah)
+- **Tes**: `tests/test_rekaman_ujian.py`, `tests/test_cek_notebook.py`, `tests/test_konsistensi.py` (kurikulum terbaca, paket Project sinkron, tautan dan path di dokumen ada, portfolio di World yang benar, katalog dataset lengkap); potongan kurikulum beku di `tests/fixtures/system/`
+- Konstitusi dan format dashboard tidak diubah; dashboard hanya mendapat baris untuk modul baru
+
 ## 2026-10-29 (kurikulum semua World)
 
 - Menambahkan `system/09_kurikulum.md`: setiap modul roadmap dirinci menjadi quest beserta fungsi/konsep wajib dan fokus ujian (102 quest/modul). Roadmap v2 tidak diubah; kurikulum merinci isinya

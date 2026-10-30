@@ -1,6 +1,6 @@
 ---
 dokumen: alur_kerja_command
-versi: 2.0
+versi: 2.1
 peran: Arti setiap command dan alur dari belajar sampai commit. Dibaca mentor dan Rafa.
 ---
 
@@ -44,7 +44,7 @@ Melanjutkan quest di `posisi_saat_ini`. Tidak boleh melompat ke materi mendatang
 
 ### `review`
 
-Menjalankan retrieval review untuk modul yang jatuh tempo: 2–3 soal tanpa catatan, di konteks baru, mode `independent`. Modul legacy masuk antrean maksimal 2 per sesi. Hasilnya menjadi Evidence Entry berjenis `retrieval`.
+Menjalankan retrieval review untuk modul yang jatuh tempo: 2–3 soal tanpa catatan, di konteks baru, mode `independent`. Soal diambil dari item *Wajib* modul itu di `system/09_kurikulum.md`, dengan prioritas pada `konsep_lemah` modul itu di `state.yaml`. Modul legacy masuk antrean maksimal 2 per sesi. Hasilnya menjadi Evidence Entry berjenis `retrieval` (dengan `cakupan`, `ujian`, dan bila ada `kesalahan`/`teratasi`).
 
 ### `latihan`
 
@@ -56,7 +56,15 @@ Definisi lama: menyimpan historis percakapan yang relevan dan memperbarui memori
 
 ### `prepare commit`
 
-Hanya persiapan, tidak mengubah apa pun. Mentor memeriksa Evidence Entry: kolom lengkap, sesuai rubrik, `keputusan` konsisten dengan skor. Lalu menyusun pesan commit dan menyatakan **SIAP** atau **BELUM SIAP**.
+Hanya persiapan, tidak mengubah apa pun. Mentor memeriksa Evidence Entry:
+
+1. Kolom lengkap dan sesuai rubrik.
+2. `cakupan` memuat semua item *Wajib* quest (validasi) dan cocok dengan soal yang benar-benar diberikan.
+3. `ujian` mencatat setiap soal dan challenge; `skor_persen` sama dengan hitungannya (50% rata-rata soal + 50% challenge; retrieval: rata-rata soal).
+4. `keputusan` konsisten dengan skor.
+5. Notebook di `bukti:` sudah disimpan di folder repo beserta file datanya, dan sudah dicoba *Restart & Run All*.
+
+Lalu menyusun pesan commit dan menyatakan **SIAP** atau **BELUM SIAP**. Rafa bisa memeriksa sendiri tanpa mengubah apa pun dengan `python tools\simpan.py --dry`.
 
 ### `commit progres`
 
@@ -74,12 +82,14 @@ Mentor menyerahkan Evidence Entry sebagai satu blok kode YAML dan mengingatkan R
 python tools\simpan.py
 ```
 
-   `simpan.py` mengerjakan, berurutan: `git pull --rebase --autostash`, simulasi rubrik, menerapkan entri, `check` (bila gagal semua perubahan dikembalikan), **satu commit** berisi file bukti dan state (file lain yang sedang kamu kerjakan tidak ikut), `git push`, lalu membangun ulang `paket_project/`.
+   `simpan.py` mengerjakan, berurutan: `git pull --rebase --autostash`, simulasi rubrik, menjalankan ulang notebook di `bukti:` (bila `nbclient` terpasang; lihat `requirements-notebook.txt`), menerapkan entri, `check` (bila gagal semua perubahan dikembalikan), **satu commit** berisi file bukti dan state (file lain yang sedang kamu kerjakan tidak ikut), `git push`, lalu membangun ulang `paket_project/`.
 4. Selesai. Tidak ada yang perlu diunggah ke ChatGPT Project: mentor membaca state langsung dari GitHub. Beri jeda ±5 menit sebelum `cek progres` karena cache GitHub.
 
 Tidak perlu `git pull` sesudahnya dan tidak perlu menunggu bot: state sudah diterapkan di komputermu sebelum push. Workflow GitHub tetap berjalan sebagai pengaman (tes dan `check`).
 
-Opsi (lewat terminal): `--dry` (periksa dan simulasi saja), `--berkas <file.yaml>` (baca dari berkas, bukan clipboard), `--tanpa-push`, `--tanpa-git`, `--tanpa-paket`, `--buka` (buka folder `paket_project/` setelah selesai).
+Opsi (lewat terminal): `--dry` (periksa dan simulasi saja), `--berkas <file.yaml>` (baca dari berkas, bukan clipboard), `--tanpa-push`, `--tanpa-git`, `--tanpa-paket`, `--tanpa-cek-notebook` (lewati cek notebook; GitHub tetap mengeceknya), `--buka` (buka folder `paket_project/` setelah selesai).
+
+**Jika notebook bukti gagal dijalankan ulang:** tidak ada file yang berubah. Biasanya file data belum disalin ke samping notebook, atau ada sel yang bergantung pada urutan eksekusi lama. Perbaiki, coba *Restart & Run All* di Jupyter, lalu jalankan lagi.
 
 **Jika entri ditolak:** pesan menyebut aturan yang dilanggar dan tidak ada file yang berubah. Perbaiki entrinya bersama mentor lalu jalankan lagi dengan `id` baru. Jangan mengedit `state.yaml` manual untuk menyiasatinya.
 
@@ -102,6 +112,7 @@ Simpan Evidence Entry ke berkas di akar repo, misalnya `entri.yaml` (nama `entri
 ```powershell
 git pull
 python tools\progress.py apply entri.yaml --dry    # simulasi, tidak mengubah file
+python tools\cek_notebook.py --entri entri.yaml    # jalankan ulang notebook bukti
 python tools\progress.py apply entri.yaml          # terapkan
 python tools\progress.py check                     # pastikan state konsisten
 git add -A

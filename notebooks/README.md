@@ -20,6 +20,8 @@ notebooks/
 ## Aturan
 
 - File data disimpan **di samping notebook yang memakainya**, supaya notebook bisa dijalankan ulang tanpa mengubah path.
+- Notebook bukti harus lolos *Restart & Run All*: `tools/cek_notebook.py` menjalankannya ulang saat Simpan Progres dan di GitHub. Sel yang sengaja error diberi tag `raises-exception`.
+- Butuh dataset baru untuk challenge atau review? Salin dari bank dataset di `assets/data/` (katalog di `assets/data/README.md`).
 - Notebook baru masuk ke folder World dan modulnya, misalnya `2_data_science/seaborn/`.
 - Jangan memindahkan atau mengganti nama notebook yang sudah dirujuk di `bukti:` sebuah Evidence Entry (lihat `state/evidence/`), karena path-nya harus tetap ada.
 - Jika notebook sudah menjadi project final, pindahkan ke folder `projects/`.

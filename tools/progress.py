@@ -13,6 +13,8 @@ Perintah:
     python tools/progress.py learned <id>       tandai quest aktif sudah dipelajari (belum diuji)
     python tools/progress.py apply <entri.yaml> [--dry]   terapkan Evidence Entry
     python tools/progress.py inbox [--dry]      terapkan semua entri di state/inbox/ (dipakai workflow GitHub)
+    python tools/progress.py cakupan <id>       daftar item Wajib quest dari kurikulum (untuk kolom cakupan:)
+    python tools/progress.py statistik          tren skor, percobaan per modul, dan konsep lemah
 
 Opsi global: --root <folder repo>  --today YYYY-MM-DD
 Kebutuhan: Python 3.9+ dan PyYAML (pip install pyyaml).
@@ -21,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import re
 import shutil
 import sys
@@ -45,6 +48,12 @@ ULANG_GAGAL = 3
 LEGACY_PER_SESI = 2
 ID_ENTRI = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]{2,79}$")  # dipakai sebagai nama file; tanpa titik/garis miring
 BATAS_ENTRI_BYTE = 64 * 1024
+LEVEL = ("L1", "L2", "L3")
+# jumlah soal yang sah per (jenis ujian, tipe modul); lihat system/03_rubrik_validasi.md bagian 2 dan 5
+JUMLAH_SOAL = {("validasi", "materi"): (3, 5), ("validasi", "review"): (3, 3), ("retrieval", None): (2, 3)}
+TOLERANSI_SKOR = 1   # selisih pembulatan yang diizinkan antara skor_persen dan hitungan dari ujian
+MIN_REVIEW = 2       # jumlah quest minimal di cakupan modul review bila kurikulum tidak menyebut "≥N"
+BATAS_KONSEP_LEMAH = 15
 
 # --------------------------------------------------------------------------
 # Presentasi dashboard (bukan data progres, jadi tidak disimpan di state)
@@ -62,6 +71,7 @@ IKON = {
     "seaborn_regression": "📈", "seaborn_matrix": "🟥", "seaborn_grids": "🔗",
     "seaborn_aesthetics": "🎨", "seaborn_review": "🏆",
     "jupyter_colab": "📓", "ai_untuk_data": "🤖",
+    "statistika_terapan": "📐", "data_storytelling": "🗣️",
 }
 IKON_TIPE = {"review": "🏆", "portfolio": "📊", "capstone": "👑"}
 IKON_DEFAULT = "🔹"
@@ -136,6 +146,7 @@ class Repo:
         self.state_path = root / "state" / "state.yaml"
         self.evidence_dir = root / "state" / "evidence"
         self.dashboard_path = root / "state" / "dashboard.md"
+        self.kurikulum_path = root / "system" / "09_kurikulum.md"
 
     def load(self):
         text = self.state_path.read_text(encoding="utf-8")
@@ -267,6 +278,9 @@ def check(repo: Repo, data=None):
                 warnings.append(f"{it['id']}: tanggal_validasi belum tercatat")
         if it["status"] == "validated_legacy" and it.get("evidence"):
             warnings.append(f"{it['id']}: punya evidence, pertimbangkan naik ke validated")
+        kl = it.get("konsep_lemah")
+        if kl is not None and (not isinstance(kl, list) or not all(isinstance(x, str) for x in kl)):
+            errors.append(f"{it['id']}: konsep_lemah harus berupa daftar teks")
 
     # tepat satu quest sedang dikerjakan, tidak ada lompatan
     sedang = [r for r in recs if r["item"]["status"] in SEDANG]
@@ -447,6 +461,218 @@ def due(data, today: dt.date):
 
 
 # --------------------------------------------------------------------------
+# kurikulum: daftar Wajib per quest (system/09_kurikulum.md)
+# --------------------------------------------------------------------------
+JUDUL_QUEST = re.compile(r"^#### `([a-z0-9_]+)`")
+BARIS_WAJIB = re.compile(r"^- \*\*Wajib:\*\*\s*(.*)$")
+
+
+def norm_item(teks) -> str:
+    """Kunci pembanding item: tanpa backtick, tanpa isi kurung, huruf kecil, spasi dirapikan.
+
+    Contoh: "`barplot` (`estimator`, `errorbar`)" -> "barplot". Jadi mentor boleh menyalin
+    item dari kurikulum apa adanya, atau hanya menulis kuncinya.
+    """
+    s = str(teks).replace("`", "")
+    out, dalam = [], 0
+    for ch in s:
+        if ch == "(":
+            dalam += 1
+        elif ch == ")":
+            dalam = max(0, dalam - 1)
+        elif dalam == 0:
+            out.append(ch)
+    return re.sub(r"\s+", " ", "".join(out)).strip(" .,;").lower()
+
+
+def pecah_koma(teks: str) -> list:
+    """Pecah daftar berkoma, kecuali koma di dalam kurung atau backtick."""
+    bagian, buf, kurung, tick = [], [], 0, False
+    for ch in teks:
+        if ch == "`":
+            tick = not tick
+        elif not tick and ch == "(":
+            kurung += 1
+        elif not tick and ch == ")":
+            kurung = max(0, kurung - 1)
+        if ch == "," and kurung == 0 and not tick:
+            bagian.append("".join(buf).strip())
+            buf = []
+        else:
+            buf.append(ch)
+    bagian.append("".join(buf).strip())
+    return [b for b in bagian if b]
+
+
+def parse_kurikulum(teks: str) -> dict:
+    """{id: {"wajib": [teks item], "kunci": [kunci item]}} untuk setiap `#### `id``."""
+    hasil, cur, baris = {}, None, teks.replace("\r\n", "\n").split("\n")
+    i = 0
+    while i < len(baris):
+        b = baris[i]
+        m = JUDUL_QUEST.match(b)
+        if m:
+            cur = m.group(1)
+            hasil[cur] = {"wajib": [], "kunci": []}
+        elif cur and BARIS_WAJIB.match(b):
+            sisa = BARIS_WAJIB.match(b).group(1).strip()
+            if sisa:
+                for it in pecah_koma(sisa):
+                    hasil[cur]["wajib"].append(it)
+                    hasil[cur]["kunci"].append(norm_item(it))
+            else:  # daftar bertingkat: satu sub-butir = satu item, kuncinya label sebelum ':'
+                while i + 1 < len(baris) and re.match(r"^\s+- ", baris[i + 1]):
+                    i += 1
+                    it = re.sub(r"^\s+- ", "", baris[i]).strip()
+                    hasil[cur]["wajib"].append(it)
+                    hasil[cur]["kunci"].append(norm_item(it.split(":", 1)[0]) if ":" in it else norm_item(it))
+        elif b.startswith("#") and not b.startswith("####"):
+            cur = None
+        i += 1
+    return hasil
+
+
+def baca_kurikulum(repo: Repo) -> dict:
+    if not repo.kurikulum_path.is_file():
+        raise StateError(f"kurikulum tidak ditemukan: {repo.kurikulum_path}")
+    return parse_kurikulum(repo.kurikulum_path.read_text(encoding="utf-8"))
+
+
+def cocokkan_cakupan(cakupan: list, kunci: list):
+    """Kembalikan (kunci yang tercakup, item cakupan yang tidak dikenal)."""
+    tercakup, asing = set(), []
+    for c in cakupan:
+        n = norm_item(c)
+        if n in kunci:
+            tercakup.add(n)
+        elif ":" in str(c) and norm_item(str(c).split(":", 1)[0]) in kunci:
+            tercakup.add(norm_item(str(c).split(":", 1)[0]))
+        else:
+            asing.append(str(c))
+    return tercakup, asing
+
+
+def periksa_cakupan(repo: Repo, data, rec, e) -> tuple:
+    """Periksa kolom cakupan terhadap item Wajib di kurikulum. Kembalikan (error, peringatan)."""
+    it, parent = rec["item"], rec["parent"]
+    kur = baca_kurikulum(repo)
+    if it["id"] not in kur or not kur[it["id"]]["kunci"]:
+        return [f"quest '{it['id']}' belum punya daftar Wajib di system/09_kurikulum.md"], []
+    cakupan = e.get("cakupan") or []
+    if not cakupan:
+        return ["kolom cakupan wajib diisi: item Wajib yang diuji (lihat: python tools/progress.py cakupan "
+                f"{it['id']})"], []
+    err, warn = [], []
+    if tipe_of(it) == "review":
+        saudara = [q for q in (parent["quest"] if parent else []) if tipe_of(q) != "review"]
+        ids = {q["id"] for q in saudara}
+        kunci_saudara = {k for q in saudara for k in kur.get(q["id"], {}).get("kunci", [])}
+        dipakai = sorted({str(c).strip() for c in cakupan if str(c).strip() in ids})
+        asing = [str(c) for c in cakupan if str(c).strip() not in ids and norm_item(c) not in kunci_saudara]
+        m = re.search(r"≥\s*(\d+)", " ".join(kur[it["id"]]["wajib"]))
+        minimal = 1 if e["jenis"] == "retrieval" else (int(m.group(1)) if m else MIN_REVIEW)
+        if len(dipakai) < minimal:
+            err.append(f"cakupan modul review wajib menyebut minimal {minimal} id quest yang dipakai "
+                       f"(pilihan: {', '.join(sorted(ids))}); tertulis: {dipakai or 'tidak ada'}")
+    else:
+        kunci = kur[it["id"]]["kunci"]
+        tercakup, asing = cocokkan_cakupan(cakupan, kunci)
+        if e["jenis"] == "validasi":
+            kurang = [w for w, k in zip(kur[it["id"]]["wajib"], kunci) if k not in tercakup]
+            if kurang:
+                err.append("ujian validasi belum mencakup semua item Wajib quest ini. Yang belum: "
+                           + "; ".join(kurang) + ". Tunda validasi sampai semuanya diajarkan dan diuji")
+        elif not tercakup:
+            err.append("cakupan retrieval harus memuat minimal satu item Wajib quest ini")
+    if asing:
+        warn.append("item cakupan tidak dikenal di kurikulum (diabaikan): " + "; ".join(asing))
+    return err, warn
+
+
+# --------------------------------------------------------------------------
+# ujian: rekaman soal dan challenge, skor dihitung ulang
+# --------------------------------------------------------------------------
+def _skor_sah(v) -> bool:
+    return isinstance(v, (int, float)) and not isinstance(v, bool) and 0 <= v <= 100
+
+
+def periksa_ujian(e, tipe: str) -> tuple:
+    """Periksa kolom ujian dan hitung skor gabungan. Kembalikan (error, skor_hitung)."""
+    u = e.get("ujian")
+    if not isinstance(u, dict) or not isinstance(u.get("soal"), list) or not u["soal"]:
+        return ["kolom ujian wajib diisi: ujian.soal (daftar soal dengan level, pertanyaan, skor)"
+                + (" dan ujian.challenge" if e["jenis"] == "validasi" else "")], None
+    err = []
+    for k, s in enumerate(u["soal"], 1):
+        if not isinstance(s, dict):
+            err.append(f"ujian.soal ke-{k} harus berupa pemetaan (level, pertanyaan, skor)")
+            continue
+        if s.get("level") not in LEVEL:
+            err.append(f"ujian.soal ke-{k}: level harus salah satu dari {', '.join(LEVEL)}")
+        if not isinstance(s.get("pertanyaan"), str) or not s["pertanyaan"].strip():
+            err.append(f"ujian.soal ke-{k}: pertanyaan wajib diisi")
+        if not _skor_sah(s.get("skor")):
+            err.append(f"ujian.soal ke-{k}: skor harus angka 0-100")
+    kunci = (e["jenis"], tipe if e["jenis"] == "validasi" else None)
+    lo, hi = JUMLAH_SOAL.get(kunci, (1, 99))
+    if not lo <= len(u["soal"]) <= hi:
+        err.append(f"jumlah soal {len(u['soal'])}, seharusnya {lo}" + (f"-{hi}" if hi != lo else "")
+                   + f" untuk {e['jenis']}" + (f" modul {tipe}" if e["jenis"] == "validasi" else ""))
+    ch = u.get("challenge")
+    if e["jenis"] == "validasi":
+        if not isinstance(ch, dict):
+            err.append("ujian.challenge wajib diisi untuk validasi (level, deskripsi, skor)")
+        else:
+            if ch.get("level") not in LEVEL:
+                err.append(f"ujian.challenge: level harus salah satu dari {', '.join(LEVEL)}")
+            elif tipe == "review" and ch["level"] != "L3":
+                err.append("challenge modul review wajib level L3 (transfer)")
+            if not isinstance(ch.get("deskripsi"), str) or not ch["deskripsi"].strip():
+                err.append("ujian.challenge: deskripsi wajib diisi")
+            if not _skor_sah(ch.get("skor")):
+                err.append("ujian.challenge: skor harus angka 0-100")
+    elif ch is not None:
+        err.append("retrieval hanya berisi soal (tanpa challenge)")
+    if err:
+        return err, None
+    level = [s["level"] for s in u["soal"]] + ([ch["level"]] if isinstance(ch, dict) else [])
+    if not any(lv in ("L2", "L3") for lv in level):
+        err.append("setiap ujian memuat minimal satu soal level L2 atau L3")
+    rata = sum(s["skor"] for s in u["soal"]) / len(u["soal"])
+    hitung = 0.5 * rata + 0.5 * ch["skor"] if e["jenis"] == "validasi" else rata
+    hitung = round(hitung, 1)
+    if abs(e["skor_persen"] - hitung) > TOLERANSI_SKOR:
+        err.append(f"skor_persen {e['skor_persen']} tidak sama dengan hitungan dari ujian ({hitung}; "
+                   + ("rata-rata soal 50% + challenge 50%" if e["jenis"] == "validasi" else "rata-rata soal") + ")")
+    return err, hitung
+
+
+def kunci_konsep(teks) -> str:
+    return norm_item(str(teks).split(":", 1)[0])
+
+
+def perbarui_konsep_lemah(it: dict, e) -> list:
+    """kesalahan: menambah/menimpa konsep lemah; teratasi: menghapusnya. Kembalikan pesan."""
+    msgs, lemah = [], list(it.get("konsep_lemah") or [])
+    for t in e.get("teratasi") or []:
+        k = kunci_konsep(t)
+        sisa = [x for x in lemah if kunci_konsep(x) != k]
+        if len(sisa) != len(lemah):
+            msgs.append(f"konsep lemah teratasi: {str(t).split(':', 1)[0].strip()}")
+        lemah = sisa
+    for t in e.get("kesalahan") or []:
+        k = kunci_konsep(t)
+        lemah = [x for x in lemah if kunci_konsep(x) != k] + [str(t).strip()]
+        msgs.append(f"konsep lemah dicatat: {str(t).strip()}")
+    lemah = lemah[-BATAS_KONSEP_LEMAH:]
+    if lemah:
+        it["konsep_lemah"] = lemah
+    else:
+        it.pop("konsep_lemah", None)
+    return msgs
+
+
+# --------------------------------------------------------------------------
 # apply (Evidence Entry)
 # --------------------------------------------------------------------------
 def periksa_bukti(root: Path, bukti: list) -> list:
@@ -501,6 +727,12 @@ def validate_entry(e, root: Path | None = None) -> list:
         err.append("jenis validasi wajib mengisi pemahaman (dua keputusan beserta alasannya)")
     if e.get("jenis") == "mastery" and len(e.get("konteks") or []) < 2:
         err.append("jenis mastery wajib mengisi konteks minimal dua")
+    for k in ("cakupan", "kesalahan", "teratasi"):
+        v = e.get(k)
+        if v is not None and (not isinstance(v, list) or not all(isinstance(x, (str, int, float)) for x in v)):
+            err.append(f"{k} harus berupa daftar teks")
+    if e.get("ujian") is not None and not isinstance(e["ujian"], dict):
+        err.append("ujian harus berupa pemetaan berisi soal (dan challenge untuk validasi)")
     return err
 
 
@@ -557,6 +789,20 @@ def apply_entry(repo: Repo, entry_path: Path, today: dt.date, dry=False):
             raise StateError("Entri ditolak: mastery wajib mode independent")
         baru = "mastered"
 
+    # rekaman ujian: cakupan (terhadap kurikulum) dan soal/challenge (skor dihitung ulang)
+    tipe = tipe_of(it)
+    wajib_rekam = e["jenis"] == "retrieval" or (e["jenis"] == "validasi" and st in SEDANG
+                                                and tipe in ("materi", "review"))
+    errs = []
+    if wajib_rekam:
+        ce, cw = periksa_cakupan(repo, data, rec, e)
+        errs += ce
+        msgs += [f"⚠️ {w}" for w in cw]
+    if wajib_rekam or (e["jenis"] == "validasi" and e.get("ujian") is not None):
+        errs += periksa_ujian(e, tipe)[0]
+    if errs:
+        raise StateError("Entri ditolak:\n  - " + "\n  - ".join(errs))
+
     hasil = baru if lulus else "tetap"
     if e["keputusan"] != hasil:
         raise StateError(f"Entri ditolak: keputusan usulan '{e['keputusan']}', hasil perhitungan '{hasil}' (skor {e['skor_persen']}, ambang {AMBANG})")
@@ -609,6 +855,7 @@ def apply_entry(repo: Repo, entry_path: Path, today: dt.date, dry=False):
             it["perlu_review"] = True
             it["review_berikutnya"] = tgl + dt.timedelta(days=ULANG_GAGAL)
             msgs.append(f"Ditandai perlu_review; jadwal ulang {it['review_berikutnya']}")
+    msgs += perbarui_konsep_lemah(it, e)
 
     data["diperbarui"] = today
     if not dry:
@@ -671,6 +918,97 @@ def proses_inbox(repo: Repo, today: dt.date, dry: bool = False):
 
 
 # --------------------------------------------------------------------------
+# statistik (dibaca dari state/evidence/; tidak mengubah apa pun)
+# --------------------------------------------------------------------------
+def muat_semua_evidence(repo: Repo) -> list:
+    out = []
+    if repo.evidence_dir.is_dir():
+        for p in sorted(repo.evidence_dir.glob("*.yaml")):
+            try:
+                e = yaml.safe_load(p.read_text(encoding="utf-8-sig"))
+            except (yaml.YAMLError, UnicodeDecodeError):
+                continue
+            if isinstance(e, dict):
+                out.append(e)
+    return out
+
+
+def _tanggal_atau_none(v):
+    try:
+        return to_date(v)
+    except StateError:
+        return None
+
+
+def statistik(repo: Repo, data) -> str:
+    entri = muat_semua_evidence(repo)
+    nama = {m["id"]: m["nama"] for w in data["worlds"] for m in w["modul"]}
+    nama.update({r["item"]["id"]: r["item"]["nama"] for r in leaves(data)})
+    berskor = [e for e in entri if _skor_sah(e.get("skor_persen")) and _tanggal_atau_none(e.get("tanggal"))]
+    berskor.sort(key=lambda e: (_tanggal_atau_none(e["tanggal"]), str(e.get("id"))))
+    L = [f"📈 STATISTIK BELAJAR ({len(entri)} Evidence Entry; {len(berskor)} bertanggal dan berskor)", ""]
+
+    L.append("Tren skor (urut tanggal):")
+    if not berskor:
+        L.append("  (belum ada)")
+    for e in berskor:
+        s = e["skor_persen"]
+        bar = "█" * int(round(s / 10))
+        tanda = "✅" if s >= AMBANG else "❌"
+        L.append(f"  {_tanggal_atau_none(e['tanggal'])}  {s:>5}% {tanda} {bar:<10}  {str(e.get('jenis')):<9} "
+                 f"{str(e.get('mode_ai')):<11} {nama.get(e.get('modul'), e.get('modul'))}")
+
+    def rata(kelompok):
+        return f"{sum(x['skor_persen'] for x in kelompok) / len(kelompok):.1f}% ({len(kelompok)} entri)"
+
+    if berskor:
+        L += ["", "Rata-rata skor:"]
+        L.append(f"  {'semua':<20}: {rata(berskor)}; lulus {sum(e['skor_persen'] >= AMBANG for e in berskor)}/{len(berskor)}")
+        for kol, nilai in (("jenis", sorted(JENIS)), ("mode_ai", sorted(MODE_AI))):
+            for v in nilai:
+                kel = [e for e in berskor if e.get(kol) == v]
+                if kel:
+                    L.append(f"  {kol + '=' + v:<20}: {rata(kel)}")
+        if len(berskor) >= 4:
+            h = len(berskor) // 2
+            awal, akhir = berskor[:h], berskor[h:]
+            selisih = sum(x["skor_persen"] for x in akhir) / len(akhir) - sum(x["skor_persen"] for x in awal) / len(awal)
+            arah = "naik" if selisih > 0 else ("turun" if selisih < 0 else "datar")
+            L.append(f"  {'tren':<20}: paruh kedua {arah} {abs(selisih):.1f} poin dibanding paruh pertama")
+
+    level = {lv: 0 for lv in LEVEL}
+    for e in entri:
+        u = e.get("ujian") if isinstance(e.get("ujian"), dict) else {}
+        for s in (u.get("soal") or []) + ([u["challenge"]] if isinstance(u.get("challenge"), dict) else []):
+            if isinstance(s, dict) and s.get("level") in level:
+                level[s["level"]] += 1
+    if any(level.values()):
+        L += ["", "Level soal yang sudah dikerjakan: " + ", ".join(f"{k} {v}" for k, v in level.items())]
+
+    per_modul = {}
+    for e in entri:
+        per_modul.setdefault(e.get("modul"), []).append(e)
+    ulang = {m: es for m, es in per_modul.items() if len(es) > 1 or any(
+        _skor_sah(x.get("skor_persen")) and x["skor_persen"] < AMBANG for x in es)}
+    L += ["", "Modul dengan lebih dari satu percobaan atau pernah gagal:"]
+    if not ulang:
+        L.append("  (tidak ada)")
+    for m, es in ulang.items():
+        skor = ", ".join(str(x.get("skor_persen")) for x in es)
+        L.append(f"  - {nama.get(m, m)} [{m}]: {len(es)} percobaan (skor: {skor})")
+
+    L += ["", "Konsep lemah yang masih tercatat (bahan retrieval review):"]
+    ada = False
+    for r in leaves(data):
+        for k in r["item"].get("konsep_lemah") or []:
+            L.append(f"  - {r['item']['nama']}: {k}")
+            ada = True
+    if not ada:
+        L.append("  (tidak ada)")
+    return "\n".join(L) + "\n"
+
+
+# --------------------------------------------------------------------------
 # CLI
 # --------------------------------------------------------------------------
 def pakai_utf8():
@@ -699,6 +1037,9 @@ def main(argv=None) -> int:
     a.add_argument("--dry", action="store_true")
     ib = sub.add_parser("inbox")
     ib.add_argument("--dry", action="store_true")
+    ck = sub.add_parser("cakupan")
+    ck.add_argument("id")
+    sub.add_parser("statistik")
     args = ap.parse_args(argv)
 
     repo = Repo(Path(args.root))
@@ -756,6 +1097,22 @@ def main(argv=None) -> int:
             if args.dry:
                 print("DRY-RUN: tidak ada file yang diubah")
             return 1 if ditolak else 0
+        elif args.cmd == "cakupan":
+            _, rec = find(data, args.id)
+            if rec is None:
+                raise StateError(f"id '{args.id}' tidak ada di state.yaml")
+            kur = baca_kurikulum(repo)
+            if tipe_of(rec["item"]) == "review":
+                qs = [q["id"] for q in (rec["parent"]["quest"] if rec["parent"] else []) if tipe_of(q) != "review"]
+                print(f"{rec['item']['nama']} adalah modul review: isi cakupan dengan id quest yang dipakai, pilih dari:")
+                for q in qs:
+                    print(f"  - {q}")
+            else:
+                print(f"cakupan:   # {rec['item']['nama']} — validasi wajib mencakup semua item ini")
+                for w, k in zip(kur.get(args.id, {}).get("wajib", []), kur.get(args.id, {}).get("kunci", [])):
+                    print(f"  - {json.dumps(k, ensure_ascii=False)}" + (f"   # {w}" if norm_item(w) != k else ""))
+        elif args.cmd == "statistik":
+            print(statistik(repo, data))
         return 0
     except StateError as x:
         print(f"❌ {x}")

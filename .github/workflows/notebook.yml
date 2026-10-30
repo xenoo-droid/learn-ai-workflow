@@ -1,0 +1,51 @@
+name: notebook
+
+# Pastikan notebook bukti bisa dijalankan ulang dari awal sampai akhir (system/03_rubrik_validasi.md bagian 3).
+# - Entri format baru (punya ujian:) wajib lolos: run merah bila notebook buktinya error.
+# - Entri format lama hanya dilaporkan (tidak membuat run merah), karena dibuat sebelum aturan ini ada.
+# Workflow ini hanya membaca repo; ia tidak meng-commit apa pun.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "notebooks/**"
+      - "state/evidence/**"
+      - "tools/cek_notebook.py"
+      - "requirements-notebook.txt"
+      - ".github/workflows/notebook.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  MPLBACKEND: Agg
+  TZ: Asia/Jakarta
+
+jobs:
+  jalankan-ulang:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: |
+            requirements.txt
+            requirements-notebook.txt
+
+      - name: Pasang dependensi
+        run: pip install -r requirements.txt -r requirements-notebook.txt
+
+      - name: Tes cek_notebook
+        run: python -m unittest discover -s tests -p "test_cek_notebook.py"
+
+      - name: Notebook bukti entri format baru (wajib lolos)
+        run: python tools/cek_notebook.py
+
+      - name: Laporan semua notebook bukti (informasi saja)
+        continue-on-error: true
+        run: python tools/cek_notebook.py --semua

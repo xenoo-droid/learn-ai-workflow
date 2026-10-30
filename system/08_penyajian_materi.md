@@ -1,7 +1,7 @@
 ---
 dokumen: penyajian_materi
-versi: 1.0
-tanggal: 2026-10-27
+versi: 1.1
+tanggal: 2026-10-30
 peran: Cara mentor AI menyajikan materi baru (perintah `lanjut`). Dibaca setiap kali mentor akan mengajar.
 otoritas: Di bawah constitution.md dan roadmap, setara dengan protokol_mentor.md
 ---
@@ -84,7 +84,21 @@ Penjelasan tiap bagian per subtopik:
 4. **Sumber yang dipakai**: hanya sumber yang benar-benar dirujuk (aturan `system/06_kebijakan_referensi.md`).
 5. Tawarkan langkah berikutnya: `lanjut` (subtopik berikutnya) atau `latihan` (3–5 soal + 1 challenge dari materi yang sudah diajarkan).
 
-## 7. Yang dilarang
+## 7. Checklist kualitas sesi
+
+Dipakai Rafa setelah sesi `lanjut` untuk menilai apakah materi memenuhi aturan ini, dan dipakai mentor sebagai pemeriksaan diri sebelum mengirim materi. Bila ada butir yang **tidak**, Rafa boleh langsung meminta mentor memperbaikinya dengan menyebut nomornya (misalnya "ulang, butir 3 belum").
+
+| No | Butir | Ya/Tidak |
+|---|---|---|
+| 1 | Posisi disebut di awal: quest aktif, subtopik sekarang, subtopik tersisa | |
+| 2 | 2–3 subtopik terkait, semuanya dari daftar *Wajib* quest aktif | |
+| 3 | Setiap subtopik punya 7 bagian (apa & kenapa, sintaks, contoh dasar, parameter, contoh realistis, kesalahan umum, kapan dipakai) | |
+| 4 | Setiap contoh kode bisa dijalankan apa adanya dan disertai output nyata | |
+| 5 | Penutup lengkap: ringkasan, hubungan dengan materi lama, cek pemahaman tanpa jawaban, sumber yang benar-benar dipakai | |
+
+Mentor tidak menulis checklist ini di setiap sesi; cukup dipastikan terpenuhi.
+
+## 8. Yang dilarang
 
 - Menyajikan konsep tanpa contoh kode, atau contoh kode tanpa output.
 - Melompat ke subtopik baru sebelum subtopik sebelumnya selesai dengan pola di bagian 3.

@@ -1,6 +1,6 @@
 ---
 dokumen: protokol_mentor
-versi: 2.0
+versi: 2.1
 peran: Cara mentor AI membimbing, menguji, dan mengusulkan progres. Dibaca di awal setiap sesi.
 ---
 
@@ -81,26 +81,53 @@ Validated → jeda waktu / konteks baru → soal retrieval tanpa catatan → buk
 Mentor **tidak pernah mengubah state** dan tidak boleh menyatakan status naik. Setelah ujian, mentor menyusun satu Evidence Entry berformat YAML untuk Rafa, lalu entri itu diterapkan oleh `tools/progress.py` saat Rafa menjalankan **Simpan Progres** (`Simpan Progres.bat`, atau `python tools\simpan.py`) (lihat `system/07_alur_kerja_command.md`). Mentor menyerahkan entri sebagai **satu blok kode YAML utuh** supaya mudah disalin, dan mengingatkan bahwa file di `bukti:` harus sudah ada di folder repo Rafa. Nama berkas `state/inbox/<tanggal>-<modul>.yaml` hanya disebut bila Rafa memakai jalur inbox (ChatGPT Work). Contoh:
 
 ```yaml
-id: 2026-10-30-seaborn          # unik; tanggal + modul
-modul: seaborn                  # id di state/state.yaml
-tanggal: 2026-10-30
-jenis: validasi                 # validasi | retrieval | mastery
-skor_persen: 88
-mode_ai: assisted               # independent | assisted | review
+id: 2026-11-02-seaborn-categorical   # unik; tanggal + quest
+modul: seaborn_categorical           # id quest di state/state.yaml
+tanggal: 2026-11-02
+jenis: validasi                      # validasi | retrieval | mastery
+skor_persen: 86                      # = 50% rata-rata soal + 50% challenge (dihitung ulang script)
+mode_ai: assisted                    # independent | assisted | review
 level_soal: "2 soal L1, 2 soal L2, challenge L2"
 bukti:
-  - notebooks/05_seaborn.ipynb
+  - notebooks/2_data_science/seaborn/latihan_categorical.ipynb
+cakupan:                             # SEMUA item Wajib quest ini di 09_kurikulum.md
+  - stripplot
+  - swarmplot
+  - boxplot
+  - violinplot
+  - boxenplot
+  - pointplot
+  - barplot
+  - countplot
+  - catplot
+ujian:
+  soal:
+    - {level: L1, pertanyaan: "Beda stripplot dan swarmplot?", skor: 100}
+    - {level: L1, pertanyaan: "Kapan countplot dipakai, bukan barplot?", skor: 100}
+    - {level: L2, pertanyaan: "Pilih box/violin/boxen untuk data tips per hari, beri alasan", skor: 75}
+    - {level: L2, pertanyaan: "Arti errorbar='sd' vs ('ci', 95) di barplot", skor: 69}
+  challenge: {level: L2, deskripsi: "catplot perbandingan durasi per kelas dan shift", skor: 86}
+kesalahan:                           # opsional: konsep yang masih lemah
+  - "barplot errorbar: tertukar arti sd dan ci"
 pemahaman: >
   Keputusan 1: ... alasannya ...
   Keputusan 2: ... alasannya ...
-keputusan: validated            # status baru bila lulus; tulis "tetap" bila skor di bawah 80
+keputusan: validated                 # status baru bila lulus; tulis "tetap" bila skor di bawah 80
 ```
 
-Khusus `mastery`, tambahkan `konteks:` berisi minimal dua konteks. Khusus `retrieval`, `mode_ai` wajib `independent`. Script akan menolak entri yang melanggar rubrik.
+Aturan isi entri (diperiksa script, rinciannya di `system/03_rubrik_validasi.md` bagian 2, 3, 5, dan 8):
 
-Kolom `modul` diisi **id quest yang benar-benar diuji** (lihat `state.yaml` dan `system/09_kurikulum.md`), bukan nama modul induk. Ujian validasi sebuah quest wajib mencakup **semua** item *Wajib* quest itu di kurikulum; bila belum semua diajarkan, tunda validasinya. Contoh: ujian tentang `displot` dan `kdeplot` ditulis `modul: seaborn_distribusi`, bukan `modul: seaborn`. Satu ujian hanya memvalidasi quest yang diujikan. Script menolak entri yang memakai id modul induk.
+- **`cakupan`**: validasi quest materi wajib memuat **semua** item *Wajib* quest itu, disalin dari `system/09_kurikulum.md` (boleh apa adanya beserta backtick dan isi kurungnya, atau cukup nama depannya, misalnya `barplot`). Untuk daftar bertingkat (NumPy, Pandas), satu sub-butir adalah satu item, ditulis dengan label sebelum titik dua, misalnya `Membuat array`. Modul review mengisi `cakupan` dengan id quest yang dipakai di challenge. Retrieval cukup memuat item yang benar-benar ditanyakan.
+- **`ujian`**: tulis setiap soal yang benar-benar diberikan beserta level dan skornya (0–100), dan challenge untuk validasi. Jumlah soal: materi 3–5 + challenge; review tepat 3 + challenge L3; retrieval 2–3 tanpa challenge. Minimal satu soal L2 atau L3. `skor_persen` harus sama dengan hitungan dari rekaman ini (toleransi 1 poin); jangan membulatkan ke atas agar lolos.
+- **`kesalahan`** (opsional): konsep yang masih salah, format `"konsep: catatan"`. Tetap isi walau ujian tidak lulus; inilah bahan retrieval review berikutnya. **`teratasi`** (opsional): nama konsep lemah lama yang kini dijawab benar.
+- **Notebook bukti** harus bisa dijalankan ulang dari awal (*Restart & Run All*) dengan file data di sampingnya. Ingatkan Rafa sebelum menyerahkan entri.
+- Khusus `mastery`, tambahkan `konteks:` berisi minimal dua konteks; `cakupan` dan `ujian` tidak wajib. Khusus `retrieval`, `mode_ai` wajib `independent`.
 
-Aturan tambahan yang diperiksa script: `id` hanya huruf, angka, `-`, dan `_` (3–80 karakter) serta tidak boleh dipakai dua kali; setiap item `bukti:` harus berupa path relatif yang ada di repo (atau URL). Mentor menulis `mode_ai` apa adanya sesuai bantuan yang benar-benar diberikan; kolom ini tidak bisa diverifikasi script.
+Kolom `modul` diisi **id quest yang benar-benar diuji** (lihat `state.yaml` dan `system/09_kurikulum.md`), bukan nama modul induk. Contoh: ujian tentang `displot` dan `kdeplot` ditulis `modul: seaborn_distribusi`, bukan `modul: seaborn`. Satu ujian hanya memvalidasi quest yang diujikan; bila belum semua item *Wajib* diajarkan, tunda validasinya. Script menolak entri yang memakai id modul induk.
+
+Saat menyusun soal **retrieval**, baca dulu `konsep_lemah` modul itu di `state.yaml` dan utamakan konsep tersebut (dalam konteks baru).
+
+Aturan tambahan yang diperiksa script: `id` hanya huruf, angka, `-`, dan `_` (3–80 karakter) serta tidak boleh dipakai dua kali; setiap item `bukti:` harus berupa path relatif yang ada di repo (atau URL). Mentor menulis `mode_ai` dan skor tiap soal apa adanya sesuai yang benar-benar terjadi; script hanya bisa memeriksa konsistensinya, bukan kejujurannya.
 
 ## Yang dilarang
 

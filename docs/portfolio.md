@@ -1,155 +1,117 @@
 # 🏗️ Portfolio Roadmap
 
-> Portfolio ini mengikuti roadmap belajar AI Workflow. Setiap project dirancang untuk memperkuat skill pada fase tertentu dan menjadi bukti perkembangan kemampuan.
+> Setiap proyek portofolio menutup satu World di Roadmap v2 (`system/02_roadmap.md`) dan menjadi bukti kemampuan yang bisa dilihat orang lain.
+
+Dokumen ini hanya menjelaskan **isi** setiap proyek. **Status** proyek (terkunci, aktif, validated) tidak ditulis di sini, karena sumber kebenarannya `state/state.yaml` dan tampilannya `state/dashboard.md`. Sebuah portfolio terbuka otomatis setelah semua modul non-opsional di World-nya selesai, dan divalidasi dengan rubrik portfolio di `system/03_rubrik_validasi.md` bagian 2. Rincian wajibnya ada di `system/09_kurikulum.md`.
+
+Proyek final disimpan di `projects/<nama-proyek>/` (lihat `projects/README.md`).
 
 ---
 
-# 📊 Progress
+# 🌍 WORLD 2 — DATA SCIENCE & DATA ANALYTICS
 
-- Total Projects : **0 / 6**
-- Current Project : **Data Analysis Report**
-- GitHub XP : **0 XP**
-- Portfolio Rank : **Apprentice Developer**
+## 📊 Portfolio #1: Data Analysis Report (`portfolio_1`)
 
----
+Prasyarat: semua modul non-opsional World 2, termasuk Statistika Terapan dan Data Storytelling.
 
-# 🌍 WORLD 1 — PYTHON & DATA
-
-## 📊 Data Analysis Report 🟨 CURRENT PROJECT
-
-### Objectives
-
-- [ ] Choose Dataset
-- [ ] Data Cleaning
-- [ ] Exploratory Data Analysis (EDA)
-- [ ] Data Visualization
-- [ ] Insight & Conclusion
-- [ ] Notebook Documentation
-- [ ] README Documentation
-- [ ] Publish to GitHub
-
-**Reward**
-
-- 🏆 Portfolio Project #1
-- ⭐ Data Analyst Apprentice
+- [ ] Pilih dataset publik dan rumuskan pertanyaan bisnis
+- [ ] Data cleaning (keputusan cleaning dicatat)
+- [ ] Exploratory Data Analysis
+- [ ] Ringkasan statistik dan, bila relevan, uji perbedaan kelompok
+- [ ] Visualisasi (Matplotlib/Seaborn) dengan judul berbentuk insight
+- [ ] Insight dan rekomendasi
+- [ ] Notebook rapi yang bisa dijalankan ulang
+- [ ] README: masalah, keputusan, keterbatasan
+- [ ] Publikasi di GitHub
 
 ---
 
-# 🌍 WORLD 2 — MATHEMATICS
+# 🌍 WORLD 3 — MATHEMATICS & STATISTICS FOR DATA/AI
 
-## 📈 Notebook Exploration
+## 📈 Portfolio: Notebook Eksplorasi Matematika/Statistika (`portfolio_math`)
 
-- [ ] Gradient Descent from Scratch
-- [ ] Statistics Visualization
-- [ ] Bayes Theorem Demonstration
+Cukup satu notebook dengan penjelasan dan visualisasi, misalnya:
 
-**Reward**
-
-- 🏆 Mathematics Explorer
+- [ ] Gradient descent dari nol dengan NumPy, atau
+- [ ] Simulasi distribusi dan Central Limit Theorem, atau
+- [ ] Demonstrasi teorema Bayes
 
 ---
 
-# 🌍 WORLD 3 — MACHINE LEARNING
+# 🌍 WORLD 4 — MACHINE LEARNING FUNDAMENTAL
 
-## 🤖 Prediction / Classification Model
+## 🤖 Portfolio #2: Prediction / Classification Model (`portfolio_2`)
 
-- [ ] Dataset Preparation
-- [ ] Data Preprocessing
-- [ ] Feature Engineering
-- [ ] Model Training
-- [ ] Model Evaluation
-- [ ] Documentation
-- [ ] Publish to GitHub
-
-**Reward**
-
-- 🏆 Machine Learning Explorer
+- [ ] Problem dan dataset
+- [ ] Preprocessing dan feature engineering
+- [ ] Training beberapa model dengan `Pipeline`
+- [ ] Evaluasi dengan metrik yang tepat dan cross-validation
+- [ ] Interpretasi hasil
+- [ ] Notebook, source code rapi di `src/`, model tersimpan
+- [ ] README dan publikasi di GitHub
 
 ---
 
-# 🌍 WORLD 4 — DEEP LEARNING
+# 🌍 WORLD 5 — DEEP LEARNING & NEURAL NETWORK
 
-## 🧠 Image / Text Classifier
+## 🧠 Portfolio #3: Image / Text Classifier (`portfolio_3`)
 
 - [ ] Dataset
-- [ ] Model Architecture
-- [ ] Training
-- [ ] Evaluation
-- [ ] Documentation
-- [ ] Publish to GitHub
-
-**Reward**
-
-- 🏆 Deep Learning Explorer
+- [ ] Model pretrained / transfer learning
+- [ ] Training dan evaluasi
+- [ ] README dan publikasi di GitHub
 
 ---
 
-# 🌍 WORLD 5 — GENERATIVE AI
+# 🌍 WORLD 6 — GENERATIVE AI & AI-ENHANCED DATA WORKFLOW
 
-## 💬 RAG-based Q&A System
+## 💬 Proyek RAG: RAG-based Q&A System (bagian dari quest `rag_pipeline`)
 
-- [ ] Document Loader
-- [ ] Embedding
-- [ ] Vector Database
-- [ ] Retrieval Pipeline
-- [ ] LLM Integration
-- [ ] Streamlit Interface
-- [ ] Documentation
-- [ ] Publish to GitHub
+Bukan portfolio terpisah di `state.yaml`; proyek ini adalah bukti quest `rag_pipeline` dan bisa ditampilkan sebagai portofolio.
 
-**Reward**
+- [ ] Document loader dan chunking
+- [ ] Embedding dan vector database (FAISS atau Chroma)
+- [ ] Retrieval pipeline
+- [ ] Integrasi LLM
+- [ ] Antarmuka sederhana (misalnya Streamlit)
+- [ ] README dan publikasi di GitHub
 
-- 🏆 RAG Builder
+## 👑 Capstone: AI-Enhanced Data Workflow (`capstone`)
 
----
-
-# 👑 FINAL WORLD
-
-## 🤖 AI Agent Capstone
-
-- [ ] Tool Calling
-- [ ] Multi-step Reasoning
-- [ ] Memory
-- [ ] Automation Workflow
-- [ ] Deployment
-- [ ] Documentation
-- [ ] Publish to GitHub
-
-**Reward**
-
-- 👑 AI Workflow Master
+- [ ] Aplikasi/workflow yang berjalan
+- [ ] README profesional dan diagram arsitektur
+- [ ] Contoh evaluasi dan failure cases
+- [ ] Demo
+- [ ] Repo GitHub
 
 ---
 
-# 🚀 Next Unlock
+# 🚀 Urutan
 
 ```text
-📊 Data Analysis Report
+📊 Portfolio #1: Data Analysis Report          (World 2)
         │
         ▼
-📈 Mathematics Notebook
+📈 Notebook Eksplorasi Matematika/Statistika    (World 3)
         │
         ▼
-🤖 Machine Learning Project
+🤖 Portfolio #2: Prediction / Classification    (World 4)
         │
         ▼
-🧠 Deep Learning Project
+🧠 Portfolio #3: Image / Text Classifier        (World 5)
         │
         ▼
-💬 RAG Q&A System
-        │
-        ▼
-👑 AI Agent Capstone
+💬 RAG Q&A System → 👑 Capstone                 (World 6)
 ```
 
 ---
 
-# 📝 Notes
+# 📝 Standar semua proyek
 
-Semua project wajib memiliki:
-
-- README yang jelas
+- README yang jelas: masalah, data, keputusan, hasil, keterbatasan
 - Source code yang rapi
 - Dokumentasi proses
 - Hasil evaluasi
-- Lesson Learned
+- Lesson learned
+
+XP, rank, dan achievements belum dipakai; sistem itu akan dirancang ulang dari state (lihat `system/05_spesifikasi_dashboard.md`, bagian "Belum termasuk").

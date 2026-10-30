@@ -1,0 +1,2016 @@
+id_transaksi,tanggal,cabang,kategori,produk,jumlah,harga_satuan,diskon_persen,metode_bayar,id_pelanggan,rating
+TRX00001,2025-01-01,Surabaya,Kecantikan,Serum Wajah,2,145000,0.0,QRIS,PLG0453,4.0
+TRX00002,2025-01-01,Surabaya,Makanan,Sambal Botol,3,28000,20.0,Transfer,PLG0119,5.0
+TRX00003,2025-01-01,Medan,Fashion,Sneakers,1,480000,15.0,QRIS,PLG0253,4.0
+TRX00004,2025-01-01,Surabaya,Kecantikan,Sunscreen SPF50,3,89000,0.0,Kartu Kredit,PLG0581,4.0
+TRX00005,2025-01-01,Bandung,Fashion,Kemeja Batik,2,260000,0.0,Kartu Kredit,PLG0139,5.0
+TRX00006,2025-01-02,Bandung,Elektronik,Earbuds Nirkabel,3,350000,10.0,Transfer,PLG0598,3.0
+TRX00007,2025-01-02,Medan,Elektronik,Speaker Bluetooth,2,410000,15.0,Kartu Debit,PLG0546,
+TRX00008,2025-01-02,Medan,Makanan,Kopi Bubuk 250g,2,55000,30.0,Kartu Kredit,PLG0649,5.0
+TRX00009,2025-01-02,Medan,Makanan,Sambal Botol,2,28000,10.0,Tunai,PLG0058,4.0
+TRX00010,2025-01-02,Bandung,Fashion,Sneakers,2,480000,20.0,QRIS,PLG0493,4.0
+TRX00011,2025-01-02,Bandung,Kecantikan,Lip Tint,3,59000,0.0,QRIS,PLG0307,5.0
+TRX00012,2025-01-03,Makassar,Rumah Tangga,Dispenser Sabun,2,60000,0.0,Transfer,PLG0497,5.0
+TRX00013,2025-01-03,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,0.0,Tunai,PLG0381,4.0
+TRX00014,2025-01-04,Surabaya,Kecantikan,Sabun Cuci Muka,2,42000,0.0,Kartu Debit,PLG0591,3.0
+TRX00015,2025-01-04,Bandung,Fashion,Kemeja Batik,1,260000,10.0,QRIS,PLG0301,4.0
+TRX00016,2025-01-04,Surabaya,Elektronik,Earbuds Nirkabel,1,350000,5.0,Kartu Debit,PLG0686,4.0
+TRX00017,2025-01-04,Surabaya,Kecantikan,Masker Wajah,1,25000,20.0,Transfer,PLG0310,3.0
+TRX00018,2025-01-04,Makassar,Elektronik,Kabel USB-C,1,45000,20.0,Kartu Kredit,PLG0120,5.0
+TRX00019,2025-01-05,surabaya,Rumah Tangga,Set Panci,2,450000,10.0,Tunai,PLG0462,4.0
+TRX00020,2025-01-05,Makassar,Rumah Tangga,Set Panci,3,450000,0.0,Kartu Debit,PLG0345,4.0
+TRX00021,2025-01-06,Makassar,Makanan,Keripik Singkong,3,18000,5.0,QRIS,PLG0296,5.0
+TRX00022,2025-01-06,Makassar,Fashion,Jilbab Instan,3,85000,0.0,QRIS,PLG0137,4.0
+TRX00023,2025-01-06,Bandung,Makanan,Madu 350ml,4,95000,0.0,QRIS,PLG0058,4.0
+TRX00024,2025-01-06,Surabaya,Fashion,Celana Chino,1,210000,15.0,Transfer,PLG0504,4.0
+TRX00025,2025-01-07,Surabaya,Kecantikan,Masker Wajah,2,25000,0.0,Kartu Debit,PLG0615,5.0
+TRX00026,2025-01-07,Jakarta,Fashion,Sneakers,1,480000,20.0,Tunai,PLG0158,4.0
+TRX00027,2025-01-07,Bandung,Rumah Tangga,Dispenser Sabun,3,60000,15.0,QRIS,PLG0667,4.0
+TRX00028,2025-01-07,Jakarta,Elektronik,Speaker Bluetooth,2,410000,,QRIS,PLG0661,
+TRX00029,2025-01-07,Medan,Kecantikan,Sabun Cuci Muka,1,42000,0.0,QRIS,PLG0253,4.0
+TRX00030,2025-01-07,Makassar,Makanan,Madu 350ml,2,95000,0.0,QRIS,PLG0270,5.0
+TRX00031,2025-01-07,Makassar,Rumah Tangga,Sapu Lantai,1,35000,5.0,QRIS,PLG0052,3.0
+TRX00032,2025-01-07,Surabaya ,Elektronik,Power Bank 10000mAh,2,220000,5.0,Tunai,PLG0216,5.0
+TRX00033,2025-01-07,Medan,Fashion,Celana Chino,1,210000,30.0,Tunai,PLG0345,4.0
+TRX00034,2025-01-08,Medan,Kecantikan,Lip Tint,2,59000,5.0,Tunai,PLG0501,4.0
+TRX00035,2025-01-09,Medan,Rumah Tangga,Rak Piring,2,160000,0.0,Kartu Debit,PLG0298,4.0
+TRX00036,2025-01-09,Jakarta,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0192,4.0
+TRX00037,2025-01-09,Surabaya,Rumah Tangga,Sapu Lantai,3,35000,30.0,QRIS,PLG0211,3.0
+TRX00038,2025-01-10,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,10.0,Tunai,PLG0265,3.0
+TRX00039,2025-01-10,Jakarta,Elektronik,Smartwatch,4,900000,0.0,Transfer,PLG0181,5.0
+TRX00040,2025-01-10,Makassar,Fashion,Celana Chino,2,210000,0.0,QRIS,PLG0013,4.0
+TRX00041,2025-01-11,Makassar,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0423,4.0
+TRX00042,2025-01-11,Jakarta,Rumah Tangga,Rice Cooker,2,380000,30.0,Tunai,PLG0477,5.0
+TRX00043,2025-01-11,Medan,Makanan,Kurma 500g,2,70000,15.0,Kartu Kredit,PLG0456,5.0
+TRX00044,2025-01-11,Jakarta,Fashion,Jilbab Instan,2,85000,15.0,Kartu Debit,PLG0578,4.0
+TRX00045,2025-01-11,Medan,Elektronik,Earbuds Nirkabel,5,350000,15.0,Kartu Debit,PLG0228,5.0
+TRX00046,2025-01-12,Surabaya,Elektronik,Power Bank 10000mAh,2,220000,0.0,Tunai,PLG0637,
+TRX00047,2025-01-13,Jakarta,Makanan,Madu 350ml,2,95000,,QRIS,PLG0348,4.0
+TRX00048,2025-01-13,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,0.0,Tunai,PLG0672,4.0
+TRX00049,2025-01-13,Jakarta,Kecantikan,Masker Wajah,2,25000,0.0,Tunai,PLG0591,4.0
+TRX00050,2025-01-13,Jakarta,Elektronik,Power Bank 10000mAh,2,220000,0.0,QRIS,PLG0282,3.0
+TRX00051,2025-01-13,Surabaya,Kecantikan,Sabun Cuci Muka,2,42000,20.0,QRIS,PLG0517,
+TRX00052,2025-01-14,Bandung,Elektronik,Speaker Bluetooth,2,410000,0.0,QRIS,PLG0055,4.0
+TRX00053,2025-01-14,Jakarta,Fashion,Kaos Polos,5,75000,0.0,QRIS,PLG0405,5.0
+TRX00054,2025-01-14,Makassar,Kecantikan,Serum Wajah,2,145000,0.0,Kartu Debit,PLG0494,3.0
+TRX00055,2025-01-14,Jakarta,Fashion,Jilbab Instan,3,85000,30.0,Kartu Kredit,PLG0157,4.0
+TRX00056,2025-01-14,Bandung,Fashion,Kaos Polos,2,75000,5.0,Kartu Kredit,PLG0121,4.0
+TRX00057,2025-01-15,Surabaya,Rumah Tangga,Rice Cooker,2,380000,0.0,Kartu Debit,PLG0474,4.0
+TRX00058,2025-01-15,Surabaya,Rumah Tangga,Dispenser Sabun,1,60000,0.0,QRIS,PLG0484,5.0
+TRX00059,2025-01-15,Surabaya,Makanan,Madu 350ml,3,95000,0.0,Tunai,PLG0301,5.0
+TRX00060,2025-01-15,Surabaya,Makanan,Madu 350ml,3,95000,30.0,Kartu Debit,PLG0148,3.0
+TRX00061,2025-01-16,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,0.0,Kartu Debit,PLG0659,3.0
+TRX00062,2025-01-16,Medan,Elektronik,Smartwatch,1,900000,0.0,Transfer,PLG0104,
+TRX00063,2025-01-16,Surabaya,Fashion,Kaos Polos,2,75000,0.0,Kartu Debit,PLG0621,5.0
+TRX00064,2025-01-16,Medan,Fashion,Sneakers,-2,480000,5.0,Kartu Kredit,PLG0338,4.0
+TRX00065,2025-01-16,Surabaya,Rumah Tangga,Dispenser Sabun,1,60000,15.0,Tunai,PLG0484,4.0
+TRX00066,2025-01-17,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,10.0,Tunai,PLG0212,4.0
+TRX00067,2025-01-17,Surabaya,Fashion,Kaos Polos,1,75000,0.0,Tunai,PLG0388,3.0
+TRX00068,2025-01-17,Medan,Rumah Tangga,Dispenser Sabun,3,60000,5.0,Tunai,PLG0124,3.0
+TRX00069,2025-01-17,Jakarta,Rumah Tangga,Rak Piring,3,160000,0.0,QRIS,PLG0578,5.0
+TRX00070,2025-01-18,Makassar,Fashion,Jilbab Instan,2,85000,0.0,QRIS,PLG0036,5.0
+TRX00071,2025-01-18,Jakarta,Fashion,Kemeja Batik,1,260000,0.0,QRIS,PLG0258,4.0
+TRX00072,2025-01-18,Surabaya,Fashion,Jilbab Instan,4,85000,0.0,QRIS,PLG0050,4.0
+TRX00073,2025-01-19,Bandung,Elektronik,Speaker Bluetooth,1,410000,0.0,Kartu Kredit,PLG0147,5.0
+TRX00074,2025-01-19,Jakarta,Fashion,Kaos Polos,2,75000,20.0,Kartu Kredit,PLG0004,4.0
+TRX00075,2025-01-19,Bandung,Fashion,Kaos Polos,1,75000,0.0,Tunai,PLG0061,5.0
+TRX00076,2025-01-19,Bandung,Kecantikan,Sunscreen SPF50,4,89000,10.0,Tunai,PLG0243,4.0
+TRX00077,2025-01-19,Medan,Fashion,Sneakers,3,480000,0.0,QRIS,PLG0314,5.0
+TRX00078,2025-01-19,Surabaya,Elektronik,Smartwatch,2,900000,0.0,Transfer,PLG0551,4.0
+TRX00079,2025-01-20,Jakarta,Elektronik,Speaker Bluetooth,3,410000,0.0,Kartu Debit,PLG0516,4.0
+TRX00080,2025-01-20,Jakarta,Rumah Tangga,Set Panci,1,450000,0.0,QRIS,PLG0232,4.0
+TRX00081,2025-01-20,Jakarta,Rumah Tangga,Dispenser Sabun,1,60000,0.0,Transfer,PLG0131,4.0
+TRX00082,2025-01-20,Jakarta,Elektronik,Speaker Bluetooth,2,410000,5.0,Tunai,PLG0047,4.0
+TRX00083,2025-01-20,Surabaya,Fashion,Sneakers,2,480000,0.0,Kartu Debit,PLG0259,5.0
+TRX00084,2025-01-21,Makassar,Kecantikan,Masker Wajah,1,25000,0.0,QRIS,PLG0015,3.0
+TRX00085,2025-01-21,Jakarta,Fashion,Sneakers,3,480000,30.0,QRIS,PLG0305,
+TRX00086,2025-01-21,Jakarta,Elektronik,Kabel USB-C,1,45000,10.0,Kartu Kredit,PLG0256,
+TRX00087,2025-01-21,Jakarta,Makanan,Madu 350ml,2,95000,20.0,Tunai,PLG0339,5.0
+TRX00088,2025-01-21,Medan,Kecantikan,Masker Wajah,3,25000,5.0,Kartu Debit,PLG0439,5.0
+TRX00089,2025-01-22,Makassar,Fashion,Sneakers,3,480000,0.0,QRIS,PLG0098,4.0
+TRX00090,2025-01-22,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,,Tunai,PLG0123,5.0
+TRX00091,2025-01-22,Jakarta,Rumah Tangga,Set Panci,1,450000,0.0,Transfer,PLG0328,4.0
+TRX00092,2025-01-22,Surabaya,Makanan,Madu 350ml,2,95000,0.0,QRIS,PLG0389,
+TRX00093,2025-01-22,Bandung,Makanan,Keripik Singkong,1,18000,20.0,QRIS,PLG0544,5.0
+TRX00094,2025-01-23,Jakarta,Makanan,Kurma 500g,1,70000,0.0,Kartu Debit,PLG0340,5.0
+TRX00095,2025-01-23,Surabaya,Fashion,Kemeja Batik,3,260000,30.0,Transfer,PLG0107,5.0
+TRX00096,2025-01-24,Medan,Rumah Tangga,Rice Cooker,3,380000,0.0,Kartu Debit,PLG0242,5.0
+TRX00097,2025-01-24,Makassar,Makanan,Sambal Botol,4,28000,15.0,Kartu Kredit,PLG0044,4.0
+TRX00098,2025-01-24,Jakarta,Makanan,Kurma 500g,2,70000,15.0,QRIS,PLG0136,5.0
+TRX00099,2025-01-24,Surabaya,Rumah Tangga,Set Panci,3,450000,15.0,Tunai,PLG0324,5.0
+TRX00100,2025-01-24,SBY,Fashion,Kaos Polos,3,75000,5.0,Tunai,PLG0248,5.0
+TRX00101,2025-01-25,Surabaya,Elektronik,Earbuds Nirkabel,3,350000,15.0,Tunai,PLG0326,4.0
+TRX00102,2025-01-25,Jakarta,Kecantikan,Sabun Cuci Muka,1,42000,30.0,QRIS,PLG0111,5.0
+TRX00103,2025-01-25,Jakarta,Fashion,Jilbab Instan,2,85000,10.0,QRIS,PLG0480,4.0
+TRX00104,2025-01-25,Makassar,Kecantikan,Lip Tint,3,59000,10.0,Transfer,PLG0215,5.0
+TRX00105,2025-01-25,Jakarta,Fashion,Jilbab Instan,1,85000,5.0,QRIS,PLG0219,4.0
+TRX00106,2025-01-25,Surabaya,Kecantikan,Serum Wajah,2,145000,10.0,Tunai,PLG0408,3.0
+TRX00107,2025-01-25,Medan,Makanan,Kurma 500g,2,70000,0.0,Transfer,PLG0260,3.0
+TRX00108,2025-01-25,Bandung,Rumah Tangga,Dispenser Sabun,3,60000,5.0,Transfer,PLG0421,3.0
+TRX00109,2025-01-25,Surabaya,Fashion,Sneakers,2,480000,10.0,QRIS,PLG0662,4.0
+TRX00110,2025-01-25,Bandung,Makanan,Kurma 500g,1,70000,0.0,Transfer,PLG0353,
+TRX00111,2025-01-26,Surabaya,Rumah Tangga,Set Panci,3,450000,10.0,QRIS,PLG0592,5.0
+TRX00112,2025-01-26,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,0.0,Tunai,PLG0290,4.0
+TRX00113,2025-01-27,Bandung,Elektronik,Power Bank 10000mAh,1,220000,15.0,Kartu Debit,PLG0120,4.0
+TRX00114,2025-01-27,Surabaya,Makanan,Madu 350ml,1,95000,0.0,QRIS,PLG0126,4.0
+TRX00115,2025-01-27,Bandung,Kecantikan,Masker Wajah,1,25000,5.0,Tunai,PLG0625,4.0
+TRX00116,2025-01-28,Bandung,Makanan,Kurma 500g,1,70000,15.0,Kartu Kredit,PLG0392,5.0
+TRX00117,2025-01-28,Makassar,Elektronik,Earbuds Nirkabel,2,350000,15.0,Tunai,PLG0308,5.0
+TRX00118,2025-01-28,Jakarta,Rumah Tangga,Set Panci,1,450000,20.0,QRIS,PLG0250,5.0
+TRX00119,2025-01-28,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,10.0,QRIS,PLG0659,3.0
+TRX00120,2025-01-28,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,0.0,Tunai,PLG0578,4.0
+TRX00121,2025-01-28,Medan,Makanan,Sambal Botol,4,28000,0.0,Transfer,PLG0211,3.0
+TRX00122,2025-01-28,Makassar,Elektronik,Speaker Bluetooth,2,410000,10.0,Kartu Kredit,PLG0127,3.0
+TRX00123,2025-01-28,Surabaya,Elektronik,Earbuds Nirkabel,3,350000,5.0,Transfer,PLG0484,3.0
+TRX00124,2025-01-28,Jakarta,Makanan,Sambal Botol,1,28000,0.0,QRIS,PLG0637,4.0
+TRX00125,2025-01-29,Surabaya,Fashion,Sneakers,4,480000,30.0,QRIS,PLG0468,5.0
+TRX00126,2025-01-30,Surabaya,Makanan,Sambal Botol,2,28000,0.0,QRIS,PLG0043,5.0
+TRX00127,2025-01-30,Surabaya,Fashion,Celana Chino,1,210000,5.0,Tunai,PLG0362,3.0
+TRX00128,2025-01-30,Surabaya,Fashion,Jilbab Instan,3,85000,10.0,QRIS,PLG0077,
+TRX00129,2025-01-30,Surabaya,Fashion,Sneakers,1,480000,20.0,QRIS,PLG0320,4.0
+TRX00130,2025-01-30,Jakarta,Fashion,Kaos Polos,3,75000,5.0,Kartu Debit,PLG0104,4.0
+TRX00131,2025-01-31,Medan,Makanan,Madu 350ml,5,95000,20.0,Tunai,PLG0216,4.0
+TRX00132,2025-01-31,Medan,Elektronik,Power Bank 10000mAh,3,220000,30.0,Transfer,PLG0688,4.0
+TRX00133,2025-02-01,Jakarta,Makanan,Madu 350ml,5,95000,0.0,QRIS,PLG0525,5.0
+TRX00134,2025-02-01,Jakarta,Rumah Tangga,Rice Cooker,1,380000,15.0,QRIS,PLG0629,4.0
+TRX00135,2025-02-01,Jakarta,Rumah Tangga,Dispenser Sabun,2,60000,0.0,QRIS,PLG0080,4.0
+TRX00136,2025-02-01,Bandung,Elektronik,Earbuds Nirkabel,2,350000,0.0,QRIS,PLG0254,5.0
+TRX00137,2025-02-02,Jakarta,Makanan,Kurma 500g,1,70000,0.0,QRIS,PLG0630,5.0
+TRX00138,2025-02-02,Surabaya,Makanan,Keripik Singkong,2,18000,10.0,Kartu Debit,PLG0067,
+TRX00139,2025-02-02,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,0.0,Kartu Kredit,PLG0624,4.0
+TRX00140,2025-02-02,Medan,Kecantikan,Sunscreen SPF50,2,89000,5.0,Kartu Kredit,PLG0471,3.0
+TRX00141,2025-02-02,Medan,Elektronik,Kabel USB-C,1,45000,30.0,QRIS,PLG0408,5.0
+TRX00142,2025-02-03,Makassar,Kecantikan,Sabun Cuci Muka,-1,42000,30.0,QRIS,PLG0266,
+TRX00143,2025-02-03,Surabaya,Fashion,Sneakers,2,480000,0.0,QRIS,PLG0144,4.0
+TRX00144,2025-02-03,Surabaya,Elektronik,Kabel USB-C,1,45000,15.0,Tunai,PLG0152,4.0
+TRX00145,2025-02-03,Bandung,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0652,5.0
+TRX00146,2025-02-03,Bandung,Elektronik,Earbuds Nirkabel,1,350000,20.0,QRIS,PLG0134,4.0
+TRX00147,2025-02-04,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,0.0,Kartu Kredit,PLG0603,4.0
+TRX00148,2025-02-04,Medan,Kecantikan,Masker Wajah,2,25000,5.0,Kartu Debit,PLG0592,5.0
+TRX00149,2025-02-04,Surabaya,Makanan,Madu 350ml,1,95000,20.0,Transfer,PLG0087,4.0
+TRX00150,2025-02-04,Bandung,Rumah Tangga,Rak Piring,2,160000,0.0,QRIS,PLG0652,5.0
+TRX00151,2025-02-04,Surabaya,Kecantikan,Lip Tint,2,59000,10.0,QRIS,PLG0690,5.0
+TRX00152,2025-02-04,Jakarta,Rumah Tangga,Rak Piring,3,160000,5.0,QRIS,PLG0132,4.0
+TRX00153,2025-02-04,surabaya,Fashion,Kaos Polos,1,75000,10.0,QRIS,PLG0617,4.0
+TRX00154,2025-02-04,Makassar,Makanan,Madu 350ml,1,95000,30.0,Tunai,PLG0604,3.0
+TRX00155,2025-02-05,Jakarta,Makanan,Keripik Singkong,3,18000,15.0,Kartu Kredit,PLG0065,3.0
+TRX00156,2025-02-05,Bandung,Rumah Tangga,Dispenser Sabun,2,60000,0.0,Transfer,PLG0042,5.0
+TRX00157,2025-02-05,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,0.0,Transfer,PLG0659,3.0
+TRX00158,2025-02-05,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,0.0,QRIS,PLG0269,4.0
+TRX00159,2025-02-05,Jakarta,Kecantikan,Serum Wajah,3,145000,15.0,Tunai,PLG0245,5.0
+TRX00160,2025-02-05,Surabaya,Rumah Tangga,Rice Cooker,3,380000,,QRIS,PLG0460,5.0
+TRX00161,2025-02-06,Jakarta,Rumah Tangga,Set Panci,3,450000,10.0,QRIS,PLG0567,4.0
+TRX00162,2025-02-06,Surabaya,Makanan,Keripik Singkong,1,18000,20.0,Tunai,PLG0369,4.0
+TRX00163,2025-02-06,Bandung,Makanan,Madu 350ml,5,95000,0.0,Transfer,PLG0460,5.0
+TRX00164,2025-02-06,Jakarta,Rumah Tangga,Sapu Lantai,1,35000,10.0,Kartu Debit,PLG0170,5.0
+TRX00165,2025-02-06,Surabaya,Makanan,Madu 350ml,2,95000,0.0,QRIS,PLG0388,4.0
+TRX00166,2025-02-06,Surabaya,Kecantikan,Sunscreen SPF50,2,89000,0.0,QRIS,PLG0270,4.0
+TRX00167,2025-02-07,Jakarta,Fashion,Kemeja Batik,3,260000,20.0,Tunai,PLG0185,5.0
+TRX00168,2025-02-07,Surabaya,Elektronik,Smartwatch,3,900000,15.0,Transfer,PLG0266,4.0
+TRX00169,2025-02-08,Bandung,Kecantikan,Serum Wajah,3,145000,5.0,Transfer,PLG0024,4.0
+TRX00170,2025-02-08,Bandung,Kecantikan,Lip Tint,1,59000,30.0,Kartu Debit,PLG0603,4.0
+TRX00171,2025-02-08,Surabaya,Rumah Tangga,Rice Cooker,2,380000,0.0,Tunai,PLG0067,
+TRX00172,2025-02-08,Bandung,Kecantikan,Serum Wajah,1,145000,15.0,QRIS,PLG0403,4.0
+TRX00173,2025-02-08,Jakarta,Kecantikan,Masker Wajah,1,25000,10.0,Tunai,PLG0373,4.0
+TRX00174,2025-02-09,Bandung,Kecantikan,Sunscreen SPF50,2,89000,5.0,QRIS,PLG0161,3.0
+TRX00175,2025-02-09,Surabaya,Makanan,Keripik Singkong,2,18000,15.0,Kartu Debit,PLG0360,5.0
+TRX00176,2025-02-09,Medan,Fashion,Sneakers,1,480000,0.0,Kartu Kredit,PLG0288,4.0
+TRX00177,2025-02-10,Medan,Rumah Tangga,Rak Piring,3,160000,15.0,Transfer,PLG0645,4.0
+TRX00178,2025-02-10,Surabaya,Fashion,Kemeja Batik,2,260000,20.0,QRIS,PLG0536,5.0
+TRX00179,2025-02-10,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,10.0,Transfer,PLG0538,4.0
+TRX00180,2025-02-10,Surabaya,Makanan,Kurma 500g,2,70000,15.0,QRIS,PLG0091,4.0
+TRX00181,2025-02-10,Surabaya,Fashion,Kaos Polos,2,75000,30.0,QRIS,PLG0140,4.0
+TRX00182,2025-02-10,Medan,Elektronik,Earbuds Nirkabel,1,350000,0.0,QRIS,PLG0200,5.0
+TRX00183,2025-02-10,Surabaya,Rumah Tangga,Set Panci,2,450000,10.0,Tunai,PLG0174,5.0
+TRX00184,2025-02-11,Surabaya,Fashion,Kaos Polos,5,75000,20.0,Tunai,PLG0322,3.0
+TRX00185,2025-02-11,Jakarta,Kecantikan,Lip Tint,3,59000,30.0,Kartu Debit,PLG0558,4.0
+TRX00186,2025-02-12,Medan,Fashion,Kaos Polos,1,75000,15.0,QRIS,PLG0437,4.0
+TRX00187,2025-02-12,Bandung,Elektronik,Earbuds Nirkabel,1,350000,0.0,QRIS,PLG0088,3.0
+TRX00188,2025-02-12,Jakarta,Makanan,Kurma 500g,1,70000,20.0,Transfer,PLG0089,3.0
+TRX00189,2025-02-12,Medan,Kecantikan,Masker Wajah,1,25000,10.0,Kartu Kredit,PLG0065,5.0
+TRX00190,2025-02-12,Jakarta,Rumah Tangga,Rice Cooker,2,380000,15.0,Transfer,PLG0061,4.0
+TRX00191,2025-02-13,Jakarta,Rumah Tangga,Rak Piring,1,160000,20.0,Transfer,PLG0393,4.0
+TRX00192,2025-02-14,Jakarta,Kecantikan,Lip Tint,2,59000,10.0,Kartu Debit,PLG0245,5.0
+TRX00193,2025-02-14,Bandung,Fashion,Sneakers,1,480000,20.0,Tunai,PLG0373,4.0
+TRX00194,2025-02-14,Surabaya,Elektronik,Smartwatch,2,900000,0.0,Transfer,PLG0490,4.0
+TRX00195,2025-02-14,Jakarta,Elektronik,Speaker Bluetooth,3,410000,5.0,Kartu Debit,PLG0221,4.0
+TRX00196,2025-02-14,Jakarta,Fashion,Kemeja Batik,3,260000,5.0,Tunai,PLG0260,
+TRX00197,2025-02-14,Bandung,Fashion,Kemeja Batik,2,260000,0.0,QRIS,PLG0570,4.0
+TRX00198,2025-02-14,Surabaya,Makanan,Sambal Botol,1,28000,0.0,QRIS,PLG0524,4.0
+TRX00199,2025-02-15,Surabaya,Fashion,Kaos Polos,3,75000,30.0,Tunai,PLG0533,5.0
+TRX00200,2025-02-15,Jakarta,Fashion,Kaos Polos,2,75000,20.0,Kartu Debit,PLG0470,4.0
+TRX00201,2025-02-15,Makassar,Makanan,Madu 350ml,3,95000,5.0,Kartu Debit,PLG0556,4.0
+TRX00202,2025-02-15,Makassar,Kecantikan,Serum Wajah,2,145000,20.0,Transfer,PLG0530,4.0
+TRX00203,2025-02-15,Bandung,Elektronik,Power Bank 10000mAh,2,220000,10.0,QRIS,PLG0225,5.0
+TRX00204,2025-02-15,Medan,Fashion,Jilbab Instan,6,85000,15.0,QRIS,PLG0057,5.0
+TRX00205,2025-02-15,Surabaya,Fashion,Kemeja Batik,1,260000,0.0,QRIS,PLG0167,3.0
+TRX00206,2025-02-16,Bandung,Makanan,Kopi Bubuk 250g,3,55000,10.0,Transfer,PLG0623,5.0
+TRX00207,2025-02-16,Jakarta,Rumah Tangga,Set Panci,2,450000,0.0,Kartu Kredit,PLG0488,4.0
+TRX00208,2025-02-16,Medan,Fashion,Kemeja Batik,2,260000,20.0,Transfer,PLG0277,4.0
+TRX00209,2025-02-17,Jakarta,Makanan,Madu 350ml,4,95000,5.0,Transfer,PLG0459,5.0
+TRX00210,2025-02-17,Medan,Makanan,Kopi Bubuk 250g,3,55000,0.0,Transfer,PLG0330,4.0
+TRX00211,2025-02-17,Surabaya,Elektronik,Earbuds Nirkabel,2,350000,30.0,Tunai,PLG0175,3.0
+TRX00212,2025-02-17,Jakarta,Makanan,Kurma 500g,1,70000,30.0,Tunai,PLG0509,
+TRX00213,2025-02-18,Surabaya,Elektronik,Power Bank 10000mAh,2,220000,0.0,QRIS,PLG0626,4.0
+TRX00214,2025-02-18,Jakarta,Makanan,Kurma 500g,2,70000,0.0,Kartu Debit,PLG0246,4.0
+TRX00215,2025-02-18,Medan,Elektronik,Earbuds Nirkabel,2,350000,20.0,Tunai,PLG0677,4.0
+TRX00216,2025-02-18,Jakarta,Rumah Tangga,Set Panci,4,450000,20.0,Kartu Kredit,PLG0562,5.0
+TRX00217,2025-02-19,Medan,Fashion,Kaos Polos,1,75000,10.0,Kartu Debit,PLG0018,3.0
+TRX00218,2025-02-19,Jakarta,Elektronik,Speaker Bluetooth,2,410000,5.0,QRIS,PLG0157,5.0
+TRX00219,2025-02-19,Surabaya,Fashion,Kemeja Batik,2,260000,15.0,QRIS,PLG0299,3.0
+TRX00220,2025-02-19,Medan,Kecantikan,Sabun Cuci Muka,3,42000,0.0,Kartu Debit,PLG0059,4.0
+TRX00221,2025-02-19,Jakarta,Fashion,Kemeja Batik,3,260000,0.0,Tunai,PLG0111,4.0
+TRX00222,2025-02-19,Bandung,Elektronik,Smartwatch,2,900000,20.0,QRIS,PLG0611,5.0
+TRX00223,2025-02-19,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,0.0,Tunai,PLG0448,
+TRX00224,2025-02-19,Jakarta,Elektronik,Speaker Bluetooth,2,410000,15.0,Transfer,PLG0316,3.0
+TRX00225,2025-02-19,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,0.0,Kartu Kredit,PLG0519,4.0
+TRX00226,2025-02-20,Surabaya,Makanan,Sambal Botol,5,28000,10.0,Tunai,PLG0493,4.0
+TRX00227,2025-02-20,Medan,Elektronik,Power Bank 10000mAh,5,220000,0.0,Tunai,PLG0614,4.0
+TRX00228,2025-02-20,Jakarta,Fashion,Jilbab Instan,2,85000,0.0,Tunai,PLG0094,4.0
+TRX00229,2025-02-20,Bandung,Rumah Tangga,Sapu Lantai,5,35000,0.0,QRIS,PLG0034,5.0
+TRX00230,2025-02-20,Bandung,Fashion,Jilbab Instan,4,85000,0.0,Tunai,PLG0189,3.0
+TRX00231,2025-02-21,Jakarta,Kecantikan,Serum Wajah,2,145000,0.0,Transfer,PLG0227,4.0
+TRX00232,2025-02-21,Bandung,Makanan,Sambal Botol,2,28000,0.0,Tunai,PLG0395,4.0
+TRX00233,2025-02-21,Surabaya,Elektronik,Speaker Bluetooth,1,410000,5.0,Tunai,PLG0523,5.0
+TRX00234,2025-02-21,Bandung,Rumah Tangga,Rak Piring,4,160000,20.0,QRIS,PLG0300,4.0
+TRX00235,2025-02-21,Bandung,Fashion,Jilbab Instan,-2,85000,20.0,QRIS,PLG0152,3.0
+TRX00236,2025-02-22,Jakarta,Fashion,Celana Chino,1,210000,0.0,Transfer,PLG0381,4.0
+TRX00237,2025-02-22,Bandung,Makanan,Kopi Bubuk 250g,1,55000,15.0,Tunai,PLG0460,5.0
+TRX00238,2025-02-22,Jakarta,Kecantikan,Serum Wajah,2,145000,20.0,QRIS,PLG0040,2.0
+TRX00239,2025-02-22,Surabaya,Elektronik,Smartwatch,4,900000,0.0,Kartu Debit,PLG0394,4.0
+TRX00240,2025-02-22,Jakarta,Fashion,Kemeja Batik,3,260000,0.0,Kartu Kredit,PLG0235,5.0
+TRX00241,2025-02-22,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,0.0,Tunai,PLG0197,3.0
+TRX00242,2025-02-23,Surabaya,Rumah Tangga,Rak Piring,2,160000,30.0,Tunai,PLG0419,
+TRX00243,2025-02-23,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,15.0,Transfer,PLG0414,4.0
+TRX00244,2025-02-23,Medan,Kecantikan,Masker Wajah,4,25000,10.0,Tunai,PLG0284,5.0
+TRX00245,2025-02-23,Makassar,Makanan,Madu 350ml,5,95000,30.0,QRIS,PLG0237,5.0
+TRX00246,2025-02-23,Jakarta,Elektronik,Power Bank 10000mAh,2,220000,5.0,Kartu Kredit,PLG0146,5.0
+TRX00247,2025-02-23,Medan,Fashion,Jilbab Instan,6,85000,30.0,Kartu Debit,PLG0099,4.0
+TRX00248,2025-02-24,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,0.0,Tunai,PLG0311,5.0
+TRX00249,2025-02-24,Makassar,Fashion,Kemeja Batik,1,260000,10.0,Kartu Kredit,PLG0178,4.0
+TRX00250,2025-02-24,Bandung,Rumah Tangga,Rice Cooker,2,380000,10.0,QRIS,PLG0512,5.0
+TRX00251,2025-02-24,Makassar,Elektronik,Smartwatch,2,900000,20.0,Kartu Debit,PLG0494,4.0
+TRX00252,2025-02-25,Makassar,Elektronik,Power Bank 10000mAh,1,220000,0.0,Kartu Debit,PLG0375,3.0
+TRX00253,2025-02-25,Jakarta,Elektronik,Speaker Bluetooth,3,410000,20.0,Kartu Debit,PLG0057,4.0
+TRX00254,2025-02-25,Jakarta,Fashion,Celana Chino,2,210000,0.0,QRIS,PLG0354,5.0
+TRX00255,2025-02-25,Bandung,Elektronik,Power Bank 10000mAh,1,220000,5.0,Tunai,PLG0149,5.0
+TRX00256,2025-02-26,Makassar,Makanan,Kurma 500g,4,70000,30.0,Kartu Kredit,PLG0639,5.0
+TRX00257,2025-02-26,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,5.0,Kartu Debit,PLG0606,5.0
+TRX00258,2025-02-27,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,10.0,QRIS,PLG0299,5.0
+TRX00259,2025-02-27,Jakarta,Rumah Tangga,Set Panci,2,450000,0.0,Kartu Kredit,PLG0643,4.0
+TRX00260,2025-02-27,Bandung,Rumah Tangga,Set Panci,5,450000,0.0,Tunai,PLG0057,5.0
+TRX00261,2025-02-27,Surabaya,Fashion,Jilbab Instan,1,85000,0.0,Tunai,PLG0154,5.0
+TRX00262,2025-02-28,Bandung,Makanan,Keripik Singkong,4,18000,0.0,QRIS,PLG0595,4.0
+TRX00263,2025-02-28,Surabaya,Makanan,Kopi Bubuk 250g,4,55000,10.0,Tunai,PLG0253,3.0
+TRX00264,2025-03-01,Jakarta,Makanan,Madu 350ml,2,95000,30.0,Tunai,PLG0675,4.0
+TRX00265,2025-03-01,Jakarta,Kecantikan,Sunscreen SPF50,3,89000,0.0,QRIS,PLG0426,4.0
+TRX00266,2025-03-01,Medan,Fashion,Jilbab Instan,1,85000,10.0,Tunai,PLG0398,4.0
+TRX00267,2025-03-01,Bandung,Makanan,Kopi Bubuk 250g,4,55000,15.0,Transfer,PLG0356,5.0
+TRX00268,2025-03-01,Bandung,Rumah Tangga,Dispenser Sabun,3,60000,5.0,QRIS,PLG0298,3.0
+TRX00269,2025-03-01,Jakarta,Makanan,Keripik Singkong,2,18000,0.0,Tunai,PLG0393,4.0
+TRX00270,2025-03-01,Surabaya,Kecantikan,Masker Wajah,-2,25000,5.0,Kartu Debit,PLG0581,4.0
+TRX00271,2025-03-01,Jakarta,Rumah Tangga,Rak Piring,3,160000,0.0,QRIS,PLG0337,3.0
+TRX00272,2025-03-01,Jakarta,Rumah Tangga,Sapu Lantai,6,35000,20.0,Kartu Debit,PLG0443,3.0
+TRX00273,2025-03-02,Bandung,Kecantikan,Lip Tint,3,59000,0.0,Kartu Debit,PLG0449,4.0
+TRX00274,2025-03-02,Surabaya,Kecantikan,Serum Wajah,3,145000,0.0,Transfer,PLG0008,5.0
+TRX00275,2025-03-02,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,20.0,Transfer,PLG0490,4.0
+TRX00276,2025-03-02,Bandung,Elektronik,Earbuds Nirkabel,1,350000,0.0,QRIS,PLG0091,3.0
+TRX00277,2025-03-02,Surabaya,Makanan,Sambal Botol,2,28000,0.0,QRIS,PLG0165,4.0
+TRX00278,2025-03-02,Surabaya,Rumah Tangga,Rak Piring,5,160000,5.0,Kartu Debit,PLG0324,4.0
+TRX00279,2025-03-02,Bandung,Fashion,Kaos Polos,1,75000,20.0,Kartu Debit,PLG0337,4.0
+TRX00280,2025-03-02,Makassar,Elektronik,Speaker Bluetooth,1,410000,0.0,Kartu Kredit,PLG0515,5.0
+TRX00281,2025-03-02,Jakarta,Fashion,Celana Chino,2,210000,5.0,QRIS,PLG0068,5.0
+TRX00282,2025-03-03,Surabaya,Elektronik,Smartwatch,1,900000,5.0,Tunai,PLG0051,3.0
+TRX00283,2025-03-03,Bandung,Fashion,Kaos Polos,2,75000,15.0,Kartu Kredit,PLG0204,4.0
+TRX00284,2025-03-03,Bandung,Makanan,Sambal Botol,3,28000,20.0,Transfer,PLG0014,4.0
+TRX00285,2025-03-03,Jakarta,Makanan,Keripik Singkong,2,18000,0.0,QRIS,PLG0164,
+TRX00286,2025-03-03,Surabaya,Elektronik,Kabel USB-C,2,45000,30.0,Tunai,PLG0515,2.0
+TRX00287,2025-03-03,Bandung,Rumah Tangga,Rak Piring,2,160000,30.0,QRIS,PLG0422,3.0
+TRX00288,2025-03-03,Bandung,Fashion,Sneakers,1,480000,0.0,QRIS,PLG0077,4.0
+TRX00289,2025-03-04,Surabaya,Rumah Tangga,Set Panci,2,450000,20.0,QRIS,PLG0149,4.0
+TRX00290,2025-03-04,Surabaya,Fashion,Celana Chino,2,210000,0.0,QRIS,PLG0334,4.0
+TRX00291,2025-03-04,Bandung,Kecantikan,Serum Wajah,4,145000,0.0,QRIS,PLG0580,5.0
+TRX00292,2025-03-04,Surabaya,Kecantikan,Serum Wajah,2,145000,20.0,QRIS,PLG0056,5.0
+TRX00293,2025-03-04,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,20.0,QRIS,PLG0445,4.0
+TRX00294,2025-03-04,Bandung,Fashion,Sneakers,1,480000,15.0,QRIS,PLG0175,4.0
+TRX00295,2025-03-05,Jakarta,Fashion,Kaos Polos,3,75000,0.0,Tunai,PLG0242,
+TRX00296,2025-03-05,Surabaya,Makanan,Sambal Botol,2,28000,0.0,Tunai,PLG0434,5.0
+TRX00297,2025-03-05,Makassar,Makanan,Keripik Singkong,2,18000,20.0,QRIS,PLG0291,4.0
+TRX00298,2025-03-06,Jakarta,Makanan,Sambal Botol,1,28000,5.0,Kartu Kredit,PLG0418,5.0
+TRX00299,2025-03-06,Surabaya,Fashion,Celana Chino,3,210000,5.0,QRIS,PLG0597,5.0
+TRX00300,2025-03-06,Jakarta,Fashion,Celana Chino,2,210000,0.0,QRIS,PLG0672,4.0
+TRX00301,2025-03-06,Surabaya,Fashion,Kaos Polos,2,75000,15.0,Transfer,PLG0006,4.0
+TRX00302,2025-03-06,Jakarta,Elektronik,Smartwatch,1,900000,5.0,QRIS,PLG0118,4.0
+TRX00303,2025-03-06,Surabaya,Fashion,Kemeja Batik,3,260000,0.0,QRIS,PLG0663,5.0
+TRX00304,2025-03-07,Surabaya,Kecantikan,Sabun Cuci Muka,2,42000,5.0,Tunai,PLG0118,4.0
+TRX00305,2025-03-07,Bandung,Makanan,Kopi Bubuk 250g,2,55000,5.0,Tunai,PLG0393,4.0
+TRX00306,2025-03-07,Jakarta,Rumah Tangga,Rak Piring,1,160000,10.0,Transfer,PLG0340,4.0
+TRX00307,2025-03-07,Jakarta,Elektronik,Earbuds Nirkabel,3,350000,30.0,Kartu Debit,PLG0186,4.0
+TRX00308,2025-03-07,Bandung,Elektronik,Power Bank 10000mAh,2,220000,10.0,QRIS,PLG0006,5.0
+TRX00309,2025-03-07,Jakarta,Fashion,Kemeja Batik,1,260000,0.0,Kartu Debit,PLG0386,4.0
+TRX00310,2025-03-07,Surabaya,Kecantikan,Lip Tint,2,59000,0.0,QRIS,PLG0114,4.0
+TRX00311,2025-03-07,Bandung,Kecantikan,Masker Wajah,3,25000,0.0,Kartu Debit,PLG0100,5.0
+TRX00312,2025-03-08,Jakarta,Elektronik,Kabel USB-C,1,45000,0.0,QRIS,PLG0643,4.0
+TRX00313,2025-03-08,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,15.0,QRIS,PLG0074,5.0
+TRX00314,2025-03-08,Medan,Fashion,Celana Chino,2,210000,0.0,Transfer,PLG0273,3.0
+TRX00315,2025-03-08,Jakarta,Fashion,Kaos Polos,4,75000,5.0,QRIS,PLG0525,4.0
+TRX00316,2025-03-08,Jakarta,Elektronik,Smartwatch,3,900000,5.0,QRIS,PLG0622,4.0
+TRX00317,2025-03-08,Medan,Elektronik,Power Bank 10000mAh,2,220000,0.0,Tunai,PLG0204,5.0
+TRX00318,2025-03-08,Jakarta,Rumah Tangga,Set Panci,2,450000,15.0,Kartu Kredit,PLG0185,4.0
+TRX00319,2025-03-08,Jakarta,Fashion,Jilbab Instan,2,85000,5.0,Tunai,PLG0267,
+TRX00320,2025-03-08,Jakarta,Rumah Tangga,Dispenser Sabun,2,60000,20.0,Kartu Debit,PLG0550,5.0
+TRX00321,2025-03-08,Surabaya,Elektronik,Speaker Bluetooth,1,410000,0.0,Kartu Debit,PLG0639,5.0
+TRX00322,2025-03-08,Jakarta,Fashion,Sneakers,2,480000,15.0,Transfer,PLG0247,3.0
+TRX00323,2025-03-08,Bandung,Elektronik,Power Bank 10000mAh,6,220000,0.0,Tunai,PLG0209,4.0
+TRX00324,2025-03-08,Jakarta,Fashion,Celana Chino,2,210000,15.0,Transfer,PLG0343,
+TRX00325,2025-03-09,Medan,Fashion,Sneakers,2,480000,5.0,QRIS,PLG0281,4.0
+TRX00326,2025-03-09,Makassar,Elektronik,Kabel USB-C,2,45000,30.0,Kartu Kredit,PLG0434,3.0
+TRX00327,2025-03-09,Jakarta,Rumah Tangga,Rak Piring,1,160000,15.0,Tunai,PLG0367,
+TRX00328,2025-03-09,Medan,Fashion,Kemeja Batik,2,260000,0.0,QRIS,PLG0398,3.0
+TRX00329,2025-03-09,Makassar,Makanan,Keripik Singkong,2,18000,10.0,Transfer,PLG0173,3.0
+TRX00330,2025-03-09,Jakarta,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0366,5.0
+TRX00331,2025-03-09,Surabaya,Elektronik,Kabel USB-C,3,45000,0.0,Kartu Kredit,PLG0057,4.0
+TRX00332,2025-03-09,Medan,Rumah Tangga,Rice Cooker,3,380000,20.0,QRIS,PLG0043,5.0
+TRX00333,2025-03-10,Medan,Elektronik,Kabel USB-C,1,45000,5.0,Transfer,PLG0159,3.0
+TRX00334,2025-03-10,Jakarta,Rumah Tangga,Rak Piring,1,160000,20.0,Tunai,PLG0204,4.0
+TRX00335,2025-03-10,Surabaya,Rumah Tangga,Sapu Lantai,1,35000,0.0,Kartu Debit,PLG0396,4.0
+TRX00336,2025-03-10,Medan,Fashion,Kemeja Batik,2,260000,5.0,QRIS,PLG0029,4.0
+TRX00337,2025-03-10,Medan,Kecantikan,Serum Wajah,1,145000,5.0,Tunai,PLG0252,
+TRX00338,2025-03-10,Medan,Kecantikan,Masker Wajah,3,25000,10.0,QRIS,PLG0063,3.0
+TRX00339,2025-03-10,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,30.0,Transfer,PLG0642,5.0
+TRX00340,2025-03-10,Medan,Fashion,Sneakers,2,480000,30.0,Kartu Kredit,PLG0419,5.0
+TRX00341,2025-03-10,Medan,Kecantikan,Sabun Cuci Muka,1,42000,0.0,Transfer,PLG0051,4.0
+TRX00342,2025-03-10,Bandung,Elektronik,Speaker Bluetooth,1,410000,30.0,Kartu Debit,PLG0603,5.0
+TRX00343,2025-03-10,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,5.0,QRIS,PLG0450,3.0
+TRX00344,2025-03-11,Bandung,Makanan,Sambal Botol,3,28000,10.0,QRIS,PLG0614,4.0
+TRX00345,2025-03-11,Jakarta,Elektronik,Power Bank 10000mAh,2,220000,5.0,Kartu Kredit,PLG0451,
+TRX00346,2025-03-11,Surabaya,Fashion,Celana Chino,2,210000,0.0,Kartu Kredit,PLG0097,4.0
+TRX00347,2025-03-11,Bandung,Rumah Tangga,Dispenser Sabun,2,60000,5.0,Transfer,PLG0582,5.0
+TRX00348,2025-03-11,Surabaya,Kecantikan,Sunscreen SPF50,6,89000,10.0,Transfer,PLG0168,4.0
+TRX00349,2025-03-11,Jakarta,Fashion,Sneakers,1,480000,0.0,QRIS,PLG0576,4.0
+TRX00350,2025-03-11,Makassar,Makanan,Keripik Singkong,4,18000,10.0,Kartu Debit,PLG0614,
+TRX00351,2025-03-11,Jakarta,Fashion,Kaos Polos,3,75000,5.0,Transfer,PLG0418,5.0
+TRX00352,2025-03-11,Medan,Fashion,Celana Chino,1,210000,15.0,Kartu Debit,PLG0508,4.0
+TRX00353,2025-03-11,Bandung,Makanan,Keripik Singkong,3,18000,0.0,Transfer,PLG0681,4.0
+TRX00354,2025-03-11,Jakarta,Fashion,Jilbab Instan,4,85000,5.0,Tunai,PLG0370,3.0
+TRX00355,2025-03-11,Jakarta,Fashion,Kaos Polos,2,75000,0.0,QRIS,PLG0613,4.0
+TRX00356,2025-03-11,Medan,Makanan,Keripik Singkong,2,18000,20.0,QRIS,PLG0432,4.0
+TRX00357,2025-03-12,Jakarta,Kecantikan,Serum Wajah,2,145000,0.0,QRIS,PLG0072,5.0
+TRX00358,2025-03-12,Bandung,Rumah Tangga,Dispenser Sabun,2,60000,20.0,Tunai,PLG0538,5.0
+TRX00359,2025-03-12,Jakarta,Makanan,Keripik Singkong,3,18000,15.0,QRIS,PLG0397,
+TRX00360,2025-03-12,Surabaya,Elektronik,Speaker Bluetooth,2,410000,30.0,Tunai,PLG0062,4.0
+TRX00361,2025-03-12,Makassar,Kecantikan,Serum Wajah,2,145000,0.0,QRIS,PLG0228,4.0
+TRX00362,2025-03-13,Jakarta,Kecantikan,Lip Tint,3,59000,0.0,Transfer,PLG0675,5.0
+TRX00363,2025-03-13,Jakarta,Elektronik,Kabel USB-C,5,45000,0.0,QRIS,PLG0137,5.0
+TRX00364,2025-03-13,Jakarta,Rumah Tangga,Dispenser Sabun,5,60000,5.0,QRIS,PLG0375,4.0
+TRX00365,2025-03-13,Jakarta,Makanan,Kurma 500g,4,70000,20.0,Kartu Kredit,PLG0081,5.0
+TRX00366,2025-03-13,Jakarta,Kecantikan,Sabun Cuci Muka,4,42000,10.0,Kartu Debit,PLG0604,5.0
+TRX00367,2025-03-13,Jakarta,Makanan,Sambal Botol,4,28000,15.0,QRIS,PLG0560,4.0
+TRX00368,2025-03-14,Surabaya,Rumah Tangga,Rice Cooker,2,380000,5.0,Kartu Debit,PLG0031,4.0
+TRX00369,2025-03-14,Bandung,Fashion,Jilbab Instan,1,85000,15.0,QRIS,PLG0241,4.0
+TRX00370,2025-03-14,Jakarta,Makanan,Kopi Bubuk 250g,4,55000,20.0,Tunai,PLG0264,4.0
+TRX00371,2025-03-15,Makassar,Elektronik,Earbuds Nirkabel,1,350000,10.0,Tunai,PLG0511,4.0
+TRX00372,2025-03-15,Medan,Kecantikan,Sabun Cuci Muka,3,42000,5.0,Transfer,PLG0501,3.0
+TRX00373,2025-03-15,Jakarta,Fashion,Jilbab Instan,1,85000,5.0,QRIS,PLG0628,4.0
+TRX00374,2025-03-15,Jakarta,Makanan,Keripik Singkong,2,18000,0.0,QRIS,PLG0214,4.0
+TRX00375,2025-03-15,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,0.0,Kartu Debit,PLG0658,5.0
+TRX00376,2025-03-15,Medan,Kecantikan,Sunscreen SPF50,1,89000,0.0,QRIS,PLG0342,4.0
+TRX00377,2025-03-15,Jakarta,Makanan,Kurma 500g,3,70000,20.0,Tunai,PLG0210,3.0
+TRX00378,2025-03-16,Jakarta,Fashion,Kemeja Batik,1,260000,0.0,QRIS,PLG0189,5.0
+TRX00379,2025-03-16,Surabaya,Rumah Tangga,Rice Cooker,1,380000,30.0,Transfer,PLG0653,4.0
+TRX00380,2025-03-16,Bandung,Makanan,Kurma 500g,2,70000,10.0,Kartu Debit,PLG0673,5.0
+TRX00381,2025-03-16,Jakarta,Fashion,Sneakers,1,480000,5.0,Tunai,PLG0259,4.0
+TRX00382,2025-03-16,Medan,Fashion,Celana Chino,3,210000,5.0,Transfer,PLG0353,4.0
+TRX00383,2025-03-16,Bandung,Elektronik,Smartwatch,2,900000,10.0,Transfer,PLG0591,5.0
+TRX00384,2025-03-16,Surabaya,Rumah Tangga,Rak Piring,1,160000,15.0,Kartu Debit,PLG0188,4.0
+TRX00385,2025-03-16,Jakarta,Rumah Tangga,Dispenser Sabun,1,60000,20.0,QRIS,PLG0149,4.0
+TRX00386,2025-03-16,SBY,Makanan,Sambal Botol,1,28000,0.0,QRIS,PLG0443,5.0
+TRX00387,2025-03-16,Jakarta,Rumah Tangga,Rak Piring,2,160000,15.0,Transfer,PLG0165,4.0
+TRX00388,2025-03-16,Makassar,Rumah Tangga,Set Panci,6,450000,0.0,Tunai,PLG0502,4.0
+TRX00389,2025-03-16,Bandung,Kecantikan,Lip Tint,4,59000,20.0,Kartu Debit,PLG0093,
+TRX00390,2025-03-16,Bandung,Fashion,Kemeja Batik,1,260000,15.0,Transfer,PLG0570,4.0
+TRX00391,2025-03-17,Surabaya,Fashion,Celana Chino,3,210000,5.0,QRIS,PLG0424,5.0
+TRX00392,2025-03-17,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,30.0,Kartu Kredit,PLG0670,4.0
+TRX00393,2025-03-17,Jakarta,Makanan,Keripik Singkong,2,18000,5.0,Tunai,PLG0204,3.0
+TRX00394,2025-03-17,Medan,Kecantikan,Masker Wajah,1,25000,15.0,Kartu Debit,PLG0156,4.0
+TRX00395,2025-03-17,Surabaya,Fashion,Kaos Polos,3,75000,30.0,QRIS,PLG0534,4.0
+TRX00396,2025-03-17,Makassar,Kecantikan,Lip Tint,3,59000,5.0,QRIS,PLG0396,4.0
+TRX00397,2025-03-17,Bandung,Elektronik,Smartwatch,2,900000,0.0,QRIS,PLG0441,4.0
+TRX00398,2025-03-18,Bandung,Rumah Tangga,Rice Cooker,2,380000,20.0,QRIS,PLG0439,2.0
+TRX00399,2025-03-18,Jakarta,Fashion,Jilbab Instan,1,85000,15.0,Transfer,PLG0200,4.0
+TRX00400,2025-03-18,Medan,Elektronik,Speaker Bluetooth,1,410000,10.0,Kartu Debit,PLG0363,
+TRX00401,2025-03-18,Surabaya,Fashion,Kemeja Batik,2,260000,20.0,QRIS,PLG0124,5.0
+TRX00402,2025-03-19,Jakarta,Fashion,Jilbab Instan,1,85000,0.0,Kartu Debit,PLG0612,5.0
+TRX00403,2025-03-19,Jakarta,Rumah Tangga,Sapu Lantai,2,35000,0.0,Kartu Kredit,PLG0425,4.0
+TRX00404,2025-03-19,Medan,Fashion,Sneakers,4,480000,20.0,Kartu Debit,PLG0005,4.0
+TRX00405,2025-03-19,Jakarta,Makanan,Madu 350ml,1,95000,15.0,QRIS,PLG0240,5.0
+TRX00406,2025-03-20,Jakarta,Rumah Tangga,Sapu Lantai,2,35000,5.0,Kartu Debit,PLG0356,4.0
+TRX00407,2025-03-20,Bandung,Elektronik,Power Bank 10000mAh,1,220000,0.0,QRIS,PLG0451,4.0
+TRX00408,2025-03-20,Medan,Elektronik,Power Bank 10000mAh,1,220000,0.0,QRIS,PLG0561,4.0
+TRX00409,2025-03-20,Surabaya,Fashion,Kemeja Batik,2,260000,0.0,Kartu Debit,PLG0061,4.0
+TRX00410,2025-03-20,Surabaya,Fashion,Kaos Polos,2,75000,0.0,QRIS,PLG0010,
+TRX00411,2025-03-20,Bandung,Makanan,Madu 350ml,2,95000,0.0,Kartu Kredit,PLG0694,3.0
+TRX00412,2025-03-21,Surabaya,Elektronik,Earbuds Nirkabel,1,350000,30.0,Tunai,PLG0058,4.0
+TRX00413,2025-03-21,Jakarta,Rumah Tangga,Set Panci,2,450000,5.0,QRIS,PLG0536,5.0
+TRX00414,2025-03-21,Bandung,Elektronik,Smartwatch,1,900000,10.0,Kartu Debit,PLG0325,5.0
+TRX00415,2025-03-21,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,0.0,QRIS,PLG0688,3.0
+TRX00416,2025-03-21,Surabaya,Makanan,Kurma 500g,2,70000,0.0,QRIS,PLG0591,3.0
+TRX00417,2025-03-21,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,0.0,Tunai,PLG0558,4.0
+TRX00418,2025-03-21,Jakarta,Fashion,Kaos Polos,1,75000,0.0,Transfer,PLG0318,4.0
+TRX00419,2025-03-22,Surabaya,Makanan,Keripik Singkong,3,18000,15.0,QRIS,PLG0008,3.0
+TRX00420,2025-03-22,Bandung,Rumah Tangga,Set Panci,2,450000,15.0,Kartu Debit,PLG0425,
+TRX00421,2025-03-22,Surabaya,Fashion,Celana Chino,4,210000,30.0,QRIS,PLG0177,5.0
+TRX00422,2025-03-22,Surabaya,Rumah Tangga,Set Panci,1,450000,0.0,QRIS,PLG0021,5.0
+TRX00423,2025-03-22,Bandung,Rumah Tangga,Set Panci,1,450000,5.0,QRIS,PLG0089,4.0
+TRX00424,2025-03-22,Surabaya,Rumah Tangga,Set Panci,2,450000,5.0,Kartu Debit,PLG0178,5.0
+TRX00425,2025-03-22,Jakarta,Fashion,Sneakers,1,480000,10.0,QRIS,PLG0272,3.0
+TRX00426,2025-03-22,Jakarta,Fashion,Sneakers,1,480000,15.0,Transfer,PLG0081,
+TRX00427,2025-03-22,Surabaya,Kecantikan,Serum Wajah,2,145000,0.0,Transfer,PLG0444,5.0
+TRX00428,2025-03-22,Medan,Kecantikan,Lip Tint,2,59000,15.0,QRIS,PLG0203,4.0
+TRX00429,2025-03-22,Makassar,Kecantikan,Sabun Cuci Muka,2,42000,20.0,QRIS,PLG0367,3.0
+TRX00430,2025-03-23,Surabaya,Fashion,Jilbab Instan,2,85000,20.0,Kartu Debit,PLG0249,4.0
+TRX00431,2025-03-23,Jakarta,Kecantikan,Sabun Cuci Muka,3,42000,5.0,QRIS,PLG0384,4.0
+TRX00432,2025-03-23,Jakarta,Kecantikan,Masker Wajah,2,25000,0.0,Kartu Debit,PLG0068,5.0
+TRX00433,2025-03-23,Jakarta,Makanan,Kurma 500g,2,70000,0.0,Kartu Debit,PLG0596,3.0
+TRX00434,2025-03-23,Bandung,Fashion,Sneakers,5,480000,10.0,QRIS,PLG0473,4.0
+TRX00435,2025-03-23,Medan,Makanan,Kurma 500g,2,70000,15.0,Tunai,PLG0421,5.0
+TRX00436,2025-03-24,Makassar,Makanan,Sambal Botol,1,28000,0.0,Kartu Debit,PLG0201,4.0
+TRX00437,2025-03-24,Medan,Rumah Tangga,Dispenser Sabun,3,60000,0.0,Tunai,PLG0367,5.0
+TRX00438,2025-03-24,Jakarta,Fashion,Celana Chino,2,210000,10.0,Tunai,PLG0230,5.0
+TRX00439,2025-03-24,Bandung,Rumah Tangga,Sapu Lantai,3,35000,20.0,QRIS,PLG0262,5.0
+TRX00440,2025-03-24,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,0.0,Kartu Kredit,PLG0007,5.0
+TRX00441,2025-03-24,Surabaya,Elektronik,Power Bank 10000mAh,2,220000,0.0,QRIS,PLG0608,4.0
+TRX00442,2025-03-24,Bandung,Kecantikan,Masker Wajah,2,25000,0.0,QRIS,PLG0396,4.0
+TRX00443,2025-03-24,Surabaya,Fashion,Jilbab Instan,2,85000,5.0,Kartu Debit,PLG0367,4.0
+TRX00444,2025-03-24,Jakarta,Makanan,Sambal Botol,2,28000,0.0,QRIS,PLG0588,5.0
+TRX00445,2025-03-25,Bandung,Makanan,Kopi Bubuk 250g,1,55000,20.0,Kartu Debit,PLG0348,4.0
+TRX00446,2025-03-25,Jakarta,Fashion,Jilbab Instan,3,85000,30.0,Transfer,PLG0158,4.0
+TRX00447,2025-03-25,Jakarta,Makanan,Sambal Botol,3,28000,15.0,QRIS,PLG0644,
+TRX00448,2025-03-25,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,10.0,Kartu Debit,PLG0173,5.0
+TRX00449,2025-03-25,Surabaya,Makanan,Sambal Botol,1,28000,0.0,Kartu Kredit,PLG0031,4.0
+TRX00450,2025-03-25,Makassar,Rumah Tangga,Set Panci,3,450000,0.0,QRIS,PLG0095,5.0
+TRX00451,2025-03-25,Bandung,Fashion,Jilbab Instan,3,85000,0.0,Transfer,PLG0373,4.0
+TRX00452,2025-03-25,SBY,Rumah Tangga,Sapu Lantai,2,35000,0.0,QRIS,PLG0391,3.0
+TRX00453,2025-03-26,Jakarta,Rumah Tangga,Rice Cooker,1,380000,5.0,QRIS,PLG0689,3.0
+TRX00454,2025-03-26,Jakarta,Fashion,Kemeja Batik,3,260000,5.0,QRIS,PLG0675,3.0
+TRX00455,2025-03-26,Bandung,Rumah Tangga,Dispenser Sabun,1,60000,0.0,Kartu Kredit,PLG0223,4.0
+TRX00456,2025-03-26,Jakarta,Elektronik,Smartwatch,1,900000,30.0,Kartu Debit,PLG0673,5.0
+TRX00457,2025-03-26,Bandung,Kecantikan,Serum Wajah,3,145000,0.0,QRIS,PLG0609,4.0
+TRX00458,2025-03-26,Medan,Makanan,Madu 350ml,1,95000,10.0,Tunai,PLG0065,4.0
+TRX00459,2025-03-26,Jakarta,Elektronik,Speaker Bluetooth,3,410000,5.0,QRIS,PLG0467,4.0
+TRX00460,2025-03-27,Surabaya,Elektronik,Kabel USB-C,2,45000,20.0,Kartu Kredit,PLG0433,5.0
+TRX00461,2025-03-27,Jakarta,Kecantikan,Masker Wajah,1,25000,5.0,Kartu Debit,PLG0435,5.0
+TRX00462,2025-03-27,Bandung,Makanan,Madu 350ml,3,95000,30.0,QRIS,PLG0270,5.0
+TRX00463,2025-03-27,Jakarta,Fashion,Kemeja Batik,2,260000,10.0,Kartu Debit,PLG0419,4.0
+TRX00464,2025-03-27,Bandung,Elektronik,Power Bank 10000mAh,1,220000,20.0,Tunai,PLG0029,4.0
+TRX00465,2025-03-27,Makassar,Makanan,Kurma 500g,1,70000,0.0,Kartu Debit,PLG0008,3.0
+TRX00466,2025-03-27,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,20.0,QRIS,PLG0663,4.0
+TRX00467,2025-03-27,Surabaya,Rumah Tangga,Rak Piring,5,160000,0.0,Kartu Debit,PLG0691,
+TRX00468,2025-03-28,Surabaya,Makanan,Madu 350ml,2,95000,10.0,Tunai,PLG0607,4.0
+TRX00469,2025-03-28,Surabaya,Elektronik,Smartwatch,2,900000,20.0,Transfer,PLG0578,4.0
+TRX00470,2025-03-28,Bandung,Fashion,Sneakers,1,480000,20.0,Transfer,PLG0083,4.0
+TRX00471,2025-03-28,Jakarta,Fashion,Celana Chino,4,210000,0.0,Tunai,PLG0351,4.0
+TRX00472,2025-03-28,Jakarta,Makanan,Madu 350ml,2,95000,0.0,Tunai,PLG0043,4.0
+TRX00473,2025-03-29,Bandung,Rumah Tangga,Sapu Lantai,3,35000,0.0,QRIS,PLG0644,5.0
+TRX00474,2025-03-29,Bandung,Kecantikan,Sunscreen SPF50,2,89000,10.0,Kartu Kredit,PLG0390,4.0
+TRX00475,2025-03-29,Jakarta,Elektronik,Earbuds Nirkabel,3,350000,15.0,Tunai,PLG0376,4.0
+TRX00476,2025-03-29,Medan,Fashion,Sneakers,2,480000,20.0,QRIS,PLG0543,4.0
+TRX00477,2025-03-29,Bandung,Elektronik,Speaker Bluetooth,4,410000,10.0,Kartu Debit,PLG0435,4.0
+TRX00478,2025-03-29,Surabaya,Makanan,Madu 350ml,4,95000,15.0,Tunai,PLG0614,4.0
+TRX00479,2025-03-29,Medan,Fashion,Celana Chino,2,210000,5.0,Kartu Debit,PLG0033,5.0
+TRX00480,2025-03-30,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,5.0,QRIS,PLG0204,4.0
+TRX00481,2025-03-30,Medan,Elektronik,Earbuds Nirkabel,1,350000,30.0,Transfer,PLG0345,4.0
+TRX00482,2025-03-30,Jakarta,Makanan,Kurma 500g,1,70000,0.0,Tunai,PLG0674,4.0
+TRX00483,2025-03-30,Surabaya,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0037,4.0
+TRX00484,2025-03-30,Medan,Makanan,Keripik Singkong,1,18000,5.0,QRIS,PLG0086,5.0
+TRX00485,2025-03-30,Surabaya,Fashion,Jilbab Instan,1,85000,15.0,Tunai,PLG0372,5.0
+TRX00486,2025-03-30,Makassar,Kecantikan,Lip Tint,2,59000,30.0,Tunai,PLG0442,3.0
+TRX00487,2025-03-30,Bandung,Rumah Tangga,Set Panci,2,450000,0.0,Kartu Debit,PLG0211,5.0
+TRX00488,2025-03-31,Surabaya,Kecantikan,Masker Wajah,3,25000,0.0,Kartu Kredit,PLG0218,4.0
+TRX00489,2025-03-31,Bandung,Elektronik,Earbuds Nirkabel,1,350000,5.0,QRIS,PLG0118,3.0
+TRX00490,2025-03-31,Jakarta,Fashion,Sneakers,2,480000,0.0,Transfer,PLG0187,4.0
+TRX00491,2025-03-31,Surabaya,Rumah Tangga,Rice Cooker,2,380000,5.0,Kartu Debit,PLG0104,4.0
+TRX00492,2025-03-31,Medan,Rumah Tangga,Rice Cooker,1,380000,10.0,QRIS,PLG0244,4.0
+TRX00493,2025-03-31,Surabaya,Fashion,Celana Chino,2,210000,20.0,Tunai,PLG0095,4.0
+TRX00494,2025-03-31,Makassar,Makanan,Sambal Botol,3,28000,20.0,Kartu Kredit,PLG0666,4.0
+TRX00495,2025-03-31,Jakarta,Fashion,Sneakers,2,480000,0.0,QRIS,PLG0329,
+TRX00496,2025-04-01,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,5.0,Kartu Kredit,PLG0156,5.0
+TRX00497,2025-04-01,Jakarta,Kecantikan,Lip Tint,1,59000,5.0,QRIS,PLG0102,4.0
+TRX00498,2025-04-01,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,20.0,QRIS,PLG0603,4.0
+TRX00499,2025-04-01,Medan,Fashion,Sneakers,5,480000,30.0,Kartu Debit,PLG0138,
+TRX00500,2025-04-02,Makassar,Kecantikan,Sunscreen SPF50,2,89000,20.0,Tunai,PLG0370,4.0
+TRX00501,2025-04-02,Jakarta,Makanan,Kurma 500g,2,70000,10.0,Kartu Kredit,PLG0318,5.0
+TRX00502,2025-04-02,Surabaya,Fashion,Kaos Polos,2,75000,5.0,QRIS,PLG0651,4.0
+TRX00503,2025-04-02,Medan,Kecantikan,Masker Wajah,2,25000,15.0,Transfer,PLG0621,4.0
+TRX00504,2025-04-02,Makassar,Makanan,Kurma 500g,1,70000,0.0,Kartu Debit,PLG0659,
+TRX00505,2025-04-02,Medan,Rumah Tangga,Sapu Lantai,3,35000,10.0,Tunai,PLG0538,
+TRX00506,2025-04-02,Bandung,Fashion,Celana Chino,1,210000,30.0,QRIS,PLG0064,3.0
+TRX00507,2025-04-02,Makassar,Makanan,Kopi Bubuk 250g,2,55000,5.0,Kartu Debit,PLG0531,5.0
+TRX00508,2025-04-03,Jakarta,Fashion,Jilbab Instan,2,85000,20.0,Tunai,PLG0560,5.0
+TRX00509,2025-04-03,Makassar,Kecantikan,Masker Wajah,1,25000,20.0,QRIS,PLG0101,4.0
+TRX00510,2025-04-03,Makassar,Rumah Tangga,Dispenser Sabun,2,60000,20.0,Tunai,PLG0418,5.0
+TRX00511,2025-04-03,Surabaya,Fashion,Jilbab Instan,2,85000,0.0,Tunai,PLG0655,5.0
+TRX00512,2025-04-04,Bandung,Fashion,Celana Chino,4,210000,0.0,QRIS,PLG0288,5.0
+TRX00513,2025-04-04,Jakarta,Fashion,Jilbab Instan,2,85000,5.0,Kartu Debit,PLG0039,3.0
+TRX00514,2025-04-04,Surabaya,Elektronik,Smartwatch,3,900000,30.0,QRIS,PLG0490,4.0
+TRX00515,2025-04-04,Bandung,Elektronik,Speaker Bluetooth,3,410000,15.0,Kartu Kredit,PLG0315,5.0
+TRX00516,2025-04-04,Surabaya,Rumah Tangga,Dispenser Sabun,1,60000,0.0,QRIS,PLG0101,4.0
+TRX00517,2025-04-04,Jakarta,Fashion,Celana Chino,1,210000,0.0,Kartu Kredit,PLG0496,4.0
+TRX00518,2025-04-04,Medan,Fashion,Kemeja Batik,2,260000,10.0,QRIS,PLG0246,4.0
+TRX00519,2025-04-04,Makassar,Kecantikan,Masker Wajah,2,25000,0.0,QRIS,PLG0030,4.0
+TRX00520,2025-04-04,Bandung,Kecantikan,Sunscreen SPF50,2,89000,0.0,QRIS,PLG0470,5.0
+TRX00521,2025-04-04,Jakarta,Kecantikan,Masker Wajah,1,25000,0.0,Transfer,PLG0623,3.0
+TRX00522,2025-04-04,Makassar,Fashion,Jilbab Instan,2,85000,5.0,QRIS,PLG0154,4.0
+TRX00523,2025-04-05,Makassar,Fashion,Kemeja Batik,2,260000,0.0,Tunai,PLG0687,4.0
+TRX00524,2025-04-05,Medan,Kecantikan,Lip Tint,2,59000,0.0,Kartu Kredit,PLG0656,5.0
+TRX00525,2025-04-05,Jakarta,Makanan,Sambal Botol,2,28000,15.0,Kartu Debit,PLG0145,4.0
+TRX00526,2025-04-05,Medan,Makanan,Kurma 500g,1,70000,30.0,Tunai,PLG0524,3.0
+TRX00527,2025-04-05,Bandung,Kecantikan,Sabun Cuci Muka,2,42000,0.0,QRIS,PLG0266,4.0
+TRX00528,2025-04-05,Jakarta,Elektronik,Speaker Bluetooth,1,410000,0.0,Kartu Debit,PLG0333,4.0
+TRX00529,2025-04-05,Jakarta,Fashion,Celana Chino,1,210000,20.0,Tunai,PLG0324,4.0
+TRX00530,2025-04-05,Medan,Kecantikan,Sunscreen SPF50,1,89000,20.0,Tunai,PLG0554,5.0
+TRX00531,2025-04-05,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,20.0,Transfer,PLG0453,3.0
+TRX00532,2025-04-06,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,10.0,Kartu Debit,PLG0041,5.0
+TRX00533,2025-04-06,Surabaya,Fashion,Kaos Polos,1,75000,30.0,Tunai,PLG0508,3.0
+TRX00534,2025-04-06,Makassar,Makanan,Keripik Singkong,3,18000,0.0,QRIS,PLG0558,4.0
+TRX00535,2025-04-06,Jakarta,Fashion,Kemeja Batik,1,260000,0.0,QRIS,PLG0422,3.0
+TRX00536,2025-04-06,Jakarta,Makanan,Sambal Botol,2,28000,10.0,Tunai,PLG0043,5.0
+TRX00537,2025-04-06,Jakarta,Fashion,Sneakers,3,480000,15.0,Kartu Debit,PLG0648,4.0
+TRX00538,2025-04-06,Surabaya,Kecantikan,Masker Wajah,2,25000,10.0,Kartu Debit,PLG0339,4.0
+TRX00539,2025-04-07,Medan,Makanan,Keripik Singkong,1,18000,5.0,Transfer,PLG0537,5.0
+TRX00540,2025-04-07,Jakarta,Kecantikan,Masker Wajah,3,25000,15.0,Kartu Debit,PLG0248,4.0
+TRX00541,2025-04-07,Jakarta,Fashion,Jilbab Instan,3,85000,10.0,QRIS,PLG0336,4.0
+TRX00542,2025-04-07,Jakarta,Makanan,Keripik Singkong,4,18000,30.0,Kartu Debit,PLG0301,5.0
+TRX00543,2025-04-07,Jakarta,Kecantikan,Sunscreen SPF50,3,89000,0.0,Kartu Debit,PLG0275,4.0
+TRX00544,2025-04-07,Bandung,Kecantikan,Lip Tint,3,59000,0.0,Tunai,PLG0322,4.0
+TRX00545,2025-04-07,Jakarta,Fashion,Kemeja Batik,1,260000,15.0,Tunai,PLG0562,4.0
+TRX00546,2025-04-07,Makassar,Makanan,Sambal Botol,2,28000,10.0,QRIS,PLG0369,4.0
+TRX00547,2025-04-07,Makassar,Rumah Tangga,Rak Piring,2,160000,0.0,QRIS,PLG0112,4.0
+TRX00548,2025-04-08,Bandung,Fashion,Jilbab Instan,2,85000,15.0,Kartu Debit,PLG0332,4.0
+TRX00549,2025-04-09,Surabaya,Fashion,Kemeja Batik,3,260000,20.0,Tunai,PLG0538,3.0
+TRX00550,2025-04-09,Bandung,Rumah Tangga,Dispenser Sabun,1,60000,15.0,QRIS,PLG0530,3.0
+TRX00551,2025-04-09,Medan,Kecantikan,Masker Wajah,2,25000,0.0,QRIS,PLG0495,
+TRX00552,2025-04-09,Jakarta,Fashion,Kaos Polos,1,75000,15.0,Tunai,PLG0213,4.0
+TRX00553,2025-04-09,Bandung,Fashion,Jilbab Instan,1,85000,20.0,Kartu Debit,PLG0692,5.0
+TRX00554,2025-04-09,Surabaya,Kecantikan,Masker Wajah,6,25000,0.0,Tunai,PLG0165,
+TRX00555,2025-04-10,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,Tunai,PLG0402,4.0
+TRX00556,2025-04-10,Surabaya,Elektronik,Kabel USB-C,4,45000,0.0,QRIS,PLG0525,4.0
+TRX00557,2025-04-11,Surabaya,Elektronik,Smartwatch,2,900000,30.0,Kartu Kredit,PLG0613,3.0
+TRX00558,2025-04-11,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,30.0,QRIS,PLG0688,5.0
+TRX00559,2025-04-11,Makassar,Rumah Tangga,Set Panci,1,450000,0.0,QRIS,PLG0662,4.0
+TRX00560,2025-04-11,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,30.0,QRIS,PLG0338,5.0
+TRX00561,2025-04-11,Surabaya,Rumah Tangga,Rak Piring,2,160000,0.0,QRIS,PLG0575,5.0
+TRX00562,2025-04-11,Bandung,Makanan,Kurma 500g,1,70000,5.0,QRIS,PLG0661,4.0
+TRX00563,2025-04-11,Medan,Fashion,Kemeja Batik,3,260000,5.0,QRIS,PLG0568,4.0
+TRX00564,2025-04-11,Medan,Elektronik,Smartwatch,4,900000,5.0,Kartu Kredit,PLG0349,
+TRX00565,2025-04-12,Bandung,Kecantikan,Sabun Cuci Muka,2,42000,10.0,QRIS,PLG0668,4.0
+TRX00566,2025-04-12,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,0.0,QRIS,PLG0208,3.0
+TRX00567,2025-04-12,Jakarta,Kecantikan,Masker Wajah,4,25000,20.0,Kartu Kredit,PLG0222,5.0
+TRX00568,2025-04-12,Surabaya,Fashion,Kaos Polos,-2,75000,0.0,Transfer,PLG0580,4.0
+TRX00569,2025-04-12,Medan,Rumah Tangga,Rak Piring,4,160000,0.0,Tunai,PLG0504,4.0
+TRX00570,2025-04-12,Jakarta,Rumah Tangga,Dispenser Sabun,2,60000,0.0,Kartu Debit,PLG0416,4.0
+TRX00571,2025-04-12,Bandung,Kecantikan,Sunscreen SPF50,1,89000,5.0,Transfer,PLG0347,4.0
+TRX00572,2025-04-12,Surabaya,Makanan,Keripik Singkong,1,18000,15.0,QRIS,PLG0183,4.0
+TRX00573,2025-04-13,Makassar,Elektronik,Earbuds Nirkabel,1,350000,5.0,Tunai,PLG0500,3.0
+TRX00574,2025-04-13,Bandung,Makanan,Keripik Singkong,1,18000,5.0,Tunai,PLG0030,4.0
+TRX00575,2025-04-13,Bandung,Kecantikan,Sabun Cuci Muka,2,42000,0.0,Tunai,PLG0255,4.0
+TRX00576,2025-04-13,Surabaya,Elektronik,Speaker Bluetooth,2,410000,0.0,Kartu Kredit,PLG0692,4.0
+TRX00577,2025-04-13,Jakarta,Makanan,Kurma 500g,2,70000,0.0,Transfer,PLG0403,3.0
+TRX00578,2025-04-14,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,5.0,Kartu Debit,PLG0450,3.0
+TRX00579,2025-04-14,Medan,Fashion,Kaos Polos,3,75000,30.0,QRIS,PLG0348,4.0
+TRX00580,2025-04-14,Surabaya,Elektronik,Earbuds Nirkabel,3,350000,20.0,QRIS,PLG0532,4.0
+TRX00581,2025-04-14,Jakarta,Kecantikan,Sabun Cuci Muka,4,42000,0.0,Kartu Debit,PLG0117,5.0
+TRX00582,2025-04-14,Surabaya,Makanan,Kurma 500g,2,70000,5.0,QRIS,PLG0443,4.0
+TRX00583,2025-04-14,Bandung,Kecantikan,Masker Wajah,1,25000,20.0,Transfer,PLG0354,5.0
+TRX00584,2025-04-14,Surabaya,Kecantikan,Masker Wajah,2,25000,30.0,Transfer,PLG0427,
+TRX00585,2025-04-15,Makassar,Kecantikan,Sunscreen SPF50,1,89000,10.0,Kartu Debit,PLG0072,4.0
+TRX00586,2025-04-15,Jakarta,Fashion,Kaos Polos,-2,75000,0.0,QRIS,PLG0308,5.0
+TRX00587,2025-04-15,Surabaya,Kecantikan,Sabun Cuci Muka,2,42000,15.0,QRIS,PLG0157,5.0
+TRX00588,2025-04-15,Makassar,Rumah Tangga,Rice Cooker,1,380000,15.0,Tunai,PLG0426,4.0
+TRX00589,2025-04-15,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,20.0,Tunai,PLG0172,3.0
+TRX00590,2025-04-15,Surabaya,Kecantikan,Masker Wajah,2,25000,15.0,Transfer,PLG0145,4.0
+TRX00591,2025-04-16,Jakarta,Rumah Tangga,Rice Cooker,-1,380000,0.0,Tunai,PLG0626,4.0
+TRX00592,2025-04-16,Makassar,Rumah Tangga,Rak Piring,3,160000,10.0,Kartu Debit,PLG0620,4.0
+TRX00593,2025-04-16,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,20.0,Transfer,PLG0015,4.0
+TRX00594,2025-04-17,Surabaya,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0374,5.0
+TRX00595,2025-04-17,Makassar,Fashion,Kemeja Batik,2,260000,10.0,Kartu Debit,PLG0400,3.0
+TRX00596,2025-04-17,Jakarta,Kecantikan,Masker Wajah,3,25000,30.0,Tunai,PLG0187,4.0
+TRX00597,2025-04-17,Bandung,Fashion,Kemeja Batik,4,260000,5.0,Tunai,PLG0699,5.0
+TRX00598,2025-04-18,Surabaya,Makanan,Kurma 500g,2,70000,20.0,Kartu Debit,PLG0669,5.0
+TRX00599,2025-04-18,Bandung,Makanan,Kopi Bubuk 250g,1,55000,0.0,QRIS,PLG0514,4.0
+TRX00600,2025-04-18,Surabaya,Elektronik,Power Bank 10000mAh,2,220000,5.0,QRIS,PLG0145,4.0
+TRX00601,2025-04-18,Medan,Makanan,Kurma 500g,1,70000,0.0,Tunai,PLG0202,3.0
+TRX00602,2025-04-18,Bandung,Elektronik,Earbuds Nirkabel,2,350000,0.0,Kartu Debit,PLG0272,4.0
+TRX00603,2025-04-18,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,30.0,QRIS,PLG0176,3.0
+TRX00604,2025-04-18,Jakarta,Makanan,Sambal Botol,1,28000,0.0,Tunai,PLG0089,5.0
+TRX00605,2025-04-18,surabaya,Makanan,Sambal Botol,2,28000,0.0,QRIS,PLG0039,2.0
+TRX00606,2025-04-19,Makassar,Fashion,Celana Chino,5,210000,0.0,Transfer,PLG0132,3.0
+TRX00607,2025-04-19,Surabaya ,Fashion,Sneakers,1,480000,15.0,Transfer,PLG0601,5.0
+TRX00608,2025-04-19,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,5.0,QRIS,PLG0514,5.0
+TRX00609,2025-04-19,Makassar,Makanan,Kopi Bubuk 250g,3,55000,15.0,QRIS,PLG0652,4.0
+TRX00610,2025-04-19,Bandung,Rumah Tangga,Rice Cooker,2,380000,0.0,Transfer,PLG0168,4.0
+TRX00611,2025-04-19,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,0.0,Tunai,PLG0406,4.0
+TRX00612,2025-04-19,Surabaya,Makanan,Madu 350ml,4,95000,10.0,QRIS,PLG0400,4.0
+TRX00613,2025-04-19,Jakarta,Fashion,Sneakers,1,480000,0.0,QRIS,PLG0330,4.0
+TRX00614,2025-04-19,Medan,Fashion,Sneakers,2,480000,20.0,QRIS,PLG0616,4.0
+TRX00615,2025-04-19,Jakarta,Makanan,Madu 350ml,3,95000,0.0,QRIS,PLG0690,5.0
+TRX00616,2025-04-19,Makassar,Makanan,Kopi Bubuk 250g,3,55000,15.0,Kartu Debit,PLG0631,5.0
+TRX00617,2025-04-19,Medan,Fashion,Celana Chino,2,210000,0.0,Kartu Debit,PLG0116,4.0
+TRX00618,2025-04-19,Bandung,Elektronik,Speaker Bluetooth,2,410000,0.0,QRIS,PLG0173,4.0
+TRX00619,2025-04-19,Makassar,Elektronik,Earbuds Nirkabel,3,350000,20.0,Transfer,PLG0092,4.0
+TRX00620,2025-04-20,Jakarta,Makanan,Madu 350ml,3,95000,0.0,QRIS,PLG0531,3.0
+TRX00621,2025-04-20,Jakarta,Rumah Tangga,Set Panci,4,450000,0.0,QRIS,PLG0549,4.0
+TRX00622,2025-04-20,Surabaya,Elektronik,Smartwatch,1,900000,15.0,QRIS,PLG0593,4.0
+TRX00623,2025-04-20,Makassar,Fashion,Jilbab Instan,2,85000,15.0,Kartu Debit,PLG0069,5.0
+TRX00624,2025-04-20,Makassar,Elektronik,Smartwatch,2,900000,0.0,QRIS,PLG0610,3.0
+TRX00625,2025-04-21,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,10.0,QRIS,PLG0139,
+TRX00626,2025-04-21,Surabaya,Rumah Tangga,Set Panci,4,450000,5.0,QRIS,PLG0536,5.0
+TRX00627,2025-04-21,surabaya,Kecantikan,Masker Wajah,1,25000,5.0,Kartu Debit,PLG0514,
+TRX00628,2025-04-21,Surabaya,Elektronik,Kabel USB-C,1,45000,20.0,Kartu Debit,PLG0330,4.0
+TRX00629,2025-04-22,Surabaya,Kecantikan,Masker Wajah,2,25000,30.0,Kartu Debit,PLG0340,3.0
+TRX00630,2025-04-22,Makassar,Elektronik,Power Bank 10000mAh,3,220000,20.0,Kartu Debit,PLG0670,5.0
+TRX00631,2025-04-22,Medan,Kecantikan,Sunscreen SPF50,2,89000,10.0,QRIS,PLG0683,5.0
+TRX00632,2025-04-22,Surabaya,Kecantikan,Lip Tint,1,59000,10.0,Tunai,PLG0399,4.0
+TRX00633,2025-04-22,Surabaya,Elektronik,Kabel USB-C,4,45000,30.0,Tunai,PLG0362,4.0
+TRX00634,2025-04-22,Makassar,Fashion,Celana Chino,5,210000,10.0,Kartu Kredit,PLG0087,4.0
+TRX00635,2025-04-23,Medan,Fashion,Kaos Polos,3,75000,30.0,Transfer,PLG0145,4.0
+TRX00636,2025-04-23,Jakarta,Makanan,Keripik Singkong,2,18000,0.0,Transfer,PLG0266,5.0
+TRX00637,2025-04-23,Surabaya,Fashion,Kemeja Batik,3,260000,0.0,Tunai,PLG0059,5.0
+TRX00638,2025-04-23,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,0.0,QRIS,PLG0617,5.0
+TRX00639,2025-04-23,Jakarta,Fashion,Kaos Polos,2,75000,15.0,Tunai,PLG0351,4.0
+TRX00640,2025-04-23,Makassar,Elektronik,Speaker Bluetooth,2,410000,0.0,Kartu Debit,PLG0036,5.0
+TRX00641,2025-04-23,Jakarta,Fashion,Sneakers,3,480000,20.0,QRIS,PLG0423,5.0
+TRX00642,2025-04-23,Jakarta,Elektronik,Smartwatch,1,900000,30.0,QRIS,PLG0118,5.0
+TRX00643,2025-04-24,Jakarta,Makanan,Madu 350ml,2,95000,30.0,QRIS,PLG0598,4.0
+TRX00644,2025-04-24,Jakarta,Elektronik,Kabel USB-C,2,45000,0.0,Kartu Debit,PLG0693,4.0
+TRX00645,2025-04-24,Jakarta,Kecantikan,Masker Wajah,4,25000,20.0,QRIS,PLG0362,4.0
+TRX00646,2025-04-24,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,0.0,Kartu Debit,PLG0176,3.0
+TRX00647,2025-04-24,Surabaya,Makanan,Kurma 500g,3,70000,0.0,QRIS,PLG0330,3.0
+TRX00648,2025-04-24,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,0.0,QRIS,PLG0334,5.0
+TRX00649,2025-04-24,Jakarta,Kecantikan,Masker Wajah,2,25000,20.0,QRIS,PLG0141,5.0
+TRX00650,2025-04-24,Jakarta,Fashion,Kemeja Batik,3,260000,15.0,Tunai,PLG0319,4.0
+TRX00651,2025-04-24,Jakarta,Elektronik,Kabel USB-C,3,45000,,Tunai,PLG0332,4.0
+TRX00652,2025-04-24,Jakarta,Makanan,Sambal Botol,1,28000,10.0,Tunai,PLG0654,4.0
+TRX00653,2025-04-24,Jakarta,Elektronik,Power Bank 10000mAh,4,220000,20.0,Kartu Debit,PLG0041,3.0
+TRX00654,2025-04-25,Surabaya,Makanan,Kurma 500g,3,70000,0.0,Kartu Debit,PLG0256,4.0
+TRX00655,2025-04-25,Bandung,Makanan,Madu 350ml,1,95000,0.0,Tunai,PLG0380,5.0
+TRX00656,2025-04-25,Jakarta,Fashion,Kaos Polos,1,75000,15.0,Tunai,PLG0672,
+TRX00657,2025-04-25,Surabaya,Elektronik,Smartwatch,1,900000,15.0,Tunai,PLG0443,5.0
+TRX00658,2025-04-25,Bandung,Makanan,Kopi Bubuk 250g,1,55000,15.0,Tunai,PLG0003,4.0
+TRX00659,2025-04-25,Medan,Kecantikan,Lip Tint,2,59000,0.0,Tunai,PLG0640,5.0
+TRX00660,2025-04-25,Jakarta,Makanan,Madu 350ml,2,95000,30.0,Tunai,PLG0421,4.0
+TRX00661,2025-04-25,Makassar,Fashion,Kemeja Batik,4,260000,0.0,Tunai,PLG0603,4.0
+TRX00662,2025-04-25,Bandung,Rumah Tangga,Rice Cooker,2,380000,0.0,Transfer,PLG0487,4.0
+TRX00663,2025-04-25,Jakarta,Rumah Tangga,Set Panci,1,450000,5.0,QRIS,PLG0483,4.0
+TRX00664,2025-04-25,Bandung,Kecantikan,Masker Wajah,3,25000,0.0,Tunai,PLG0500,5.0
+TRX00665,2025-04-26,Surabaya,Elektronik,Smartwatch,1,900000,20.0,Transfer,PLG0601,4.0
+TRX00666,2025-04-26,Surabaya,Rumah Tangga,Sapu Lantai,3,35000,5.0,QRIS,PLG0128,4.0
+TRX00667,2025-04-26,Makassar,Rumah Tangga,Rice Cooker,3,380000,5.0,QRIS,PLG0627,4.0
+TRX00668,2025-04-26,Surabaya,Elektronik,Smartwatch,3,900000,20.0,Tunai,PLG0123,5.0
+TRX00669,2025-04-26,Jakarta,Fashion,Kemeja Batik,7,260000,0.0,Kartu Kredit,PLG0531,5.0
+TRX00670,2025-04-26,Medan,Makanan,Kopi Bubuk 250g,2,55000,20.0,Kartu Kredit,PLG0038,4.0
+TRX00671,2025-04-27,Surabaya,Elektronik,Speaker Bluetooth,2,410000,5.0,Tunai,PLG0339,5.0
+TRX00672,2025-04-27,Jakarta,Kecantikan,Masker Wajah,1,25000,0.0,Tunai,PLG0442,5.0
+TRX00673,2025-04-27,Medan,Rumah Tangga,Sapu Lantai,1,35000,5.0,Tunai,PLG0074,4.0
+TRX00674,2025-04-27,Bandung,Elektronik,Earbuds Nirkabel,2,350000,0.0,Tunai,PLG0629,4.0
+TRX00675,2025-04-27,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,30.0,Transfer,PLG0109,4.0
+TRX00676,2025-04-28,Jakarta,Fashion,Kemeja Batik,2,260000,10.0,Kartu Debit,PLG0599,4.0
+TRX00677,2025-04-28,Jakarta,Elektronik,Power Bank 10000mAh,4,220000,10.0,QRIS,PLG0660,4.0
+TRX00678,2025-04-28,Surabaya,Makanan,Sambal Botol,2,28000,30.0,Tunai,PLG0016,4.0
+TRX00679,2025-04-28,Surabaya,Makanan,Madu 350ml,4,95000,5.0,Transfer,PLG0430,
+TRX00680,2025-04-28,Surabaya,Makanan,Keripik Singkong,3,18000,10.0,Tunai,PLG0564,5.0
+TRX00681,2025-04-28,Bandung,Elektronik,Speaker Bluetooth,4,410000,0.0,Tunai,PLG0422,4.0
+TRX00682,2025-04-28,Jakarta,Elektronik,Smartwatch,3,900000,20.0,Transfer,PLG0348,4.0
+TRX00683,2025-04-28,Jakarta,Fashion,Celana Chino,1,210000,0.0,Transfer,PLG0219,3.0
+TRX00684,2025-04-28,Surabaya,Makanan,Kurma 500g,3,70000,10.0,Tunai,PLG0527,5.0
+TRX00685,2025-04-29,Surabaya,Makanan,Keripik Singkong,1,18000,10.0,Tunai,PLG0691,5.0
+TRX00686,2025-04-29,SBY,Kecantikan,Sunscreen SPF50,1,89000,20.0,Transfer,PLG0395,4.0
+TRX00687,2025-04-29,Jakarta,Kecantikan,Serum Wajah,1,145000,20.0,QRIS,PLG0176,4.0
+TRX00688,2025-04-29,Makassar,Kecantikan,Lip Tint,1,59000,20.0,QRIS,PLG0264,5.0
+TRX00689,2025-04-29,SBY,Elektronik,Earbuds Nirkabel,1,350000,0.0,Transfer,PLG0292,4.0
+TRX00690,2025-04-29,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,5.0,Transfer,PLG0497,4.0
+TRX00691,2025-04-29,Medan,Fashion,Kaos Polos,2,75000,0.0,Transfer,PLG0279,5.0
+TRX00692,2025-04-29,Surabaya,Kecantikan,Serum Wajah,4,145000,0.0,Kartu Kredit,PLG0119,
+TRX00693,2025-04-29,Surabaya,Fashion,Kemeja Batik,1,260000,30.0,QRIS,PLG0045,4.0
+TRX00694,2025-04-30,Jakarta,Fashion,Jilbab Instan,3,85000,15.0,Kartu Kredit,PLG0558,
+TRX00695,2025-04-30,Medan,Kecantikan,Sabun Cuci Muka,2,42000,0.0,Tunai,PLG0149,5.0
+TRX00696,2025-04-30,Surabaya,Rumah Tangga,Set Panci,1,450000,15.0,Kartu Debit,PLG0011,4.0
+TRX00697,2025-04-30,Bandung,Elektronik,Power Bank 10000mAh,4,220000,0.0,QRIS,PLG0631,5.0
+TRX00698,2025-04-30,Jakarta,Makanan,Madu 350ml,1,95000,0.0,QRIS,PLG0093,4.0
+TRX00699,2025-04-30,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,0.0,Tunai,PLG0693,5.0
+TRX00700,2025-04-30,Jakarta,Rumah Tangga,Rice Cooker,2,380000,0.0,QRIS,PLG0493,4.0
+TRX00701,2025-04-30,Jakarta,Fashion,Kemeja Batik,3,260000,30.0,Transfer,PLG0297,4.0
+TRX00702,2025-04-30,Jakarta,Rumah Tangga,Dispenser Sabun,1,60000,0.0,Tunai,PLG0052,
+TRX00703,2025-05-01,Bandung,Elektronik,Earbuds Nirkabel,3,350000,30.0,QRIS,PLG0356,4.0
+TRX00704,2025-05-01,Jakarta,Rumah Tangga,Set Panci,2,450000,0.0,Kartu Kredit,PLG0348,4.0
+TRX00705,2025-05-02,Jakarta,Makanan,Kurma 500g,3,70000,10.0,Kartu Debit,PLG0073,4.0
+TRX00706,2025-05-02,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,20.0,Kartu Debit,PLG0209,3.0
+TRX00707,2025-05-02,Jakarta,Makanan,Sambal Botol,1,28000,10.0,Kartu Debit,PLG0678,5.0
+TRX00708,2025-05-02,Surabaya,Makanan,Sambal Botol,2,28000,20.0,Tunai,PLG0132,4.0
+TRX00709,2025-05-03,Surabaya,Fashion,Kaos Polos,2,75000,15.0,QRIS,PLG0536,5.0
+TRX00710,2025-05-04,Makassar,Rumah Tangga,Set Panci,1,450000,20.0,Tunai,PLG0475,4.0
+TRX00711,2025-05-04,Makassar,Fashion,Jilbab Instan,4,85000,5.0,Transfer,PLG0697,4.0
+TRX00712,2025-05-04,Jakarta,Fashion,Kaos Polos,1,75000,0.0,Tunai,PLG0388,3.0
+TRX00713,2025-05-04,Jakarta,Elektronik,Speaker Bluetooth,3,410000,20.0,QRIS,PLG0252,5.0
+TRX00714,2025-05-05,Medan,Kecantikan,Sabun Cuci Muka,3,42000,30.0,QRIS,PLG0145,4.0
+TRX00715,2025-05-05,Bandung,Makanan,Kurma 500g,3,70000,30.0,Kartu Kredit,PLG0646,4.0
+TRX00716,2025-05-05,Jakarta,Rumah Tangga,Dispenser Sabun,1,60000,30.0,Transfer,PLG0182,2.0
+TRX00717,2025-05-05,Bandung,Kecantikan,Masker Wajah,3,25000,5.0,Tunai,PLG0608,3.0
+TRX00718,2025-05-05,Jakarta,Fashion,Kemeja Batik,4,260000,20.0,Kartu Debit,PLG0290,5.0
+TRX00719,2025-05-05,Jakarta,Rumah Tangga,Rak Piring,1,160000,30.0,Kartu Debit,PLG0157,5.0
+TRX00720,2025-05-06,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,10.0,QRIS,PLG0336,5.0
+TRX00721,2025-05-06,Medan,Makanan,Kurma 500g,2,70000,0.0,Kartu Debit,PLG0608,4.0
+TRX00722,2025-05-06,Bandung,Fashion,Kemeja Batik,3,260000,5.0,QRIS,PLG0314,5.0
+TRX00723,2025-05-06,Jakarta,Makanan,Sambal Botol,2,28000,20.0,Tunai,PLG0653,4.0
+TRX00724,2025-05-06,Jakarta,Kecantikan,Sabun Cuci Muka,4,42000,0.0,Transfer,PLG0239,4.0
+TRX00725,2025-05-07,Bandung,Fashion,Kaos Polos,2,75000,30.0,QRIS,PLG0197,4.0
+TRX00726,2025-05-07,Makassar,Makanan,Sambal Botol,2,28000,30.0,Kartu Debit,PLG0292,4.0
+TRX00727,2025-05-07,Surabaya,Makanan,Kopi Bubuk 250g,3,55000,30.0,QRIS,PLG0090,3.0
+TRX00728,2025-05-07,Makassar,Makanan,Kopi Bubuk 250g,3,55000,0.0,Kartu Kredit,PLG0512,3.0
+TRX00729,2025-05-07,Jakarta,Kecantikan,Serum Wajah,1,145000,15.0,Transfer,PLG0198,4.0
+TRX00730,2025-05-07,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,10.0,QRIS,PLG0197,4.0
+TRX00731,2025-05-07,Jakarta,Elektronik,Smartwatch,3,900000,10.0,QRIS,PLG0345,4.0
+TRX00732,2025-05-08,Surabaya,Makanan,Kurma 500g,4,70000,10.0,QRIS,PLG0338,4.0
+TRX00733,2025-05-08,Surabaya,Rumah Tangga,Rice Cooker,4,380000,0.0,Transfer,PLG0402,4.0
+TRX00734,2025-05-08,Makassar,Elektronik,Kabel USB-C,1,45000,30.0,Kartu Debit,PLG0469,5.0
+TRX00735,2025-05-08,Jakarta,Makanan,Keripik Singkong,1,18000,20.0,Transfer,PLG0698,4.0
+TRX00736,2025-05-08,Bandung,Rumah Tangga,Dispenser Sabun,3,60000,5.0,QRIS,PLG0249,2.0
+TRX00737,2025-05-08,Surabaya,Rumah Tangga,Set Panci,4,450000,0.0,QRIS,PLG0622,4.0
+TRX00738,2025-05-08,Surabaya,Fashion,Celana Chino,2,210000,20.0,Tunai,PLG0044,3.0
+TRX00739,2025-05-09,Medan,Kecantikan,Sabun Cuci Muka,1,42000,15.0,Transfer,PLG0600,4.0
+TRX00740,2025-05-09,Medan,Kecantikan,Sunscreen SPF50,1,89000,0.0,Kartu Debit,PLG0437,2.0
+TRX00741,2025-05-09,Bandung,Kecantikan,Masker Wajah,3,25000,0.0,Transfer,PLG0427,3.0
+TRX00742,2025-05-09,Jakarta,Elektronik,Kabel USB-C,1,45000,0.0,QRIS,PLG0627,4.0
+TRX00743,2025-05-09,Surabaya,Elektronik,Smartwatch,2,900000,0.0,QRIS,PLG0009,5.0
+TRX00744,2025-05-09,Jakarta,Fashion,Kaos Polos,3,75000,10.0,QRIS,PLG0317,4.0
+TRX00745,2025-05-10,Surabaya,Makanan,Kurma 500g,3,70000,,Kartu Debit,PLG0042,5.0
+TRX00746,2025-05-10,Bandung,Kecantikan,Serum Wajah,1,145000,30.0,Tunai,PLG0188,5.0
+TRX00747,2025-05-10,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,15.0,Kartu Debit,PLG0184,4.0
+TRX00748,2025-05-10,Medan,Rumah Tangga,Set Panci,2,450000,10.0,Kartu Debit,PLG0493,5.0
+TRX00749,2025-05-10,Bandung,Rumah Tangga,Dispenser Sabun,4,60000,0.0,Kartu Debit,PLG0500,4.0
+TRX00750,2025-05-11,Medan,Makanan,Keripik Singkong,3,18000,5.0,QRIS,PLG0597,4.0
+TRX00751,2025-05-12,Surabaya,Makanan,Madu 350ml,2,95000,0.0,Kartu Debit,PLG0686,3.0
+TRX00752,2025-05-12,Bandung,Rumah Tangga,Dispenser Sabun,2,60000,10.0,Tunai,PLG0363,4.0
+TRX00753,2025-05-12,Makassar,Fashion,Celana Chino,4,210000,5.0,Tunai,PLG0520,5.0
+TRX00754,2025-05-13,Bandung,Elektronik,Earbuds Nirkabel,1,350000,20.0,QRIS,PLG0670,4.0
+TRX00755,2025-05-13,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,20.0,Transfer,PLG0039,5.0
+TRX00756,2025-05-13,Bandung,Rumah Tangga,Dispenser Sabun,2,60000,20.0,QRIS,PLG0328,
+TRX00757,2025-05-13,Jakarta,Makanan,Keripik Singkong,3,18000,30.0,QRIS,PLG0034,4.0
+TRX00758,2025-05-13,Makassar,Fashion,Kemeja Batik,1,260000,10.0,QRIS,PLG0013,4.0
+TRX00759,2025-05-13,Makassar,Makanan,Kopi Bubuk 250g,3,55000,15.0,Kartu Kredit,PLG0420,4.0
+TRX00760,2025-05-13,Medan,Kecantikan,Lip Tint,2,59000,10.0,Kartu Kredit,PLG0310,
+TRX00761,2025-05-14,Bandung,Makanan,Kopi Bubuk 250g,1,55000,30.0,Kartu Debit,PLG0291,3.0
+TRX00762,2025-05-14,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,30.0,Tunai,PLG0342,4.0
+TRX00763,2025-05-14,Medan,Kecantikan,Lip Tint,3,59000,0.0,Kartu Kredit,PLG0105,4.0
+TRX00764,2025-05-15,Jakarta,Makanan,Keripik Singkong,2,18000,10.0,Kartu Debit,PLG0293,5.0
+TRX00765,2025-05-15,Medan,Fashion,Kaos Polos,1,75000,10.0,Kartu Kredit,PLG0093,5.0
+TRX00766,2025-05-15,Surabaya,Makanan,Kopi Bubuk 250g,3,55000,20.0,Tunai,PLG0134,
+TRX00767,2025-05-15,Medan,Makanan,Keripik Singkong,3,18000,0.0,Tunai,PLG0659,5.0
+TRX00768,2025-05-15,Bandung,Makanan,Keripik Singkong,2,18000,10.0,QRIS,PLG0665,3.0
+TRX00769,2025-05-16,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,Kartu Debit,PLG0382,4.0
+TRX00770,2025-05-16,Medan,Fashion,Jilbab Instan,3,85000,0.0,QRIS,PLG0324,4.0
+TRX00771,2025-05-16,Jakarta,Fashion,Sneakers,5,480000,0.0,QRIS,PLG0444,5.0
+TRX00772,2025-05-16,Jakarta,Makanan,Sambal Botol,4,28000,15.0,Tunai,PLG0069,5.0
+TRX00773,2025-05-17,Surabaya,Makanan,Kopi Bubuk 250g,4,55000,5.0,Kartu Kredit,PLG0337,
+TRX00774,2025-05-17,Jakarta,Kecantikan,Masker Wajah,1,25000,0.0,QRIS,PLG0578,4.0
+TRX00775,2025-05-17,Medan,Makanan,Kopi Bubuk 250g,2,55000,20.0,Kartu Kredit,PLG0328,5.0
+TRX00776,2025-05-18,Jakarta,Makanan,Madu 350ml,1,95000,20.0,Tunai,PLG0358,3.0
+TRX00777,2025-05-18,Bandung,Makanan,Keripik Singkong,1,18000,30.0,Tunai,PLG0038,3.0
+TRX00778,2025-05-18,Surabaya,Makanan,Sambal Botol,2,28000,20.0,Tunai,PLG0358,5.0
+TRX00779,2025-05-18,Jakarta,Rumah Tangga,Dispenser Sabun,1,60000,5.0,QRIS,PLG0151,5.0
+TRX00780,2025-05-18,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,0.0,Tunai,PLG0260,3.0
+TRX00781,2025-05-19,Surabaya,Kecantikan,Sabun Cuci Muka,1,42000,10.0,QRIS,PLG0091,4.0
+TRX00782,2025-05-19,Surabaya,Elektronik,Speaker Bluetooth,2,410000,0.0,QRIS,PLG0309,4.0
+TRX00783,2025-05-19,Surabaya,Makanan,Kurma 500g,1,70000,0.0,Kartu Debit,PLG0372,3.0
+TRX00784,2025-05-19,Jakarta,Fashion,Sneakers,2,480000,5.0,Kartu Debit,PLG0559,4.0
+TRX00785,2025-05-19,Surabaya,Elektronik,Power Bank 10000mAh,2,220000,0.0,QRIS,PLG0380,4.0
+TRX00786,2025-05-19,Jakarta,Makanan,Madu 350ml,2,95000,20.0,QRIS,PLG0630,5.0
+TRX00787,2025-05-20,Jakarta,Elektronik,Speaker Bluetooth,3,410000,5.0,Transfer,PLG0363,4.0
+TRX00788,2025-05-20,Makassar,Makanan,Madu 350ml,2,95000,5.0,Kartu Debit,PLG0206,4.0
+TRX00789,2025-05-20,Medan,Kecantikan,Lip Tint,2,59000,0.0,Kartu Kredit,PLG0236,4.0
+TRX00790,2025-05-20,Makassar,Elektronik,Earbuds Nirkabel,1,350000,30.0,QRIS,PLG0084,4.0
+TRX00791,2025-05-20,Medan,Makanan,Kurma 500g,2,70000,15.0,Kartu Kredit,PLG0464,3.0
+TRX00792,2025-05-20,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,0.0,Tunai,PLG0291,4.0
+TRX00793,2025-05-20,Jakarta,Kecantikan,Masker Wajah,3,25000,0.0,Tunai,PLG0127,5.0
+TRX00794,2025-05-20,Surabaya,Kecantikan,Sabun Cuci Muka,1,42000,5.0,QRIS,PLG0451,5.0
+TRX00795,2025-05-20,Makassar,Rumah Tangga,Rak Piring,2,160000,0.0,Tunai,PLG0511,3.0
+TRX00796,2025-05-21,Bandung,Makanan,Madu 350ml,1,95000,0.0,QRIS,PLG0172,4.0
+TRX00797,2025-05-21,Bandung,Fashion,Sneakers,2,480000,0.0,Kartu Debit,PLG0698,5.0
+TRX00798,2025-05-21,Medan,Elektronik,Smartwatch,1,900000,0.0,QRIS,PLG0597,
+TRX00799,2025-05-22,Jakarta,Fashion,Kaos Polos,3,75000,5.0,Kartu Debit,PLG0189,3.0
+TRX00800,2025-05-22,Jakarta,Rumah Tangga,Rak Piring,1,160000,0.0,QRIS,PLG0388,5.0
+TRX00801,2025-05-22,Jakarta,Kecantikan,Sunscreen SPF50,1,89000,30.0,Tunai,PLG0435,5.0
+TRX00802,2025-05-22,Makassar,Makanan,Kopi Bubuk 250g,3,55000,0.0,Kartu Kredit,PLG0669,4.0
+TRX00803,2025-05-23,Jakarta,Kecantikan,Sabun Cuci Muka,3,42000,15.0,Kartu Debit,PLG0554,4.0
+TRX00804,2025-05-23,Surabaya,Fashion,Jilbab Instan,2,85000,0.0,Transfer,PLG0192,4.0
+TRX00805,2025-05-23,Jakarta,Rumah Tangga,Rice Cooker,3,380000,15.0,QRIS,PLG0236,4.0
+TRX00806,2025-05-23,Surabaya,Makanan,Keripik Singkong,1,18000,15.0,Kartu Kredit,PLG0637,4.0
+TRX00807,2025-05-23,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,15.0,Kartu Debit,PLG0687,3.0
+TRX00808,2025-05-23,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,30.0,Tunai,PLG0456,4.0
+TRX00809,2025-05-24,Jakarta,Makanan,Keripik Singkong,1,18000,0.0,QRIS,PLG0398,4.0
+TRX00810,2025-05-24,Surabaya,Fashion,Kemeja Batik,2,260000,5.0,Kartu Kredit,PLG0309,
+TRX00811,2025-05-24,Jakarta,Fashion,Kemeja Batik,1,260000,0.0,Kartu Debit,PLG0371,5.0
+TRX00812,2025-05-24,Makassar,Makanan,Keripik Singkong,2,18000,5.0,QRIS,PLG0340,4.0
+TRX00813,2025-05-24,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,5.0,QRIS,PLG0278,3.0
+TRX00814,2025-05-25,Jakarta,Makanan,Madu 350ml,2,95000,0.0,QRIS,PLG0261,5.0
+TRX00815,2025-05-25,Medan,Kecantikan,Serum Wajah,3,145000,10.0,QRIS,PLG0227,
+TRX00816,2025-05-25,Medan,Elektronik,Power Bank 10000mAh,2,220000,5.0,Kartu Debit,PLG0367,5.0
+TRX00817,2025-05-25,Surabaya,Rumah Tangga,Dispenser Sabun,1,60000,20.0,Tunai,PLG0005,4.0
+TRX00818,2025-05-26,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,0.0,Tunai,PLG0409,3.0
+TRX00819,2025-05-26,Jakarta,Makanan,Keripik Singkong,1,18000,10.0,Transfer,PLG0614,4.0
+TRX00820,2025-05-26,Jakarta,Rumah Tangga,Sapu Lantai,2,35000,0.0,QRIS,PLG0215,4.0
+TRX00821,2025-05-26,Bandung,Kecantikan,Serum Wajah,3,145000,10.0,Transfer,PLG0045,4.0
+TRX00822,2025-05-26,Medan,Rumah Tangga,Sapu Lantai,2,35000,20.0,QRIS,PLG0466,3.0
+TRX00823,2025-05-26,Medan,Fashion,Sneakers,2,480000,10.0,Kartu Debit,PLG0264,5.0
+TRX00824,2025-05-26,Surabaya,Kecantikan,Serum Wajah,3,145000,15.0,Tunai,PLG0164,5.0
+TRX00825,2025-05-27,Bandung,Makanan,Sambal Botol,2,28000,0.0,Kartu Debit,PLG0463,4.0
+TRX00826,2025-05-27,Medan,Rumah Tangga,Set Panci,4,450000,0.0,QRIS,PLG0200,3.0
+TRX00827,2025-05-27,Jakarta,Makanan,Keripik Singkong,2,18000,5.0,Tunai,PLG0054,4.0
+TRX00828,2025-05-27,Makassar,Kecantikan,Lip Tint,3,59000,15.0,QRIS,PLG0121,3.0
+TRX00829,2025-05-27,Surabaya,Rumah Tangga,Rak Piring,1,160000,15.0,QRIS,PLG0226,4.0
+TRX00830,2025-05-28,Bandung,Elektronik,Earbuds Nirkabel,3,350000,0.0,Kartu Debit,PLG0152,5.0
+TRX00831,2025-05-28,Jakarta,Fashion,Sneakers,1,480000,30.0,Kartu Debit,PLG0617,4.0
+TRX00832,2025-05-28,Surabaya,Elektronik,Kabel USB-C,2,45000,0.0,Kartu Debit,PLG0111,4.0
+TRX00833,2025-05-28,Jakarta,Makanan,Kurma 500g,2,70000,30.0,Tunai,PLG0044,5.0
+TRX00834,2025-05-28,Bandung,Makanan,Madu 350ml,2,95000,15.0,Tunai,PLG0588,4.0
+TRX00835,2025-05-29,Bandung,Elektronik,Kabel USB-C,1,45000,30.0,Tunai,PLG0165,5.0
+TRX00836,2025-05-29,Makassar,Elektronik,Power Bank 10000mAh,1,220000,5.0,Transfer,PLG0688,4.0
+TRX00837,2025-05-29,Bandung,Kecantikan,Masker Wajah,-2,25000,0.0,Transfer,PLG0552,
+TRX00838,2025-05-29,Surabaya,Fashion,Kemeja Batik,1,260000,20.0,QRIS,PLG0047,5.0
+TRX00839,2025-05-29,Surabaya,Fashion,Kaos Polos,3,75000,0.0,QRIS,PLG0670,5.0
+TRX00840,2025-05-30,Jakarta,Rumah Tangga,Rak Piring,2,160000,,Kartu Debit,PLG0516,3.0
+TRX00841,2025-05-30,Bandung,Kecantikan,Masker Wajah,2,25000,5.0,QRIS,PLG0654,
+TRX00842,2025-05-30,Makassar,Kecantikan,Masker Wajah,2,25000,0.0,Transfer,PLG0565,2.0
+TRX00843,2025-05-31,Medan,Rumah Tangga,Dispenser Sabun,3,60000,0.0,QRIS,PLG0309,4.0
+TRX00844,2025-05-31,Surabaya,Rumah Tangga,Sapu Lantai,1,35000,0.0,Transfer,PLG0135,4.0
+TRX00845,2025-05-31,Jakarta,Makanan,Madu 350ml,1,95000,0.0,QRIS,PLG0292,4.0
+TRX00846,2025-05-31,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,5.0,Kartu Debit,PLG0273,5.0
+TRX00847,2025-06-01,Surabaya,Elektronik,Smartwatch,3,900000,15.0,Kartu Debit,PLG0116,5.0
+TRX00848,2025-06-01,Bandung,Elektronik,Smartwatch,1,900000,10.0,QRIS,PLG0394,4.0
+TRX00849,2025-06-02,Surabaya,Makanan,Madu 350ml,2,95000,5.0,Kartu Debit,PLG0164,5.0
+TRX00850,2025-06-02,Jakarta,Elektronik,Earbuds Nirkabel,3,350000,20.0,QRIS,PLG0616,3.0
+TRX00851,2025-06-02,Bandung,Fashion,Jilbab Instan,1,85000,10.0,QRIS,PLG0313,4.0
+TRX00852,2025-06-02,Medan,Rumah Tangga,Rice Cooker,2,380000,0.0,Kartu Debit,PLG0183,
+TRX00853,2025-06-02,Bandung,Fashion,Celana Chino,1,210000,5.0,Transfer,PLG0361,5.0
+TRX00854,2025-06-03,Surabaya,Makanan,Madu 350ml,1,95000,15.0,Transfer,PLG0236,4.0
+TRX00855,2025-06-03,Jakarta,Fashion,Kemeja Batik,3,260000,0.0,Kartu Kredit,PLG0695,
+TRX00856,2025-06-03,Jakarta,Fashion,Kemeja Batik,4,260000,0.0,Transfer,PLG0229,5.0
+TRX00857,2025-06-03,Jakarta,Makanan,Keripik Singkong,2,18000,5.0,Kartu Debit,PLG0621,5.0
+TRX00858,2025-06-03,Jakarta,Makanan,Keripik Singkong,1,18000,20.0,QRIS,PLG0474,5.0
+TRX00859,2025-06-03,Jakarta,Elektronik,Kabel USB-C,4,45000,0.0,QRIS,PLG0414,
+TRX00860,2025-06-03,Jakarta,Elektronik,Kabel USB-C,2,45000,30.0,QRIS,PLG0597,
+TRX00861,2025-06-03,Jakarta,Elektronik,Kabel USB-C,2,45000,20.0,QRIS,PLG0688,5.0
+TRX00862,2025-06-03,Surabaya,Makanan,Keripik Singkong,2,18000,30.0,QRIS,PLG0542,4.0
+TRX00863,2025-06-04,Surabaya,Kecantikan,Sabun Cuci Muka,1,42000,5.0,Kartu Debit,PLG0462,4.0
+TRX00864,2025-06-04,Makassar,Kecantikan,Sunscreen SPF50,3,89000,30.0,Kartu Debit,PLG0528,4.0
+TRX00865,2025-06-04,Medan,Kecantikan,Lip Tint,2,59000,10.0,Tunai,PLG0014,5.0
+TRX00866,2025-06-05,Bandung,Fashion,Kaos Polos,1,75000,5.0,Tunai,PLG0670,3.0
+TRX00867,2025-06-05,Makassar,Elektronik,Kabel USB-C,1,45000,5.0,Kartu Kredit,PLG0380,4.0
+TRX00868,2025-06-05,Makassar,Makanan,Madu 350ml,2,95000,5.0,Transfer,PLG0563,4.0
+TRX00869,2025-06-05,Jakarta,Kecantikan,Sunscreen SPF50,1,89000,0.0,Tunai,PLG0660,3.0
+TRX00870,2025-06-05,Jakarta,Fashion,Celana Chino,2,210000,20.0,Kartu Debit,PLG0399,4.0
+TRX00871,2025-06-05,Surabaya,Fashion,Kaos Polos,1,75000,10.0,Tunai,PLG0234,5.0
+TRX00872,2025-06-05,Bandung,Makanan,Madu 350ml,3,95000,30.0,Tunai,PLG0102,4.0
+TRX00873,2025-06-05,Jakarta,Makanan,Kurma 500g,3,70000,5.0,QRIS,PLG0004,5.0
+TRX00874,2025-06-05,Bandung,Rumah Tangga,Sapu Lantai,2,35000,5.0,QRIS,PLG0176,5.0
+TRX00875,2025-06-06,Jakarta,Fashion,Kemeja Batik,4,260000,0.0,Tunai,PLG0430,5.0
+TRX00876,2025-06-06,Bandung,Makanan,Kopi Bubuk 250g,1,55000,10.0,QRIS,PLG0613,5.0
+TRX00877,2025-06-06,Surabaya,Elektronik,Power Bank 10000mAh,1,220000,0.0,Transfer,PLG0482,2.0
+TRX00878,2025-06-06,Jakarta,Rumah Tangga,Rice Cooker,2,380000,0.0,Kartu Debit,PLG0669,3.0
+TRX00879,2025-06-06,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,15.0,Tunai,PLG0037,4.0
+TRX00880,2025-06-07,Jakarta,Makanan,Kurma 500g,2,70000,10.0,Tunai,PLG0418,4.0
+TRX00881,2025-06-07,Jakarta,Rumah Tangga,Rak Piring,1,160000,5.0,Transfer,PLG0263,4.0
+TRX00882,2025-06-07,Medan,Makanan,Sambal Botol,3,28000,0.0,QRIS,PLG0462,3.0
+TRX00883,2025-06-07,Bandung,Fashion,Jilbab Instan,3,85000,10.0,Kartu Kredit,PLG0565,4.0
+TRX00884,2025-06-07,Surabaya,Fashion,Sneakers,2,480000,5.0,Transfer,PLG0271,4.0
+TRX00885,2025-06-07,Surabaya,Kecantikan,Sabun Cuci Muka,4,42000,0.0,Tunai,PLG0410,4.0
+TRX00886,2025-06-07,Surabaya,Fashion,Sneakers,1,480000,0.0,Tunai,PLG0266,4.0
+TRX00887,2025-06-08,Surabaya,Elektronik,Speaker Bluetooth,2,410000,0.0,QRIS,PLG0333,3.0
+TRX00888,2025-06-08,Surabaya,Rumah Tangga,Sapu Lantai,1,35000,15.0,Transfer,PLG0037,5.0
+TRX00889,2025-06-08,Medan,Fashion,Kaos Polos,2,75000,10.0,Kartu Debit,PLG0228,4.0
+TRX00890,2025-06-09,Jakarta,Elektronik,Smartwatch,2,900000,0.0,QRIS,PLG0613,5.0
+TRX00891,2025-06-09,Surabaya,Kecantikan,Masker Wajah,1,25000,30.0,QRIS,PLG0097,4.0
+TRX00892,2025-06-09,Makassar,Makanan,Kurma 500g,5,70000,30.0,QRIS,PLG0458,4.0
+TRX00893,2025-06-09,Surabaya,Rumah Tangga,Rak Piring,1,160000,0.0,Transfer,PLG0324,4.0
+TRX00894,2025-06-10,Makassar,Kecantikan,Masker Wajah,4,25000,30.0,Tunai,PLG0486,4.0
+TRX00895,2025-06-10,Makassar,Makanan,Keripik Singkong,4,18000,0.0,QRIS,PLG0359,5.0
+TRX00896,2025-06-11,Surabaya,Makanan,Keripik Singkong,3,18000,0.0,Kartu Debit,PLG0386,4.0
+TRX00897,2025-06-11,Jakarta,Rumah Tangga,Set Panci,3,450000,0.0,Kartu Debit,PLG0480,4.0
+TRX00898,2025-06-11,Bandung,Rumah Tangga,Rak Piring,1,160000,30.0,QRIS,PLG0020,
+TRX00899,2025-06-11,Jakarta,Kecantikan,Lip Tint,3,59000,30.0,QRIS,PLG0193,5.0
+TRX00900,2025-06-11,Bandung,Rumah Tangga,Set Panci,3,450000,20.0,Kartu Debit,PLG0440,5.0
+TRX00901,2025-06-12,Makassar,Rumah Tangga,Set Panci,1,450000,10.0,Kartu Debit,PLG0218,3.0
+TRX00902,2025-06-12,Surabaya,Kecantikan,Lip Tint,3,59000,15.0,QRIS,PLG0383,5.0
+TRX00903,2025-06-12,Makassar,Fashion,Kemeja Batik,3,260000,5.0,Kartu Kredit,PLG0697,4.0
+TRX00904,2025-06-13,Medan,Rumah Tangga,Set Panci,2,450000,5.0,QRIS,PLG0389,4.0
+TRX00905,2025-06-13,Bandung,Kecantikan,Sabun Cuci Muka,2,42000,10.0,Kartu Kredit,PLG0694,5.0
+TRX00906,2025-06-13,Surabaya,Kecantikan,Masker Wajah,1,25000,5.0,Transfer,PLG0322,4.0
+TRX00907,2025-06-13,Jakarta,Fashion,Kemeja Batik,1,260000,5.0,QRIS,PLG0698,4.0
+TRX00908,2025-06-14,Bandung,Rumah Tangga,Rice Cooker,1,380000,0.0,Kartu Debit,PLG0439,3.0
+TRX00909,2025-06-14,Medan,Fashion,Sneakers,2,480000,15.0,Transfer,PLG0655,4.0
+TRX00910,2025-06-14,Jakarta,Makanan,Kurma 500g,1,70000,0.0,Kartu Kredit,PLG0425,5.0
+TRX00911,2025-06-14,Makassar,Rumah Tangga,Dispenser Sabun,2,60000,0.0,QRIS,PLG0539,3.0
+TRX00912,2025-06-14,Surabaya,Elektronik,Earbuds Nirkabel,1,350000,5.0,Transfer,PLG0567,4.0
+TRX00913,2025-06-14,Bandung,Elektronik,Smartwatch,4,900000,30.0,QRIS,PLG0504,
+TRX00914,2025-06-15,Jakarta,Kecantikan,Sabun Cuci Muka,1,42000,0.0,QRIS,PLG0291,4.0
+TRX00915,2025-06-15,Medan,Fashion,Jilbab Instan,2,85000,,Tunai,PLG0299,4.0
+TRX00916,2025-06-15,surabaya,Makanan,Keripik Singkong,1,18000,0.0,Kartu Kredit,PLG0515,5.0
+TRX00917,2025-06-15,Bandung,Fashion,Sneakers,4,480000,0.0,Kartu Debit,PLG0206,3.0
+TRX00918,2025-06-16,Jakarta,Fashion,Jilbab Instan,1,85000,15.0,Transfer,PLG0372,4.0
+TRX00919,2025-06-16,Jakarta,Makanan,Madu 350ml,2,95000,20.0,Kartu Debit,PLG0481,5.0
+TRX00920,2025-06-17,Jakarta,Elektronik,Kabel USB-C,3,45000,30.0,Kartu Debit,PLG0138,3.0
+TRX00921,2025-06-17,Jakarta,Elektronik,Kabel USB-C,1,45000,5.0,Tunai,PLG0160,5.0
+TRX00922,2025-06-17,Jakarta,Elektronik,Smartwatch,3,900000,30.0,Kartu Kredit,PLG0305,5.0
+TRX00923,2025-06-17,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,10.0,Kartu Debit,PLG0413,
+TRX00924,2025-06-17,Makassar,Rumah Tangga,Dispenser Sabun,3,60000,20.0,Kartu Debit,PLG0357,
+TRX00925,2025-06-17,Bandung,Kecantikan,Sunscreen SPF50,2,89000,15.0,Tunai,PLG0126,4.0
+TRX00926,2025-06-18,Bandung,Makanan,Keripik Singkong,3,18000,0.0,Kartu Debit,PLG0576,4.0
+TRX00927,2025-06-18,Jakarta,Rumah Tangga,Rice Cooker,3,380000,,Kartu Debit,PLG0431,3.0
+TRX00928,2025-06-18,Medan,Elektronik,Speaker Bluetooth,2,410000,20.0,Tunai,PLG0587,5.0
+TRX00929,2025-06-18,Makassar,Makanan,Keripik Singkong,2,18000,20.0,Kartu Debit,PLG0378,5.0
+TRX00930,2025-06-18,Jakarta,Fashion,Kaos Polos,1,75000,5.0,Kartu Kredit,PLG0426,5.0
+TRX00931,2025-06-18,Surabaya,Makanan,Madu 350ml,2,95000,0.0,Transfer,PLG0682,4.0
+TRX00932,2025-06-18,Jakarta,Elektronik,Speaker Bluetooth,1,410000,0.0,Kartu Debit,PLG0188,5.0
+TRX00933,2025-06-18,Jakarta,Kecantikan,Masker Wajah,2,25000,20.0,Tunai,PLG0085,4.0
+TRX00934,2025-06-19,Surabaya,Kecantikan,Masker Wajah,1,25000,0.0,Kartu Kredit,PLG0194,3.0
+TRX00935,2025-06-19,Makassar,Elektronik,Power Bank 10000mAh,2,220000,15.0,QRIS,PLG0308,4.0
+TRX00936,2025-06-19,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,0.0,QRIS,PLG0489,5.0
+TRX00937,2025-06-19,Jakarta,Rumah Tangga,Sapu Lantai,2,35000,0.0,QRIS,PLG0355,4.0
+TRX00938,2025-06-20,Jakarta,Kecantikan,Serum Wajah,1,145000,0.0,Kartu Debit,PLG0213,4.0
+TRX00939,2025-06-20,Bandung,Rumah Tangga,Rak Piring,3,160000,0.0,QRIS,PLG0461,4.0
+TRX00940,2025-06-20,Medan,Rumah Tangga,Dispenser Sabun,1,60000,10.0,QRIS,PLG0311,5.0
+TRX00941,2025-06-20,Jakarta,Fashion,Sneakers,2,480000,5.0,QRIS,PLG0053,4.0
+TRX00942,2025-06-20,Makassar,Makanan,Sambal Botol,3,28000,10.0,Tunai,PLG0658,5.0
+TRX00943,2025-06-21,Medan,Makanan,Kopi Bubuk 250g,1,55000,20.0,QRIS,PLG0404,4.0
+TRX00944,2025-06-21,Surabaya,Rumah Tangga,Set Panci,3,450000,0.0,Tunai,PLG0573,5.0
+TRX00945,2025-06-21,Makassar,Rumah Tangga,Dispenser Sabun,3,60000,15.0,QRIS,PLG0032,4.0
+TRX00946,2025-06-22,Surabaya,Fashion,Celana Chino,1,210000,10.0,Kartu Kredit,PLG0357,3.0
+TRX00947,2025-06-22,Makassar,Makanan,Sambal Botol,3,28000,0.0,Transfer,PLG0335,
+TRX00948,2025-06-22,Jakarta,Makanan,Sambal Botol,3,28000,0.0,Kartu Kredit,PLG0165,4.0
+TRX00949,2025-06-22,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,5.0,Kartu Debit,PLG0165,4.0
+TRX00950,2025-06-23,Medan,Kecantikan,Sunscreen SPF50,1,89000,0.0,Transfer,PLG0362,5.0
+TRX00951,2025-06-23,Medan,Fashion,Kaos Polos,2,75000,20.0,Kartu Kredit,PLG0100,4.0
+TRX00952,2025-06-23,Bandung,Kecantikan,Lip Tint,3,59000,20.0,Transfer,PLG0636,
+TRX00953,2025-06-23,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,Tunai,PLG0496,
+TRX00954,2025-06-24,Jakarta,Makanan,Kopi Bubuk 250g,4,55000,20.0,QRIS,PLG0564,
+TRX00955,2025-06-24,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,0.0,QRIS,PLG0085,4.0
+TRX00956,2025-06-24,Jakarta,Fashion,Kaos Polos,3,75000,15.0,Tunai,PLG0628,4.0
+TRX00957,2025-06-24,Jakarta,Makanan,Sambal Botol,1,28000,0.0,QRIS,PLG0455,5.0
+TRX00958,2025-06-25,Medan,Kecantikan,Masker Wajah,2,25000,30.0,Tunai,PLG0044,4.0
+TRX00959,2025-06-26,Jakarta,Kecantikan,Masker Wajah,1,25000,10.0,QRIS,PLG0316,4.0
+TRX00960,2025-06-26,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,0.0,Kartu Debit,PLG0385,4.0
+TRX00961,2025-06-26,Jakarta,Elektronik,Power Bank 10000mAh,3,220000,0.0,Tunai,PLG0017,5.0
+TRX00962,2025-06-26,Jakarta,Kecantikan,Sunscreen SPF50,4,89000,5.0,Transfer,PLG0452,3.0
+TRX00963,2025-06-26,Medan,Fashion,Sneakers,2,480000,20.0,QRIS,PLG0605,5.0
+TRX00964,2025-06-27,Surabaya,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0478,5.0
+TRX00965,2025-06-27,Bandung,Rumah Tangga,Rice Cooker,3,380000,30.0,Transfer,PLG0699,4.0
+TRX00966,2025-06-28,Jakarta,Makanan,Kurma 500g,2,70000,0.0,QRIS,PLG0212,5.0
+TRX00967,2025-06-28,Jakarta,Makanan,Madu 350ml,1,95000,0.0,QRIS,PLG0015,5.0
+TRX00968,2025-06-29,Surabaya,Makanan,Kurma 500g,1,70000,0.0,QRIS,PLG0624,3.0
+TRX00969,2025-06-29,Makassar,Kecantikan,Serum Wajah,1,145000,0.0,QRIS,PLG0385,4.0
+TRX00970,2025-06-29,Jakarta,Fashion,Sneakers,2,480000,5.0,QRIS,PLG0588,4.0
+TRX00971,2025-06-29,Surabaya,Kecantikan,Serum Wajah,3,145000,20.0,Tunai,PLG0211,4.0
+TRX00972,2025-06-29,Medan,Elektronik,Smartwatch,1,900000,0.0,QRIS,PLG0601,3.0
+TRX00973,2025-06-29,Surabaya,Fashion,Kemeja Batik,2,260000,15.0,Kartu Debit,PLG0412,4.0
+TRX00974,2025-06-30,Makassar,Elektronik,Kabel USB-C,2,45000,30.0,QRIS,PLG0418,4.0
+TRX00975,2025-06-30,Surabaya,Kecantikan,Serum Wajah,3,145000,15.0,QRIS,PLG0153,5.0
+TRX00976,2025-06-30,Medan,Fashion,Kaos Polos,2,75000,15.0,Kartu Kredit,PLG0148,5.0
+TRX00977,2025-06-30,Makassar,Fashion,Kaos Polos,1,75000,20.0,QRIS,PLG0118,5.0
+TRX00978,2025-07-01,Medan,Makanan,Sambal Botol,3,28000,10.0,QRIS,PLG0277,3.0
+TRX00979,2025-07-01,Surabaya,Fashion,Sneakers,1,480000,30.0,Transfer,PLG0397,4.0
+TRX00980,2025-07-01,Surabaya,Elektronik,Kabel USB-C,3,45000,15.0,Kartu Kredit,PLG0351,4.0
+TRX00981,2025-07-02,Medan,Kecantikan,Lip Tint,2,59000,15.0,Tunai,PLG0420,4.0
+TRX00982,2025-07-02,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,0.0,Transfer,PLG0611,4.0
+TRX00983,2025-07-02,Makassar,Makanan,Kurma 500g,2,70000,5.0,Kartu Debit,PLG0658,5.0
+TRX00984,2025-07-03,Jakarta,Makanan,Sambal Botol,2,28000,10.0,Tunai,PLG0617,4.0
+TRX00985,2025-07-03,Bandung,Elektronik,Speaker Bluetooth,2,410000,30.0,Tunai,PLG0463,4.0
+TRX00986,2025-07-04,Makassar,Makanan,Keripik Singkong,2,18000,0.0,Transfer,PLG0640,4.0
+TRX00987,2025-07-04,Jakarta,Makanan,Keripik Singkong,7,18000,30.0,QRIS,PLG0013,5.0
+TRX00988,2025-07-04,Medan,Kecantikan,Sunscreen SPF50,1,89000,0.0,Transfer,PLG0632,4.0
+TRX00989,2025-07-04,Jakarta,Makanan,Sambal Botol,2,28000,15.0,Kartu Debit,PLG0417,
+TRX00990,2025-07-04,Surabaya,Kecantikan,Serum Wajah,1,145000,0.0,Tunai,PLG0145,5.0
+TRX00991,2025-07-04,SBY,Kecantikan,Serum Wajah,1,145000,0.0,Kartu Kredit,PLG0673,4.0
+TRX00992,2025-07-04,Surabaya,Makanan,Keripik Singkong,1,18000,0.0,QRIS,PLG0656,4.0
+TRX00993,2025-07-04,Surabaya,Elektronik,Speaker Bluetooth,2,410000,0.0,QRIS,PLG0092,4.0
+TRX00994,2025-07-04,Surabaya,Rumah Tangga,Dispenser Sabun,-2,60000,10.0,QRIS,PLG0441,3.0
+TRX00995,2025-07-04,Medan,Makanan,Keripik Singkong,3,18000,0.0,Kartu Kredit,PLG0687,4.0
+TRX00996,2025-07-05,Jakarta,Fashion,Kaos Polos,3,75000,10.0,Kartu Debit,PLG0313,
+TRX00997,2025-07-05,Surabaya,Fashion,Celana Chino,3,210000,10.0,Kartu Debit,PLG0436,4.0
+TRX00998,2025-07-05,Jakarta,Fashion,Kemeja Batik,2,260000,5.0,QRIS,PLG0603,3.0
+TRX00999,2025-07-06,Bandung,Fashion,Kaos Polos,3,75000,10.0,Tunai,PLG0138,4.0
+TRX01000,2025-07-06,Surabaya,Fashion,Kemeja Batik,3,260000,0.0,Kartu Debit,PLG0266,4.0
+TRX01001,2025-07-06,Bandung,Fashion,Kaos Polos,3,75000,10.0,QRIS,PLG0022,
+TRX01002,2025-07-06,Bandung,Makanan,Kopi Bubuk 250g,3,55000,0.0,Tunai,PLG0504,
+TRX01003,2025-07-06,Jakarta,Fashion,Kemeja Batik,1,260000,10.0,Tunai,PLG0015,5.0
+TRX01004,2025-07-06,Jakarta,Kecantikan,Sabun Cuci Muka,3,42000,0.0,QRIS,PLG0442,4.0
+TRX01005,2025-07-06,Makassar,Makanan,Kurma 500g,8,70000,15.0,Kartu Kredit,PLG0455,4.0
+TRX01006,2025-07-07,Makassar,Elektronik,Speaker Bluetooth,2,410000,0.0,Kartu Debit,PLG0025,4.0
+TRX01007,2025-07-07,Surabaya,Makanan,Sambal Botol,1,28000,5.0,QRIS,PLG0612,4.0
+TRX01008,2025-07-07,Jakarta,Makanan,Sambal Botol,1,28000,0.0,Tunai,PLG0043,4.0
+TRX01009,2025-07-07,Jakarta,Rumah Tangga,Rice Cooker,1,380000,20.0,QRIS,PLG0350,5.0
+TRX01010,2025-07-07,Bandung,Fashion,Jilbab Instan,2,85000,30.0,QRIS,PLG0097,4.0
+TRX01011,2025-07-07,Surabaya,Elektronik,Smartwatch,4,900000,15.0,Kartu Kredit,PLG0655,5.0
+TRX01012,2025-07-07,Surabaya,Makanan,Sambal Botol,5,28000,10.0,Tunai,PLG0152,4.0
+TRX01013,2025-07-07,Jakarta,Fashion,Kaos Polos,1,75000,15.0,QRIS,PLG0268,5.0
+TRX01014,2025-07-07,Surabaya,Elektronik,Smartwatch,2,900000,10.0,Kartu Debit,PLG0510,
+TRX01015,2025-07-08,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,30.0,Kartu Debit,PLG0321,5.0
+TRX01016,2025-07-08,Medan,Makanan,Keripik Singkong,4,18000,20.0,Transfer,PLG0054,5.0
+TRX01017,2025-07-08,Surabaya,Elektronik,Earbuds Nirkabel,3,350000,0.0,Kartu Kredit,PLG0423,3.0
+TRX01018,2025-07-08,Jakarta,Rumah Tangga,Set Panci,3,450000,0.0,Kartu Kredit,PLG0300,4.0
+TRX01019,2025-07-08,Jakarta,Makanan,Madu 350ml,1,95000,0.0,Transfer,PLG0399,3.0
+TRX01020,2025-07-08,Jakarta,Elektronik,Kabel USB-C,2,45000,0.0,Tunai,PLG0605,4.0
+TRX01021,2025-07-08,Makassar,Rumah Tangga,Dispenser Sabun,1,60000,15.0,Transfer,PLG0049,4.0
+TRX01022,2025-07-08,Bandung,Kecantikan,Sunscreen SPF50,4,89000,10.0,Kartu Kredit,PLG0606,4.0
+TRX01023,2025-07-08,Jakarta,Elektronik,Smartwatch,3,900000,0.0,Kartu Debit,PLG0309,5.0
+TRX01024,2025-07-08,Surabaya,Fashion,Sneakers,3,480000,10.0,Tunai,PLG0275,5.0
+TRX01025,2025-07-08,Makassar,Fashion,Kemeja Batik,2,260000,0.0,QRIS,PLG0329,4.0
+TRX01026,2025-07-08,Jakarta,Kecantikan,Serum Wajah,2,145000,30.0,Kartu Kredit,PLG0267,4.0
+TRX01027,2025-07-09,Makassar,Makanan,Madu 350ml,1,95000,5.0,Tunai,PLG0338,4.0
+TRX01028,2025-07-09,SBY,Makanan,Madu 350ml,2,95000,5.0,Kartu Debit,PLG0008,3.0
+TRX01029,2025-07-09,Jakarta,Elektronik,Power Bank 10000mAh,5,220000,15.0,Tunai,PLG0153,5.0
+TRX01030,2025-07-09,Surabaya,Kecantikan,Sunscreen SPF50,2,89000,20.0,Kartu Debit,PLG0224,
+TRX01031,2025-07-09,Surabaya,Rumah Tangga,Rice Cooker,1,380000,,QRIS,PLG0088,4.0
+TRX01032,2025-07-09,Bandung,Elektronik,Smartwatch,1,900000,15.0,Kartu Debit,PLG0518,4.0
+TRX01033,2025-07-10,Jakarta,Fashion,Kemeja Batik,3,260000,0.0,Kartu Debit,PLG0255,4.0
+TRX01034,2025-07-10,Surabaya,Elektronik,Speaker Bluetooth,1,410000,30.0,QRIS,PLG0452,5.0
+TRX01035,2025-07-10,Jakarta,Rumah Tangga,Set Panci,3,450000,0.0,QRIS,PLG0363,4.0
+TRX01036,2025-07-11,Medan,Rumah Tangga,Rak Piring,2,160000,10.0,Tunai,PLG0087,4.0
+TRX01037,2025-07-11,Surabaya,Fashion,Sneakers,2,480000,30.0,QRIS,PLG0648,4.0
+TRX01038,2025-07-12,Makassar,Makanan,Keripik Singkong,2,18000,0.0,Tunai,PLG0238,4.0
+TRX01039,2025-07-12,Jakarta,Makanan,Madu 350ml,2,95000,10.0,QRIS,PLG0435,5.0
+TRX01040,2025-07-12,Surabaya,Makanan,Kurma 500g,3,70000,10.0,Kartu Debit,PLG0506,5.0
+TRX01041,2025-07-12,Surabaya,Kecantikan,Masker Wajah,1,25000,15.0,Kartu Kredit,PLG0274,4.0
+TRX01042,2025-07-12,Makassar,Fashion,Jilbab Instan,3,85000,15.0,Kartu Debit,PLG0387,4.0
+TRX01043,2025-07-12,Medan,Makanan,Kurma 500g,2,70000,0.0,Tunai,PLG0554,4.0
+TRX01044,2025-07-13,Medan,Kecantikan,Lip Tint,1,59000,20.0,Transfer,PLG0651,5.0
+TRX01045,2025-07-13,Bandung,Kecantikan,Lip Tint,1,59000,30.0,QRIS,PLG0266,5.0
+TRX01046,2025-07-13,Bandung,Elektronik,Kabel USB-C,2,45000,0.0,Kartu Kredit,PLG0679,5.0
+TRX01047,2025-07-13,Jakarta,Kecantikan,Masker Wajah,3,25000,0.0,Transfer,PLG0219,4.0
+TRX01048,2025-07-13,Bandung,Fashion,Kaos Polos,1,75000,15.0,Tunai,PLG0193,3.0
+TRX01049,2025-07-14,Medan,Makanan,Keripik Singkong,1,18000,30.0,Kartu Debit,PLG0616,
+TRX01050,2025-07-14,Surabaya,Fashion,Sneakers,1,480000,0.0,QRIS,PLG0616,4.0
+TRX01051,2025-07-14,Surabaya,Elektronik,Speaker Bluetooth,1,410000,15.0,QRIS,PLG0344,3.0
+TRX01052,2025-07-14,Surabaya,Fashion,Kaos Polos,3,75000,0.0,Kartu Debit,PLG0059,3.0
+TRX01053,2025-07-14,Jakarta,Elektronik,Kabel USB-C,2,45000,15.0,QRIS,PLG0651,4.0
+TRX01054,2025-07-15,Surabaya,Kecantikan,Lip Tint,2,59000,5.0,QRIS,PLG0647,3.0
+TRX01055,2025-07-15,Surabaya,Fashion,Jilbab Instan,1,85000,5.0,QRIS,PLG0594,5.0
+TRX01056,2025-07-15,Makassar,Fashion,Sneakers,1,480000,30.0,QRIS,PLG0426,5.0
+TRX01057,2025-07-15,Surabaya,Fashion,Kemeja Batik,1,260000,,Transfer,PLG0574,4.0
+TRX01058,2025-07-15,Surabaya,Makanan,Keripik Singkong,2,18000,0.0,Kartu Debit,PLG0430,4.0
+TRX01059,2025-07-16,Jakarta,Elektronik,Speaker Bluetooth,3,410000,0.0,Transfer,PLG0366,3.0
+TRX01060,2025-07-16,Bandung,Kecantikan,Masker Wajah,1,25000,10.0,QRIS,PLG0365,4.0
+TRX01061,2025-07-16,Jakarta,Elektronik,Kabel USB-C,2,45000,5.0,QRIS,PLG0411,5.0
+TRX01062,2025-07-16,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,0.0,QRIS,PLG0073,4.0
+TRX01063,2025-07-16,Medan,Rumah Tangga,Rice Cooker,4,380000,0.0,Tunai,PLG0233,4.0
+TRX01064,2025-07-16,Surabaya,Makanan,Sambal Botol,4,28000,5.0,Kartu Debit,PLG0677,5.0
+TRX01065,2025-07-17,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,0.0,Tunai,PLG0022,4.0
+TRX01066,2025-07-17,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,30.0,QRIS,PLG0588,4.0
+TRX01067,2025-07-17,Jakarta,Elektronik,Speaker Bluetooth,3,410000,30.0,Tunai,PLG0541,5.0
+TRX01068,2025-07-17,Surabaya,Makanan,Kurma 500g,1,70000,0.0,Kartu Debit,PLG0515,
+TRX01069,2025-07-17,Makassar,Kecantikan,Sunscreen SPF50,2,89000,0.0,Kartu Debit,PLG0497,4.0
+TRX01070,2025-07-17,Surabaya,Rumah Tangga,Rice Cooker,2,380000,20.0,Kartu Debit,PLG0465,4.0
+TRX01071,2025-07-18,Jakarta,Kecantikan,Masker Wajah,2,25000,0.0,QRIS,PLG0304,
+TRX01072,2025-07-18,Jakarta,Elektronik,Speaker Bluetooth,1,410000,5.0,Kartu Debit,PLG0223,3.0
+TRX01073,2025-07-18,Jakarta,Makanan,Madu 350ml,2,95000,30.0,Transfer,PLG0443,5.0
+TRX01074,2025-07-18,Bandung,Kecantikan,Lip Tint,2,59000,5.0,Tunai,PLG0455,3.0
+TRX01075,2025-07-18,Jakarta,Kecantikan,Lip Tint,1,59000,0.0,QRIS,PLG0442,4.0
+TRX01076,2025-07-18,Surabaya,Fashion,Kemeja Batik,2,260000,30.0,QRIS,PLG0042,5.0
+TRX01077,2025-07-18,Makassar,Kecantikan,Sunscreen SPF50,1,89000,10.0,QRIS,PLG0631,3.0
+TRX01078,2025-07-20,Bandung,Makanan,Sambal Botol,2,28000,15.0,Kartu Debit,PLG0264,3.0
+TRX01079,2025-07-20,Bandung,Rumah Tangga,Set Panci,2,450000,5.0,QRIS,PLG0102,4.0
+TRX01080,2025-07-21,Makassar,Fashion,Celana Chino,2,210000,15.0,Kartu Debit,PLG0188,4.0
+TRX01081,2025-07-21,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,0.0,Kartu Kredit,PLG0248,4.0
+TRX01082,2025-07-21,Surabaya,Elektronik,Smartwatch,1,900000,10.0,QRIS,PLG0689,5.0
+TRX01083,2025-07-21,Surabaya,Fashion,Sneakers,3,480000,30.0,Kartu Kredit,PLG0505,3.0
+TRX01084,2025-07-22,Jakarta,Makanan,Keripik Singkong,1,18000,0.0,Kartu Kredit,PLG0552,4.0
+TRX01085,2025-07-22,Surabaya,Fashion,Kemeja Batik,3,260000,5.0,Kartu Debit,PLG0351,4.0
+TRX01086,2025-07-23,Surabaya,Makanan,Kurma 500g,2,70000,30.0,Kartu Debit,PLG0659,4.0
+TRX01087,2025-07-23,Surabaya,Makanan,Kurma 500g,1,70000,0.0,Tunai,PLG0490,
+TRX01088,2025-07-23,Medan,Kecantikan,Serum Wajah,2,145000,15.0,Transfer,PLG0569,4.0
+TRX01089,2025-07-24,Jakarta,Makanan,Keripik Singkong,3,18000,0.0,QRIS,PLG0147,4.0
+TRX01090,2025-07-24,Bandung,Elektronik,Smartwatch,3,900000,30.0,QRIS,PLG0505,4.0
+TRX01091,2025-07-25,Medan,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0118,4.0
+TRX01092,2025-07-25,Surabaya,Fashion,Sneakers,4,480000,10.0,Tunai,PLG0029,4.0
+TRX01093,2025-07-25,Bandung,Elektronik,Speaker Bluetooth,3,410000,10.0,Transfer,PLG0277,3.0
+TRX01094,2025-07-25,Makassar,Fashion,Kaos Polos,2,75000,30.0,QRIS,PLG0320,4.0
+TRX01095,2025-07-25,Jakarta,Makanan,Madu 350ml,6,95000,,Tunai,PLG0404,4.0
+TRX01096,2025-07-25,Bandung,Elektronik,Power Bank 10000mAh,2,220000,0.0,Tunai,PLG0129,4.0
+TRX01097,2025-07-26,Medan,Kecantikan,Masker Wajah,1,25000,5.0,Transfer,PLG0420,5.0
+TRX01098,2025-07-26,Bandung,Kecantikan,Sunscreen SPF50,3,89000,0.0,Tunai,PLG0261,4.0
+TRX01099,2025-07-26,Medan,Fashion,Kemeja Batik,4,260000,10.0,Kartu Kredit,PLG0502,4.0
+TRX01100,2025-07-26,Surabaya,Rumah Tangga,Set Panci,2,450000,15.0,Kartu Debit,PLG0062,5.0
+TRX01101,2025-07-27,Makassar,Makanan,Keripik Singkong,2,18000,0.0,Kartu Kredit,PLG0141,4.0
+TRX01102,2025-07-27,Jakarta,Rumah Tangga,Rice Cooker,4,380000,20.0,Transfer,PLG0130,2.0
+TRX01103,2025-07-27,Surabaya,Kecantikan,Lip Tint,2,59000,30.0,QRIS,PLG0436,3.0
+TRX01104,2025-07-27,Jakarta,Fashion,Jilbab Instan,4,85000,20.0,Tunai,PLG0096,4.0
+TRX01105,2025-07-27,Medan,Makanan,Kurma 500g,1,70000,20.0,QRIS,PLG0566,4.0
+TRX01106,2025-07-28,Medan,Fashion,Celana Chino,2,210000,20.0,QRIS,PLG0450,4.0
+TRX01107,2025-07-28,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,30.0,Tunai,PLG0459,3.0
+TRX01108,2025-07-28,Jakarta,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0355,3.0
+TRX01109,2025-07-28,Surabaya,Fashion,Jilbab Instan,1,85000,15.0,Tunai,PLG0397,4.0
+TRX01110,2025-07-28,Surabaya,Fashion,Sneakers,2,480000,20.0,QRIS,PLG0102,5.0
+TRX01111,2025-07-28,Medan,Fashion,Kaos Polos,2,75000,15.0,Tunai,PLG0597,4.0
+TRX01112,2025-07-29,Surabaya,Fashion,Kaos Polos,1,75000,15.0,QRIS,PLG0538,5.0
+TRX01113,2025-07-29,Makassar,Fashion,Celana Chino,2,210000,10.0,Kartu Kredit,PLG0357,5.0
+TRX01114,2025-07-29,Surabaya,Rumah Tangga,Rice Cooker,2,380000,0.0,Kartu Debit,PLG0381,4.0
+TRX01115,2025-07-29,Jakarta,Makanan,Keripik Singkong,1,18000,5.0,Tunai,PLG0452,5.0
+TRX01116,2025-07-29,Jakarta,Rumah Tangga,Sapu Lantai,2,35000,0.0,Kartu Kredit,PLG0612,4.0
+TRX01117,2025-07-29,Jakarta,Makanan,Keripik Singkong,4,18000,20.0,Tunai,PLG0233,4.0
+TRX01118,2025-07-29,Jakarta,Makanan,Madu 350ml,5,95000,20.0,Kartu Debit,PLG0663,4.0
+TRX01119,2025-07-30,Surabaya,Elektronik,Earbuds Nirkabel,3,350000,0.0,Kartu Debit,PLG0540,4.0
+TRX01120,2025-07-30,Bandung,Fashion,Celana Chino,3,210000,30.0,Transfer,PLG0346,4.0
+TRX01121,2025-07-30,Jakarta,Kecantikan,Lip Tint,3,59000,10.0,QRIS,PLG0436,4.0
+TRX01122,2025-07-30,Jakarta,Rumah Tangga,Set Panci,2,450000,5.0,Tunai,PLG0407,4.0
+TRX01123,2025-07-30,Makassar,Fashion,Kaos Polos,1,75000,0.0,Tunai,PLG0601,3.0
+TRX01124,2025-07-30,Makassar,Kecantikan,Lip Tint,5,59000,20.0,Tunai,PLG0440,
+TRX01125,2025-07-30,Jakarta,Makanan,Kurma 500g,1,70000,0.0,Kartu Kredit,PLG0081,4.0
+TRX01126,2025-07-31,Surabaya,Elektronik,Earbuds Nirkabel,2,350000,20.0,Tunai,PLG0338,5.0
+TRX01127,2025-07-31,Bandung,Elektronik,Earbuds Nirkabel,4,350000,5.0,Tunai,PLG0169,3.0
+TRX01128,2025-07-31,Jakarta,Elektronik,Speaker Bluetooth,1,410000,15.0,Tunai,PLG0387,5.0
+TRX01129,2025-07-31,Surabaya,Rumah Tangga,Set Panci,3,450000,5.0,Transfer,PLG0628,5.0
+TRX01130,2025-07-31,Medan,Kecantikan,Serum Wajah,4,145000,5.0,QRIS,PLG0624,4.0
+TRX01131,2025-08-01,Surabaya,Rumah Tangga,Set Panci,2,450000,20.0,Tunai,PLG0466,4.0
+TRX01132,2025-08-01,Makassar,Fashion,Celana Chino,3,210000,15.0,QRIS,PLG0576,5.0
+TRX01133,2025-08-01,Surabaya,Makanan,Kurma 500g,4,70000,30.0,Tunai,PLG0037,3.0
+TRX01134,2025-08-01,Surabaya,Fashion,Celana Chino,3,210000,10.0,Tunai,PLG0005,5.0
+TRX01135,2025-08-01,Surabaya,Rumah Tangga,Set Panci,1,450000,15.0,Kartu Kredit,PLG0047,5.0
+TRX01136,2025-08-01,Jakarta,Elektronik,Earbuds Nirkabel,5,350000,0.0,QRIS,PLG0264,3.0
+TRX01137,2025-08-02,Jakarta,Fashion,Kaos Polos,3,75000,15.0,Transfer,PLG0541,5.0
+TRX01138,2025-08-02,Makassar,Rumah Tangga,Set Panci,3,450000,0.0,Kartu Debit,PLG0397,4.0
+TRX01139,2025-08-02,Jakarta,Fashion,Kaos Polos,2,75000,,QRIS,PLG0625,4.0
+TRX01140,2025-08-02,Bandung,Fashion,Sneakers,2,480000,0.0,QRIS,PLG0072,2.0
+TRX01141,2025-08-03,Bandung,Makanan,Kopi Bubuk 250g,3,55000,10.0,QRIS,PLG0445,5.0
+TRX01142,2025-08-03,Makassar,Makanan,Kurma 500g,2,70000,20.0,Tunai,PLG0628,3.0
+TRX01143,2025-08-03,Jakarta,Fashion,Celana Chino,2,210000,15.0,QRIS,PLG0534,5.0
+TRX01144,2025-08-03,Surabaya,Kecantikan,Masker Wajah,3,25000,0.0,QRIS,PLG0648,4.0
+TRX01145,2025-08-03,Medan,Rumah Tangga,Rak Piring,1,160000,15.0,Transfer,PLG0047,2.0
+TRX01146,2025-08-03,Makassar,Makanan,Keripik Singkong,3,18000,0.0,Tunai,PLG0604,5.0
+TRX01147,2025-08-03,Makassar,Makanan,Keripik Singkong,2,18000,5.0,QRIS,PLG0210,5.0
+TRX01148,2025-08-04,Surabaya,Makanan,Keripik Singkong,1,18000,15.0,QRIS,PLG0165,
+TRX01149,2025-08-04,Bandung,Makanan,Madu 350ml,2,95000,20.0,QRIS,PLG0345,4.0
+TRX01150,2025-08-04,Jakarta,Fashion,Celana Chino,3,210000,15.0,Kartu Debit,PLG0011,4.0
+TRX01151,2025-08-04,Jakarta,Makanan,Sambal Botol,3,28000,0.0,QRIS,PLG0092,4.0
+TRX01152,2025-08-04,Bandung,Makanan,Kurma 500g,2,70000,0.0,Transfer,PLG0622,4.0
+TRX01153,2025-08-04,Jakarta,Makanan,Keripik Singkong,2,18000,10.0,Tunai,PLG0244,5.0
+TRX01154,2025-08-05,Jakarta,Kecantikan,Sunscreen SPF50,1,89000,0.0,Transfer,PLG0400,5.0
+TRX01155,2025-08-05,Jakarta,Fashion,Celana Chino,1,210000,0.0,Tunai,PLG0077,3.0
+TRX01156,2025-08-05,Jakarta,Rumah Tangga,Rak Piring,3,160000,30.0,Transfer,PLG0523,4.0
+TRX01157,2025-08-06,Bandung,Fashion,Sneakers,2,480000,10.0,Tunai,PLG0630,5.0
+TRX01158,2025-08-06,Surabaya,Rumah Tangga,Dispenser Sabun,3,60000,0.0,Tunai,PLG0508,3.0
+TRX01159,2025-08-06,Makassar,Rumah Tangga,Rice Cooker,2,380000,0.0,Kartu Kredit,PLG0507,3.0
+TRX01160,2025-08-06,Surabaya,Elektronik,Speaker Bluetooth,4,410000,10.0,Transfer,PLG0497,4.0
+TRX01161,2025-08-06,Makassar,Kecantikan,Sabun Cuci Muka,2,42000,10.0,QRIS,PLG0343,4.0
+TRX01162,2025-08-06,Makassar,Kecantikan,Masker Wajah,1,25000,10.0,Kartu Debit,PLG0689,
+TRX01163,2025-08-07,Jakarta,Elektronik,Smartwatch,3,900000,0.0,Tunai,PLG0075,4.0
+TRX01164,2025-08-07,Bandung,Kecantikan,Sunscreen SPF50,3,89000,5.0,Tunai,PLG0126,4.0
+TRX01165,2025-08-07,Surabaya,Kecantikan,Sunscreen SPF50,2,89000,0.0,QRIS,PLG0289,3.0
+TRX01166,2025-08-08,Makassar,Rumah Tangga,Set Panci,3,450000,15.0,Kartu Debit,PLG0222,2.0
+TRX01167,2025-08-08,Jakarta,Makanan,Kopi Bubuk 250g,4,55000,30.0,Transfer,PLG0293,5.0
+TRX01168,2025-08-08,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,15.0,QRIS,PLG0677,4.0
+TRX01169,2025-08-08,Surabaya,Fashion,Kemeja Batik,1,260000,5.0,QRIS,PLG0076,4.0
+TRX01170,2025-08-08,Bandung,Elektronik,Earbuds Nirkabel,2,350000,30.0,Kartu Debit,PLG0412,5.0
+TRX01171,2025-08-09,Jakarta,Kecantikan,Lip Tint,1,59000,0.0,QRIS,PLG0022,5.0
+TRX01172,2025-08-09,Medan,Fashion,Jilbab Instan,1,85000,0.0,QRIS,PLG0250,5.0
+TRX01173,2025-08-09,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,20.0,QRIS,PLG0197,5.0
+TRX01174,2025-08-09,Jakarta,Kecantikan,Sunscreen SPF50,1,89000,5.0,QRIS,PLG0647,4.0
+TRX01175,2025-08-10,Medan,Kecantikan,Serum Wajah,2,145000,15.0,Transfer,PLG0673,4.0
+TRX01176,2025-08-10,SBY,Makanan,Kurma 500g,1,70000,5.0,Kartu Debit,PLG0663,4.0
+TRX01177,2025-08-10,Bandung,Makanan,Kurma 500g,3,70000,15.0,Tunai,PLG0479,4.0
+TRX01178,2025-08-10,Makassar,Fashion,Kemeja Batik,3,260000,5.0,Transfer,PLG0032,5.0
+TRX01179,2025-08-10,Medan,Fashion,Sneakers,1,480000,0.0,Tunai,PLG0542,4.0
+TRX01180,2025-08-10,Surabaya,Elektronik,Earbuds Nirkabel,2,350000,20.0,QRIS,PLG0163,5.0
+TRX01181,2025-08-10,Surabaya,Elektronik,Earbuds Nirkabel,4,350000,15.0,Kartu Debit,PLG0507,4.0
+TRX01182,2025-08-11,Surabaya,Fashion,Jilbab Instan,2,85000,30.0,Transfer,PLG0630,5.0
+TRX01183,2025-08-11,Jakarta,Elektronik,Power Bank 10000mAh,2,220000,0.0,Kartu Debit,PLG0611,4.0
+TRX01184,2025-08-11,Jakarta,Rumah Tangga,Set Panci,2,450000,0.0,Tunai,PLG0570,4.0
+TRX01185,2025-08-11,Bandung,Rumah Tangga,Rice Cooker,1,380000,5.0,QRIS,PLG0014,4.0
+TRX01186,2025-08-11,Surabaya,Elektronik,Speaker Bluetooth,2,410000,0.0,Transfer,PLG0300,4.0
+TRX01187,2025-08-12,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,5.0,Kartu Kredit,PLG0176,4.0
+TRX01188,2025-08-12,Surabaya,Rumah Tangga,Rak Piring,3,160000,0.0,Tunai,PLG0367,4.0
+TRX01189,2025-08-12,Jakarta,Makanan,Sambal Botol,1,28000,0.0,Transfer,PLG0398,4.0
+TRX01190,2025-08-12,Bandung,Makanan,Madu 350ml,2,95000,15.0,Tunai,PLG0611,4.0
+TRX01191,2025-08-12,Makassar,Elektronik,Smartwatch,1,900000,0.0,Kartu Debit,PLG0332,5.0
+TRX01192,2025-08-12,Jakarta,Makanan,Keripik Singkong,2,18000,0.0,QRIS,PLG0038,4.0
+TRX01193,2025-08-12,Bandung,Makanan,Madu 350ml,2,95000,15.0,Transfer,PLG0173,5.0
+TRX01194,2025-08-13,Jakarta,Elektronik,Smartwatch,1,900000,0.0,QRIS,PLG0335,5.0
+TRX01195,2025-08-13,Jakarta,Makanan,Sambal Botol,3,28000,30.0,Kartu Kredit,PLG0523,3.0
+TRX01196,2025-08-13,Surabaya,Rumah Tangga,Dispenser Sabun,2,60000,5.0,Transfer,PLG0682,5.0
+TRX01197,2025-08-14,Makassar,Elektronik,Smartwatch,2,900000,30.0,QRIS,PLG0254,5.0
+TRX01198,2025-08-14,Surabaya,Kecantikan,Sabun Cuci Muka,1,42000,20.0,Tunai,PLG0518,3.0
+TRX01199,2025-08-14,Bandung,Makanan,Keripik Singkong,4,18000,0.0,Transfer,PLG0572,4.0
+TRX01200,2025-08-14,Surabaya,Makanan,Keripik Singkong,5,18000,5.0,Tunai,PLG0435,4.0
+TRX01201,2025-08-14,Jakarta,Rumah Tangga,Rak Piring,1,160000,20.0,Tunai,PLG0312,4.0
+TRX01202,2025-08-14,Surabaya,Makanan,Madu 350ml,4,95000,15.0,QRIS,PLG0119,3.0
+TRX01203,2025-08-15,Makassar,Fashion,Kaos Polos,1,75000,15.0,Tunai,PLG0086,4.0
+TRX01204,2025-08-15,Makassar,Rumah Tangga,Sapu Lantai,3,35000,15.0,QRIS,PLG0263,5.0
+TRX01205,2025-08-15,Jakarta,Rumah Tangga,Rak Piring,2,160000,5.0,QRIS,PLG0192,4.0
+TRX01206,2025-08-15,Surabaya,Fashion,Kaos Polos,2,75000,30.0,Kartu Kredit,PLG0471,5.0
+TRX01207,2025-08-15,Medan,Kecantikan,Sunscreen SPF50,1,89000,0.0,Tunai,PLG0145,4.0
+TRX01208,2025-08-16,Jakarta,Fashion,Kemeja Batik,2,260000,0.0,Transfer,PLG0241,5.0
+TRX01209,2025-08-16,Bandung,Elektronik,Earbuds Nirkabel,2,350000,10.0,Transfer,PLG0302,5.0
+TRX01210,2025-08-17,SBY,Kecantikan,Lip Tint,1,59000,15.0,QRIS,PLG0428,5.0
+TRX01211,2025-08-17,Bandung,Fashion,Celana Chino,1,210000,5.0,Kartu Kredit,PLG0113,3.0
+TRX01212,2025-08-17,Surabaya,Makanan,Madu 350ml,1,95000,15.0,Kartu Kredit,PLG0526,4.0
+TRX01213,2025-08-17,Jakarta,Kecantikan,Serum Wajah,3,145000,10.0,Transfer,PLG0673,4.0
+TRX01214,2025-08-17,Jakarta,Makanan,Kopi Bubuk 250g,3,55000,20.0,QRIS,PLG0619,4.0
+TRX01215,2025-08-17,Makassar,Rumah Tangga,Rak Piring,2,160000,20.0,QRIS,PLG0540,3.0
+TRX01216,2025-08-17,Makassar,Makanan,Kurma 500g,2,70000,10.0,QRIS,PLG0398,5.0
+TRX01217,2025-08-18,Medan,Makanan,Madu 350ml,2,95000,0.0,Transfer,PLG0666,4.0
+TRX01218,2025-08-18,Bandung,Makanan,Sambal Botol,1,28000,0.0,QRIS,PLG0050,3.0
+TRX01219,2025-08-18,Makassar,Rumah Tangga,Rak Piring,3,160000,30.0,QRIS,PLG0106,4.0
+TRX01220,2025-08-18,Medan,Elektronik,Speaker Bluetooth,3,410000,5.0,Transfer,PLG0346,3.0
+TRX01221,2025-08-19,Jakarta,Rumah Tangga,Dispenser Sabun,2,60000,20.0,Kartu Debit,PLG0137,3.0
+TRX01222,2025-08-19,Surabaya,Makanan,Keripik Singkong,2,18000,0.0,Tunai,PLG0199,4.0
+TRX01223,2025-08-19,Medan,Fashion,Kaos Polos,1,75000,0.0,QRIS,PLG0690,
+TRX01224,2025-08-19,Makassar,Fashion,Jilbab Instan,1,85000,,QRIS,PLG0226,3.0
+TRX01225,2025-08-20,Bandung,Fashion,Celana Chino,3,210000,15.0,Kartu Debit,PLG0417,4.0
+TRX01226,2025-08-20,Jakarta,Makanan,Madu 350ml,3,95000,20.0,Kartu Debit,PLG0109,5.0
+TRX01227,2025-08-20,Bandung,Rumah Tangga,Set Panci,2,450000,0.0,Tunai,PLG0546,
+TRX01228,2025-08-21,Surabaya ,Makanan,Madu 350ml,3,95000,15.0,Tunai,PLG0160,4.0
+TRX01229,2025-08-21,Makassar,Rumah Tangga,Set Panci,4,450000,5.0,QRIS,PLG0037,4.0
+TRX01230,2025-08-21,Jakarta,Fashion,Jilbab Instan,4,85000,0.0,Kartu Debit,PLG0036,3.0
+TRX01231,2025-08-21,Jakarta,Makanan,Madu 350ml,2,95000,10.0,Kartu Debit,PLG0624,
+TRX01232,2025-08-22,Surabaya,Fashion,Sneakers,2,480000,10.0,Tunai,PLG0278,
+TRX01233,2025-08-22,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,0.0,QRIS,PLG0082,4.0
+TRX01234,2025-08-22,Bandung,Makanan,Keripik Singkong,1,18000,0.0,QRIS,PLG0191,4.0
+TRX01235,2025-08-22,Surabaya,Elektronik,Kabel USB-C,2,45000,20.0,Transfer,PLG0572,4.0
+TRX01236,2025-08-22,Jakarta,Fashion,Jilbab Instan,1,85000,0.0,QRIS,PLG0442,
+TRX01237,2025-08-22,Jakarta,Makanan,Sambal Botol,2,28000,0.0,Kartu Debit,PLG0008,3.0
+TRX01238,2025-08-22,Bandung,Fashion,Kemeja Batik,2,260000,0.0,Kartu Kredit,PLG0396,4.0
+TRX01239,2025-08-22,Bandung,Elektronik,Speaker Bluetooth,3,410000,0.0,Kartu Debit,PLG0510,5.0
+TRX01240,2025-08-23,Jakarta,Rumah Tangga,Rak Piring,4,160000,0.0,Kartu Debit,PLG0111,4.0
+TRX01241,2025-08-23,Medan,Makanan,Madu 350ml,3,95000,0.0,Tunai,PLG0628,3.0
+TRX01242,2025-08-23,surabaya,Makanan,Madu 350ml,1,95000,20.0,QRIS,PLG0224,3.0
+TRX01243,2025-08-23,Surabaya ,Rumah Tangga,Rice Cooker,1,380000,0.0,QRIS,PLG0578,5.0
+TRX01244,2025-08-23,Jakarta,Elektronik,Smartwatch,1,900000,0.0,Kartu Debit,PLG0527,4.0
+TRX01245,2025-08-23,Jakarta,Fashion,Kemeja Batik,4,260000,0.0,Tunai,PLG0239,4.0
+TRX01246,2025-08-23,Surabaya,Makanan,Keripik Singkong,2,18000,0.0,QRIS,PLG0499,4.0
+TRX01247,2025-08-24,Medan,Kecantikan,Sabun Cuci Muka,4,42000,0.0,Transfer,PLG0354,4.0
+TRX01248,2025-08-24,Surabaya,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0603,4.0
+TRX01249,2025-08-24,Makassar,Makanan,Sambal Botol,1,28000,5.0,Tunai,PLG0242,4.0
+TRX01250,2025-08-24,Surabaya ,Kecantikan,Sabun Cuci Muka,1,42000,20.0,Transfer,PLG0264,5.0
+TRX01251,2025-08-24,Surabaya,Elektronik,Power Bank 10000mAh,2,220000,0.0,Kartu Debit,PLG0649,4.0
+TRX01252,2025-08-25,Surabaya,Makanan,Kurma 500g,1,70000,0.0,Transfer,PLG0295,4.0
+TRX01253,2025-08-25,Makassar,Fashion,Jilbab Instan,2,85000,15.0,QRIS,PLG0031,5.0
+TRX01254,2025-08-25,Surabaya,Fashion,Jilbab Instan,2,85000,30.0,Kartu Debit,PLG0237,4.0
+TRX01255,2025-08-25,Jakarta,Elektronik,Speaker Bluetooth,3,410000,5.0,QRIS,PLG0508,5.0
+TRX01256,2025-08-25,Bandung,Makanan,Sambal Botol,3,28000,0.0,Kartu Debit,PLG0649,4.0
+TRX01257,2025-08-25,Makassar,Elektronik,Speaker Bluetooth,2,410000,5.0,Tunai,PLG0640,4.0
+TRX01258,2025-08-25,Surabaya,Rumah Tangga,Rak Piring,1,160000,0.0,Tunai,PLG0658,
+TRX01259,2025-08-26,Bandung,Kecantikan,Sabun Cuci Muka,3,42000,0.0,QRIS,PLG0021,3.0
+TRX01260,2025-08-26,Jakarta,Rumah Tangga,Rice Cooker,2,380000,15.0,Transfer,PLG0505,4.0
+TRX01261,2025-08-26,Makassar,Rumah Tangga,Rak Piring,2,160000,0.0,Kartu Kredit,PLG0231,5.0
+TRX01262,2025-08-26,Surabaya,Makanan,Madu 350ml,3,95000,10.0,QRIS,PLG0293,4.0
+TRX01263,2025-08-26,Jakarta,Fashion,Kemeja Batik,2,260000,0.0,Kartu Debit,PLG0378,5.0
+TRX01264,2025-08-27,Makassar,Makanan,Kopi Bubuk 250g,2,55000,5.0,Kartu Kredit,PLG0031,5.0
+TRX01265,2025-08-27,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,0.0,QRIS,PLG0558,5.0
+TRX01266,2025-08-27,Surabaya,Rumah Tangga,Set Panci,1,450000,20.0,QRIS,PLG0247,4.0
+TRX01267,2025-08-27,Makassar,Kecantikan,Masker Wajah,3,25000,30.0,Transfer,PLG0446,5.0
+TRX01268,2025-08-27,Jakarta,Makanan,Sambal Botol,2,28000,0.0,Transfer,PLG0262,4.0
+TRX01269,2025-08-28,Jakarta,Elektronik,Kabel USB-C,1,45000,0.0,QRIS,PLG0064,4.0
+TRX01270,2025-08-28,Medan,Makanan,Madu 350ml,1,95000,30.0,Transfer,PLG0571,4.0
+TRX01271,2025-08-28,Makassar,Makanan,Sambal Botol,1,28000,20.0,QRIS,PLG0578,4.0
+TRX01272,2025-08-28,Bandung,Makanan,Madu 350ml,2,95000,30.0,Tunai,PLG0291,
+TRX01273,2025-08-28,Jakarta,Rumah Tangga,Rak Piring,3,160000,0.0,Tunai,PLG0584,5.0
+TRX01274,2025-08-28,Surabaya,Elektronik,Speaker Bluetooth,1,410000,0.0,Kartu Debit,PLG0642,
+TRX01275,2025-08-29,Makassar,Makanan,Kurma 500g,2,70000,5.0,QRIS,PLG0577,4.0
+TRX01276,2025-08-29,Medan,Elektronik,Kabel USB-C,2,45000,0.0,Tunai,PLG0384,5.0
+TRX01277,2025-08-29,Bandung,Elektronik,Kabel USB-C,2,45000,0.0,Kartu Debit,PLG0448,4.0
+TRX01278,2025-08-29,Jakarta,Makanan,Kurma 500g,2,70000,10.0,Transfer,PLG0111,4.0
+TRX01279,2025-08-30,Bandung,Kecantikan,Sunscreen SPF50,2,89000,0.0,QRIS,PLG0434,5.0
+TRX01280,2025-08-30,Jakarta,Rumah Tangga,Sapu Lantai,4,35000,15.0,QRIS,PLG0544,5.0
+TRX01281,2025-08-31,Makassar,Rumah Tangga,Sapu Lantai,2,35000,30.0,QRIS,PLG0257,4.0
+TRX01282,2025-08-31,Surabaya,Fashion,Kaos Polos,3,75000,20.0,QRIS,PLG0568,5.0
+TRX01283,2025-08-31,Surabaya,Makanan,Madu 350ml,1,95000,30.0,QRIS,PLG0338,3.0
+TRX01284,2025-08-31,Makassar,Rumah Tangga,Set Panci,1,450000,0.0,QRIS,PLG0326,3.0
+TRX01285,2025-08-31,Medan,Fashion,Jilbab Instan,2,85000,20.0,QRIS,PLG0456,5.0
+TRX01286,2025-08-31,Surabaya,Fashion,Kaos Polos,1,75000,30.0,QRIS,PLG0021,5.0
+TRX01287,2025-09-01,Jakarta,Makanan,Kurma 500g,1,70000,20.0,QRIS,PLG0595,5.0
+TRX01288,2025-09-01,Makassar,Makanan,Kurma 500g,1,70000,15.0,Kartu Kredit,PLG0211,5.0
+TRX01289,2025-09-01,Makassar,Makanan,Keripik Singkong,2,18000,20.0,QRIS,PLG0566,4.0
+TRX01290,2025-09-01,Jakarta,Makanan,Keripik Singkong,2,18000,5.0,QRIS,PLG0124,3.0
+TRX01291,2025-09-01,Medan,Fashion,Sneakers,1,480000,30.0,QRIS,PLG0535,4.0
+TRX01292,2025-09-01,Surabaya,Fashion,Kemeja Batik,5,260000,30.0,QRIS,PLG0408,3.0
+TRX01293,2025-09-01,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,0.0,QRIS,PLG0416,3.0
+TRX01294,2025-09-02,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,30.0,QRIS,PLG0324,5.0
+TRX01295,2025-09-02,Jakarta,Makanan,Kurma 500g,5,70000,0.0,Kartu Debit,PLG0480,4.0
+TRX01296,2025-09-02,Surabaya,Fashion,Kemeja Batik,1,260000,10.0,QRIS,PLG0613,4.0
+TRX01297,2025-09-02,Jakarta,Makanan,Kurma 500g,3,70000,30.0,Tunai,PLG0077,4.0
+TRX01298,2025-09-02,Surabaya,Makanan,Madu 350ml,3,95000,10.0,Kartu Kredit,PLG0632,
+TRX01299,2025-09-03,Bandung,Elektronik,Earbuds Nirkabel,2,350000,15.0,Kartu Debit,PLG0140,4.0
+TRX01300,2025-09-03,Makassar,Fashion,Kaos Polos,1,75000,0.0,QRIS,PLG0397,4.0
+TRX01301,2025-09-03,Jakarta,Makanan,Madu 350ml,1,95000,20.0,QRIS,PLG0357,
+TRX01302,2025-09-03,Makassar,Makanan,Kurma 500g,4,70000,0.0,Kartu Debit,PLG0071,4.0
+TRX01303,2025-09-03,Bandung,Makanan,Keripik Singkong,2,18000,5.0,Transfer,PLG0151,4.0
+TRX01304,2025-09-04,Makassar,Elektronik,Speaker Bluetooth,2,410000,,Kartu Kredit,PLG0423,4.0
+TRX01305,2025-09-04,Jakarta,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0189,4.0
+TRX01306,2025-09-05,Jakarta,Makanan,Sambal Botol,4,28000,0.0,Transfer,PLG0644,4.0
+TRX01307,2025-09-05,Surabaya,Rumah Tangga,Rice Cooker,2,380000,15.0,Kartu Debit,PLG0431,2.0
+TRX01308,2025-09-05,Jakarta,Makanan,Kurma 500g,3,70000,15.0,Transfer,PLG0257,5.0
+TRX01309,2025-09-06,Surabaya,Rumah Tangga,Rice Cooker,2,380000,10.0,Transfer,PLG0293,4.0
+TRX01310,2025-09-06,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,15.0,Tunai,PLG0585,4.0
+TRX01311,2025-09-07,Medan,Kecantikan,Sabun Cuci Muka,1,42000,15.0,QRIS,PLG0298,5.0
+TRX01312,2025-09-07,Jakarta,Kecantikan,Sunscreen SPF50,3,89000,0.0,Kartu Debit,PLG0204,3.0
+TRX01313,2025-09-07,Bandung,Fashion,Sneakers,3,480000,20.0,Tunai,PLG0426,3.0
+TRX01314,2025-09-07,Makassar,Rumah Tangga,Sapu Lantai,2,35000,10.0,QRIS,PLG0232,3.0
+TRX01315,2025-09-07,Bandung,Rumah Tangga,Dispenser Sabun,1,60000,15.0,QRIS,PLG0490,4.0
+TRX01316,2025-09-08,Surabaya,Makanan,Sambal Botol,4,28000,0.0,Kartu Debit,PLG0638,4.0
+TRX01317,2025-09-08,Surabaya,Kecantikan,Serum Wajah,2,145000,0.0,QRIS,PLG0088,5.0
+TRX01318,2025-09-09,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,15.0,QRIS,PLG0376,4.0
+TRX01319,2025-09-09,Medan,Elektronik,Power Bank 10000mAh,3,220000,0.0,Tunai,PLG0375,4.0
+TRX01320,2025-09-09,Jakarta,Kecantikan,Serum Wajah,1,145000,0.0,Kartu Debit,PLG0197,4.0
+TRX01321,2025-09-10,Surabaya,Elektronik,Earbuds Nirkabel,2,350000,5.0,Kartu Debit,PLG0096,5.0
+TRX01322,2025-09-10,Bandung,Makanan,Keripik Singkong,2,18000,5.0,Transfer,PLG0358,5.0
+TRX01323,2025-09-10,Surabaya ,Elektronik,Earbuds Nirkabel,3,350000,0.0,QRIS,PLG0685,5.0
+TRX01324,2025-09-11,Bandung,Elektronik,Earbuds Nirkabel,2,350000,30.0,QRIS,PLG0345,5.0
+TRX01325,2025-09-12,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,20.0,Transfer,PLG0411,3.0
+TRX01326,2025-09-12,Makassar,Kecantikan,Serum Wajah,3,145000,,QRIS,PLG0521,5.0
+TRX01327,2025-09-13,Jakarta,Kecantikan,Sabun Cuci Muka,3,42000,0.0,QRIS,PLG0516,5.0
+TRX01328,2025-09-13,Bandung,Elektronik,Smartwatch,2,900000,30.0,Transfer,PLG0316,3.0
+TRX01329,2025-09-13,Bandung,Rumah Tangga,Dispenser Sabun,2,60000,,QRIS,PLG0363,4.0
+TRX01330,2025-09-13,Bandung,Makanan,Sambal Botol,2,28000,0.0,Transfer,PLG0493,3.0
+TRX01331,2025-09-14,Jakarta,Elektronik,Kabel USB-C,1,45000,0.0,Kartu Debit,PLG0418,5.0
+TRX01332,2025-09-14,surabaya,Kecantikan,Sabun Cuci Muka,2,42000,0.0,Tunai,PLG0287,4.0
+TRX01333,2025-09-14,Makassar,Rumah Tangga,Rak Piring,2,160000,15.0,QRIS,PLG0216,4.0
+TRX01334,2025-09-14,Makassar,Fashion,Celana Chino,2,210000,15.0,QRIS,PLG0306,4.0
+TRX01335,2025-09-14,Jakarta,Elektronik,Speaker Bluetooth,3,410000,0.0,Tunai,PLG0396,4.0
+TRX01336,2025-09-15,Surabaya,Kecantikan,Serum Wajah,3,145000,10.0,Kartu Debit,PLG0593,5.0
+TRX01337,2025-09-15,Surabaya,Fashion,Kemeja Batik,1,260000,10.0,QRIS,PLG0112,5.0
+TRX01338,2025-09-15,Bandung,Rumah Tangga,Rak Piring,3,160000,10.0,QRIS,PLG0542,3.0
+TRX01339,2025-09-15,Bandung,Makanan,Kurma 500g,2,70000,0.0,Transfer,PLG0601,5.0
+TRX01340,2025-09-15,SBY,Kecantikan,Serum Wajah,2,145000,,Kartu Debit,PLG0487,4.0
+TRX01341,2025-09-16,Jakarta,Kecantikan,Masker Wajah,2,25000,0.0,Tunai,PLG0211,5.0
+TRX01342,2025-09-16,Makassar,Kecantikan,Lip Tint,2,59000,10.0,Tunai,PLG0121,4.0
+TRX01343,2025-09-16,Surabaya,Rumah Tangga,Rak Piring,3,160000,0.0,QRIS,PLG0382,5.0
+TRX01344,2025-09-16,Medan,Makanan,Sambal Botol,2,28000,15.0,Tunai,PLG0486,3.0
+TRX01345,2025-09-16,Surabaya,Makanan,Keripik Singkong,2,18000,15.0,Kartu Kredit,PLG0156,5.0
+TRX01346,2025-09-17,Medan,Kecantikan,Masker Wajah,2,25000,20.0,QRIS,PLG0364,5.0
+TRX01347,2025-09-17,Bandung,Makanan,Sambal Botol,1,28000,15.0,QRIS,PLG0663,5.0
+TRX01348,2025-09-17,Makassar,Elektronik,Power Bank 10000mAh,1,220000,0.0,Transfer,PLG0609,4.0
+TRX01349,2025-09-17,Bandung,Elektronik,Smartwatch,3,900000,10.0,Tunai,PLG0469,4.0
+TRX01350,2025-09-17,Surabaya,Fashion,Jilbab Instan,3,85000,20.0,QRIS,PLG0461,4.0
+TRX01351,2025-09-17,Jakarta,Elektronik,Earbuds Nirkabel,3,350000,15.0,QRIS,PLG0034,4.0
+TRX01352,2025-09-17,Medan,Fashion,Kaos Polos,2,75000,10.0,Transfer,PLG0368,3.0
+TRX01353,2025-09-17,Makassar,Makanan,Sambal Botol,2,28000,0.0,Tunai,PLG0685,4.0
+TRX01354,2025-09-18,Surabaya,Rumah Tangga,Rice Cooker,1,380000,10.0,Tunai,PLG0009,4.0
+TRX01355,2025-09-18,Bandung,Rumah Tangga,Rice Cooker,2,380000,30.0,QRIS,PLG0092,5.0
+TRX01356,2025-09-18,Surabaya,Fashion,Celana Chino,2,210000,10.0,Tunai,PLG0674,3.0
+TRX01357,2025-09-18,Makassar,Elektronik,Speaker Bluetooth,2,410000,15.0,QRIS,PLG0191,3.0
+TRX01358,2025-09-18,Jakarta,Rumah Tangga,Dispenser Sabun,2,60000,0.0,Kartu Kredit,PLG0009,5.0
+TRX01359,2025-09-18,Surabaya,Fashion,Jilbab Instan,1,85000,30.0,Transfer,PLG0338,4.0
+TRX01360,2025-09-18,Jakarta,Makanan,Kurma 500g,1,70000,30.0,Transfer,PLG0509,5.0
+TRX01361,2025-09-18,Medan,Makanan,Kurma 500g,3,70000,0.0,Kartu Debit,PLG0614,4.0
+TRX01362,2025-09-19,Surabaya,Makanan,Madu 350ml,2,95000,0.0,Kartu Kredit,PLG0490,4.0
+TRX01363,2025-09-19,Surabaya,Kecantikan,Sabun Cuci Muka,1,42000,30.0,QRIS,PLG0163,5.0
+TRX01364,2025-09-19,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,5.0,Tunai,PLG0170,
+TRX01365,2025-09-19,Medan,Makanan,Kopi Bubuk 250g,2,55000,5.0,QRIS,PLG0525,3.0
+TRX01366,2025-09-19,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,10.0,QRIS,PLG0286,4.0
+TRX01367,2025-09-19,Makassar,Elektronik,Power Bank 10000mAh,3,220000,15.0,Tunai,PLG0603,4.0
+TRX01368,2025-09-19,Jakarta,Rumah Tangga,Set Panci,1,450000,0.0,QRIS,PLG0175,5.0
+TRX01369,2025-09-19,Makassar,Elektronik,Earbuds Nirkabel,2,350000,5.0,Kartu Kredit,PLG0197,4.0
+TRX01370,2025-09-19,Surabaya,Makanan,Keripik Singkong,3,18000,5.0,QRIS,PLG0552,
+TRX01371,2025-09-20,Surabaya,Kecantikan,Masker Wajah,2,25000,0.0,Transfer,PLG0068,
+TRX01372,2025-09-20,Medan,Rumah Tangga,Dispenser Sabun,3,60000,20.0,Kartu Debit,PLG0228,4.0
+TRX01373,2025-09-21,Surabaya,Fashion,Sneakers,1,480000,0.0,QRIS,PLG0530,4.0
+TRX01374,2025-09-21,Surabaya,Kecantikan,Serum Wajah,1,145000,10.0,Tunai,PLG0100,4.0
+TRX01375,2025-09-21,Jakarta,Rumah Tangga,Set Panci,3,450000,0.0,Transfer,PLG0497,4.0
+TRX01376,2025-09-21,Surabaya,Kecantikan,Sunscreen SPF50,2,89000,0.0,QRIS,PLG0003,4.0
+TRX01377,2025-09-21,Surabaya,Kecantikan,Lip Tint,3,59000,20.0,Kartu Debit,PLG0195,4.0
+TRX01378,2025-09-21,Medan,Fashion,Jilbab Instan,1,85000,30.0,Transfer,PLG0200,4.0
+TRX01379,2025-09-21,Medan,Elektronik,Power Bank 10000mAh,1,220000,15.0,QRIS,PLG0661,4.0
+TRX01380,2025-09-21,Medan,Fashion,Sneakers,4,480000,15.0,QRIS,PLG0312,4.0
+TRX01381,2025-09-21,Bandung,Fashion,Sneakers,-4,480000,10.0,Kartu Debit,PLG0157,4.0
+TRX01382,2025-09-22,Surabaya,Elektronik,Speaker Bluetooth,3,410000,15.0,Kartu Debit,PLG0205,5.0
+TRX01383,2025-09-22,Jakarta,Elektronik,Speaker Bluetooth,3,410000,30.0,QRIS,PLG0636,5.0
+TRX01384,2025-09-22,Makassar,Kecantikan,Lip Tint,4,59000,0.0,QRIS,PLG0426,
+TRX01385,2025-09-22,Medan,Elektronik,Speaker Bluetooth,2,410000,30.0,Tunai,PLG0646,3.0
+TRX01386,2025-09-22,Bandung,Rumah Tangga,Rak Piring,3,160000,15.0,Tunai,PLG0083,4.0
+TRX01387,2025-09-22,Surabaya,Kecantikan,Serum Wajah,3,145000,20.0,Transfer,PLG0112,4.0
+TRX01388,2025-09-22,Medan,Makanan,Madu 350ml,1,95000,5.0,Tunai,PLG0555,3.0
+TRX01389,2025-09-22,Surabaya,Makanan,Madu 350ml,3,95000,15.0,Kartu Kredit,PLG0476,5.0
+TRX01390,2025-09-22,Jakarta,Fashion,Jilbab Instan,1,85000,15.0,Kartu Debit,PLG0473,5.0
+TRX01391,2025-09-23,Makassar,Elektronik,Power Bank 10000mAh,1,220000,10.0,Kartu Debit,PLG0137,4.0
+TRX01392,2025-09-23,Surabaya,Kecantikan,Lip Tint,2,59000,30.0,Kartu Kredit,PLG0233,4.0
+TRX01393,2025-09-23,Makassar,Fashion,Sneakers,2,480000,20.0,QRIS,PLG0017,4.0
+TRX01394,2025-09-23,Jakarta,Rumah Tangga,Sapu Lantai,2,35000,30.0,QRIS,PLG0280,5.0
+TRX01395,2025-09-23,Makassar,Makanan,Kopi Bubuk 250g,1,55000,10.0,QRIS,PLG0052,
+TRX01396,2025-09-24,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,0.0,Transfer,PLG0524,5.0
+TRX01397,2025-09-24,Surabaya,Elektronik,Speaker Bluetooth,3,410000,5.0,Kartu Debit,PLG0611,5.0
+TRX01398,2025-09-24,Surabaya,Makanan,Madu 350ml,1,95000,30.0,Tunai,PLG0663,4.0
+TRX01399,2025-09-24,Surabaya,Makanan,Kurma 500g,2,70000,5.0,QRIS,PLG0527,4.0
+TRX01400,2025-09-24,Bandung,Rumah Tangga,Sapu Lantai,2,35000,10.0,Tunai,PLG0697,
+TRX01401,2025-09-25,Jakarta,Kecantikan,Sabun Cuci Muka,1,42000,10.0,Kartu Kredit,PLG0402,5.0
+TRX01402,2025-09-25,Surabaya,Elektronik,Power Bank 10000mAh,3,220000,0.0,Kartu Debit,PLG0207,4.0
+TRX01403,2025-09-25,Surabaya,Elektronik,Speaker Bluetooth,2,410000,15.0,Kartu Kredit,PLG0262,4.0
+TRX01404,2025-09-25,Makassar,Fashion,Sneakers,1,480000,20.0,Kartu Debit,PLG0507,4.0
+TRX01405,2025-09-26,Medan,Rumah Tangga,Rak Piring,1,160000,15.0,Kartu Debit,PLG0680,4.0
+TRX01406,2025-09-26,Bandung,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0047,4.0
+TRX01407,2025-09-26,Bandung,Rumah Tangga,Dispenser Sabun,1,60000,10.0,Tunai,PLG0699,4.0
+TRX01408,2025-09-26,Jakarta,Fashion,Jilbab Instan,2,85000,15.0,Tunai,PLG0563,5.0
+TRX01409,2025-09-26,Jakarta,Kecantikan,Masker Wajah,2,25000,0.0,QRIS,PLG0469,
+TRX01410,2025-09-26,Medan,Makanan,Madu 350ml,2,95000,0.0,Kartu Debit,PLG0184,
+TRX01411,2025-09-27,Bandung,Elektronik,Speaker Bluetooth,1,410000,20.0,Tunai,PLG0600,
+TRX01412,2025-09-27,Bandung,Elektronik,Speaker Bluetooth,2,410000,0.0,Tunai,PLG0147,4.0
+TRX01413,2025-09-27,Jakarta,Fashion,Kaos Polos,3,75000,5.0,Tunai,PLG0479,4.0
+TRX01414,2025-09-27,Surabaya,Elektronik,Smartwatch,2,900000,10.0,QRIS,PLG0104,3.0
+TRX01415,2025-09-27,Surabaya,Elektronik,Earbuds Nirkabel,1,350000,30.0,Kartu Kredit,PLG0382,4.0
+TRX01416,2025-09-27,Medan,Makanan,Keripik Singkong,2,18000,0.0,Tunai,PLG0206,4.0
+TRX01417,2025-09-27,Surabaya,Rumah Tangga,Set Panci,4,450000,15.0,QRIS,PLG0270,
+TRX01418,2025-09-27,Surabaya,Fashion,Jilbab Instan,3,85000,10.0,QRIS,PLG0498,5.0
+TRX01419,2025-09-28,Jakarta,Fashion,Kaos Polos,2,75000,30.0,Kartu Debit,PLG0037,
+TRX01420,2025-09-28,Makassar,Rumah Tangga,Sapu Lantai,2,35000,0.0,QRIS,PLG0488,5.0
+TRX01421,2025-09-28,Surabaya,Kecantikan,Serum Wajah,2,145000,0.0,Transfer,PLG0266,3.0
+TRX01422,2025-09-28,Makassar,Kecantikan,Sabun Cuci Muka,3,42000,0.0,Kartu Kredit,PLG0556,5.0
+TRX01423,2025-09-29,Jakarta,Fashion,Celana Chino,1,210000,30.0,Transfer,PLG0286,4.0
+TRX01424,2025-09-29,Medan,Fashion,Jilbab Instan,3,85000,30.0,Tunai,PLG0550,3.0
+TRX01425,2025-09-29,Jakarta,Fashion,Celana Chino,3,210000,,Transfer,PLG0576,5.0
+TRX01426,2025-09-30,Bandung,Kecantikan,Masker Wajah,2,25000,5.0,Tunai,PLG0117,4.0
+TRX01427,2025-09-30,Surabaya,Elektronik,Power Bank 10000mAh,1,220000,5.0,Tunai,PLG0033,3.0
+TRX01428,2025-09-30,Surabaya,Fashion,Celana Chino,3,210000,0.0,Kartu Debit,PLG0181,4.0
+TRX01429,2025-09-30,Makassar,Rumah Tangga,Rak Piring,1,160000,,Tunai,PLG0439,4.0
+TRX01430,2025-09-30,Surabaya,Fashion,Jilbab Instan,2,85000,0.0,Transfer,PLG0337,5.0
+TRX01431,2025-09-30,Jakarta,Kecantikan,Sabun Cuci Muka,6,42000,10.0,Tunai,PLG0278,4.0
+TRX01432,2025-09-30,Surabaya,Fashion,Celana Chino,4,210000,0.0,Tunai,PLG0042,2.0
+TRX01433,2025-09-30,Surabaya,Fashion,Kaos Polos,1,75000,30.0,Tunai,PLG0634,4.0
+TRX01434,2025-09-30,Bandung,Makanan,Madu 350ml,1,95000,30.0,Transfer,PLG0052,4.0
+TRX01435,2025-09-30,Makassar,Rumah Tangga,Rice Cooker,1,380000,0.0,Transfer,PLG0592,
+TRX01436,2025-10-01,Surabaya,Kecantikan,Lip Tint,4,59000,,QRIS,PLG0274,4.0
+TRX01437,2025-10-01,Medan,Kecantikan,Lip Tint,2,59000,0.0,Tunai,PLG0648,4.0
+TRX01438,2025-10-01,Makassar,Fashion,Kaos Polos,3,75000,15.0,QRIS,PLG0096,4.0
+TRX01439,2025-10-01,Jakarta,Fashion,Kaos Polos,3,75000,5.0,Kartu Debit,PLG0493,4.0
+TRX01440,2025-10-01,Jakarta,Rumah Tangga,Rak Piring,1,160000,20.0,QRIS,PLG0518,4.0
+TRX01441,2025-10-02,Jakarta,Makanan,Madu 350ml,2,95000,5.0,QRIS,PLG0058,4.0
+TRX01442,2025-10-02,surabaya,Fashion,Celana Chino,2,210000,0.0,QRIS,PLG0473,5.0
+TRX01443,2025-10-02,Jakarta,Rumah Tangga,Rak Piring,4,160000,0.0,Transfer,PLG0601,4.0
+TRX01444,2025-10-02,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,15.0,Tunai,PLG0667,5.0
+TRX01445,2025-10-02,Jakarta,Makanan,Kurma 500g,2,70000,30.0,Kartu Debit,PLG0272,4.0
+TRX01446,2025-10-02,Jakarta,Fashion,Sneakers,4,480000,10.0,Transfer,PLG0657,5.0
+TRX01447,2025-10-02,Jakarta,Fashion,Sneakers,3,480000,20.0,Tunai,PLG0538,5.0
+TRX01448,2025-10-02,Jakarta,Elektronik,Kabel USB-C,1,45000,30.0,QRIS,PLG0500,4.0
+TRX01449,2025-10-02,Surabaya,Fashion,Jilbab Instan,3,85000,15.0,QRIS,PLG0506,5.0
+TRX01450,2025-10-03,Surabaya,Rumah Tangga,Rice Cooker,1,380000,20.0,QRIS,PLG0448,4.0
+TRX01451,2025-10-03,Bandung,Elektronik,Kabel USB-C,1,45000,20.0,Tunai,PLG0135,4.0
+TRX01452,2025-10-04,Jakarta,Rumah Tangga,Rak Piring,2,160000,0.0,Tunai,PLG0336,4.0
+TRX01453,2025-10-04,Medan,Makanan,Kurma 500g,1,70000,5.0,Tunai,PLG0139,5.0
+TRX01454,2025-10-04,Bandung,Fashion,Kaos Polos,1,75000,30.0,Transfer,PLG0300,3.0
+TRX01455,2025-10-04,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,20.0,Transfer,PLG0296,3.0
+TRX01456,2025-10-04,Jakarta,Fashion,Kemeja Batik,1,260000,20.0,Kartu Kredit,PLG0198,4.0
+TRX01457,2025-10-04,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,30.0,QRIS,PLG0177,4.0
+TRX01458,2025-10-04,Makassar,Makanan,Kopi Bubuk 250g,1,55000,0.0,QRIS,PLG0309,3.0
+TRX01459,2025-10-04,Jakarta,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0149,4.0
+TRX01460,2025-10-04,Medan,Makanan,Kopi Bubuk 250g,2,55000,10.0,QRIS,PLG0079,4.0
+TRX01461,2025-10-04,Bandung,Elektronik,Earbuds Nirkabel,1,350000,20.0,QRIS,PLG0300,4.0
+TRX01462,2025-10-05,Surabaya,Makanan,Madu 350ml,3,95000,0.0,Tunai,PLG0040,5.0
+TRX01463,2025-10-05,Jakarta,Rumah Tangga,Rak Piring,3,160000,0.0,Tunai,PLG0311,4.0
+TRX01464,2025-10-06,Bandung,Rumah Tangga,Rice Cooker,1,380000,0.0,Kartu Debit,PLG0109,4.0
+TRX01465,2025-10-06,Makassar,Elektronik,Earbuds Nirkabel,3,350000,30.0,Tunai,PLG0306,5.0
+TRX01466,2025-10-06,Jakarta,Makanan,Madu 350ml,3,95000,20.0,QRIS,PLG0427,4.0
+TRX01467,2025-10-07,Surabaya,Kecantikan,Serum Wajah,3,145000,0.0,Transfer,PLG0057,3.0
+TRX01468,2025-10-07,Makassar,Kecantikan,Sunscreen SPF50,4,89000,10.0,Kartu Debit,PLG0237,5.0
+TRX01469,2025-10-07,Surabaya,Makanan,Madu 350ml,2,95000,20.0,Transfer,PLG0431,5.0
+TRX01470,2025-10-07,Jakarta,Elektronik,Smartwatch,3,900000,30.0,Transfer,PLG0066,4.0
+TRX01471,2025-10-08,Jakarta,Makanan,Kurma 500g,2,70000,30.0,Kartu Debit,PLG0381,5.0
+TRX01472,2025-10-09,Makassar,Fashion,Kaos Polos,4,75000,10.0,Kartu Debit,PLG0238,5.0
+TRX01473,2025-10-09,Surabaya,Makanan,Sambal Botol,1,28000,0.0,Kartu Kredit,PLG0222,4.0
+TRX01474,2025-10-09,Bandung,Elektronik,Smartwatch,2,900000,5.0,QRIS,PLG0660,5.0
+TRX01475,2025-10-09,Medan,Fashion,Jilbab Instan,2,85000,5.0,Tunai,PLG0438,3.0
+TRX01476,2025-10-09,Surabaya,Makanan,Sambal Botol,3,28000,15.0,Transfer,PLG0677,5.0
+TRX01477,2025-10-09,Jakarta,Kecantikan,Serum Wajah,2,145000,0.0,QRIS,PLG0354,5.0
+TRX01478,2025-10-10,Surabaya,Elektronik,Kabel USB-C,2,45000,5.0,QRIS,PLG0339,5.0
+TRX01479,2025-10-10,Surabaya,Fashion,Celana Chino,4,210000,15.0,Transfer,PLG0439,4.0
+TRX01480,2025-10-10,Jakarta,Rumah Tangga,Dispenser Sabun,1,60000,0.0,QRIS,PLG0622,4.0
+TRX01481,2025-10-10,Jakarta,Elektronik,Smartwatch,4,900000,5.0,Kartu Debit,PLG0158,4.0
+TRX01482,2025-10-11,Makassar,Kecantikan,Sunscreen SPF50,2,89000,0.0,Kartu Kredit,PLG0633,3.0
+TRX01483,2025-10-11,Jakarta,Rumah Tangga,Set Panci,4,450000,10.0,QRIS,PLG0111,3.0
+TRX01484,2025-10-11,Medan,Fashion,Kemeja Batik,3,260000,0.0,Kartu Kredit,PLG0315,
+TRX01485,2025-10-11,Surabaya,Fashion,Kaos Polos,1,75000,0.0,Transfer,PLG0365,5.0
+TRX01486,2025-10-11,Medan,Elektronik,Power Bank 10000mAh,2,220000,15.0,Kartu Debit,PLG0071,3.0
+TRX01487,2025-10-11,Surabaya,Kecantikan,Lip Tint,2,59000,30.0,QRIS,PLG0196,4.0
+TRX01488,2025-10-11,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,30.0,Kartu Debit,PLG0213,4.0
+TRX01489,2025-10-11,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,0.0,QRIS,PLG0048,5.0
+TRX01490,2025-10-12,Bandung,Elektronik,Earbuds Nirkabel,1,350000,0.0,Kartu Kredit,PLG0572,4.0
+TRX01491,2025-10-12,Makassar,Kecantikan,Masker Wajah,2,25000,20.0,Transfer,PLG0459,4.0
+TRX01492,2025-10-12,Jakarta,Kecantikan,Lip Tint,4,59000,5.0,QRIS,PLG0222,3.0
+TRX01493,2025-10-12,Makassar,Rumah Tangga,Sapu Lantai,2,35000,5.0,QRIS,PLG0094,5.0
+TRX01494,2025-10-12,Jakarta,Fashion,Kaos Polos,1,75000,15.0,QRIS,PLG0496,4.0
+TRX01495,2025-10-12,Bandung,Elektronik,Earbuds Nirkabel,3,350000,0.0,Transfer,PLG0589,4.0
+TRX01496,2025-10-12,Jakarta,Makanan,Sambal Botol,5,28000,30.0,QRIS,PLG0128,4.0
+TRX01497,2025-10-12,Surabaya,Rumah Tangga,Rice Cooker,2,380000,15.0,Transfer,PLG0417,4.0
+TRX01498,2025-10-12,Medan,Elektronik,Power Bank 10000mAh,2,220000,0.0,Kartu Kredit,PLG0261,4.0
+TRX01499,2025-10-13,Jakarta,Elektronik,Kabel USB-C,3,45000,15.0,QRIS,PLG0303,3.0
+TRX01500,2025-10-13,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,QRIS,PLG0481,3.0
+TRX01501,2025-10-13,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,20.0,Tunai,PLG0239,4.0
+TRX01502,2025-10-13,Jakarta,Kecantikan,Serum Wajah,2,145000,30.0,QRIS,PLG0552,3.0
+TRX01503,2025-10-13,Surabaya ,Rumah Tangga,Rak Piring,1,160000,30.0,Kartu Kredit,PLG0254,4.0
+TRX01504,2025-10-13,Medan,Rumah Tangga,Set Panci,1,450000,0.0,Transfer,PLG0627,5.0
+TRX01505,2025-10-13,Bandung,Makanan,Madu 350ml,2,95000,10.0,QRIS,PLG0531,4.0
+TRX01506,2025-10-13,Medan,Makanan,Keripik Singkong,7,18000,20.0,Tunai,PLG0243,4.0
+TRX01507,2025-10-13,Makassar,Makanan,Kurma 500g,1,70000,0.0,QRIS,PLG0195,5.0
+TRX01508,2025-10-13,Surabaya,Kecantikan,Serum Wajah,3,145000,30.0,QRIS,PLG0683,
+TRX01509,2025-10-13,Makassar,Elektronik,Power Bank 10000mAh,2,220000,30.0,QRIS,PLG0171,5.0
+TRX01510,2025-10-14,Jakarta,Elektronik,Speaker Bluetooth,3,410000,30.0,QRIS,PLG0618,4.0
+TRX01511,2025-10-14,Bandung,Makanan,Kurma 500g,3,70000,20.0,Kartu Kredit,PLG0018,5.0
+TRX01512,2025-10-14,Jakarta,Rumah Tangga,Set Panci,3,450000,0.0,Transfer,PLG0152,4.0
+TRX01513,2025-10-14,Jakarta,Makanan,Madu 350ml,3,95000,0.0,QRIS,PLG0567,4.0
+TRX01514,2025-10-14,Jakarta,Rumah Tangga,Sapu Lantai,2,35000,0.0,QRIS,PLG0233,
+TRX01515,2025-10-14,Jakarta,Makanan,Kopi Bubuk 250g,4,55000,0.0,QRIS,PLG0410,3.0
+TRX01516,2025-10-14,Jakarta,Elektronik,Kabel USB-C,2,45000,5.0,Transfer,PLG0307,4.0
+TRX01517,2025-10-15,Jakarta,Rumah Tangga,Sapu Lantai,1,35000,30.0,QRIS,PLG0663,4.0
+TRX01518,2025-10-16,Surabaya,Makanan,Keripik Singkong,1,18000,20.0,Kartu Debit,PLG0068,4.0
+TRX01519,2025-10-16,Makassar,Fashion,Sneakers,3,480000,0.0,QRIS,PLG0140,4.0
+TRX01520,2025-10-16,Surabaya,Rumah Tangga,Sapu Lantai,3,35000,15.0,QRIS,PLG0336,3.0
+TRX01521,2025-10-16,Jakarta,Makanan,Keripik Singkong,3,18000,10.0,Transfer,PLG0321,3.0
+TRX01522,2025-10-16,Jakarta,Rumah Tangga,Rice Cooker,1,380000,10.0,QRIS,PLG0508,4.0
+TRX01523,2025-10-16,Bandung,Kecantikan,Sunscreen SPF50,2,89000,30.0,QRIS,PLG0471,3.0
+TRX01524,2025-10-17,Bandung,Kecantikan,Sabun Cuci Muka,4,42000,0.0,Kartu Debit,PLG0269,4.0
+TRX01525,2025-10-17,Bandung,Makanan,Madu 350ml,2,95000,0.0,Tunai,PLG0231,4.0
+TRX01526,2025-10-17,Surabaya,Kecantikan,Masker Wajah,2,25000,0.0,QRIS,PLG0509,4.0
+TRX01527,2025-10-17,Makassar,Makanan,Sambal Botol,3,28000,30.0,QRIS,PLG0387,5.0
+TRX01528,2025-10-17,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,10.0,QRIS,PLG0022,4.0
+TRX01529,2025-10-17,Makassar,Rumah Tangga,Dispenser Sabun,3,60000,5.0,QRIS,PLG0440,4.0
+TRX01530,2025-10-17,Jakarta,Elektronik,Kabel USB-C,1,45000,15.0,Tunai,PLG0122,4.0
+TRX01531,2025-10-18,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,5.0,QRIS,PLG0679,5.0
+TRX01532,2025-10-18,Makassar,Kecantikan,Serum Wajah,3,145000,0.0,Kartu Kredit,PLG0022,4.0
+TRX01533,2025-10-18,Surabaya,Makanan,Kurma 500g,1,70000,30.0,Transfer,PLG0647,3.0
+TRX01534,2025-10-18,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,0.0,Tunai,PLG0058,4.0
+TRX01535,2025-10-18,Medan,Kecantikan,Sabun Cuci Muka,3,42000,20.0,Kartu Debit,PLG0046,5.0
+TRX01536,2025-10-19,Bandung,Rumah Tangga,Sapu Lantai,4,35000,20.0,Tunai,PLG0530,4.0
+TRX01537,2025-10-19,Jakarta,Fashion,Kaos Polos,1,75000,0.0,Kartu Kredit,PLG0315,4.0
+TRX01538,2025-10-19,Surabaya,Elektronik,Smartwatch,1,900000,0.0,QRIS,PLG0562,4.0
+TRX01539,2025-10-19,Medan,Elektronik,Power Bank 10000mAh,3,220000,0.0,QRIS,PLG0349,4.0
+TRX01540,2025-10-19,Surabaya,Fashion,Jilbab Instan,2,85000,0.0,Kartu Debit,PLG0393,5.0
+TRX01541,2025-10-19,Jakarta,Kecantikan,Masker Wajah,6,25000,30.0,Tunai,PLG0099,
+TRX01542,2025-10-20,Jakarta,Makanan,Kopi Bubuk 250g,3,55000,0.0,QRIS,PLG0224,4.0
+TRX01543,2025-10-20,Surabaya,Fashion,Jilbab Instan,2,85000,5.0,Transfer,PLG0513,5.0
+TRX01544,2025-10-20,Medan,Fashion,Jilbab Instan,2,85000,15.0,Kartu Debit,PLG0194,4.0
+TRX01545,2025-10-20,Jakarta,Makanan,Kurma 500g,2,70000,0.0,Kartu Debit,PLG0651,3.0
+TRX01546,2025-10-20,Makassar,Makanan,Kopi Bubuk 250g,4,55000,10.0,Transfer,PLG0195,5.0
+TRX01547,2025-10-20,Medan,Rumah Tangga,Set Panci,2,450000,0.0,Kartu Kredit,PLG0047,4.0
+TRX01548,2025-10-20,Makassar,Fashion,Kemeja Batik,2,260000,5.0,Kartu Kredit,PLG0012,4.0
+TRX01549,2025-10-20,Makassar,Fashion,Jilbab Instan,1,85000,0.0,Tunai,PLG0676,4.0
+TRX01550,2025-10-21,Surabaya,Fashion,Celana Chino,1,210000,0.0,Transfer,PLG0618,4.0
+TRX01551,2025-10-21,Makassar,Fashion,Kemeja Batik,2,260000,5.0,QRIS,PLG0336,5.0
+TRX01552,2025-10-22,Surabaya,Kecantikan,Masker Wajah,2,25000,10.0,Kartu Kredit,PLG0316,3.0
+TRX01553,2025-10-22,Medan,Makanan,Sambal Botol,2,28000,0.0,Transfer,PLG0412,4.0
+TRX01554,2025-10-22,Surabaya,Rumah Tangga,Sapu Lantai,1,35000,0.0,QRIS,PLG0359,4.0
+TRX01555,2025-10-22,Surabaya,Elektronik,Speaker Bluetooth,3,410000,0.0,Transfer,PLG0462,3.0
+TRX01556,2025-10-22,Bandung,Fashion,Sneakers,1,480000,15.0,Tunai,PLG0543,4.0
+TRX01557,2025-10-22,Jakarta,Rumah Tangga,Rak Piring,1,160000,0.0,Tunai,PLG0177,4.0
+TRX01558,2025-10-22,Bandung,Fashion,Celana Chino,2,210000,0.0,QRIS,PLG0369,4.0
+TRX01559,2025-10-23,Bandung,Elektronik,Speaker Bluetooth,2,410000,15.0,Transfer,PLG0509,5.0
+TRX01560,2025-10-23,Jakarta,Rumah Tangga,Sapu Lantai,8,35000,5.0,QRIS,PLG0697,4.0
+TRX01561,2025-10-23,Surabaya,Kecantikan,Masker Wajah,2,25000,0.0,Kartu Debit,PLG0548,5.0
+TRX01562,2025-10-23,Surabaya,Kecantikan,Sunscreen SPF50,4,89000,0.0,QRIS,PLG0326,3.0
+TRX01563,2025-10-23,Bandung,Fashion,Jilbab Instan,2,85000,15.0,Tunai,PLG0531,4.0
+TRX01564,2025-10-23,Jakarta,Kecantikan,Masker Wajah,1,25000,10.0,Transfer,PLG0510,4.0
+TRX01565,2025-10-23,Jakarta,Fashion,Sneakers,1,480000,5.0,Tunai,PLG0584,5.0
+TRX01566,2025-10-24,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,30.0,QRIS,PLG0151,5.0
+TRX01567,2025-10-24,Surabaya,Elektronik,Speaker Bluetooth,3,410000,30.0,Tunai,PLG0270,4.0
+TRX01568,2025-10-24,Medan,Fashion,Celana Chino,3,210000,0.0,QRIS,PLG0430,4.0
+TRX01569,2025-10-24,Surabaya,Rumah Tangga,Set Panci,3,450000,15.0,Transfer,PLG0318,5.0
+TRX01570,2025-10-25,Bandung,Kecantikan,Serum Wajah,4,145000,30.0,Tunai,PLG0614,5.0
+TRX01571,2025-10-25,Surabaya,Makanan,Madu 350ml,1,95000,10.0,Tunai,PLG0070,3.0
+TRX01572,2025-10-25,Surabaya,Rumah Tangga,Sapu Lantai,2,35000,15.0,Transfer,PLG0360,4.0
+TRX01573,2025-10-26,Jakarta,Rumah Tangga,Rak Piring,2,160000,0.0,QRIS,PLG0617,5.0
+TRX01574,2025-10-26,Jakarta,Fashion,Celana Chino,1,210000,10.0,Tunai,PLG0324,
+TRX01575,2025-10-26,Surabaya,Fashion,Celana Chino,5,210000,15.0,Kartu Debit,PLG0116,4.0
+TRX01576,2025-10-27,Jakarta,Fashion,Kaos Polos,3,75000,15.0,Transfer,PLG0665,5.0
+TRX01577,2025-10-27,Makassar,Elektronik,Earbuds Nirkabel,2,350000,5.0,Tunai,PLG0568,5.0
+TRX01578,2025-10-27,Medan,Fashion,Jilbab Instan,2,85000,10.0,QRIS,PLG0161,4.0
+TRX01579,2025-10-28,Jakarta,Rumah Tangga,Rak Piring,4,160000,0.0,Kartu Debit,PLG0027,3.0
+TRX01580,2025-10-28,Surabaya,Elektronik,Power Bank 10000mAh,2,220000,0.0,QRIS,PLG0622,
+TRX01581,2025-10-28,Bandung,Elektronik,Kabel USB-C,1,45000,,Transfer,PLG0004,5.0
+TRX01582,2025-10-28,Medan,Fashion,Sneakers,4,480000,0.0,Transfer,PLG0298,5.0
+TRX01583,2025-10-28,Surabaya,Kecantikan,Lip Tint,1,59000,30.0,Kartu Debit,PLG0540,3.0
+TRX01584,2025-10-28,Jakarta,Makanan,Kurma 500g,1,70000,0.0,QRIS,PLG0316,4.0
+TRX01585,2025-10-28,Makassar,Rumah Tangga,Dispenser Sabun,1,60000,30.0,Tunai,PLG0083,5.0
+TRX01586,2025-10-29,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,Tunai,PLG0199,4.0
+TRX01587,2025-10-29,Surabaya,Makanan,Sambal Botol,3,28000,10.0,QRIS,PLG0439,
+TRX01588,2025-10-29,Jakarta,Rumah Tangga,Rak Piring,2,160000,0.0,Kartu Kredit,PLG0321,4.0
+TRX01589,2025-10-29,Jakarta,Kecantikan,Lip Tint,2,59000,0.0,Tunai,PLG0265,4.0
+TRX01590,2025-10-30,Surabaya,Makanan,Kurma 500g,3,70000,15.0,Transfer,PLG0162,4.0
+TRX01591,2025-10-30,Makassar,Fashion,Jilbab Instan,2,85000,10.0,Transfer,PLG0372,5.0
+TRX01592,2025-10-30,Surabaya,Rumah Tangga,Dispenser Sabun,2,60000,30.0,QRIS,PLG0399,4.0
+TRX01593,2025-10-30,Jakarta,Fashion,Celana Chino,6,210000,5.0,Transfer,PLG0651,4.0
+TRX01594,2025-10-30,Surabaya,Fashion,Kaos Polos,2,75000,30.0,Transfer,PLG0488,5.0
+TRX01595,2025-10-31,Bandung,Makanan,Madu 350ml,1,95000,20.0,Kartu Kredit,PLG0667,
+TRX01596,2025-10-31,Bandung,Rumah Tangga,Dispenser Sabun,3,60000,5.0,Kartu Kredit,PLG0633,4.0
+TRX01597,2025-10-31,Jakarta,Kecantikan,Serum Wajah,2,145000,20.0,Tunai,PLG0310,5.0
+TRX01598,2025-10-31,Medan,Elektronik,Power Bank 10000mAh,1,220000,10.0,Tunai,PLG0666,4.0
+TRX01599,2025-10-31,Surabaya,Elektronik,Speaker Bluetooth,1,410000,0.0,Tunai,PLG0335,4.0
+TRX01600,2025-10-31,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,,QRIS,PLG0490,5.0
+TRX01601,2025-10-31,Medan,Rumah Tangga,Dispenser Sabun,1,60000,15.0,Tunai,PLG0486,5.0
+TRX01602,2025-10-31,Makassar,Makanan,Kopi Bubuk 250g,1,55000,30.0,QRIS,PLG0485,5.0
+TRX01603,2025-10-31,Bandung,Fashion,Jilbab Instan,2,85000,0.0,QRIS,PLG0556,4.0
+TRX01604,2025-11-01,Bandung,Kecantikan,Sunscreen SPF50,-3,89000,10.0,Kartu Kredit,PLG0113,3.0
+TRX01605,2025-11-01,Makassar,Elektronik,Speaker Bluetooth,2,410000,0.0,Transfer,PLG0194,
+TRX01606,2025-11-01,Makassar,Rumah Tangga,Rice Cooker,2,380000,5.0,QRIS,PLG0220,3.0
+TRX01607,2025-11-02,Makassar,Fashion,Celana Chino,4,210000,10.0,QRIS,PLG0399,5.0
+TRX01608,2025-11-02,Surabaya,Kecantikan,Lip Tint,1,59000,0.0,Tunai,PLG0539,4.0
+TRX01609,2025-11-02,Makassar,Makanan,Madu 350ml,3,95000,0.0,Kartu Debit,PLG0477,5.0
+TRX01610,2025-11-02,Surabaya,Fashion,Kemeja Batik,3,260000,20.0,Kartu Debit,PLG0013,5.0
+TRX01611,2025-11-02,Makassar,Rumah Tangga,Rak Piring,2,160000,0.0,QRIS,PLG0594,5.0
+TRX01612,2025-11-02,Makassar,Kecantikan,Sunscreen SPF50,2,89000,20.0,Tunai,PLG0244,5.0
+TRX01613,2025-11-02,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,0.0,Transfer,PLG0329,4.0
+TRX01614,2025-11-02,surabaya,Makanan,Sambal Botol,3,28000,0.0,Transfer,PLG0159,5.0
+TRX01615,2025-11-02,Bandung,Kecantikan,Lip Tint,1,59000,20.0,Kartu Debit,PLG0303,4.0
+TRX01616,2025-11-03,Surabaya,Rumah Tangga,Rice Cooker,1,380000,10.0,Tunai,PLG0670,4.0
+TRX01617,2025-11-04,Medan,Kecantikan,Lip Tint,3,59000,15.0,Kartu Debit,PLG0433,4.0
+TRX01618,2025-11-04,Surabaya,Elektronik,Kabel USB-C,2,45000,20.0,QRIS,PLG0580,
+TRX01619,2025-11-04,Bandung,Kecantikan,Sabun Cuci Muka,2,42000,0.0,QRIS,PLG0521,3.0
+TRX01620,2025-11-04,Medan,Makanan,Kopi Bubuk 250g,1,55000,0.0,Kartu Debit,PLG0135,
+TRX01621,2025-11-05,Bandung,Fashion,Celana Chino,2,210000,0.0,Kartu Debit,PLG0234,5.0
+TRX01622,2025-11-05,Jakarta,Rumah Tangga,Rice Cooker,3,380000,5.0,Tunai,PLG0669,4.0
+TRX01623,2025-11-05,Jakarta,Rumah Tangga,Dispenser Sabun,2,60000,5.0,Kartu Debit,PLG0398,3.0
+TRX01624,2025-11-05,Surabaya,Elektronik,Speaker Bluetooth,2,410000,0.0,Kartu Kredit,PLG0016,4.0
+TRX01625,2025-11-05,Jakarta,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0594,4.0
+TRX01626,2025-11-05,Surabaya,Rumah Tangga,Set Panci,3,450000,0.0,Tunai,PLG0361,5.0
+TRX01627,2025-11-05,Jakarta,Kecantikan,Serum Wajah,1,145000,20.0,Tunai,PLG0309,4.0
+TRX01628,2025-11-06,Makassar,Rumah Tangga,Dispenser Sabun,1,60000,20.0,QRIS,PLG0283,4.0
+TRX01629,2025-11-06,Makassar,Fashion,Celana Chino,4,210000,10.0,Kartu Debit,PLG0508,5.0
+TRX01630,2025-11-06,Bandung,Elektronik,Earbuds Nirkabel,2,350000,30.0,Kartu Debit,PLG0653,5.0
+TRX01631,2025-11-07,Jakarta,Kecantikan,Serum Wajah,3,145000,0.0,Tunai,PLG0321,4.0
+TRX01632,2025-11-07,Medan,Makanan,Keripik Singkong,6,18000,0.0,QRIS,PLG0259,4.0
+TRX01633,2025-11-07,Surabaya,Fashion,Kaos Polos,1,75000,10.0,Tunai,PLG0653,4.0
+TRX01634,2025-11-07,Jakarta,Kecantikan,Sunscreen SPF50,1,89000,0.0,Tunai,PLG0004,3.0
+TRX01635,2025-11-07,Bandung,Rumah Tangga,Rice Cooker,3,380000,0.0,Tunai,PLG0127,4.0
+TRX01636,2025-11-08,Makassar,Kecantikan,Sunscreen SPF50,1,89000,10.0,Tunai,PLG0168,4.0
+TRX01637,2025-11-08,Jakarta,Fashion,Jilbab Instan,1,85000,10.0,Kartu Debit,PLG0623,3.0
+TRX01638,2025-11-08,Surabaya,Elektronik,Earbuds Nirkabel,2,350000,10.0,QRIS,PLG0074,5.0
+TRX01639,2025-11-08,Surabaya,Makanan,Keripik Singkong,3,18000,10.0,QRIS,PLG0635,
+TRX01640,2025-11-08,Surabaya,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0129,4.0
+TRX01641,2025-11-08,Medan,Makanan,Kopi Bubuk 250g,2,55000,20.0,Tunai,PLG0243,5.0
+TRX01642,2025-11-09,Bandung,Makanan,Keripik Singkong,3,18000,5.0,Transfer,PLG0667,4.0
+TRX01643,2025-11-09,Makassar,Kecantikan,Sunscreen SPF50,2,89000,15.0,QRIS,PLG0011,5.0
+TRX01644,2025-11-09,Jakarta,Kecantikan,Masker Wajah,1,25000,20.0,Tunai,PLG0601,4.0
+TRX01645,2025-11-09,Medan,Rumah Tangga,Rice Cooker,3,380000,15.0,Transfer,PLG0306,3.0
+TRX01646,2025-11-10,Medan,Fashion,Jilbab Instan,2,85000,0.0,Tunai,PLG0104,5.0
+TRX01647,2025-11-10,Bandung,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0442,5.0
+TRX01648,2025-11-10,Surabaya,Makanan,Sambal Botol,1,28000,5.0,Tunai,PLG0236,3.0
+TRX01649,2025-11-10,Surabaya,Makanan,Kurma 500g,5,70000,15.0,QRIS,PLG0181,3.0
+TRX01650,2025-11-11,Makassar,Kecantikan,Sunscreen SPF50,4,89000,0.0,QRIS,PLG0192,4.0
+TRX01651,2025-11-11,Makassar,Kecantikan,Serum Wajah,5,145000,30.0,Kartu Kredit,PLG0394,5.0
+TRX01652,2025-11-11,Makassar,Makanan,Keripik Singkong,3,18000,0.0,QRIS,PLG0378,4.0
+TRX01653,2025-11-12,Surabaya,Elektronik,Power Bank 10000mAh,3,220000,0.0,Transfer,PLG0309,4.0
+TRX01654,2025-11-12,Medan,Fashion,Celana Chino,1,210000,15.0,QRIS,PLG0053,5.0
+TRX01655,2025-11-12,Makassar,Fashion,Kemeja Batik,1,260000,30.0,QRIS,PLG0294,4.0
+TRX01656,2025-11-12,Makassar,Kecantikan,Lip Tint,2,59000,30.0,QRIS,PLG0451,4.0
+TRX01657,2025-11-12,Bandung,Makanan,Kopi Bubuk 250g,2,55000,5.0,QRIS,PLG0451,4.0
+TRX01658,2025-11-12,Makassar,Makanan,Madu 350ml,2,95000,30.0,Tunai,PLG0420,
+TRX01659,2025-11-13,Surabaya,Fashion,Kemeja Batik,1,260000,0.0,QRIS,PLG0155,4.0
+TRX01660,2025-11-13,Medan,Makanan,Keripik Singkong,2,18000,5.0,Transfer,PLG0386,3.0
+TRX01661,2025-11-13,Surabaya,Makanan,Sambal Botol,4,28000,0.0,Tunai,PLG0213,4.0
+TRX01662,2025-11-13,Jakarta,Elektronik,Smartwatch,3,900000,30.0,QRIS,PLG0486,4.0
+TRX01663,2025-11-13,Jakarta,Rumah Tangga,Dispenser Sabun,4,60000,15.0,Kartu Kredit,PLG0598,5.0
+TRX01664,2025-11-13,Makassar,Elektronik,Kabel USB-C,3,45000,10.0,QRIS,PLG0280,4.0
+TRX01665,2025-11-14,Bandung,Elektronik,Earbuds Nirkabel,3,350000,20.0,Kartu Kredit,PLG0027,4.0
+TRX01666,2025-11-14,Jakarta,Fashion,Jilbab Instan,3,85000,10.0,QRIS,PLG0542,4.0
+TRX01667,2025-11-14,Bandung,Fashion,Jilbab Instan,1,85000,0.0,Kartu Debit,PLG0250,4.0
+TRX01668,2025-11-16,Bandung,Rumah Tangga,Sapu Lantai,2,35000,5.0,QRIS,PLG0599,4.0
+TRX01669,2025-11-16,Medan,Fashion,Kaos Polos,3,75000,30.0,Kartu Debit,PLG0418,5.0
+TRX01670,2025-11-16,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,20.0,Tunai,PLG0132,5.0
+TRX01671,2025-11-16,Surabaya,Rumah Tangga,Rak Piring,2,160000,0.0,QRIS,PLG0586,3.0
+TRX01672,2025-11-16,Bandung,Makanan,Kurma 500g,3,70000,30.0,Transfer,PLG0223,5.0
+TRX01673,2025-11-16,surabaya,Elektronik,Speaker Bluetooth,4,410000,30.0,QRIS,PLG0522,5.0
+TRX01674,2025-11-16,Surabaya,Fashion,Sneakers,3,480000,,Tunai,PLG0099,5.0
+TRX01675,2025-11-17,Makassar,Kecantikan,Serum Wajah,6,145000,0.0,Kartu Debit,PLG0384,3.0
+TRX01676,2025-11-17,Jakarta,Fashion,Celana Chino,1,210000,5.0,QRIS,PLG0424,4.0
+TRX01677,2025-11-17,Bandung,Makanan,Kurma 500g,4,70000,20.0,Kartu Debit,PLG0339,4.0
+TRX01678,2025-11-17,Jakarta,Rumah Tangga,Rice Cooker,3,380000,5.0,Tunai,PLG0117,4.0
+TRX01679,2025-11-17,Surabaya,Fashion,Celana Chino,1,210000,15.0,Tunai,PLG0194,4.0
+TRX01680,2025-11-18,Surabaya,Makanan,Kurma 500g,2,70000,0.0,QRIS,PLG0399,5.0
+TRX01681,2025-11-18,Bandung,Rumah Tangga,Sapu Lantai,2,35000,0.0,Tunai,PLG0036,4.0
+TRX01682,2025-11-18,Medan,Fashion,Sneakers,3,480000,0.0,QRIS,PLG0234,4.0
+TRX01683,2025-11-18,Jakarta,Makanan,Kurma 500g,2,70000,15.0,QRIS,PLG0445,5.0
+TRX01684,2025-11-18,Jakarta,Elektronik,Smartwatch,4,900000,15.0,Tunai,PLG0202,3.0
+TRX01685,2025-11-19,Surabaya,Makanan,Madu 350ml,3,95000,10.0,Kartu Kredit,PLG0358,4.0
+TRX01686,2025-11-19,Jakarta,Elektronik,Earbuds Nirkabel,3,350000,5.0,Tunai,PLG0547,
+TRX01687,2025-11-19,Bandung,Kecantikan,Sunscreen SPF50,1,89000,5.0,Tunai,PLG0067,3.0
+TRX01688,2025-11-19,Makassar,Elektronik,Smartwatch,2,900000,0.0,Tunai,PLG0437,4.0
+TRX01689,2025-11-19,Medan,Fashion,Sneakers,2,480000,0.0,Kartu Kredit,PLG0504,4.0
+TRX01690,2025-11-20,Bandung,Makanan,Kurma 500g,3,70000,0.0,QRIS,PLG0223,4.0
+TRX01691,2025-11-20,Bandung,Kecantikan,Masker Wajah,1,25000,0.0,Kartu Kredit,PLG0352,5.0
+TRX01692,2025-11-20,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,15.0,QRIS,PLG0537,5.0
+TRX01693,2025-11-20,Jakarta,Fashion,Celana Chino,2,210000,0.0,Kartu Kredit,PLG0602,4.0
+TRX01694,2025-11-21,Bandung,Fashion,Celana Chino,1,210000,20.0,QRIS,PLG0327,4.0
+TRX01695,2025-11-21,Surabaya,Makanan,Keripik Singkong,1,18000,0.0,Kartu Kredit,PLG0424,
+TRX01696,2025-11-21,Jakarta,Makanan,Kurma 500g,1,70000,20.0,QRIS,PLG0436,4.0
+TRX01697,2025-11-22,Makassar,Makanan,Kopi Bubuk 250g,3,55000,15.0,Tunai,PLG0181,4.0
+TRX01698,2025-11-22,Medan,Makanan,Madu 350ml,3,95000,10.0,Transfer,PLG0686,4.0
+TRX01699,2025-11-22,Surabaya,Rumah Tangga,Set Panci,1,450000,20.0,QRIS,PLG0614,3.0
+TRX01700,2025-11-22,Jakarta,Rumah Tangga,Dispenser Sabun,3,60000,15.0,Transfer,PLG0087,4.0
+TRX01701,2025-11-22,Jakarta,Fashion,Kemeja Batik,3,260000,0.0,Kartu Kredit,PLG0595,5.0
+TRX01702,2025-11-22,Jakarta,Kecantikan,Lip Tint,2,59000,0.0,Transfer,PLG0351,5.0
+TRX01703,2025-11-22,Jakarta,Makanan,Kurma 500g,1,70000,0.0,Kartu Debit,PLG0349,4.0
+TRX01704,2025-11-22,Makassar,Makanan,Sambal Botol,5,28000,10.0,Transfer,PLG0300,3.0
+TRX01705,2025-11-23,Jakarta,Fashion,Kemeja Batik,2,260000,15.0,Transfer,PLG0648,4.0
+TRX01706,2025-11-23,Bandung,Rumah Tangga,Set Panci,1,450000,20.0,Kartu Debit,PLG0611,5.0
+TRX01707,2025-11-24,Surabaya,Makanan,Kurma 500g,1,70000,10.0,QRIS,PLG0199,5.0
+TRX01708,2025-11-24,Bandung,Kecantikan,Serum Wajah,1,145000,5.0,Transfer,PLG0403,3.0
+TRX01709,2025-11-24,Medan,Fashion,Celana Chino,2,210000,30.0,QRIS,PLG0188,5.0
+TRX01710,2025-11-24,Surabaya,Kecantikan,Sunscreen SPF50,3,89000,15.0,Tunai,PLG0051,5.0
+TRX01711,2025-11-25,Bandung,Makanan,Kurma 500g,1,70000,20.0,Kartu Debit,PLG0323,4.0
+TRX01712,2025-11-25,Bandung,Makanan,Sambal Botol,1,28000,0.0,Tunai,PLG0551,4.0
+TRX01713,2025-11-25,Jakarta,Makanan,Kurma 500g,4,70000,30.0,QRIS,PLG0087,5.0
+TRX01714,2025-11-25,Medan,Rumah Tangga,Sapu Lantai,3,35000,5.0,Tunai,PLG0486,3.0
+TRX01715,2025-11-26,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,20.0,QRIS,PLG0598,5.0
+TRX01716,2025-11-26,Jakarta,Makanan,Kurma 500g,2,70000,5.0,Tunai,PLG0631,5.0
+TRX01717,2025-11-26,Medan,Elektronik,Speaker Bluetooth,2,410000,0.0,Kartu Kredit,PLG0151,3.0
+TRX01718,2025-11-26,Jakarta,Kecantikan,Serum Wajah,3,145000,20.0,Kartu Debit,PLG0488,5.0
+TRX01719,2025-11-27,Makassar,Makanan,Madu 350ml,2,95000,0.0,Kartu Debit,PLG0496,3.0
+TRX01720,2025-11-27,Makassar,Kecantikan,Masker Wajah,2,25000,30.0,QRIS,PLG0458,2.0
+TRX01721,2025-11-27,Makassar,Makanan,Keripik Singkong,3,18000,15.0,Kartu Debit,PLG0049,4.0
+TRX01722,2025-11-27,Surabaya,Elektronik,Kabel USB-C,4,45000,15.0,Transfer,PLG0472,4.0
+TRX01723,2025-11-27,Jakarta,Elektronik,Earbuds Nirkabel,1,350000,20.0,Kartu Debit,PLG0005,3.0
+TRX01724,2025-11-27,Surabaya,Kecantikan,Lip Tint,1,59000,0.0,Kartu Debit,PLG0173,5.0
+TRX01725,2025-11-27,Medan,Makanan,Keripik Singkong,2,18000,0.0,Tunai,PLG0197,4.0
+TRX01726,2025-11-28,Bandung,Kecantikan,Sabun Cuci Muka,4,42000,30.0,Transfer,PLG0121,5.0
+TRX01727,2025-11-28,Surabaya,Elektronik,Smartwatch,4,900000,0.0,QRIS,PLG0194,4.0
+TRX01728,2025-11-28,Jakarta,Fashion,Kemeja Batik,2,260000,0.0,QRIS,PLG0340,5.0
+TRX01729,2025-11-28,Surabaya,Makanan,Kurma 500g,2,70000,20.0,Kartu Debit,PLG0578,4.0
+TRX01730,2025-11-29,Jakarta,Kecantikan,Lip Tint,1,59000,0.0,QRIS,PLG0281,4.0
+TRX01731,2025-11-29,Bandung,Fashion,Kaos Polos,3,75000,30.0,QRIS,PLG0440,4.0
+TRX01732,2025-11-29,Jakarta,Elektronik,Kabel USB-C,6,45000,0.0,Tunai,PLG0089,5.0
+TRX01733,2025-11-29,Jakarta,Fashion,Kaos Polos,3,75000,15.0,Kartu Kredit,PLG0089,4.0
+TRX01734,2025-11-29,Makassar,Elektronik,Smartwatch,3,900000,20.0,QRIS,PLG0445,4.0
+TRX01735,2025-11-29,Bandung,Elektronik,Smartwatch,2,900000,20.0,QRIS,PLG0014,4.0
+TRX01736,2025-11-29,Bandung,Elektronik,Smartwatch,1,900000,10.0,QRIS,PLG0039,4.0
+TRX01737,2025-11-29,Surabaya,Elektronik,Earbuds Nirkabel,1,350000,20.0,Kartu Kredit,PLG0240,4.0
+TRX01738,2025-11-29,Jakarta,Fashion,Jilbab Instan,1,85000,5.0,Transfer,PLG0473,4.0
+TRX01739,2025-11-29,Surabaya,Elektronik,Earbuds Nirkabel,2,350000,15.0,QRIS,PLG0577,5.0
+TRX01740,2025-11-29,Jakarta,Kecantikan,Sabun Cuci Muka,2,42000,10.0,Transfer,PLG0086,5.0
+TRX01741,2025-11-30,Makassar,Elektronik,Speaker Bluetooth,2,410000,30.0,Tunai,PLG0140,4.0
+TRX01742,2025-11-30,Surabaya,Makanan,Madu 350ml,3,95000,5.0,Kartu Kredit,PLG0491,4.0
+TRX01743,2025-11-30,Makassar,Makanan,Madu 350ml,1,95000,15.0,QRIS,PLG0014,5.0
+TRX01744,2025-11-30,Jakarta,Kecantikan,Masker Wajah,1,25000,30.0,Kartu Debit,PLG0674,5.0
+TRX01745,2025-12-01,Makassar,Fashion,Sneakers,1,480000,30.0,Tunai,PLG0448,4.0
+TRX01746,2025-12-01,Medan,Elektronik,Speaker Bluetooth,4,410000,30.0,Tunai,PLG0699,4.0
+TRX01747,2025-12-01,Makassar,Kecantikan,Sunscreen SPF50,1,89000,0.0,Tunai,PLG0239,4.0
+TRX01748,2025-12-01,Jakarta,Elektronik,Speaker Bluetooth,1,410000,20.0,QRIS,PLG0345,4.0
+TRX01749,2025-12-01,Jakarta,Fashion,Jilbab Instan,1,85000,20.0,Transfer,PLG0007,
+TRX01750,2025-12-01,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,20.0,QRIS,PLG0679,4.0
+TRX01751,2025-12-01,Jakarta,Makanan,Madu 350ml,2,95000,0.0,Tunai,PLG0006,4.0
+TRX01752,2025-12-01,Surabaya,Kecantikan,Sunscreen SPF50,1,89000,15.0,QRIS,PLG0318,4.0
+TRX01753,2025-12-01,Jakarta,Fashion,Celana Chino,3,210000,20.0,QRIS,PLG0690,4.0
+TRX01754,2025-12-02,Surabaya,Fashion,Kaos Polos,1,75000,0.0,Kartu Kredit,PLG0548,
+TRX01755,2025-12-02,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,Kartu Debit,PLG0644,4.0
+TRX01756,2025-12-02,Bandung,Elektronik,Smartwatch,4,900000,20.0,Kartu Debit,PLG0252,4.0
+TRX01757,2025-12-02,Jakarta,Fashion,Kemeja Batik,3,260000,15.0,Tunai,PLG0486,4.0
+TRX01758,2025-12-02,Surabaya,Elektronik,Power Bank 10000mAh,3,220000,5.0,Transfer,PLG0300,5.0
+TRX01759,2025-12-03,Makassar,Makanan,Keripik Singkong,2,18000,0.0,Kartu Debit,PLG0587,4.0
+TRX01760,2025-12-03,Bandung,Kecantikan,Serum Wajah,1,145000,5.0,Tunai,PLG0560,5.0
+TRX01761,2025-12-03,Surabaya,Rumah Tangga,Dispenser Sabun,3,60000,0.0,Transfer,PLG0274,5.0
+TRX01762,2025-12-03,Bandung,Elektronik,Kabel USB-C,2,45000,0.0,QRIS,PLG0177,3.0
+TRX01763,2025-12-03,Medan,Makanan,Sambal Botol,3,28000,0.0,Kartu Debit,PLG0057,4.0
+TRX01764,2025-12-03,Bandung,Kecantikan,Serum Wajah,4,145000,10.0,QRIS,PLG0069,5.0
+TRX01765,2025-12-04,Medan,Kecantikan,Sunscreen SPF50,4,89000,0.0,Kartu Debit,PLG0699,3.0
+TRX01766,2025-12-04,Jakarta,Kecantikan,Lip Tint,6,59000,20.0,QRIS,PLG0583,3.0
+TRX01767,2025-12-04,Surabaya,Kecantikan,Masker Wajah,3,25000,0.0,QRIS,PLG0341,4.0
+TRX01768,2025-12-04,Medan,Kecantikan,Serum Wajah,1,145000,0.0,Transfer,PLG0111,4.0
+TRX01769,2025-12-04,Jakarta,Makanan,Sambal Botol,3,28000,30.0,Kartu Kredit,PLG0172,4.0
+TRX01770,2025-12-04,Jakarta,Fashion,Celana Chino,1,210000,0.0,Tunai,PLG0160,4.0
+TRX01771,2025-12-04,Surabaya,Fashion,Celana Chino,2,210000,20.0,QRIS,PLG0059,5.0
+TRX01772,2025-12-04,Surabaya,Kecantikan,Serum Wajah,1,145000,0.0,Tunai,PLG0441,5.0
+TRX01773,2025-12-04,Surabaya,Makanan,Kurma 500g,2,70000,0.0,Transfer,PLG0554,4.0
+TRX01774,2025-12-04,Bandung,Makanan,Kurma 500g,1,70000,30.0,QRIS,PLG0165,
+TRX01775,2025-12-04,Makassar,Kecantikan,Sabun Cuci Muka,2,42000,30.0,Tunai,PLG0326,
+TRX01776,2025-12-05,Jakarta,Makanan,Sambal Botol,2,28000,5.0,Transfer,PLG0691,3.0
+TRX01777,2025-12-05,Surabaya,Kecantikan,Masker Wajah,1,25000,0.0,QRIS,PLG0463,4.0
+TRX01778,2025-12-05,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,0.0,QRIS,PLG0068,4.0
+TRX01779,2025-12-05,Bandung,Rumah Tangga,Set Panci,4,450000,0.0,Tunai,PLG0634,5.0
+TRX01780,2025-12-05,Makassar,Elektronik,Earbuds Nirkabel,3,350000,20.0,Kartu Kredit,PLG0148,5.0
+TRX01781,2025-12-05,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,0.0,Tunai,PLG0156,4.0
+TRX01782,2025-12-05,Medan,Makanan,Kopi Bubuk 250g,2,55000,20.0,QRIS,PLG0147,4.0
+TRX01783,2025-12-05,Jakarta,Elektronik,Speaker Bluetooth,4,410000,20.0,QRIS,PLG0177,3.0
+TRX01784,2025-12-05,Surabaya,Makanan,Kopi Bubuk 250g,4,55000,15.0,Kartu Debit,PLG0542,4.0
+TRX01785,2025-12-05,Medan,Makanan,Sambal Botol,4,28000,10.0,QRIS,PLG0046,4.0
+TRX01786,2025-12-05,Jakarta,Fashion,Celana Chino,2,210000,0.0,QRIS,PLG0633,4.0
+TRX01787,2025-12-06,Makassar,Kecantikan,Sabun Cuci Muka,2,42000,20.0,QRIS,PLG0224,3.0
+TRX01788,2025-12-06,Makassar,Fashion,Celana Chino,2,210000,5.0,Kartu Debit,PLG0020,4.0
+TRX01789,2025-12-06,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,5.0,Kartu Debit,PLG0310,4.0
+TRX01790,2025-12-06,Surabaya,Rumah Tangga,Set Panci,3,450000,0.0,Tunai,PLG0129,5.0
+TRX01791,2025-12-06,Surabaya,Makanan,Kurma 500g,2,70000,0.0,Kartu Debit,PLG0588,4.0
+TRX01792,2025-12-06,Medan,Makanan,Sambal Botol,1,28000,5.0,QRIS,PLG0399,5.0
+TRX01793,2025-12-06,Surabaya,Makanan,Keripik Singkong,1,18000,0.0,Tunai,PLG0285,5.0
+TRX01794,2025-12-06,Bandung,Kecantikan,Sabun Cuci Muka,3,42000,10.0,QRIS,PLG0289,
+TRX01795,2025-12-06,Makassar,Fashion,Sneakers,1,480000,0.0,Kartu Debit,PLG0317,4.0
+TRX01796,2025-12-06,Jakarta,Rumah Tangga,Rice Cooker,1,380000,30.0,Tunai,PLG0646,4.0
+TRX01797,2025-12-06,Surabaya,Fashion,Celana Chino,3,210000,10.0,Transfer,PLG0238,5.0
+TRX01798,2025-12-06,Makassar,Fashion,Jilbab Instan,2,85000,5.0,Kartu Kredit,PLG0608,3.0
+TRX01799,2025-12-07,Surabaya,Rumah Tangga,Rak Piring,2,160000,5.0,Tunai,PLG0313,5.0
+TRX01800,2025-12-07,Surabaya,Elektronik,Kabel USB-C,1,45000,20.0,Kartu Debit,PLG0594,3.0
+TRX01801,2025-12-07,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,10.0,Kartu Kredit,PLG0480,4.0
+TRX01802,2025-12-07,Bandung,Makanan,Madu 350ml,1,95000,0.0,Kartu Debit,PLG0602,4.0
+TRX01803,2025-12-07,Jakarta,Kecantikan,Sunscreen SPF50,2,89000,5.0,QRIS,PLG0400,5.0
+TRX01804,2025-12-08,Surabaya,Makanan,Madu 350ml,2,95000,5.0,Tunai,PLG0421,4.0
+TRX01805,2025-12-08,Jakarta,Elektronik,Speaker Bluetooth,1,410000,10.0,QRIS,PLG0065,5.0
+TRX01806,2025-12-08,Medan,Elektronik,Power Bank 10000mAh,1,220000,10.0,QRIS,PLG0346,3.0
+TRX01807,2025-12-08,Surabaya,Makanan,Kurma 500g,3,70000,20.0,Tunai,PLG0473,5.0
+TRX01808,2025-12-08,Surabaya,Rumah Tangga,Rice Cooker,2,380000,10.0,Kartu Debit,PLG0057,4.0
+TRX01809,2025-12-08,Surabaya,Elektronik,Speaker Bluetooth,2,410000,5.0,Kartu Debit,PLG0082,5.0
+TRX01810,2025-12-08,Jakarta,Rumah Tangga,Rice Cooker,2,380000,20.0,QRIS,PLG0091,5.0
+TRX01811,2025-12-08,Surabaya,Kecantikan,Masker Wajah,2,25000,15.0,Transfer,PLG0535,3.0
+TRX01812,2025-12-08,Medan,Elektronik,Speaker Bluetooth,2,410000,0.0,Tunai,PLG0622,5.0
+TRX01813,2025-12-09,Medan,Fashion,Jilbab Instan,1,85000,30.0,Tunai,PLG0248,4.0
+TRX01814,2025-12-09,Surabaya,Kecantikan,Masker Wajah,2,25000,0.0,Kartu Debit,PLG0292,4.0
+TRX01815,2025-12-09,Medan,Makanan,Sambal Botol,3,28000,10.0,Kartu Debit,PLG0291,4.0
+TRX01816,2025-12-09,Medan,Fashion,Jilbab Instan,2,85000,20.0,QRIS,PLG0313,
+TRX01817,2025-12-09,Makassar,Makanan,Madu 350ml,1,95000,30.0,Kartu Debit,PLG0109,5.0
+TRX01818,2025-12-09,Surabaya,Rumah Tangga,Rice Cooker,2,380000,15.0,Kartu Debit,PLG0256,4.0
+TRX01819,2025-12-09,Makassar,Fashion,Jilbab Instan,2,85000,0.0,Tunai,PLG0649,
+TRX01820,2025-12-10,Jakarta,Elektronik,Kabel USB-C,4,45000,5.0,QRIS,PLG0240,3.0
+TRX01821,2025-12-10,Jakarta,Kecantikan,Serum Wajah,2,145000,0.0,Tunai,PLG0688,4.0
+TRX01822,2025-12-10,Makassar,Rumah Tangga,Dispenser Sabun,4,60000,30.0,Tunai,PLG0517,4.0
+TRX01823,2025-12-10,Jakarta,Makanan,Kopi Bubuk 250g,1,55000,10.0,Tunai,PLG0402,4.0
+TRX01824,2025-12-10,Surabaya,Makanan,Kurma 500g,1,70000,0.0,Tunai,PLG0557,4.0
+TRX01825,2025-12-10,Medan,Elektronik,Earbuds Nirkabel,3,350000,0.0,QRIS,PLG0664,
+TRX01826,2025-12-10,Jakarta,Fashion,Kemeja Batik,3,260000,15.0,Tunai,PLG0434,4.0
+TRX01827,2025-12-11,Surabaya,Elektronik,Earbuds Nirkabel,1,350000,5.0,Kartu Debit,PLG0486,3.0
+TRX01828,2025-12-11,Bandung,Kecantikan,Serum Wajah,4,145000,30.0,QRIS,PLG0201,3.0
+TRX01829,2025-12-11,Bandung,Fashion,Celana Chino,2,210000,0.0,Tunai,PLG0684,3.0
+TRX01830,2025-12-11,Surabaya,Fashion,Sneakers,3,480000,0.0,Transfer,PLG0168,4.0
+TRX01831,2025-12-11,Medan,Rumah Tangga,Dispenser Sabun,3,60000,15.0,QRIS,PLG0390,4.0
+TRX01832,2025-12-11,Medan,Makanan,Madu 350ml,1,95000,15.0,QRIS,PLG0362,5.0
+TRX01833,2025-12-11,Medan,Makanan,Keripik Singkong,1,18000,0.0,Transfer,PLG0217,4.0
+TRX01834,2025-12-11,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,0.0,QRIS,PLG0279,4.0
+TRX01835,2025-12-11,Surabaya,Fashion,Kaos Polos,2,75000,30.0,Tunai,PLG0554,4.0
+TRX01836,2025-12-11,Makassar,Fashion,Sneakers,4,480000,20.0,Transfer,PLG0603,5.0
+TRX01837,2025-12-12,Bandung,Makanan,Keripik Singkong,2,18000,0.0,Tunai,PLG0275,5.0
+TRX01838,2025-12-12,Makassar,Fashion,Kaos Polos,3,75000,5.0,QRIS,PLG0337,4.0
+TRX01839,2025-12-12,Surabaya ,Makanan,Kurma 500g,1,70000,0.0,Tunai,PLG0495,4.0
+TRX01840,2025-12-12,Bandung,Makanan,Keripik Singkong,2,18000,0.0,Transfer,PLG0601,4.0
+TRX01841,2025-12-12,Surabaya,Fashion,Celana Chino,1,210000,30.0,Kartu Kredit,PLG0067,5.0
+TRX01842,2025-12-12,Medan,Fashion,Sneakers,4,480000,15.0,Kartu Kredit,PLG0129,3.0
+TRX01843,2025-12-13,Surabaya,Rumah Tangga,Rak Piring,1,160000,15.0,Kartu Debit,PLG0376,3.0
+TRX01844,2025-12-13,Jakarta,Kecantikan,Masker Wajah,2,25000,15.0,QRIS,PLG0252,5.0
+TRX01845,2025-12-13,Jakarta,Rumah Tangga,Rak Piring,4,160000,10.0,QRIS,PLG0582,4.0
+TRX01846,2025-12-13,Jakarta,Rumah Tangga,Sapu Lantai,3,35000,20.0,QRIS,PLG0079,4.0
+TRX01847,2025-12-13,Bandung,Kecantikan,Serum Wajah,1,145000,20.0,Kartu Debit,PLG0154,4.0
+TRX01848,2025-12-13,Jakarta,Fashion,Kemeja Batik,3,260000,0.0,Kartu Kredit,PLG0059,4.0
+TRX01849,2025-12-13,Medan,Makanan,Sambal Botol,3,28000,,QRIS,PLG0368,3.0
+TRX01850,2025-12-13,Makassar,Elektronik,Speaker Bluetooth,2,410000,30.0,Kartu Kredit,PLG0379,3.0
+TRX01851,2025-12-14,Jakarta,Rumah Tangga,Rak Piring,4,160000,0.0,Kartu Debit,PLG0386,5.0
+TRX01852,2025-12-14,Makassar,Elektronik,Speaker Bluetooth,4,410000,0.0,Tunai,PLG0479,2.0
+TRX01853,2025-12-14,Bandung,Kecantikan,Lip Tint,2,59000,10.0,Kartu Debit,PLG0558,4.0
+TRX01854,2025-12-14,Makassar,Kecantikan,Lip Tint,1,59000,0.0,QRIS,PLG0151,4.0
+TRX01855,2025-12-14,Medan,Kecantikan,Masker Wajah,2,25000,15.0,QRIS,PLG0605,4.0
+TRX01856,2025-12-14,Medan,Elektronik,Earbuds Nirkabel,3,350000,20.0,Kartu Debit,PLG0248,5.0
+TRX01857,2025-12-14,Bandung,Makanan,Madu 350ml,1,95000,0.0,Tunai,PLG0261,4.0
+TRX01858,2025-12-14,Surabaya,Fashion,Jilbab Instan,4,85000,10.0,Transfer,PLG0512,4.0
+TRX01859,2025-12-14,Jakarta,Kecantikan,Masker Wajah,3,25000,0.0,Tunai,PLG0194,5.0
+TRX01860,2025-12-14,Medan,Makanan,Sambal Botol,3,28000,5.0,Kartu Debit,PLG0577,4.0
+TRX01861,2025-12-15,Surabaya,Fashion,Kemeja Batik,1,260000,0.0,QRIS,PLG0387,4.0
+TRX01862,2025-12-15,Medan,Makanan,Madu 350ml,4,95000,30.0,Tunai,PLG0012,5.0
+TRX01863,2025-12-15,Jakarta,Fashion,Kemeja Batik,1,260000,5.0,QRIS,PLG0657,5.0
+TRX01864,2025-12-15,Makassar,Rumah Tangga,Set Panci,2,450000,10.0,QRIS,PLG0685,4.0
+TRX01865,2025-12-15,Surabaya,Makanan,Keripik Singkong,4,18000,30.0,Tunai,PLG0665,4.0
+TRX01866,2025-12-15,Bandung,Kecantikan,Masker Wajah,2,25000,15.0,QRIS,PLG0299,4.0
+TRX01867,2025-12-15,Jakarta,Fashion,Kaos Polos,2,75000,10.0,Tunai,PLG0095,
+TRX01868,2025-12-15,Jakarta,Rumah Tangga,Set Panci,5,450000,0.0,Kartu Kredit,PLG0356,5.0
+TRX01869,2025-12-15,Surabaya,Elektronik,Kabel USB-C,2,45000,5.0,Tunai,PLG0307,4.0
+TRX01870,2025-12-16,Jakarta,Makanan,Sambal Botol,2,28000,10.0,QRIS,PLG0089,3.0
+TRX01871,2025-12-16,Bandung,Kecantikan,Sabun Cuci Muka,2,42000,20.0,QRIS,PLG0066,5.0
+TRX01872,2025-12-16,Bandung,Kecantikan,Lip Tint,2,59000,10.0,Kartu Debit,PLG0111,4.0
+TRX01873,2025-12-17,Jakarta,Fashion,Jilbab Instan,2,85000,0.0,Transfer,PLG0669,4.0
+TRX01874,2025-12-17,Surabaya,Elektronik,Power Bank 10000mAh,1,220000,10.0,Tunai,PLG0512,4.0
+TRX01875,2025-12-17,Surabaya,Fashion,Sneakers,2,480000,0.0,Kartu Kredit,PLG0533,
+TRX01876,2025-12-17,Surabaya,Fashion,Jilbab Instan,1,85000,0.0,Tunai,PLG0405,5.0
+TRX01877,2025-12-17,Jakarta,Makanan,Kopi Bubuk 250g,5,55000,30.0,QRIS,PLG0040,5.0
+TRX01878,2025-12-17,Jakarta,Elektronik,Kabel USB-C,2,45000,10.0,QRIS,PLG0624,4.0
+TRX01879,2025-12-17,Jakarta,Makanan,Keripik Singkong,2,18000,0.0,Kartu Kredit,PLG0016,5.0
+TRX01880,2025-12-17,Bandung,Makanan,Kurma 500g,4,70000,20.0,Transfer,PLG0542,5.0
+TRX01881,2025-12-17,Jakarta,Fashion,Kaos Polos,1,75000,30.0,Tunai,PLG0517,5.0
+TRX01882,2025-12-18,Jakarta,Rumah Tangga,Dispenser Sabun,2,60000,15.0,QRIS,PLG0250,4.0
+TRX01883,2025-12-18,Jakarta,Elektronik,Earbuds Nirkabel,-4,350000,20.0,QRIS,PLG0488,3.0
+TRX01884,2025-12-18,Bandung,Rumah Tangga,Rice Cooker,1,380000,0.0,Transfer,PLG0220,5.0
+TRX01885,2025-12-18,Jakarta,Elektronik,Earbuds Nirkabel,2,350000,0.0,Kartu Kredit,PLG0433,5.0
+TRX01886,2025-12-18,Bandung,Makanan,Kurma 500g,1,70000,30.0,Tunai,PLG0306,4.0
+TRX01887,2025-12-18,Jakarta,Makanan,Madu 350ml,1,95000,0.0,QRIS,PLG0482,4.0
+TRX01888,2025-12-18,Makassar,Fashion,Kemeja Batik,1,260000,0.0,Kartu Debit,PLG0404,4.0
+TRX01889,2025-12-18,Jakarta,Makanan,Madu 350ml,1,95000,5.0,Transfer,PLG0008,5.0
+TRX01890,2025-12-18,Makassar,Fashion,Celana Chino,3,210000,0.0,Kartu Kredit,PLG0393,3.0
+TRX01891,2025-12-18,Jakarta,Makanan,Sambal Botol,2,28000,0.0,Kartu Debit,PLG0610,4.0
+TRX01892,2025-12-18,Surabaya,Kecantikan,Lip Tint,3,59000,15.0,Transfer,PLG0288,4.0
+TRX01893,2025-12-19,Surabaya ,Makanan,Kopi Bubuk 250g,1,55000,5.0,QRIS,PLG0096,4.0
+TRX01894,2025-12-19,Surabaya,Rumah Tangga,Dispenser Sabun,1,60000,10.0,Kartu Debit,PLG0375,4.0
+TRX01895,2025-12-19,Medan,Makanan,Kurma 500g,1,70000,0.0,Transfer,PLG0317,3.0
+TRX01896,2025-12-19,Jakarta,Fashion,Celana Chino,1,210000,5.0,Tunai,PLG0255,5.0
+TRX01897,2025-12-20,Bandung,Elektronik,Power Bank 10000mAh,1,220000,0.0,Tunai,PLG0362,5.0
+TRX01898,2025-12-20,Surabaya,Elektronik,Speaker Bluetooth,3,410000,10.0,Kartu Debit,PLG0258,4.0
+TRX01899,2025-12-20,Makassar,Elektronik,Speaker Bluetooth,1,410000,0.0,QRIS,PLG0008,
+TRX01900,2025-12-20,Makassar,Fashion,Celana Chino,1,210000,20.0,QRIS,PLG0011,4.0
+TRX01901,2025-12-20,Makassar,Kecantikan,Serum Wajah,2,145000,30.0,QRIS,PLG0276,4.0
+TRX01902,2025-12-20,Jakarta,Elektronik,Speaker Bluetooth,3,410000,20.0,Tunai,PLG0424,5.0
+TRX01903,2025-12-20,Bandung,Rumah Tangga,Rice Cooker,1,380000,0.0,Tunai,PLG0153,4.0
+TRX01904,2025-12-20,Bandung,Makanan,Kurma 500g,2,70000,30.0,Kartu Debit,PLG0248,4.0
+TRX01905,2025-12-20,Surabaya,Makanan,Kopi Bubuk 250g,1,55000,10.0,QRIS,PLG0170,
+TRX01906,2025-12-20,Jakarta,Fashion,Kaos Polos,4,75000,0.0,QRIS,PLG0196,4.0
+TRX01907,2025-12-20,Makassar,Kecantikan,Sabun Cuci Muka,1,42000,20.0,QRIS,PLG0514,4.0
+TRX01908,2025-12-20,Surabaya,Fashion,Celana Chino,2,210000,0.0,Tunai,PLG0262,4.0
+TRX01909,2025-12-21,Bandung,Makanan,Madu 350ml,2,95000,0.0,QRIS,PLG0604,4.0
+TRX01910,2025-12-21,Bandung,Elektronik,Kabel USB-C,2,45000,10.0,Kartu Kredit,PLG0445,4.0
+TRX01911,2025-12-21,Bandung,Makanan,Kurma 500g,2,70000,0.0,QRIS,PLG0443,4.0
+TRX01912,2025-12-21,Jakarta,Kecantikan,Lip Tint,2,59000,30.0,QRIS,PLG0144,4.0
+TRX01913,2025-12-21,Jakarta,Fashion,Kaos Polos,2,75000,10.0,Transfer,PLG0684,4.0
+TRX01914,2025-12-21,Surabaya,Makanan,Madu 350ml,5,95000,15.0,Tunai,PLG0121,4.0
+TRX01915,2025-12-22,Makassar,Rumah Tangga,Sapu Lantai,2,35000,10.0,Transfer,PLG0454,5.0
+TRX01916,2025-12-22,Bandung,Elektronik,Speaker Bluetooth,1,410000,5.0,Transfer,PLG0055,4.0
+TRX01917,2025-12-22,Jakarta,Makanan,Kurma 500g,2,70000,5.0,Kartu Debit,PLG0479,4.0
+TRX01918,2025-12-22,Bandung,Kecantikan,Masker Wajah,2,25000,15.0,QRIS,PLG0430,5.0
+TRX01919,2025-12-22,Bandung,Kecantikan,Masker Wajah,2,25000,0.0,Kartu Debit,PLG0116,4.0
+TRX01920,2025-12-22,Jakarta,Fashion,Kemeja Batik,1,260000,0.0,Tunai,PLG0312,2.0
+TRX01921,2025-12-23,Surabaya,Makanan,Sambal Botol,1,28000,0.0,QRIS,PLG0081,4.0
+TRX01922,2025-12-23,Medan,Elektronik,Kabel USB-C,2,45000,0.0,Kartu Debit,PLG0467,4.0
+TRX01923,2025-12-23,Jakarta,Fashion,Sneakers,3,480000,0.0,QRIS,PLG0645,5.0
+TRX01924,2025-12-23,Surabaya,Fashion,Kemeja Batik,4,260000,30.0,Tunai,PLG0108,5.0
+TRX01925,2025-12-23,Jakarta,Fashion,Kemeja Batik,2,260000,0.0,QRIS,PLG0619,4.0
+TRX01926,2025-12-23,Makassar,Kecantikan,Sunscreen SPF50,3,89000,5.0,Kartu Debit,PLG0425,4.0
+TRX01927,2025-12-23,Surabaya,Makanan,Kurma 500g,3,70000,0.0,Kartu Kredit,PLG0690,
+TRX01928,2025-12-23,Surabaya,Fashion,Jilbab Instan,2,85000,10.0,Tunai,PLG0455,4.0
+TRX01929,2025-12-24,Makassar,Kecantikan,Serum Wajah,3,145000,20.0,Kartu Kredit,PLG0332,4.0
+TRX01930,2025-12-24,Jakarta,Elektronik,Speaker Bluetooth,3,410000,0.0,Kartu Debit,PLG0439,4.0
+TRX01931,2025-12-25,Makassar,Elektronik,Speaker Bluetooth,3,410000,10.0,Kartu Debit,PLG0290,3.0
+TRX01932,2025-12-25,Makassar,Kecantikan,Masker Wajah,3,25000,5.0,QRIS,PLG0086,4.0
+TRX01933,2025-12-25,Makassar,Fashion,Celana Chino,4,210000,0.0,QRIS,PLG0155,4.0
+TRX01934,2025-12-25,Bandung,Elektronik,Smartwatch,2,900000,0.0,QRIS,PLG0394,3.0
+TRX01935,2025-12-25,Jakarta,Rumah Tangga,Dispenser Sabun,5,60000,0.0,Kartu Debit,PLG0478,4.0
+TRX01936,2025-12-25,Medan,Elektronik,Smartwatch,2,900000,0.0,QRIS,PLG0094,4.0
+TRX01937,2025-12-25,Surabaya,Fashion,Jilbab Instan,1,85000,20.0,QRIS,PLG0648,3.0
+TRX01938,2025-12-25,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,QRIS,PLG0404,4.0
+TRX01939,2025-12-25,Makassar,Rumah Tangga,Dispenser Sabun,3,60000,10.0,Tunai,PLG0366,4.0
+TRX01940,2025-12-25,Surabaya,Elektronik,Kabel USB-C,2,45000,20.0,QRIS,PLG0355,3.0
+TRX01941,2025-12-25,Jakarta,Fashion,Jilbab Instan,2,85000,0.0,Kartu Kredit,PLG0299,5.0
+TRX01942,2025-12-26,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,5.0,QRIS,PLG0636,4.0
+TRX01943,2025-12-26,Medan,Rumah Tangga,Set Panci,3,450000,0.0,Kartu Kredit,PLG0073,3.0
+TRX01944,2025-12-26,Makassar,Elektronik,Kabel USB-C,2,45000,0.0,Tunai,PLG0232,4.0
+TRX01945,2025-12-26,Makassar,Kecantikan,Sunscreen SPF50,3,89000,10.0,QRIS,PLG0294,4.0
+TRX01946,2025-12-26,Bandung,Makanan,Madu 350ml,1,95000,0.0,Kartu Debit,PLG0228,4.0
+TRX01947,2025-12-26,Surabaya,Elektronik,Kabel USB-C,2,45000,10.0,QRIS,PLG0131,
+TRX01948,2025-12-27,Jakarta,Fashion,Celana Chino,3,210000,5.0,Transfer,PLG0568,4.0
+TRX01949,2025-12-27,Surabaya,Elektronik,Kabel USB-C,3,45000,0.0,QRIS,PLG0532,3.0
+TRX01950,2025-12-27,Jakarta,Fashion,Kemeja Batik,5,260000,15.0,Tunai,PLG0037,4.0
+TRX01951,2025-12-27,Jakarta,Kecantikan,Lip Tint,3,59000,15.0,QRIS,PLG0503,4.0
+TRX01952,2025-12-27,Bandung,Fashion,Jilbab Instan,2,85000,10.0,Kartu Kredit,PLG0477,5.0
+TRX01953,2025-12-27,Jakarta,Fashion,Kaos Polos,3,75000,0.0,Kartu Debit,PLG0563,4.0
+TRX01954,2025-12-27,Surabaya ,Elektronik,Speaker Bluetooth,1,410000,5.0,QRIS,PLG0382,5.0
+TRX01955,2025-12-27,Jakarta,Elektronik,Power Bank 10000mAh,3,220000,30.0,Kartu Kredit,PLG0692,5.0
+TRX01956,2025-12-27,Medan,Kecantikan,Lip Tint,5,59000,15.0,Tunai,PLG0180,4.0
+TRX01957,2025-12-27,Jakarta,Fashion,Kemeja Batik,5,260000,10.0,Kartu Kredit,PLG0360,4.0
+TRX01958,2025-12-28,Medan,Makanan,Kopi Bubuk 250g,4,55000,15.0,QRIS,PLG0667,4.0
+TRX01959,2025-12-28,Bandung,Makanan,Kurma 500g,1,70000,10.0,QRIS,PLG0495,3.0
+TRX01960,2025-12-28,Bandung,Kecantikan,Lip Tint,2,59000,0.0,QRIS,PLG0675,
+TRX01961,2025-12-28,Jakarta,Makanan,Sambal Botol,1,28000,10.0,QRIS,PLG0245,
+TRX01962,2025-12-28,Medan,Kecantikan,Serum Wajah,5,145000,10.0,QRIS,PLG0064,5.0
+TRX01963,2025-12-28,Makassar,Fashion,Kaos Polos,1,75000,0.0,QRIS,PLG0218,3.0
+TRX01964,2025-12-28,Jakarta,Rumah Tangga,Rice Cooker,2,380000,0.0,QRIS,PLG0095,5.0
+TRX01965,2025-12-28,Bandung,Makanan,Keripik Singkong,2,18000,10.0,Tunai,PLG0363,3.0
+TRX01966,2025-12-28,Bandung,Makanan,Keripik Singkong,2,18000,0.0,Transfer,PLG0092,4.0
+TRX01967,2025-12-28,Jakarta,Elektronik,Power Bank 10000mAh,1,220000,15.0,Kartu Kredit,PLG0448,5.0
+TRX01968,2025-12-28,Jakarta,Fashion,Jilbab Instan,3,85000,0.0,Tunai,PLG0404,5.0
+TRX01969,2025-12-29,Jakarta,Fashion,Celana Chino,1,210000,0.0,QRIS,PLG0573,5.0
+TRX01970,2025-12-29,Surabaya,Kecantikan,Masker Wajah,2,25000,0.0,QRIS,PLG0191,3.0
+TRX01971,2025-12-29,Bandung,Kecantikan,Lip Tint,1,59000,5.0,Tunai,PLG0430,
+TRX01972,2025-12-29,Makassar,Elektronik,Smartwatch,1,900000,5.0,Tunai,PLG0406,4.0
+TRX01973,2025-12-29,Makassar,Fashion,Kemeja Batik,2,260000,0.0,Kartu Debit,PLG0432,4.0
+TRX01974,2025-12-29,Jakarta,Fashion,Sneakers,1,480000,0.0,Tunai,PLG0634,5.0
+TRX01975,2025-12-29,Jakarta,Rumah Tangga,Dispenser Sabun,1,60000,0.0,QRIS,PLG0399,4.0
+TRX01976,2025-12-29,Surabaya,Rumah Tangga,Set Panci,4,450000,30.0,Transfer,PLG0266,5.0
+TRX01977,2025-12-29,Makassar,Makanan,Sambal Botol,1,28000,20.0,QRIS,PLG0110,4.0
+TRX01978,2025-12-29,Makassar,Fashion,Kaos Polos,2,75000,0.0,Kartu Kredit,PLG0572,
+TRX01979,2025-12-29,Medan,Fashion,Jilbab Instan,3,85000,15.0,Kartu Debit,PLG0489,5.0
+TRX01980,2025-12-29,Jakarta,Rumah Tangga,Rice Cooker,3,380000,15.0,Kartu Kredit,PLG0344,5.0
+TRX01981,2025-12-29,Surabaya,Rumah Tangga,Dispenser Sabun,4,60000,0.0,Tunai,PLG0181,5.0
+TRX01982,2025-12-29,Bandung,Kecantikan,Sabun Cuci Muka,1,42000,5.0,QRIS,PLG0201,5.0
+TRX01983,2025-12-30,Surabaya,Rumah Tangga,Set Panci,2,450000,0.0,Kartu Debit,PLG0127,
+TRX01984,2025-12-30,Medan,Fashion,Jilbab Instan,2,85000,10.0,QRIS,PLG0650,4.0
+TRX01985,2025-12-30,Makassar,Elektronik,Smartwatch,2,900000,20.0,Kartu Debit,PLG0215,
+TRX01986,2025-12-30,Jakarta,Elektronik,Kabel USB-C,3,45000,10.0,Tunai,PLG0392,3.0
+TRX01987,2025-12-30,Makassar,Fashion,Kaos Polos,1,75000,30.0,Kartu Kredit,PLG0027,5.0
+TRX01988,2025-12-30,Jakarta,Kecantikan,Lip Tint,1,59000,30.0,QRIS,PLG0419,4.0
+TRX01989,2025-12-30,Jakarta,Makanan,Kurma 500g,3,70000,20.0,Tunai,PLG0502,5.0
+TRX01990,2025-12-30,Surabaya,Makanan,Keripik Singkong,2,18000,10.0,Kartu Kredit,PLG0617,4.0
+TRX01991,2025-12-30,Jakarta,Kecantikan,Serum Wajah,2,145000,20.0,Tunai,PLG0562,5.0
+TRX01992,2025-12-31,Surabaya,Kecantikan,Serum Wajah,1,145000,30.0,Tunai,PLG0096,4.0
+TRX01993,2025-12-31,Jakarta,Rumah Tangga,Rak Piring,3,160000,30.0,QRIS,PLG0449,4.0
+TRX01994,2025-12-31,Bandung,Makanan,Madu 350ml,6,95000,30.0,QRIS,PLG0225,5.0
+TRX01995,2025-12-31,Bandung,Rumah Tangga,Set Panci,4,450000,5.0,Transfer,PLG0030,4.0
+TRX01996,2025-12-31,Bandung,Kecantikan,Masker Wajah,2,25000,0.0,Kartu Debit,PLG0392,5.0
+TRX01997,2025-12-31,Bandung,Rumah Tangga,Rice Cooker,1,380000,30.0,Transfer,PLG0320,4.0
+TRX01998,2025-12-31,Medan,Makanan,Kurma 500g,2,70000,30.0,Transfer,PLG0059,3.0
+TRX01999,2025-12-31,Medan,Fashion,Kaos Polos,3,75000,30.0,Transfer,PLG0488,4.0
+TRX02000,2025-12-31,Jakarta,Fashion,Jilbab Instan,2,85000,30.0,Kartu Debit,PLG0570,
+TRX01908,2025-12-20,Surabaya,Fashion,Celana Chino,2,210000,0.0,Tunai,PLG0262,4.0
+TRX01944,2025-12-26,Makassar,Elektronik,Kabel USB-C,2,45000,0.0,Tunai,PLG0232,4.0
+TRX00269,2025-03-01,Jakarta,Makanan,Keripik Singkong,2,18000,0.0,Tunai,PLG0393,4.0
+TRX01655,2025-11-12,Makassar,Fashion,Kemeja Batik,1,260000,30.0,QRIS,PLG0294,4.0
+TRX01086,2025-07-23,Surabaya,Makanan,Kurma 500g,2,70000,30.0,Kartu Debit,PLG0659,4.0
+TRX00578,2025-04-14,Surabaya,Makanan,Kopi Bubuk 250g,2,55000,5.0,Kartu Debit,PLG0450,3.0
+TRX01928,2025-12-23,Surabaya,Fashion,Jilbab Instan,2,85000,10.0,Tunai,PLG0455,4.0
+TRX00383,2025-03-16,Bandung,Elektronik,Smartwatch,2,900000,10.0,Transfer,PLG0591,5.0
+TRX01607,2025-11-02,Makassar,Fashion,Celana Chino,4,210000,10.0,QRIS,PLG0399,5.0
+TRX00982,2025-07-02,Jakarta,Makanan,Kopi Bubuk 250g,2,55000,0.0,Transfer,PLG0611,4.0
+TRX01365,2025-09-19,Medan,Makanan,Kopi Bubuk 250g,2,55000,5.0,QRIS,PLG0525,3.0
+TRX00453,2025-03-26,Jakarta,Rumah Tangga,Rice Cooker,1,380000,5.0,QRIS,PLG0689,3.0
+TRX00206,2025-02-16,Bandung,Makanan,Kopi Bubuk 250g,3,55000,10.0,Transfer,PLG0623,5.0
+TRX01764,2025-12-03,Bandung,Kecantikan,Serum Wajah,4,145000,10.0,QRIS,PLG0069,5.0
+TRX01383,2025-09-22,Jakarta,Elektronik,Speaker Bluetooth,3,410000,30.0,QRIS,PLG0636,5.0

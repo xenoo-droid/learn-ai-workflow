@@ -249,6 +249,23 @@ Analisis dataset publik secara end-to-end.
 
 ---
 
+## 📐 Statistika Terapan untuk Analisis
+
+**Ditambahkan 2026-10-30 dengan persetujuan Rafa**, supaya Portfolio #1 tidak berhenti di grafik dan rata-rata.
+
+- Ringkasan yang tepat untuk data skewed (mean vs median)
+- Persentil, IQR, dan outlier
+- Proporsi, rasio, dan pertumbuhan (MoM/YoY)
+- Segmentasi dan tabulasi silang
+- Populasi vs sampel, confidence interval
+- Uji hipotesis dasar dan p-value
+- A/B test sederhana
+- Signifikan secara statistik vs penting secara praktis
+
+> Fokusnya pemakaian dengan Pandas/NumPy/SciPy untuk menjawab pertanyaan data. Teori dan rumusnya diperdalam di Fase 3.
+
+---
+
 ## 🤖 AI untuk Pekerjaan Data — Level Familiar
 
 Mulai mengenal AI sebagai alat kerja:
@@ -264,7 +281,23 @@ Mulai mengenal AI sebagai alat kerja:
 
 **Human validation tetap wajib.**
 
-### 🏗️ Portfolio Project #1
+---
+
+## 🗣️ Data Storytelling & Komunikasi Insight
+
+**Ditambahkan 2026-10-30 dengan persetujuan Rafa.** Analisis baru bernilai bila bisa dipahami dan ditindaklanjuti orang lain.
+
+- Pertanyaan bisnis dan audiens
+- Struktur laporan: ringkasan → temuan → rekomendasi → keterbatasan
+- Judul grafik berbentuk insight
+- Memilih grafik sesuai pesan
+- Decluttering, warna untuk penekanan, anotasi
+- Mengenali grafik yang menyesatkan
+- Menyusun beberapa grafik menjadi satu alur cerita
+
+---
+
+## 🏗️ Portfolio Project #1
 
 **Data Analysis Report**
 
@@ -951,25 +984,15 @@ Fase 6
 
 # 📚 REVIEW QUEUE
 
-Review Queue tetap terpisah dari roadmap utama.
+Review tetap terpisah dari roadmap utama dan tidak memblokir quest aktif.
 
-Materi yang sudah tervalidasi:
-
-- ✅ Error Handling
-- ✅ File I/O
-- ✅ Virtual Environment & pip
-
-Jika queue selesai:
-
-> 🏆 REVIEW QUEUE COMPLETED
-
-Tidak aktif lagi sampai dibuat queue baru.
+Sejak 2026-10-22, antrean review tidak lagi ditulis tangan di sini. Antrean resminya dihitung dari `state/state.yaml` (jadwal H+7/H+30 dan modul legacy) dengan `python tools/progress.py due`, sesuai `system/03_rubrik_validasi.md` bagian 5 dan 7. Review Queue lama (Error Handling, File I/O, Virtual Environment & pip) sudah selesai dan modulnya kini berstatus Validated (legacy).
 
 ---
 
 # 🏗️ PORTFOLIO LOCK
 
-Portfolio World 1 tetap:
+Portfolio #1 (World 2) tetap:
 
 ```text
 📊 Data Analysis Report
@@ -979,12 +1002,12 @@ Portfolio World 1 tetap:
 Unlock requirement:
 
 ```text
-Fase 2 — Python untuk Data
+Semua modul non-opsional World 2 (Fase 2) selesai
         ↓
-100% COMPLETED
-        ↓
-Portfolio World 1 UNLOCKED
+Portfolio #1 UNLOCKED
 ```
+
+Aturan yang sama berlaku untuk portfolio di World lain; `tools/progress.py` menolak portfolio yang dibuka sebelum prasyaratnya selesai.
 
 ---
 

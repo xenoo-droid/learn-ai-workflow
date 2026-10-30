@@ -29,7 +29,7 @@
 # ============================================================================
 
 versi_skema: 1
-diperbarui: 2026-10-29
+diperbarui: 2026-10-30
 pemain: Rafa
 target: AI-Enhanced Data Professional (Data Scientist / Data Analyst yang AI-native)
 posisi_saat_ini: {world: 2, modul: seaborn, quest: seaborn_categorical}
@@ -110,6 +110,11 @@ worlds:
     - {id: sql_join_subquery, nama: JOIN & Subquery Dasar, status: belum}
     - {id: sql_relational_sqlite, nama: Relational Database & SQLite, status: belum}
     - {id: sql_postgresql, nama: PostgreSQL Fundamentals, status: belum}
+  - id: statistika_terapan
+    nama: Statistika Terapan untuk Analisis
+    quest:
+    - {id: stat_terapan_deskriptif, nama: Ringkasan & Perbandingan Kelompok, status: belum}
+    - {id: stat_terapan_inferensi, nama: 'Sampel, Confidence Interval & Uji Hipotesis Dasar', status: belum}
   - id: ai_untuk_data
     nama: AI untuk Pekerjaan Data
     quest:
@@ -117,6 +122,11 @@ worlds:
     - {id: ai_debugging, nama: Debugging dengan AI, status: belum}
     - {id: ai_eda_cleaning, nama: AI untuk EDA & Data Cleaning, status: belum}
     - {id: ai_viz_docs_insight, nama: 'AI untuk Visualisasi, Dokumentasi & Insight', status: belum}
+  - id: data_storytelling
+    nama: Data Storytelling & Komunikasi Insight
+    quest:
+    - {id: story_struktur_insight, nama: Struktur Insight & Laporan, status: belum}
+    - {id: story_visual_penjelas, nama: Grafik yang Menjelaskan, status: belum}
   - {id: portfolio_1, nama: 'Portfolio #1: Data Analysis Report', tipe: portfolio, status: belum}
 - id: 3
   nama: MATHEMATICS & STATISTICS FOR DATA/AI
